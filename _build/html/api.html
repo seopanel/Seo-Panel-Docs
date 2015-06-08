@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3. API &mdash; Seo Panel Docs 3.7.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '3.7.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Seo Panel Docs 3.7.0 documentation" href="index.html" />
+    <link rel="prev" title="4. SUPPORT" href="support.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="support.html" title="4. SUPPORT"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Seo Panel Docs 3.7.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="api">
+<h1>3. API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+<p>The Seo Panel API provides an interface to allow you to access and perform actions
+in Seo Panel both from external applications and scripts as well as internal modules and addons.</p>
+<p>The Seo Panel API supports response type: JSON</p>
+<div class="section" id="api-setup">
+<h2>1. API Setup<a class="headerlink" href="#api-setup" title="Permalink to this headline">¶</a></h2>
+<p>Login as admin and go to following page</p>
+<p>Admin Panel =&gt; API Manager =&gt; API Settings</p>
+<p>Change values of API Key and Secret for security according to the below screen shot.</p>
+<img alt="_images/sp_api_settings.png" src="_images/sp_api_settings.png" />
+</div>
+<div class="section" id="functions">
+<h2>2. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p>The API currently supports the following functions</p>
+<div class="section" id="website-management">
+<h3>Website Management<a class="headerlink" href="#website-management" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="add-website">
+<h4>Add Website<a class="headerlink" href="#add-website" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to add a new website in seo panel.</p>
+<dl class="docutils">
+<dt><strong>Attributes</strong></dt>
+<dd><ul class="first last simple">
+<li>name =&gt; The name of the website</li>
+<li>url =&gt; The url of the website</li>
+<li>user_id =&gt; The user id of website</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>title =&gt; The title of the website</li>
+<li>description =&gt; The description of website</li>
+<li>keywords =&gt; The keyword of the website</li>
+<li>status =&gt; The status of the website - default[1]</li>
+</ul>
+</div></blockquote>
+<p><strong>Example Command</strong></p>
+<blockquote>
+<div>$postfields[&#8220;action&#8221;] = &#8220;createWebsite&#8221;;</div></blockquote>
+<p><strong>Successful Response</strong></p>
+<p>result = success
+message =  xxx - returned on error
+clientid = returned ID of newly added Client</p>
+<p><strong>Error Response</strong></p>
+<p>result=error&amp;message=</p>
+</div>
+<div class="section" id="update-website">
+<h4>Update Website<a class="headerlink" href="#update-website" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="delete-website">
+<h4>Delete Website<a class="headerlink" href="#delete-website" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-website-details">
+<h4>Get Website Details<a class="headerlink" href="#get-website-details" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-website-reports">
+<h4>Get Website Reports<a class="headerlink" href="#get-website-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-user-website-reports">
+<h4>Get User Website Reports<a class="headerlink" href="#get-user-website-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+</div>
+<div class="section" id="keyword-management">
+<h3>Keyword Management<a class="headerlink" href="#keyword-management" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="add-keyword">
+<h4>Add Keyword<a class="headerlink" href="#add-keyword" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="update-keyword">
+<h4>Update Keyword<a class="headerlink" href="#update-keyword" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="delete-keyword">
+<h4>Delete Keyword<a class="headerlink" href="#delete-keyword" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-keyword-details">
+<h4>Get Keyword Details<a class="headerlink" href="#get-keyword-details" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-keyword-reports">
+<h4>Get Keyword Reports<a class="headerlink" href="#get-keyword-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-website-keyword-reports">
+<h4>Get Website Keyword Reports<a class="headerlink" href="#get-website-keyword-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="get-user-keyword-reports">
+<h4>Get User Keyword Reports<a class="headerlink" href="#get-user-keyword-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+</div>
+<div class="section" id="user-management">
+<h3>User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="add-user">
+<h4>Add User<a class="headerlink" href="#add-user" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="update-user">
+<h4>Update User<a class="headerlink" href="#update-user" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+<div class="section" id="delete-user">
+<h4>Delete User<a class="headerlink" href="#delete-user" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p><strong>Attributes</strong></p>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<p><strong>Successful Response</strong></p>
+<p><strong>Error Response</strong></p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3. API</a><ul>
+<li><a class="reference internal" href="#api-setup">1. API Setup</a></li>
+<li><a class="reference internal" href="#functions">2. Functions</a><ul>
+<li><a class="reference internal" href="#website-management">Website Management</a><ul>
+<li><a class="reference internal" href="#add-website">Add Website</a></li>
+<li><a class="reference internal" href="#update-website">Update Website</a></li>
+<li><a class="reference internal" href="#delete-website">Delete Website</a></li>
+<li><a class="reference internal" href="#get-website-details">Get Website Details</a></li>
+<li><a class="reference internal" href="#get-website-reports">Get Website Reports</a></li>
+<li><a class="reference internal" href="#get-user-website-reports">Get User Website Reports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#keyword-management">Keyword Management</a><ul>
+<li><a class="reference internal" href="#add-keyword">Add Keyword</a></li>
+<li><a class="reference internal" href="#update-keyword">Update Keyword</a></li>
+<li><a class="reference internal" href="#delete-keyword">Delete Keyword</a></li>
+<li><a class="reference internal" href="#get-keyword-details">Get Keyword Details</a></li>
+<li><a class="reference internal" href="#get-keyword-reports">Get Keyword Reports</a></li>
+<li><a class="reference internal" href="#get-website-keyword-reports">Get Website Keyword Reports</a></li>
+<li><a class="reference internal" href="#get-user-keyword-reports">Get User Keyword Reports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#user-management">User Management</a><ul>
+<li><a class="reference internal" href="#add-user">Add User</a></li>
+<li><a class="reference internal" href="#update-user">Update User</a></li>
+<li><a class="reference internal" href="#delete-user">Delete User</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="support.html"
+                        title="previous chapter">4. SUPPORT</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/api.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, seopanel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.4</a>
+      
+      |
+      <a href="_sources/api.txt"
+          rel="nofollow">Page source</a></li>
+    </div>
+
+    
+
+    
+  </body>
+</html>
