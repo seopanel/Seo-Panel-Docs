@@ -66,122 +66,207 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p>The API currently supports the following functions</p>
 <div class="section" id="website-management">
 <h3>Website Management<a class="headerlink" href="#website-management" title="Permalink to this headline">¶</a></h3>
+<p><strong>Common Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>SP_API_KEY =&gt; Seo panel api key</li>
+<li>API_SECRET =&gt; Seo panel api secret key</li>
+<li>category&#8221; = website</li>
+</ul>
+</div></blockquote>
 <div class="section" id="add-website">
 <h4>Add Website<a class="headerlink" href="#add-website" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to add a new website in seo panel.</p>
-<dl class="docutils">
-<dt><strong>Attributes</strong></dt>
-<dd><ul class="first last simple">
-<li>name =&gt; The name of the website</li>
-<li>url =&gt; The url of the website</li>
-<li>user_id =&gt; The user id of website</li>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action        = createWebsite</li>
+<li>name          =&gt; The name of the website</li>
+<li>url           =&gt; The url of the website</li>
+<li>user_id       =&gt; The user id of website</li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>title =&gt; The title of the website</li>
-<li>description =&gt; The description of website</li>
-<li>keywords =&gt; The keyword of the website</li>
-<li>status =&gt; The status of the website - default[1]</li>
+<li>title                 =&gt; The title of the website</li>
+<li>description   =&gt; The description of website</li>
+<li>keywords              =&gt; The keywords of the website</li>
+<li>status                =&gt; The status of the website - default[1]</li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<blockquote>
-<div>$postfields[&#8220;action&#8221;] = &#8220;createWebsite&#8221;;</div></blockquote>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;createWebsite&quot;;</span>
+<span class="x">$paramList[&#39;name&#39;] = &quot;test.com&quot;;</span>
+<span class="x">$paramList[&#39;user_id&#39;] = &quot;1&quot;;</span>
+<span class="x">$paramList[&#39;url&#39;] = &quot;http://test.com/&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
-<p>result = success
-message =  xxx - returned on error
-clientid = returned ID of newly added Client</p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully created website</li>
+<li>website_id = The id of the website</li>
+</ul>
+</div></blockquote>
 <p><strong>Error Response</strong></p>
-<p>result=error&amp;message=</p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = * Website already exist</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="update-website">
 <h4>Update Website<a class="headerlink" href="#update-website" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to update existing website in seo panel.</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = updateWebsite</li>
+<li>id =&gt; The id of the website</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>name                  =&gt; The name of the website</li>
+<li>url                   =&gt; The url of the website</li>
+<li>user_id               =&gt; The user id of website</li>
+<li>title                 =&gt; The title of the website</li>
+<li>description   =&gt; The description of website</li>
+<li>keywords              =&gt; The keywords of the website</li>
+<li>status                =&gt; The status of the website - default[1]</li>
+</ul>
+</div></blockquote>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;updateWebsite&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;name&#39;] = &quot;Test Website&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully updated website</li>
+</ul>
+</div></blockquote>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid website id provided</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="delete-website">
 <h4>Delete Website<a class="headerlink" href="#delete-website" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to delete existing website in seo panel.</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = deleteWebsite</li>
+<li>id =&gt; The id of the website</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;deleteWebsite&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully deleted website and related data</li>
+</ul>
+</div></blockquote>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid website id provided</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="get-website-details">
 <h4>Get Website Details<a class="headerlink" href="#get-website-details" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to get details of a website</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getWebsiteInfo</li>
+<li>id =&gt; The id of the website</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getWebsiteInfo&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object(</span>
+<span class="x">        [id] =&gt; website id</span>
+<span class="x">        [name] =&gt; website name</span>
+<span class="x">        [url] =&gt; website url</span>
+<span class="x">        [owner_name] =&gt; owner name</span>
+<span class="x">        [owner_email] =&gt; owner email</span>
+<span class="x">        [category] =&gt; website category</span>
+<span class="x">        [title] =&gt; website title</span>
+<span class="x">        [description] =&gt; website description</span>
+<span class="x">        [keywords] =&gt; website keywords</span>
+<span class="x">        [title2] =&gt; website title2 for directory submission</span>
+<span class="x">        [title3] =&gt; website title3 for directory submission</span>
+<span class="x">        [title4] =&gt; website title4 for directory submission</span>
+<span class="x">        [title5] =&gt; website title5 for directory submission</span>
+<span class="x">        [description2] =&gt; website description2 for directory submission</span>
+<span class="x">        [description3] =&gt; website description3 for directory submission</span>
+<span class="x">        [description4] =&gt; website description4 for directory submission</span>
+<span class="x">        [description5] =&gt; website description5 for directory submission</span>
+<span class="x">        [reciprocal_url] =&gt; reciprocal url for directory submission</span>
+<span class="x">        [user_id] =&gt; user id</span>
+<span class="x">        [status] =&gt; website status</span>
+<span class="x">)</span>
+</pre></div>
+</div>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid website id provided</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="get-website-reports">
 <h4>Get Website Reports<a class="headerlink" href="#get-website-reports" title="Permalink to this headline">¶</a></h4>
-<p><strong>Purpose</strong></p>
-<p><strong>Attributes</strong></p>
-<p><strong>Optional Attributes</strong></p>
-<p><strong>Example Command</strong></p>
-<p><strong>Successful Response</strong></p>
-<p><strong>Error Response</strong></p>
 </div>
 <div class="section" id="get-user-website-reports">
 <h4>Get User Website Reports<a class="headerlink" href="#get-user-website-reports" title="Permalink to this headline">¶</a></h4>
-<p><strong>Purpose</strong></p>
-<p><strong>Attributes</strong></p>
-<p><strong>Optional Attributes</strong></p>
-<p><strong>Example Command</strong></p>
-<p><strong>Successful Response</strong></p>
-<p><strong>Error Response</strong></p>
 </div>
 </div>
 <div class="section" id="keyword-management">
 <h3>Keyword Management<a class="headerlink" href="#keyword-management" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="add-keyword">
-<h4>Add Keyword<a class="headerlink" href="#add-keyword" title="Permalink to this headline">¶</a></h4>
-<p><strong>Purpose</strong></p>
-<p><strong>Attributes</strong></p>
-<p><strong>Optional Attributes</strong></p>
-<p><strong>Example Command</strong></p>
-<p><strong>Successful Response</strong></p>
-<p><strong>Error Response</strong></p>
-</div>
-<div class="section" id="update-keyword">
-<h4>Update Keyword<a class="headerlink" href="#update-keyword" title="Permalink to this headline">¶</a></h4>
-<p><strong>Purpose</strong></p>
-<p><strong>Attributes</strong></p>
-<p><strong>Optional Attributes</strong></p>
-<p><strong>Example Command</strong></p>
-<p><strong>Successful Response</strong></p>
-<p><strong>Error Response</strong></p>
-</div>
-<div class="section" id="delete-keyword">
-<h4>Delete Keyword<a class="headerlink" href="#delete-keyword" title="Permalink to this headline">¶</a></h4>
-<p><strong>Purpose</strong></p>
-<p><strong>Attributes</strong></p>
-<p><strong>Optional Attributes</strong></p>
-<p><strong>Example Command</strong></p>
-<p><strong>Successful Response</strong></p>
-<p><strong>Error Response</strong></p>
-</div>
-<div class="section" id="get-keyword-details">
-<h4>Get Keyword Details<a class="headerlink" href="#get-keyword-details" title="Permalink to this headline">¶</a></h4>
-<p><strong>Purpose</strong></p>
-<p><strong>Attributes</strong></p>
-<p><strong>Optional Attributes</strong></p>
-<p><strong>Example Command</strong></p>
-<p><strong>Successful Response</strong></p>
-<p><strong>Error Response</strong></p>
-</div>
 <div class="section" id="get-keyword-reports">
 <h4>Get Keyword Reports<a class="headerlink" href="#get-keyword-reports" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
@@ -264,10 +349,6 @@ clientid = returned ID of newly added Client</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#keyword-management">Keyword Management</a><ul>
-<li><a class="reference internal" href="#add-keyword">Add Keyword</a></li>
-<li><a class="reference internal" href="#update-keyword">Update Keyword</a></li>
-<li><a class="reference internal" href="#delete-keyword">Delete Keyword</a></li>
-<li><a class="reference internal" href="#get-keyword-details">Get Keyword Details</a></li>
 <li><a class="reference internal" href="#get-keyword-reports">Get Keyword Reports</a></li>
 <li><a class="reference internal" href="#get-website-keyword-reports">Get Website Keyword Reports</a></li>
 <li><a class="reference internal" href="#get-user-keyword-reports">Get User Keyword Reports</a></li>
