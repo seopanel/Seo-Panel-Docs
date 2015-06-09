@@ -27,6 +27,13 @@ The API currently supports the following functions
 Website Management
 ------------------
 
+**Common Attributes**
+
+	- SP_API_KEY => Seo panel api key
+	- API_SECRET => Seo panel api secret key 
+	- category" = website
+
+
 Add Website
 ************************
 
@@ -35,6 +42,7 @@ Add Website
 This command is used to add a new website in seo panel.
 
 **Attributes**
+	- action = createWebsite
 	- name => The name of the website
 	- url => The url of the website
 	- user_id => The user id of website
@@ -43,25 +51,31 @@ This command is used to add a new website in seo panel.
 
 	- title => The title of the website
 	- description => The description of website
-	- keywords => The keyword of the website
+	- keywords => The keywords of the website
 	- status => The status of the website - default[1]
 
 **Example Command**
 
- $postfields["action"] = "createWebsite";
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "website";
+	$paramList['action'] = "createWebsite";
+	$paramList['name'] = "test.com";
+	$paramList['user_id'] = "1";
+	$paramList['url'] = "http://test.com/";
 
 **Successful Response**
 
-result = success
-message =  xxx - returned on error
-clientid = returned ID of newly added Client
+	- response = success
+	- result = Successfully created website
+	- website_id = 2
 
 **Error Response**
 
-result=error&message=
-
-
-
+	- response = Error
+	- error_msg = * Website already exist
 
 Update Website
 ************************

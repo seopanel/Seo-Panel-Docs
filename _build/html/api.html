@@ -66,6 +66,14 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p>The API currently supports the following functions</p>
 <div class="section" id="website-management">
 <h3>Website Management<a class="headerlink" href="#website-management" title="Permalink to this headline">¶</a></h3>
+<p><strong>Common Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>SP_API_KEY =&gt; Seo panel api key</li>
+<li>API_SECRET =&gt; Seo panel api secret key</li>
+<li>category&#8221; = website</li>
+</ul>
+</div></blockquote>
 <div class="section" id="add-website">
 <h4>Add Website<a class="headerlink" href="#add-website" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
@@ -73,6 +81,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <dl class="docutils">
 <dt><strong>Attributes</strong></dt>
 <dd><ul class="first last simple">
+<li>action = createWebsite</li>
 <li>name =&gt; The name of the website</li>
 <li>url =&gt; The url of the website</li>
 <li>user_id =&gt; The user id of website</li>
@@ -84,19 +93,35 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <div><ul class="simple">
 <li>title =&gt; The title of the website</li>
 <li>description =&gt; The description of website</li>
-<li>keywords =&gt; The keyword of the website</li>
+<li>keywords =&gt; The keywords of the website</li>
 <li>status =&gt; The status of the website - default[1]</li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<blockquote>
-<div>$postfields[&#8220;action&#8221;] = &#8220;createWebsite&#8221;;</div></blockquote>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;createWebsite&quot;;</span>
+<span class="x">$paramList[&#39;name&#39;] = &quot;test.com&quot;;</span>
+<span class="x">$paramList[&#39;user_id&#39;] = &quot;1&quot;;</span>
+<span class="x">$paramList[&#39;url&#39;] = &quot;http://test.com/&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
-<p>result = success
-message =  xxx - returned on error
-clientid = returned ID of newly added Client</p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully created website</li>
+<li>website_id = 2</li>
+</ul>
+</div></blockquote>
 <p><strong>Error Response</strong></p>
-<p>result=error&amp;message=</p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = * Website already exist</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="update-website">
 <h4>Update Website<a class="headerlink" href="#update-website" title="Permalink to this headline">¶</a></h4>
