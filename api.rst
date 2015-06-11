@@ -42,32 +42,18 @@ Add Website
 This command is used to add a new website in seo panel.
 
 **Attributes**
-<<<<<<< HEAD
 
 	- action 	= createWebsite
 	- name 		=> The name of the website
 	- url 		=> The url of the website
 	- user_id 	=> The user id of website
-=======
-	- action = createWebsite
-	- name => The name of the website
-	- url => The url of the website
-	- user_id => The user id of website
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 
 **Optional Attributes**
 
-<<<<<<< HEAD
 	- title 		=> The title of the website
 	- description 	=> The description of website
 	- keywords 		=> The keywords of the website
 	- status 		=> The status of the website - default[1]
-=======
-	- title => The title of the website
-	- description => The description of website
-	- keywords => The keywords of the website
-	- status => The status of the website - default[1]
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 
 **Example Command**
 
@@ -85,20 +71,12 @@ This command is used to add a new website in seo panel.
 
 	- response = success
 	- result = Successfully created website
-<<<<<<< HEAD
 	- website_id = The id of the website
-=======
-	- website_id = 2
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 
 **Error Response**
 
 	- response = Error
 	- error_msg = * Website already exist
-<<<<<<< HEAD
-	
-=======
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 
 Update Website
 ************************
