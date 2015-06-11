@@ -334,6 +334,7 @@ Update User
 
 **Error Response**
 
+
 Delete User
 ************************
 
