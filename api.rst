@@ -221,15 +221,456 @@ This command is used to get details of a website
 Get Website Reports
 ************************
 
+**Purpose**
+
+This command is used to get reports of a website
+
+**Attributes**
+
+	- action = getReportById
+	- id => The id of the website			
+
+**Optional Attributes**
+
+	- from_time =>	The from time of report in (yyyy-mm-dd)- default[Yesterday]
+	- to_time => The to time of report in (yyyy-mm-dd) - default[Today]
+	
+	
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "website";
+	$paramList['action'] = "getReportById";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
+
+**Successful Response**
+
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [id] => 1
+            [name] => Test Website
+            [url] => http://www.seopanel.in/
+            [owner_name] => 
+            [owner_email] => 
+            [category] => 
+            [title] => Seo Panel: World's first open source seo control panel for multiple web sites
+            [description] => A complete free control panel for managing search engine optimization of your websites.
+            [keywords] => Seo Panel,seo control panel,search engine optimization panel,seo tools kit
+            [title2] => 
+            [title3] => 
+            [title4] => 
+            [title5] => 
+            [description2] => 
+            [description3] => 
+            [description4] => 
+            [description5] => 
+            [reciprocal_url] => 
+            [user_id] => 1
+            [status] => 1
+            [alexa] => stdClass Object
+                (
+                    [alexarank] => stdClass Object
+                        (
+                            [rank] => 68690
+                            [diff] => -974
+                            [date] => 2015-06-29
+                        )
+
+                    [backlinks] => stdClass Object
+                        (
+                            [rank] => 717
+                            [diff] => 
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+            [google] => stdClass Object
+                (
+                    [pagerank] => stdClass Object
+                        (
+                            [rank] => 5
+                            [diff] => 
+                            [date] => 2015-06-29
+                        )
+
+                    [backlinks] => stdClass Object
+                        (
+                            [rank] => 39
+                            [diff] => (-1)
+                            [date] => 2015-06-29
+                        )
+
+                    [indexed] => stdClass Object
+                        (
+                            [rank] => 413
+                            [diff] => (1)
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+            [bing] => stdClass Object
+                (
+                    [backlinks] => stdClass Object
+                        (
+                            [rank] => 22
+                            [diff] => (1)
+                            [date] => 2015-06-29
+                        )
+
+                    [indexed] => stdClass Object
+                        (
+                            [rank] => 2720
+                            [diff] => (440)
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+            [dirsub] => stdClass Object
+                (
+                    [total] => 0
+                    [active] => 0
+                    [date] => 2015-06-29
+                )
+
+        )
+
+	)
+    
+**Error Response**
+
+	- response = Error
+	- error_msg = The invalid website id provided
+
+
+
 Get User Website Reports
 ************************
+
+**Purpose**
+
+This command is used to get reports of all user websites
+
+**Attributes**
+
+	- action = getReportByUserId
+	- id => The id of the user			
+
+**Optional Attributes**
+
+	- from_time =>	The from time of report in (yyyy-mm-dd)- default[Yesterday]
+	- to_time => The to time of report in (yyyy-mm-dd) - default[Today]
+	
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "website";
+	$paramList['action'] = "getReportByUserId";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
+
+**Successful Response**
+
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [1] => stdClass Object
+                (
+                    [id] => 1
+                    [name] => sp
+                    [url] => http://www.seopanel.in/
+                    [owner_name] => 
+                    [owner_email] => 
+                    [category] => 
+                    [title] => Seo Panel: World's first open source seo control panel for multiple web sites
+                    [description] => A complete free control panel for managing search engine optimization of your websites.
+                    [keywords] => Seo Panel,seo control panel,search engine optimization panel,seo tools kit,keyword rank checker
+                    [title2] => 
+                    [title3] => 
+                    [title4] => 
+                    [title5] => 
+                    [description2] => 
+                    [description3] => 
+                    [description4] => 
+                    [description5] => 
+                    [reciprocal_url] => 
+                    [user_id] => 1
+                    [status] => 1
+                    [alexa] => stdClass Object
+                        (
+                            [alexarank] => stdClass Object
+                                (
+                                    [rank] => 68690
+                                    [diff] => -974
+                                    [date] => 2015-06-29
+                                )
+
+                            [backlinks] => stdClass Object
+                                (
+                                    [rank] => 717
+                                    [diff] => 
+                                    [date] => 2015-06-29
+                                )
+
+                        )
+
+                    [google] => stdClass Object
+                        (
+                            [pagerank] => stdClass Object
+                                (
+                                    [rank] => 5
+                                    [diff] => 
+                                    [date] => 2015-06-29
+                                )
+
+                            [backlinks] => stdClass Object
+                                (
+                                    [rank] => 39
+                                    [diff] => (-1)
+                                    [date] => 2015-06-29
+                                )
+
+                            [indexed] => stdClass Object
+                                (
+                                    [rank] => 413
+                                    [diff] => (1)
+                                    [date] => 2015-06-29
+                                )
+
+                        )
+
+                    [bing] => stdClass Object
+                        (
+                            [backlinks] => stdClass Object
+                                (
+                                    [rank] => 22
+                                    [diff] => (1)
+                                    [date] => 2015-06-29
+                                )
+
+                            [indexed] => stdClass Object
+                                (
+                                    [rank] => 2720
+                                    [diff] => (440)
+                                    [date] => 2015-06-29
+                                )
+
+                        )
+
+                    [dirsub] => stdClass Object
+                        (
+                            [total] => 0
+                            [active] => 0
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+        )
+
+
+    
+**Error Response**
+
+	- response = Error
+	- error_msg = No reports found!
 
 
 
 Keyword Management
 ------------------
 
+**Common Attributes**
 
+	- SP_API_KEY => Seo panel api key
+	- API_SECRET => Seo panel api secret key 
+	- category" = keyword
+
+
+Add Keyword
+************************
+
+**Purpose**
+
+This command is used to add a new keyword in seo panel.
+
+**Attributes**
+
+	- action 			= createKeyword
+	- name 				=> The name of the keyword
+	- website_id		=> The website id of keyword
+	- searchengines		=> The search engine ids of the keyword	- [id1:id2] Eg. 1:2
+
+**Optional Attributes**
+	
+	- lang_code 		=>	The language code of the keyword - Eg. fr
+	- country_code		=>	The country code of the keyword - Eg. de
+	- status			=>	The status of the keyword - default[1]
+
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "createKeyword";
+	$paramList['name'] = "seo panel";
+	$paramList['website_id'] = "1";
+	$paramList['searchengines'] = "1:2:3";
+
+**Successful Response**
+
+	- response = success
+	- result = Successfully created keyword
+	- keyword_id = The id of the keyword
+
+**Error Response**
+
+	- response = Error
+	- error_msg = * Keyword already exist
+	
+
+Update Keyword
+************************
+
+**Purpose**
+
+This command is used to update existing keyword in seo panel.
+
+**Attributes**
+
+	- action = updateKeyword
+	- id => The id of the keyword			
+
+**Optional Attributes**
+
+	- name 				=> The name of the keyword
+	- website_id		=> The website id of keyword
+	- searchengines		=> The search engine ids of the keyword	- [id1:id2] Eg. 1:2
+	- lang_code 		=>	The language code of the keyword - Eg. fr
+	- country_code		=>	The country code of the keyword - Eg. de
+	- status			=>	The status of the keyword - default[1]	
+
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "updateKeyword";
+	$paramList['id'] = 1;
+	$paramList['searchengines'] = "1:2";
+
+**Successful Response**
+
+	- response = success
+	- result = Successfully updated keyword
+
+**Error Response**
+
+	- response = Error
+	- error_msg = The invalid keyword id provided
+
+
+Delete Keyword
+************************
+
+**Purpose**
+
+This command is used to delete existing keyword in seo panel.
+
+**Attributes**
+
+	- action = deleteKeyword
+	- id => The id of the keyword			
+
+**Optional Attributes**
+	
+	
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "deleteKeyword";
+	$paramList['id'] = 1;
+
+**Successful Response**
+
+	- response = success
+	- result = Successfully deleted keyword
+
+**Error Response**
+
+	- response = Error
+	- error_msg = The invalid keyword id provided
+
+
+Get Keyword Details
+********************
+
+**Purpose**
+
+This command is used to get details of a keyword
+
+**Attributes**
+
+	- action = getKeywordInfo
+	- id => The id of the keyword			
+
+**Optional Attributes**
+	
+	
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "getKeywordInfo";
+	$paramList['id'] = 1;
+
+**Successful Response**
+
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [id] => 1
+            [name] => seo panel
+            [lang_code] => 
+            [country_code] => 
+            [website_id] => 1
+            [searchengines] => 1:2:3
+            [status] => 1
+        )
+    
+**Error Response**
+
+	- response = Error
+	- error_msg = The invalid keyword id provided
 
 
 
@@ -238,15 +679,137 @@ Get Keyword Reports
 
 **Purpose**
 
+This command is used to get reports of a keyword
+
 **Attributes**
+
+	- action = getReportById
+	- id => The id of the keyword			
 
 **Optional Attributes**
 
+	- from_time =>	The from time of report in (yyyy-mm-dd)- default[Yesterday]
+	- to_time => The to time of report in (yyyy-mm-dd) - default[Today]
+	
+	
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "getReportById";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
 
 **Successful Response**
 
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [id] => 1
+            [name] => Test Website
+            [url] => http://www.seopanel.in/
+            [owner_name] => 
+            [owner_email] => 
+            [category] => 
+            [title] => Seo Panel: World's first open source seo control panel for multiple web sites
+            [description] => A complete free control panel for managing search engine optimization of your keywords.
+            [keywords] => Seo Panel,seo control panel,search engine optimization panel,seo tools kit
+            [title2] => 
+            [title3] => 
+            [title4] => 
+            [title5] => 
+            [description2] => 
+            [description3] => 
+            [description4] => 
+            [description5] => 
+            [reciprocal_url] => 
+            [user_id] => 1
+            [status] => 1
+            [alexa] => stdClass Object
+                (
+                    [alexarank] => stdClass Object
+                        (
+                            [rank] => 68690
+                            [diff] => -974
+                            [date] => 2015-06-29
+                        )
+
+                    [backlinks] => stdClass Object
+                        (
+                            [rank] => 717
+                            [diff] => 
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+            [google] => stdClass Object
+                (
+                    [pagerank] => stdClass Object
+                        (
+                            [rank] => 5
+                            [diff] => 
+                            [date] => 2015-06-29
+                        )
+
+                    [backlinks] => stdClass Object
+                        (
+                            [rank] => 39
+                            [diff] => (-1)
+                            [date] => 2015-06-29
+                        )
+
+                    [indexed] => stdClass Object
+                        (
+                            [rank] => 413
+                            [diff] => (1)
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+            [bing] => stdClass Object
+                (
+                    [backlinks] => stdClass Object
+                        (
+                            [rank] => 22
+                            [diff] => (1)
+                            [date] => 2015-06-29
+                        )
+
+                    [indexed] => stdClass Object
+                        (
+                            [rank] => 2720
+                            [diff] => (440)
+                            [date] => 2015-06-29
+                        )
+
+                )
+
+            [dirsub] => stdClass Object
+                (
+                    [total] => 0
+                    [active] => 0
+                    [date] => 2015-06-29
+                )
+
+        )
+
+	)
+    
 **Error Response**
+
+	- response = Error
+	- error_msg = The invalid keyword id provided
+
+
+
 
 Get Website Keyword Reports
 ***************************

@@ -78,7 +78,6 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <h4>Add Website<a class="headerlink" href="#add-website" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to add a new website in seo panel.</p>
-<<<<<<< HEAD
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
@@ -86,31 +85,15 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <li>name          =&gt; The name of the website</li>
 <li>url           =&gt; The url of the website</li>
 <li>user_id       =&gt; The user id of website</li>
-=======
-<dl class="docutils">
-<dt><strong>Attributes</strong></dt>
-<dd><ul class="first last simple">
-<li>action = createWebsite</li>
-<li>name =&gt; The name of the website</li>
-<li>url =&gt; The url of the website</li>
-<li>user_id =&gt; The user id of website</li>
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<<<<<<< HEAD
 <li>title                 =&gt; The title of the website</li>
 <li>description   =&gt; The description of website</li>
 <li>keywords              =&gt; The keywords of the website</li>
 <li>status                =&gt; The status of the website - default[1]</li>
-=======
-<li>title =&gt; The title of the website</li>
-<li>description =&gt; The description of website</li>
-<li>keywords =&gt; The keywords of the website</li>
-<li>status =&gt; The status of the website - default[1]</li>
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
@@ -128,11 +111,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <div><ul class="simple">
 <li>response = success</li>
 <li>result = Successfully created website</li>
-<<<<<<< HEAD
 <li>website_id = The id of the website</li>
-=======
-<li>website_id = 2</li>
->>>>>>> branch 'master' of git@github.com:seopanel/Seo-Panel-Docs.git
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
@@ -281,13 +260,453 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div>
 <div class="section" id="get-website-reports">
 <h4>Get Website Reports<a class="headerlink" href="#get-website-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to get reports of a website</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getReportById</li>
+<li>id =&gt; The id of the website</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
+<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+</ul>
+</div></blockquote>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportById&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [id] =&gt; 1</span>
+<span class="x">    [name] =&gt; Test Website</span>
+<span class="x">    [url] =&gt; http://www.seopanel.in/</span>
+<span class="x">    [owner_name] =&gt;</span>
+<span class="x">    [owner_email] =&gt;</span>
+<span class="x">    [category] =&gt;</span>
+<span class="x">    [title] =&gt; Seo Panel: World&#39;s first open source seo control panel for multiple web sites</span>
+<span class="x">    [description] =&gt; A complete free control panel for managing search engine optimization of your websites.</span>
+<span class="x">    [keywords] =&gt; Seo Panel,seo control panel,search engine optimization panel,seo tools kit</span>
+<span class="x">    [title2] =&gt;</span>
+<span class="x">    [title3] =&gt;</span>
+<span class="x">    [title4] =&gt;</span>
+<span class="x">    [title5] =&gt;</span>
+<span class="x">    [description2] =&gt;</span>
+<span class="x">    [description3] =&gt;</span>
+<span class="x">    [description4] =&gt;</span>
+<span class="x">    [description5] =&gt;</span>
+<span class="x">    [reciprocal_url] =&gt;</span>
+<span class="x">    [user_id] =&gt; 1</span>
+<span class="x">    [status] =&gt; 1</span>
+<span class="x">    [alexa] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [alexarank] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 68690</span>
+<span class="x">                    [diff] =&gt; -974</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">            [backlinks] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 717</span>
+<span class="x">                    [diff] =&gt;</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">    [google] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [pagerank] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 5</span>
+<span class="x">                    [diff] =&gt;</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">            [backlinks] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 39</span>
+<span class="x">                    [diff] =&gt; (-1)</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">            [indexed] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 413</span>
+<span class="x">                    [diff] =&gt; (1)</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">    [bing] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [backlinks] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 22</span>
+<span class="x">                    [diff] =&gt; (1)</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">            [indexed] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank] =&gt; 2720</span>
+<span class="x">                    [diff] =&gt; (440)</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">    [dirsub] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [total] =&gt; 0</span>
+<span class="x">            [active] =&gt; 0</span>
+<span class="x">            [date] =&gt; 2015-06-29</span>
+<span class="x">        )</span>
+
+<span class="x">)</span>
+
+<span class="x">)</span>
+</pre></div>
+</div>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid website id provided</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="get-user-website-reports">
 <h4>Get User Website Reports<a class="headerlink" href="#get-user-website-reports" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to get reports of all user websites</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getReportByUserId</li>
+<li>id =&gt; The id of the user</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
+<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+</ul>
+</div></blockquote>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByUserId&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [1] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [id] =&gt; 1</span>
+<span class="x">            [name] =&gt; sp</span>
+<span class="x">            [url] =&gt; http://www.seopanel.in/</span>
+<span class="x">            [owner_name] =&gt;</span>
+<span class="x">            [owner_email] =&gt;</span>
+<span class="x">            [category] =&gt;</span>
+<span class="x">            [title] =&gt; Seo Panel: World&#39;s first open source seo control panel for multiple web sites</span>
+<span class="x">            [description] =&gt; A complete free control panel for managing search engine optimization of your websites.</span>
+<span class="x">            [keywords] =&gt; Seo Panel,seo control panel,search engine optimization panel,seo tools kit,keyword rank checker</span>
+<span class="x">            [title2] =&gt;</span>
+<span class="x">            [title3] =&gt;</span>
+<span class="x">            [title4] =&gt;</span>
+<span class="x">            [title5] =&gt;</span>
+<span class="x">            [description2] =&gt;</span>
+<span class="x">            [description3] =&gt;</span>
+<span class="x">            [description4] =&gt;</span>
+<span class="x">            [description5] =&gt;</span>
+<span class="x">            [reciprocal_url] =&gt;</span>
+<span class="x">            [user_id] =&gt; 1</span>
+<span class="x">            [status] =&gt; 1</span>
+<span class="x">            [alexa] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [alexarank] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 68690</span>
+<span class="x">                            [diff] =&gt; -974</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [backlinks] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 717</span>
+<span class="x">                            [diff] =&gt;</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                )</span>
+
+<span class="x">            [google] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [pagerank] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 5</span>
+<span class="x">                            [diff] =&gt;</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [backlinks] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 39</span>
+<span class="x">                            [diff] =&gt; (-1)</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [indexed] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 413</span>
+<span class="x">                            [diff] =&gt; (1)</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                )</span>
+
+<span class="x">            [bing] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [backlinks] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 22</span>
+<span class="x">                            [diff] =&gt; (1)</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [indexed] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank] =&gt; 2720</span>
+<span class="x">                            [diff] =&gt; (440)</span>
+<span class="x">                            [date] =&gt; 2015-06-29</span>
+<span class="x">                        )</span>
+
+<span class="x">                )</span>
+
+<span class="x">            [dirsub] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [total] =&gt; 0</span>
+<span class="x">                    [active] =&gt; 0</span>
+<span class="x">                    [date] =&gt; 2015-06-29</span>
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">)</span>
+</pre></div>
+</div>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = No reports found!</li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="keyword-management">
 <h3>Keyword Management<a class="headerlink" href="#keyword-management" title="Permalink to this headline">¶</a></h3>
+<p><strong>Common Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>SP_API_KEY =&gt; Seo panel api key</li>
+<li>API_SECRET =&gt; Seo panel api secret key</li>
+<li>category&#8221; = keyword</li>
+</ul>
+</div></blockquote>
+<div class="section" id="add-keyword">
+<h4>Add Keyword<a class="headerlink" href="#add-keyword" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to add a new keyword in seo panel.</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action                        = createKeyword</li>
+<li>name                          =&gt; The name of the keyword</li>
+<li>website_id            =&gt; The website id of keyword</li>
+<li>searchengines         =&gt; The search engine ids of the keyword - [id1:id2] Eg. 1:2</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>lang_code             =&gt;      The language code of the keyword - Eg. fr</li>
+<li>country_code          =&gt;      The country code of the keyword - Eg. de</li>
+<li>status                        =&gt;      The status of the keyword - default[1]</li>
+</ul>
+</div></blockquote>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;createKeyword&quot;;</span>
+<span class="x">$paramList[&#39;name&#39;] = &quot;seo panel&quot;;</span>
+<span class="x">$paramList[&#39;website_id&#39;] = &quot;1&quot;;</span>
+<span class="x">$paramList[&#39;searchengines&#39;] = &quot;1:2:3&quot;;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully created keyword</li>
+<li>keyword_id = The id of the keyword</li>
+</ul>
+</div></blockquote>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = * Keyword already exist</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="update-keyword">
+<h4>Update Keyword<a class="headerlink" href="#update-keyword" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to update existing keyword in seo panel.</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = updateKeyword</li>
+<li>id =&gt; The id of the keyword</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>name                          =&gt; The name of the keyword</li>
+<li>website_id            =&gt; The website id of keyword</li>
+<li>searchengines         =&gt; The search engine ids of the keyword - [id1:id2] Eg. 1:2</li>
+<li>lang_code             =&gt;      The language code of the keyword - Eg. fr</li>
+<li>country_code          =&gt;      The country code of the keyword - Eg. de</li>
+<li>status                        =&gt;      The status of the keyword - default[1]</li>
+</ul>
+</div></blockquote>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;updateKeyword&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;searchengines&#39;] = &quot;1:2&quot;;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully updated keyword</li>
+</ul>
+</div></blockquote>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid keyword id provided</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="delete-keyword">
+<h4>Delete Keyword<a class="headerlink" href="#delete-keyword" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to delete existing keyword in seo panel.</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = deleteKeyword</li>
+<li>id =&gt; The id of the keyword</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;deleteKeyword&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully deleted keyword</li>
+</ul>
+</div></blockquote>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid keyword id provided</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="get-keyword-details">
+<h4>Get Keyword Details<a class="headerlink" href="#get-keyword-details" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to get details of a keyword</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getKeywordInfo</li>
+<li>id =&gt; The id of the keyword</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getKeywordInfo&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [id] =&gt; 1</span>
+<span class="x">    [name] =&gt; seo panel</span>
+<span class="x">    [lang_code] =&gt;</span>
+<span class="x">    [country_code] =&gt;</span>
+<span class="x">    [website_id] =&gt; 1</span>
+<span class="x">    [searchengines] =&gt; 1:2:3</span>
+<span class="x">    [status] =&gt; 1</span>
+<span class="x">)</span>
+</pre></div>
+</div>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid keyword id provided</li>
+</ul>
+</div></blockquote>
+</div>
 <div class="section" id="get-keyword-reports">
 <h4>Get Keyword Reports<a class="headerlink" href="#get-keyword-reports" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
@@ -370,6 +789,10 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </li>
 <li><a class="reference internal" href="#keyword-management">Keyword Management</a><ul>
+<li><a class="reference internal" href="#add-keyword">Add Keyword</a></li>
+<li><a class="reference internal" href="#update-keyword">Update Keyword</a></li>
+<li><a class="reference internal" href="#delete-keyword">Delete Keyword</a></li>
+<li><a class="reference internal" href="#get-keyword-details">Get Keyword Details</a></li>
 <li><a class="reference internal" href="#get-keyword-reports">Get Keyword Reports</a></li>
 <li><a class="reference internal" href="#get-website-keyword-reports">Get Website Keyword Reports</a></li>
 <li><a class="reference internal" href="#get-user-keyword-reports">Get User Keyword Reports</a></li>
