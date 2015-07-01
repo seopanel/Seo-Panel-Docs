@@ -710,59 +710,595 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <div class="section" id="get-keyword-reports">
 <h4>Get Keyword Reports<a class="headerlink" href="#get-keyword-reports" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to get reports of a keyword</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getReportById</li>
+<li>id =&gt; The id of the keyword</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
+<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+</ul>
+</div></blockquote>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportById&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [id] =&gt; 1</span>
+<span class="x">    [name] =&gt; seo panel</span>
+<span class="x">    [lang_code] =&gt;</span>
+<span class="x">    [country_code] =&gt;</span>
+<span class="x">    [website_id] =&gt; 1</span>
+<span class="x">    [searchengines] =&gt; 1:2:3</span>
+<span class="x">    [status] =&gt; 1</span>
+<span class="x">    [position_info] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [1] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank_diff] =&gt; -1</span>
+<span class="x">                    [rank] =&gt; 2</span>
+<span class="x">                    [search_engine] =&gt; www.google.com</span>
+<span class="x">                    [date] =&gt; 2015-07-01</span>
+<span class="x">                )</span>
+
+<span class="x">            [2] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank_diff] =&gt; 1</span>
+<span class="x">                    [rank] =&gt; 1</span>
+<span class="x">                    [search_engine] =&gt; www.yahoo.com</span>
+<span class="x">                    [date] =&gt; 2015-07-01</span>
+<span class="x">                )</span>
+
+<span class="x">            [3] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [rank_diff] =&gt;</span>
+<span class="x">                    [rank] =&gt; 1</span>
+<span class="x">                    [search_engine] =&gt; www.bing.com</span>
+<span class="x">                    [date] =&gt; 2015-07-01</span>
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">)</span>
+</pre></div>
+</div>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid keyword id provided</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="get-website-keyword-reports">
 <h4>Get Website Keyword Reports<a class="headerlink" href="#get-website-keyword-reports" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to get reports of a keywords of a website</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getReportByWebsiteId</li>
+<li>id =&gt; The id of the website</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
+<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+</ul>
+</div></blockquote>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByWebsiteId&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [1] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [id] =&gt; 1</span>
+<span class="x">            [name] =&gt; seo panel</span>
+<span class="x">            [lang_code] =&gt;</span>
+<span class="x">            [country_code] =&gt;</span>
+<span class="x">            [website_id] =&gt; 1</span>
+<span class="x">            [searchengines] =&gt; 1:2:3</span>
+<span class="x">            [status] =&gt; 1</span>
+<span class="x">            [website] =&gt; sp</span>
+<span class="x">            [weburl] =&gt; http://www.seopanel.in/</span>
+<span class="x">            [position_info] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [1] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank_diff] =&gt; -1</span>
+<span class="x">                            [rank] =&gt; 2</span>
+<span class="x">                            [search_engine] =&gt; www.google.com</span>
+<span class="x">                            [date] =&gt; 2015-07-01</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [2] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank_diff] =&gt; 1</span>
+<span class="x">                            [rank] =&gt; 1</span>
+<span class="x">                            [search_engine] =&gt; www.yahoo.com</span>
+<span class="x">                            [date] =&gt; 2015-07-01</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [3] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank_diff] =&gt;</span>
+<span class="x">                            [rank] =&gt; 1</span>
+<span class="x">                            [search_engine] =&gt; www.bing.com</span>
+<span class="x">                            [date] =&gt; 2015-07-01</span>
+<span class="x">                        )</span>
+
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">)</span>
+</pre></div>
+</div>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = No reports found</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="get-user-keyword-reports">
 <h4>Get User Keyword Reports<a class="headerlink" href="#get-user-keyword-reports" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to get reports of a keywords of a user</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getReportByUserId</li>
+<li>id =&gt; The id of the user</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
+<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+</ul>
+</div></blockquote>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByUserId&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [1] =&gt; stdClass Object</span>
+<span class="x">        (</span>
+<span class="x">            [id] =&gt; 1</span>
+<span class="x">            [name] =&gt; seo panel</span>
+<span class="x">            [lang_code] =&gt;</span>
+<span class="x">            [country_code] =&gt;</span>
+<span class="x">            [website_id] =&gt; 1</span>
+<span class="x">            [searchengines] =&gt; 1:2:3</span>
+<span class="x">            [status] =&gt; 1</span>
+<span class="x">            [website] =&gt; sp</span>
+<span class="x">            [weburl] =&gt; http://www.seopanel.in/</span>
+<span class="x">            [position_info] =&gt; stdClass Object</span>
+<span class="x">                (</span>
+<span class="x">                    [1] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank_diff] =&gt; -1</span>
+<span class="x">                            [rank] =&gt; 2</span>
+<span class="x">                            [search_engine] =&gt; www.google.com</span>
+<span class="x">                            [date] =&gt; 2015-07-01</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [2] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank_diff] =&gt; 1</span>
+<span class="x">                            [rank] =&gt; 1</span>
+<span class="x">                            [search_engine] =&gt; www.yahoo.com</span>
+<span class="x">                            [date] =&gt; 2015-07-01</span>
+<span class="x">                        )</span>
+
+<span class="x">                    [3] =&gt; stdClass Object</span>
+<span class="x">                        (</span>
+<span class="x">                            [rank_diff] =&gt;</span>
+<span class="x">                            [rank] =&gt; 1</span>
+<span class="x">                            [search_engine] =&gt; www.bing.com</span>
+<span class="x">                            [date] =&gt; 2015-07-01</span>
+<span class="x">                        )</span>
+
+<span class="x">                )</span>
+
+<span class="x">        )</span>
+
+<span class="x">)</span>
+</pre></div>
+</div>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = No reports found</li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="user-management">
 <h3>User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h3>
+<p><strong>Common Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>SP_API_KEY =&gt; Seo panel api key</li>
+<li>API_SECRET =&gt; Seo panel api secret key</li>
+<li>category&#8221; = user</li>
+</ul>
+</div></blockquote>
 <div class="section" id="add-user">
 <h4>Add User<a class="headerlink" href="#add-user" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to add a new user in seo panel.</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action        = createUser</li>
+<li>username              =&gt;              The username of the user</li>
+<li>password              =&gt;              The password of the user</li>
+<li>first_name    =&gt;              The first name f the user</li>
+<li>email                 =&gt;              The user email</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>last_name     =&gt; The last name of user</li>
+<li>type_id               =&gt; The user type id of user - default[2]</li>
+<li>status                =&gt; The status of the user - default[1]</li>
+</ul>
+</div></blockquote>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;createUser&quot;;</span>
+<span class="x">$paramList[&#39;username&#39;] = &quot;spuser&quot;;</span>
+<span class="x">$paramList[&#39;password&#39;] = &quot;spuser123&quot;;</span>
+<span class="x">$paramList[&#39;first_name&#39;] = &quot;SP&quot;;</span>
+<span class="x">$paramList[&#39;last_name&#39;] = &quot;User&quot;;</span>
+<span class="x">$paramList[&#39;email&#39;] = &quot;spuser@seopanel.in&quot;;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully created user</li>
+<li>user_id = The id of the user</li>
+</ul>
+</div></blockquote>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = * Username already exist</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="update-user">
 <h4>Update User<a class="headerlink" href="#update-user" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to update existing user in seo panel.</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = updateUser</li>
+<li>id =&gt; The id of the user</li>
+</ul>
+</div></blockquote>
+<p><strong>Optional Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>username              =&gt; The username of the user</li>
+<li>password              =&gt; The password of the user</li>
+<li>first_name    =&gt; The first name f the user</li>
+<li>email                 =&gt; The user email</li>
+<li>last_name     =&gt; The last name of user</li>
+<li>type_id               =&gt; The user type id of user - default[2]</li>
+<li>status                =&gt; The status of the user - default[1]</li>
+</ul>
+</div></blockquote>
+<p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;updateUser&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 2;</span>
+<span class="x">$paramList[&#39;first_name&#39;] = &quot;Test User&quot;;</span>
+</pre></div>
+</div>
+<p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully updated user</li>
+</ul>
+</div></blockquote>
+<p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid user id provided</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="get-user-details">
+<h4>Get User Details<a class="headerlink" href="#get-user-details" title="Permalink to this headline">¶</a></h4>
+<p><strong>Purpose</strong></p>
+<p>This command is used to get details of a user</p>
+<p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = getUserInfo</li>
+<li>id =&gt; The id of the user</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getUserInfo&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">[response] =&gt; success</span>
+<span class="x">[result] =&gt; stdClass Object</span>
+<span class="x">(</span>
+<span class="x">    [id] =&gt; 2</span>
+<span class="x">    [utype_id] =&gt; 2</span>
+<span class="x">    [username] =&gt; spuser</span>
+<span class="x">    [password] =&gt;</span>
+<span class="x">    [first_name] =&gt; Test</span>
+<span class="x">    [last_name] =&gt; User</span>
+<span class="x">    [email] =&gt; spuser@seopanel.in</span>
+<span class="x">    [lang_code] =&gt; en</span>
+<span class="x">    [created] =&gt; 1435781740</span>
+<span class="x">    [status] =&gt; 1</span>
+<span class="x">)</span>
+</pre></div>
+</div>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid user id provided</li>
+</ul>
+</div></blockquote>
 </div>
 <div class="section" id="delete-user">
 <h4>Delete User<a class="headerlink" href="#delete-user" title="Permalink to this headline">¶</a></h4>
 <p><strong>Purpose</strong></p>
+<p>This command is used to delete existing user in seo panel.</p>
 <p><strong>Attributes</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>action = deleteUser</li>
+<li>id =&gt; The id of the user</li>
+</ul>
+</div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;deleteUser&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 2;</span>
+</pre></div>
+</div>
 <p><strong>Successful Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = success</li>
+<li>result = Successfully deleted user</li>
+</ul>
+</div></blockquote>
 <p><strong>Error Response</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li>response = Error</li>
+<li>error_msg = The invalid user id provided</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+</div>
+<div class="section" id="sample-code">
+<h2>3. Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="create-user">
+<h3>Create User<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">function doCurlPost($apiUrl, $paramList) {</span>
+
+<span class="x">        // create field string</span>
+<span class="x">        $fieldString = &quot;&quot;;</span>
+
+<span class="x">        foreach($paramList as $key =&gt; $value) {</span>
+<span class="x">                $fieldString .= &quot;$key=$value&amp;&quot;;</span>
+
+<span class="x">        }</span>
+
+<span class="x">        rtrim($fieldString, &#39;&amp;&#39;);</span>
+
+<span class="x">        // open connection</span>
+<span class="x">        $ch = curl_init();</span>
+
+<span class="x">        // set the url, number of POST vars, POST data</span>
+<span class="x">        curl_setopt($ch,CURLOPT_URL, $apiUrl);</span>
+<span class="x">        curl_setopt($ch,CURLOPT_POST, count($paramList));</span>
+<span class="x">        curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);</span>
+<span class="x">        curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);</span>
+<span class="x">        curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);</span>
+
+<span class="x">        // execute post</span>
+<span class="x">        $result = curl_exec($ch);</span>
+
+<span class="x">        // close connection</span>
+<span class="x">        curl_close($ch);</span>
+<span class="x">        return $result;</span>
+
+<span class="x">}</span>
+
+<span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;sss&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;sss&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;createUser&quot;;</span>
+<span class="x">$paramList[&#39;username&#39;] = &quot;spuser&quot;;</span>
+<span class="x">$paramList[&#39;password&#39;] = &quot;spuser123&quot;;</span>
+<span class="x">$paramList[&#39;first_name&#39;] = &quot;SP&quot;;</span>
+<span class="x">$paramList[&#39;last_name&#39;] = &quot;User&quot;;</span>
+<span class="x">$paramList[&#39;email&#39;] = &quot;spuser@seopanel.in&quot;;</span>
+
+<span class="x">$apiUrl = &quot;http://localhost/seopanel/api/api.php&quot;;</span>
+<span class="x">$result = doCurlPost($apiUrl, $paramList);</span>
+<span class="x">$resultInfo = json_decode($result);</span>
+<span class="x">echo &quot;&lt;pre&gt;&quot;;</span>
+<span class="x">print_r($resultInfo);</span>
+<span class="x">echo &quot;&lt;/pre&gt;&quot;;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="user-website-reports">
+<h3>User Website Reports<a class="headerlink" href="#user-website-reports" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">function doCurlPost($apiUrl, $paramList) {</span>
+
+<span class="x">        // create field string</span>
+<span class="x">        $fieldString = &quot;&quot;;</span>
+
+<span class="x">        foreach($paramList as $key =&gt; $value) {</span>
+<span class="x">                $fieldString .= &quot;$key=$value&amp;&quot;;</span>
+
+<span class="x">        }</span>
+
+<span class="x">        rtrim($fieldString, &#39;&amp;&#39;);</span>
+
+<span class="x">        // open connection</span>
+<span class="x">        $ch = curl_init();</span>
+
+<span class="x">        // set the url, number of POST vars, POST data</span>
+<span class="x">        curl_setopt($ch,CURLOPT_URL, $apiUrl);</span>
+<span class="x">        curl_setopt($ch,CURLOPT_POST, count($paramList));</span>
+<span class="x">        curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);</span>
+<span class="x">        curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);</span>
+<span class="x">        curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);</span>
+
+<span class="x">        // execute post</span>
+<span class="x">        $result = curl_exec($ch);</span>
+
+<span class="x">        // close connection</span>
+<span class="x">        curl_close($ch);</span>
+<span class="x">        return $result;</span>
+
+<span class="x">}</span>
+
+<span class="x"># get user website reports</span>
+<span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;sss&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;sss&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByUserId&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 5;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+
+<span class="x">$apiUrl = &quot;http://localhost/seopanel/api/api.php&quot;;</span>
+<span class="x">$result = doCurlPost($apiUrl, $paramList);</span>
+<span class="x">print $result;</span>
+<span class="x">$resultInfo = json_decode($result);</span>
+<span class="x">echo &quot;&lt;pre&gt;&quot;;</span>
+<span class="x">print_r($resultInfo);</span>
+<span class="x">echo &quot;&lt;/pre&gt;&quot;;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="keyword-reports">
+<h3>Keyword Reports<a class="headerlink" href="#keyword-reports" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-php"><div class="highlight"><pre><span class="x">function doCurlPost($apiUrl, $paramList) {</span>
+
+<span class="x">        // create field string</span>
+<span class="x">        $fieldString = &quot;&quot;;</span>
+
+<span class="x">        foreach($paramList as $key =&gt; $value) {</span>
+<span class="x">                $fieldString .= &quot;$key=$value&amp;&quot;;</span>
+
+<span class="x">        }</span>
+
+<span class="x">        rtrim($fieldString, &#39;&amp;&#39;);</span>
+
+<span class="x">        // open connection</span>
+<span class="x">        $ch = curl_init();</span>
+
+<span class="x">        // set the url, number of POST vars, POST data</span>
+<span class="x">        curl_setopt($ch,CURLOPT_URL, $apiUrl);</span>
+<span class="x">        curl_setopt($ch,CURLOPT_POST, count($paramList));</span>
+<span class="x">        curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);</span>
+<span class="x">        curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);</span>
+<span class="x">        curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);</span>
+
+<span class="x">        // execute post</span>
+<span class="x">        $result = curl_exec($ch);</span>
+
+<span class="x">        // close connection</span>
+<span class="x">        curl_close($ch);</span>
+<span class="x">        return $result;</span>
+
+<span class="x">}</span>
+
+<span class="x"># get keyword reports by id</span>
+<span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;sss&quot;;</span>
+<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;sss&quot;;</span>
+<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
+<span class="x">$paramList[&#39;action&#39;] = &quot;getReportById&quot;;</span>
+<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-30&quot;;</span>
+<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-07-01&quot;;</span>
+
+<span class="x">$apiUrl = &quot;http://localhost/seopanel/api/api.php&quot;;</span>
+<span class="x">$result = doCurlPost($apiUrl, $paramList);</span>
+<span class="x">print $result;</span>
+<span class="x">$resultInfo = json_decode($result);</span>
+<span class="x">echo &quot;&lt;pre&gt;&quot;;</span>
+<span class="x">print_r($resultInfo);</span>
+<span class="x">echo &quot;&lt;/pre&gt;&quot;;</span>
+</pre></div>
 </div>
 </div>
 </div>
@@ -801,9 +1337,16 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <li><a class="reference internal" href="#user-management">User Management</a><ul>
 <li><a class="reference internal" href="#add-user">Add User</a></li>
 <li><a class="reference internal" href="#update-user">Update User</a></li>
+<li><a class="reference internal" href="#get-user-details">Get User Details</a></li>
 <li><a class="reference internal" href="#delete-user">Delete User</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a class="reference internal" href="#sample-code">3. Sample Code</a><ul>
+<li><a class="reference internal" href="#create-user">Create User</a></li>
+<li><a class="reference internal" href="#user-website-reports">User Website Reports</a></li>
+<li><a class="reference internal" href="#keyword-reports">Keyword Reports</a></li>
 </ul>
 </li>
 </ul>

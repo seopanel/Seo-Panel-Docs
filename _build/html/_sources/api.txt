@@ -679,79 +679,406 @@ Get Keyword Reports
 
 **Purpose**
 
+This command is used to get reports of a keyword
+
 **Attributes**
+
+	- action = getReportById
+	- id => The id of the keyword			
 
 **Optional Attributes**
 
+	- from_time =>	The from time of report in (yyyy-mm-dd)- default[Yesterday]
+	- to_time => The to time of report in (yyyy-mm-dd) - default[Today]
+	
+	
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "getReportById";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
 
 **Successful Response**
 
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [id] => 1
+            [name] => seo panel
+            [lang_code] => 
+            [country_code] => 
+            [website_id] => 1
+            [searchengines] => 1:2:3
+            [status] => 1
+            [position_info] => stdClass Object
+                (
+                    [1] => stdClass Object
+                        (
+                            [rank_diff] => -1
+                            [rank] => 2
+                            [search_engine] => www.google.com
+                            [date] => 2015-07-01
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [rank_diff] => 1
+                            [rank] => 1
+                            [search_engine] => www.yahoo.com
+                            [date] => 2015-07-01
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [rank_diff] => 
+                            [rank] => 1
+                            [search_engine] => www.bing.com
+                            [date] => 2015-07-01
+                        )
+
+                )
+
+        )
+    
 **Error Response**
+
+	- response = Error
+	- error_msg = The invalid keyword id provided
+
 
 Get Website Keyword Reports
 ***************************
 
 **Purpose**
 
+This command is used to get reports of a keywords of a website
+
 **Attributes**
+
+	- action = getReportByWebsiteId
+	- id => The id of the website			
 
 **Optional Attributes**
 
+	- from_time =>	The from time of report in (yyyy-mm-dd)- default[Yesterday]
+	- to_time => The to time of report in (yyyy-mm-dd) - default[Today]
+	
+	
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "getReportByWebsiteId";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
 
 **Successful Response**
 
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [1] => stdClass Object
+                (
+                    [id] => 1
+                    [name] => seo panel
+                    [lang_code] => 
+                    [country_code] => 
+                    [website_id] => 1
+                    [searchengines] => 1:2:3
+                    [status] => 1
+                    [website] => sp
+                    [weburl] => http://www.seopanel.in/
+                    [position_info] => stdClass Object
+                        (
+                            [1] => stdClass Object
+                                (
+                                    [rank_diff] => -1
+                                    [rank] => 2
+                                    [search_engine] => www.google.com
+                                    [date] => 2015-07-01
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [rank_diff] => 1
+                                    [rank] => 1
+                                    [search_engine] => www.yahoo.com
+                                    [date] => 2015-07-01
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [rank_diff] => 
+                                    [rank] => 1
+                                    [search_engine] => www.bing.com
+                                    [date] => 2015-07-01
+                                )
+
+                        )
+
+                )
+
+        )
+	
+	
+    
 **Error Response**
+
+	- response = Error
+	- error_msg = No reports found
+	
 
 Get User Keyword Reports
 ************************
 
 **Purpose**
 
+This command is used to get reports of a keywords of a user
+
 **Attributes**
+
+	- action = getReportByUserId
+	- id => The id of the user			
 
 **Optional Attributes**
 
+	- from_time =>	The from time of report in (yyyy-mm-dd)- default[Yesterday]
+	- to_time => The to time of report in (yyyy-mm-dd) - default[Today]
+	
+	
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "getReportByUserId";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
 
 **Successful Response**
 
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [1] => stdClass Object
+                (
+                    [id] => 1
+                    [name] => seo panel
+                    [lang_code] => 
+                    [country_code] => 
+                    [website_id] => 1
+                    [searchengines] => 1:2:3
+                    [status] => 1
+                    [website] => sp
+                    [weburl] => http://www.seopanel.in/
+                    [position_info] => stdClass Object
+                        (
+                            [1] => stdClass Object
+                                (
+                                    [rank_diff] => -1
+                                    [rank] => 2
+                                    [search_engine] => www.google.com
+                                    [date] => 2015-07-01
+                                )
+
+                            [2] => stdClass Object
+                                (
+                                    [rank_diff] => 1
+                                    [rank] => 1
+                                    [search_engine] => www.yahoo.com
+                                    [date] => 2015-07-01
+                                )
+
+                            [3] => stdClass Object
+                                (
+                                    [rank_diff] => 
+                                    [rank] => 1
+                                    [search_engine] => www.bing.com
+                                    [date] => 2015-07-01
+                                )
+
+                        )
+
+                )
+
+        )
+    
 **Error Response**
+
+	- response = Error
+	- error_msg = No reports found
+
 
 
 User Management
 ------------------
+
+**Common Attributes**
+
+	- SP_API_KEY => Seo panel api key
+	- API_SECRET => Seo panel api secret key 
+	- category" = user
+
 
 Add User
 ************************
 
 **Purpose**
 
+This command is used to add a new user in seo panel.
+
 **Attributes**
+
+	- action 	= createUser
+ 	- username 		=>		The username of the user
+ 	- password 		=>		The password of the user
+ 	- first_name 	=>		The first name f the user
+ 	- email 		=>		The user email
 
 **Optional Attributes**
 
+	- last_name 	=> The last name of user
+	- type_id 		=> The user type id of user - default[2]
+	- status 		=> The status of the user - default[1]
+
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "user";
+	$paramList['action'] = "createUser";
+	$paramList['username'] = "spuser";
+	$paramList['password'] = "spuser123";
+	$paramList['first_name'] = "SP";
+	$paramList['last_name'] = "User";
+	$paramList['email'] = "spuser@seopanel.in";
+	
 
 **Successful Response**
 
+	- response = success
+	- result = Successfully created user
+	- user_id = The id of the user
+
 **Error Response**
+
+	- response = Error
+	- error_msg = * Username already exist
 
 Update User
 ************************
 
 **Purpose**
 
+This command is used to update existing user in seo panel.
+
 **Attributes**
+
+	- action = updateUser
+	- id => The id of the user			
 
 **Optional Attributes**
 
+ 	- username 		=> The username of the user
+ 	- password 		=> The password of the user
+ 	- first_name 	=> The first name f the user
+ 	- email 		=> The user email
+	- last_name 	=> The last name of user
+	- type_id 		=> The user type id of user - default[2]
+	- status 		=> The status of the user - default[1]
+
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "user";
+	$paramList['action'] = "updateUser";
+	$paramList['id'] = 2;
+	$paramList['first_name'] = "Test User";
 
 **Successful Response**
 
+	- response = success
+	- result = Successfully updated user
+
 **Error Response**
+
+	- response = Error
+	- error_msg = The invalid user id provided
+
+
+Get User Details
+********************
+
+**Purpose**
+
+This command is used to get details of a user
+
+**Attributes**
+
+	- action = getUserInfo
+	- id => The id of the user			
+
+**Optional Attributes**
+	
+	
+**Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "user";
+	$paramList['action'] = "getUserInfo";
+	$paramList['id'] = 1;
+
+**Successful Response**
+
+.. code-block:: php
+
+	[response] => success
+	[result] => stdClass Object
+        (
+            [id] => 2
+            [utype_id] => 2
+            [username] => spuser
+            [password] => 
+            [first_name] => Test
+            [last_name] => User
+            [email] => spuser@seopanel.in
+            [lang_code] => en
+            [created] => 1435781740
+            [status] => 1
+        )
+	
+    
+**Error Response**
+
+	- response = Error
+	- error_msg = The invalid user id provided
 
 
 Delete User
@@ -759,13 +1086,197 @@ Delete User
 
 **Purpose**
 
+This command is used to delete existing user in seo panel.
+
 **Attributes**
 
-**Optional Attributes**
+	- action = deleteUser
+	- id => The id of the user			
 
+**Optional Attributes**
+	
+	
 **Example Command**
+
+.. code-block:: php
+	
+	$paramList['SP_API_KEY'] = "*******";
+	$paramList['API_SECRET'] = "*******";
+	$paramList['category'] = "user";
+	$paramList['action'] = "deleteUser";
+	$paramList['id'] = 2;
 
 **Successful Response**
 
+	- response = success
+	- result = Successfully deleted user
+
 **Error Response**
 
+	- response = Error
+	- error_msg = The invalid user id provided
+	
+	
+3. Sample Code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Create User
+------------------
+
+.. code-block:: php
+
+	function doCurlPost($apiUrl, $paramList) {
+		
+		// create field string
+		$fieldString = "";
+		
+		foreach($paramList as $key => $value) {
+			$fieldString .= "$key=$value&";
+			 
+		}
+		
+		rtrim($fieldString, '&');	
+		
+		// open connection
+		$ch = curl_init();
+		
+		// set the url, number of POST vars, POST data
+		curl_setopt($ch,CURLOPT_URL, $apiUrl);
+		curl_setopt($ch,CURLOPT_POST, count($paramList));
+		curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);
+		curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);
+		curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);
+		
+		// execute post
+		$result = curl_exec($ch);
+		
+		// close connection
+		curl_close($ch);	
+		return $result;
+		
+	}
+	
+	$paramList['SP_API_KEY'] = "sss";
+	$paramList['API_SECRET'] = "sss";
+	$paramList['category'] = "user";
+	$paramList['action'] = "createUser";
+	$paramList['username'] = "spuser";
+	$paramList['password'] = "spuser123";
+	$paramList['first_name'] = "SP";
+	$paramList['last_name'] = "User";
+	$paramList['email'] = "spuser@seopanel.in";
+	
+	$apiUrl = "http://localhost/seopanel/api/api.php";
+	$result = doCurlPost($apiUrl, $paramList);
+	$resultInfo = json_decode($result);
+	echo "<pre>";
+	print_r($resultInfo);
+	echo "</pre>";
+
+
+User Website Reports
+---------------------
+
+.. code-block:: php
+
+	function doCurlPost($apiUrl, $paramList) {
+		
+		// create field string
+		$fieldString = "";
+		
+		foreach($paramList as $key => $value) {
+			$fieldString .= "$key=$value&";
+			 
+		}
+		
+		rtrim($fieldString, '&');	
+		
+		// open connection
+		$ch = curl_init();
+		
+		// set the url, number of POST vars, POST data
+		curl_setopt($ch,CURLOPT_URL, $apiUrl);
+		curl_setopt($ch,CURLOPT_POST, count($paramList));
+		curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);
+		curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);
+		curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);
+		
+		// execute post
+		$result = curl_exec($ch);
+		
+		// close connection
+		curl_close($ch);	
+		return $result;
+		
+	}
+
+	# get user website reports
+	$paramList['SP_API_KEY'] = "sss";
+	$paramList['API_SECRET'] = "sss";
+	$paramList['category'] = "website";
+	$paramList['action'] = "getReportByUserId";
+	$paramList['id'] = 5;
+	$paramList['from_time'] = "2015-06-26";
+	$paramList['to_time'] = "2015-06-29";
+	
+	$apiUrl = "http://localhost/seopanel/api/api.php";
+	$result = doCurlPost($apiUrl, $paramList);
+	print $result;  
+	$resultInfo = json_decode($result);
+	echo "<pre>";
+	print_r($resultInfo);
+	echo "</pre>";
+	
+	
+Keyword Reports
+------------------
+
+.. code-block:: php
+
+	function doCurlPost($apiUrl, $paramList) {
+		
+		// create field string
+		$fieldString = "";
+		
+		foreach($paramList as $key => $value) {
+			$fieldString .= "$key=$value&";
+			 
+		}
+		
+		rtrim($fieldString, '&');	
+		
+		// open connection
+		$ch = curl_init();
+		
+		// set the url, number of POST vars, POST data
+		curl_setopt($ch,CURLOPT_URL, $apiUrl);
+		curl_setopt($ch,CURLOPT_POST, count($paramList));
+		curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);
+		curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);
+		curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);
+		
+		// execute post
+		$result = curl_exec($ch);
+		
+		// close connection
+		curl_close($ch);	
+		return $result;
+		
+	}
+	
+	# get keyword reports by id
+	$paramList['SP_API_KEY'] = "sss";
+	$paramList['API_SECRET'] = "sss";
+	$paramList['category'] = "keyword";
+	$paramList['action'] = "getReportById";
+	$paramList['id'] = 1;
+	$paramList['from_time'] = "2015-06-30";
+	$paramList['to_time'] = "2015-07-01";
+		
+	$apiUrl = "http://localhost/seopanel/api/api.php";
+	$result = doCurlPost($apiUrl, $paramList);
+	print $result;  
+	$resultInfo = json_decode($result);
+	echo "<pre>";
+	print_r($resultInfo);
+	echo "</pre>";
