@@ -1,2 +1,50 @@
 1. INSTALLATION
 ======================
+
+Simply use Bitnami / Softaculous / Installatron / Webuzo / AMPPS to install SEO Panel or Follow the below steps
+
+1. Download and Unzip the package.
+
+2. Upload all the files contained in this folder (retaining the directory structure) to a web accessible directory on your server or hosting account.
+
+3. Change the permissions on config/sp-config.php to be writable by all (666 or -rw-rw-rw- within your FTP Client)
+
+4. Change the permissions on the tmp directory to be writable by all (777 or -rwxrwxrwx within your FTP Client)
+
+5. Using your web browser visit the location you placed Seo Panel with the addition of install/index.php or pointing directly to install/
+
+    Eg: http://www.yourdomain.com/seopanel/install/
+
+	.. image:: _static/sp_install1.png
+	
+	Enter database details
+	
+	.. image:: _static/sp_install2.png
+	
+	Select admin language and timezone.
+    
+	.. image:: _static/sp_install3.png
+	
+
+6. Follow the steps and fill out all the requested information.
+
+
+7. Change the permissions on config/sp-config.php to be writable only by yourself (644 or -rw-r--r-- within your FTP Client)
+
+8. Please use following login details to access Admin Interface.
+
+Admin Section:
+
+Username: spadmin
+
+Password: spadmin
+
+Note:
+
+a. Please change password of administrator by visiting Profile link on right top of the seo panel to prevent from security threats.
+
+b. Remove install directory of seo panel
+
+Click here to use all video tutorials of seo panel.
+
+If you have any issues while installation, Please contact seo panel team or open a ticket in support system 
