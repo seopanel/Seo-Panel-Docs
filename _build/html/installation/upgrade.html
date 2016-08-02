@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Upgrade Steps &mdash; Seo Panel Docs 3.7.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.7.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Seo Panel Docs 3.7.0 documentation" href="../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="upgrade-steps">
+<h1>Upgrade Steps<a class="headerlink" href="#upgrade-steps" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-warning admonition">
+<p class="first admonition-title">Warning</p>
+<p class="last">Before upgrade please take the <strong>backup</strong> of your current seo panel database and code</p>
+</div>
+<p>Simply use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> to upgrade SEO Panel or Follow the below steps</p>
+<ol class="arabic">
+<li><p class="first"><strong>Change</strong> the current seo panel directory name or move it to another place, e.g seopanel to seopanel_bak</p>
+</li>
+<li><p class="first"><strong>Download</strong> latest version from following link and <strong>Unzip</strong> the package.</p>
+<p><a class="reference external" href="http://www.seopanel.in/download/">http://www.seopanel.in/download/</a></p>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Upload</strong> all the files contained in this folder (retaining the directory structure) to a web accessible directory on</dt>
+<dd><p class="first last">your server or hosting account.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><strong>Copy</strong> the contents of sample config file <strong>config/sp-config-sample.php</strong> to <strong>config/sp-config.php</strong> or remove</dt>
+<dd><p class="first last">config/sp-config.php and rename config/sp-config-sample.php to config/sp-config.php</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">Open up <strong>config/sp-config.php</strong> with a text editor like Notepad or similar editor.</p>
+<p>Then <strong>modify the following sections</strong> with your <strong>server and database settings of previous version</strong> of seo panel.</p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x"># The web path or url to access seo panel through browser.</span>
+<span class="x">define(&#39;SP_WEBPATH&#39;, &#39;http://localhost/seopanel&#39;);</span>
+
+<span class="x"># DB settings - You can get this info from your web hosting provider.</span>
+<span class="x"># The name of the database for seo panel</span>
+<span class="x">define(&#39;DB_NAME&#39;, &#39;seopanel&#39;);</span>
+
+<span class="x"># DB database username</span>
+<span class="x">define(&#39;DB_USER&#39;, &#39;root&#39;);</span>
+
+<span class="x"># DB database password</span>
+<span class="x">define(&#39;DB_PASSWORD&#39;, &#39;&#39;);</span>
+
+<span class="x"># DB hostname</span>
+<span class="x">define(&#39;DB_HOST&#39;, &#39;localhost&#39;);</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Save</strong> the contents of file <strong>config/sp-config.php</strong></p>
+</li>
+<li><p class="first">Change the permissions on the <strong>&#8216;tmp&#8217; directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
+</li>
+<li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/upgrade.php</strong></p>
+<blockquote>
+<div><p>e.g. <a class="reference external" href="http://www.yourdomain.com/seopanel/install/upgrade.php">http://www.yourdomain.com/seopanel/install/upgrade.php</a></p>
+</div></blockquote>
+</li>
+<li><p class="first">Follow the steps and fill out all the requested information.</p>
+<img alt="installation/_static/sp_upgrade1.png" src="installation/_static/sp_upgrade1.png" />
+<p><strong>Proceed to next step</strong></p>
+<img alt="installation/_static/sp_upgrade2.png" src="installation/_static/sp_upgrade2.png" />
+</li>
+</ol>
+<div class="admonition-warning admonition">
+<p class="first admonition-title">Warning</p>
+<p>Remove install directory of seo panel</p>
+<p class="last">Copy all plugins from <strong>&#8216;plugins&#8217;</strong> folder of old seo panel folder to &#8216;plugins&#8217; folder of new Seo Panel.</p>
+</div>
+<p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/installation/upgrade.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, seopanel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="../_sources/installation/upgrade.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
