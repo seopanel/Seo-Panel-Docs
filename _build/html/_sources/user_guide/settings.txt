@@ -16,7 +16,7 @@ Next step is to update system settings accordng to your environment.
    
    - **Seo Panel Keywords** - The meta keywords of your seo panel installation
    
-   - **Number of entries per page** - The max number of entries to start pagination(Default value is `10`)  
+   - **Number of entries per page** - The max number of entries to start pagination(Default value is '10')  
    
    - **User registration interface** - Enable / Disable users to register in your seo panel 
    
@@ -32,7 +32,7 @@ Next step is to update system settings accordng to your environment.
       
       - **SMTP Password** - SMTP account password 
       
-      - **SMTP Mail Port** - SMTP mail port used(default value is `25`)
+      - **SMTP Mail Port** - SMTP mail port used(default value is '25')
        
        
    - **Time Zone:** - Your timezone to see reports in your time 
@@ -51,6 +51,8 @@ Setup MOZ API to get website ranking related informations
 1) Go to **Admin Panel => System Settings=> MOZ Settings**
 
 2) **Click on `Click here to get MOZ account`** link to get free MOZ API account
+
+   https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account
 
 3) Enter details as following screen shot
 

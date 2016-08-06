@@ -25,7 +25,7 @@ After installation of seo panel, next step is to create website.
    - **Keywords** - The keywords related to the website
 
    
-You can also **edit, activate, deactivate and delete** websites using options available in the **website management** page.
+You can also **edit, activate, deactivate and delete** websites using options available in the **website Manager** page.
 
    
 ~~~~~~~~~~~~~~~

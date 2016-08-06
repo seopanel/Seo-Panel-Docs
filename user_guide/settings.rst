@@ -52,6 +52,8 @@ Setup MOZ API to get website ranking related informations
 
 2) **Click on `Click here to get MOZ account`** link to get free MOZ API account
 
+   https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account
+
 3) Enter details as following screen shot
 
    .. image:: _static/sp_moz_settings.png
