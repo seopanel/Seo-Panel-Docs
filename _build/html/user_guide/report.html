@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Report Settings &mdash; Seo Panel Docs 3.7.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.7.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Seo Panel Docs 3.7.0 documentation" href="../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="report-settings">
+<h1>Report Settings<a class="headerlink" href="#report-settings" title="Permalink to this headline">¶</a></h1>
+<p>Next step is to configure seo panel reports</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Report Settings</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="user_guide/_static/sp_report_settings.png" src="user_guide/_static/sp_report_settings.png" />
+<ul class="simple">
+<li><strong>Delay between each spider crawl(seconds)</strong> - The delay between each crawling in your seo panel(Default value is <cite>5 seconds</cite>)</li>
+<li><strong>Allow user to generate reports</strong> - Allow users to generate reports or not(Default value is <cite>No</cite>)</li>
+<li><strong>User agent</strong> - User agent used while crawling a page in seo panel</li>
+<li><strong>Allow users to schedule report</strong> - Allow users to edit their report generation settings(Default value is <cite>Yes</cite>)</li>
+<li><strong>System report generation interval</strong> - Seo panel report generation interval. We can set it as Daily, 2 days, Weekly and Monthly(Default value is <cite>Daily</cite>)</li>
+<li><strong>Enable report email notification</strong> - Enable this feature to send reports in email</li>
+<li><strong>Number of keywords needs to be checked in each cron execution</strong> - The number of keywords used in reports generation for each cron job execution(default value is <cite>1</cite>). For efficient report generation keep it as <cite>1</cite></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="cron-command">
+<h1>Cron Command<a class="headerlink" href="#cron-command" title="Permalink to this headline">¶</a></h1>
+<p>Cron job is the best method to generate reports effectively with out failures.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Cron Command</strong></p>
+</li>
+<li><p class="first">Add following command to your cron tab</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
+</pre></div>
+</div>
+<img alt="user_guide/_static/sp_report_cronjob.png" src="user_guide/_static/sp_report_cronjob.png" />
+<p>Check following tutorials to setup cron job in different environments</p>
+<p><strong>Setup cron job in cpanel</strong></p>
+<p><a class="reference external" href="https://www.siteground.com/tutorials/cpanel/cron_jobs.htm">https://www.siteground.com/tutorials/cpanel/cron_jobs.htm</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bmBjg1nD5yA" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in plesk</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t0P4E6guKwU" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in linux</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UlVqobmcPuM" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in windows</strong></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sx4vh4KdFPw" frameborder="0" allowfullscreen></iframe></li>
+</ol>
+</div>
+<div class="section" id="schedule-reports">
+<h1>Schedule Reports<a class="headerlink" href="#schedule-reports" title="Permalink to this headline">¶</a></h1>
+<p>You can also schedule reports for different users</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Schedule Reports</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="user_guide/_static/sp_report_schedule.png" src="user_guide/_static/sp_report_schedule.png" />
+<ul class="simple">
+<li><strong>User</strong> - Select corresponding user to schedule reports</li>
+<li><strong>Next report generation time</strong> - Next report generation date</li>
+<li><strong>Reports generation interval</strong> - User report generation interval. We can set it as Daily, 2 days, Weekly and Monthly(Default value is <cite>Daily</cite>)</li>
+<li><strong>Email notification</strong> - Enable this feature to send reports in user email</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="report-generation-manager">
+<h1>Report Generation Manager<a class="headerlink" href="#report-generation-manager" title="Permalink to this headline">¶</a></h1>
+<p>We <strong>did not recommend</strong> to use this feature, as it may add captcha to search engine results. We plan to deprecate this feature in new releases.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Report Generation Manager</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="user_guide/_static/sp_report_generation.png" src="user_guide/_static/sp_report_generation.png" />
+<ul class="simple">
+<li><strong>Website</strong> - Select the correponding website for report generation</li>
+<li><strong>Seo Tools</strong> - Choose required seo tool from the list</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="archived-reports">
+<h1>Archived Reports<a class="headerlink" href="#archived-reports" title="Permalink to this headline">¶</a></h1>
+<p>Here you can see overall reports of websites added in seo panel.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Archived Reports</strong></p>
+</li>
+<li><p class="first">Check details in following screen shot</p>
+<img alt="user_guide/_static/sp_report_archived.png" src="user_guide/_static/sp_report_archived.png" />
+<p><strong>Filters</strong></p>
+<ul>
+<li><p class="first"><strong>Name</strong> - Enter required keyword filter the reports</p>
+</li>
+<li><p class="first"><strong>Period</strong> - Enter date interval to filter the reports</p>
+</li>
+<li><p class="first"><strong>Website</strong> - Choose required website to filter the results</p>
+</li>
+<li><p class="first"><strong>Report Type</strong> - You can select different reports types</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Keyword Position Summary</strong> - Select to get keyword reports only</li>
+<li><strong>Website Statistics</strong> - Select to get website reports only</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p class="first">You can also choose following to download and print reports in different formats</p>
+<ul class="simple">
+<li><strong>PDF</strong> - Click on <cite>PDF icon</cite> to download reports in PDF format</li>
+<li><strong>Export</strong> - Click on <cite>Export Icon</cite> to download reports in <cite>.csv</cite> format</li>
+<li><strong>Print</strong> - Click on <cite>Print Icon</cite> to print te reports</li>
+</ul>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Report Settings</a></li>
+<li><a class="reference internal" href="#cron-command">Cron Command</a></li>
+<li><a class="reference internal" href="#schedule-reports">Schedule Reports</a></li>
+<li><a class="reference internal" href="#report-generation-manager">Report Generation Manager</a></li>
+<li><a class="reference internal" href="#archived-reports">Archived Reports</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/user_guide/report.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, seopanel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="../_sources/user_guide/report.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
