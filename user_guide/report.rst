@@ -106,7 +106,7 @@ We **did not recommend** to use this feature, as it may add captcha to search en
 
    .. image:: _static/sp_report_generation.png
 
-   - **Website** - Select the correponding website for report generation 
+   - **Website** - Select the required website for report generation 
 
    - **Seo Tools** - Choose required seo tool from the list
    

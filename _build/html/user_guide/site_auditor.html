@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Create Project &mdash; Seo Panel Docs 3.7.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.7.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Seo Panel Docs 3.7.0 documentation" href="../index.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="create-project">
+<h1>Create Project<a class="headerlink" href="#create-project" title="Permalink to this headline">¶</a></h1>
+<p>This section will help you to audit your website to know the stats related to SEO</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Projects</strong></p>
+</li>
+<li><p class="first"><strong>Click on &#8216;New Project&#8217; button</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="user_guide/_static/sp_create_auditor_project.png" src="user_guide/_static/sp_create_auditor_project.png" />
+<ul class="simple">
+<li><strong>Website</strong> - Select a website needs to be audited</li>
+<li><strong>Maximum number of pages to be checked</strong> - Maximum number of pages needs to be audited(default value is <cite>500</cite>, it can be changed from <cite>Auditor Settings</cite>)</li>
+<li><strong>Exclude links</strong> - Insert links separated with comma needs to be excluded to prevent infinite links in reports. <strong>Eg:</strong> /plugin/l/, &amp;lang_code=</li>
+<li><strong>Check pagerank of pages</strong> - Check pagerank of pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
+<li><strong>Check backlinks of pages</strong> - Check backlinks of pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
+<li><strong>Check pages indexed or not</strong> - Check index status of pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
+<li><strong>Store all links found in a page</strong> - Store links found in pages for more detailed reports</li>
+<li><strong>Check broken links in a page</strong> - Check brocken links in pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
+<li><strong>Execute with cron</strong> - Execute report generation with cron job. We recommened to <strong>select &#8216;Yes&#8217;</strong> for better report generation.</li>
+</ul>
+</li>
+</ol>
+<p>You can also <strong>edit, activate, deactivate and delete</strong> projects using options available in the <strong>Auditor Projects</strong> page.</p>
+</div>
+<div class="section" id="generate-reports">
+<h1>Generate Reports<a class="headerlink" href="#generate-reports" title="Permalink to this headline">¶</a></h1>
+<p>This section help you to generate reports of site auditor projects.</p>
+<p>We have 2 methods to generate reports, we <strong>recommend to use cron job</strong> method for report generation.</p>
+<blockquote>
+<div><ul class="simple">
+<li>Cron Job</li>
+</ul>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Cron Command</strong></p>
+</li>
+<li><p class="first">Add following command to your cron tab</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
+</pre></div>
+</div>
+</li>
+</ol>
+<ul class="simple">
+<li>Manual Report Generation</li>
+</ul>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Projects</strong></p>
+</li>
+<li><p class="first"><strong>Select &#8216;Run Project&#8217;</strong> from <cite>Action</cite> select box of corresponding project and proceed.</p>
+<p>You will get a window like following screen shot with stats.</p>
+</li>
+</ol>
+<blockquote>
+<div><img alt="user_guide/_static/sp_auditor_report_generation.png" src="user_guide/_static/sp_auditor_report_generation.png" />
+</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="auditor-reports">
+<h1>Auditor Reports<a class="headerlink" href="#auditor-reports" title="Permalink to this headline">¶</a></h1>
+<p>This section will help you to understand different types of site auditor reports</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Reports</strong></p>
+</li>
+<li><dl class="first docutils">
+<dt>Reports</dt>
+<dd><img alt="user_guide/_static/sp_auditor_reports.png" class="first last" src="user_guide/_static/sp_auditor_reports.png" />
+</dd>
+</dl>
+</li>
+</ol>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Create Project</a></li>
+<li><a class="reference internal" href="#generate-reports">Generate Reports</a></li>
+<li><a class="reference internal" href="#auditor-reports">Auditor Reports</a></li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/user_guide/site_auditor.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2015, seopanel.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="../_sources/user_guide/site_auditor.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

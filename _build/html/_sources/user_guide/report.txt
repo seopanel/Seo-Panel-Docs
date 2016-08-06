@@ -98,7 +98,7 @@ You can also schedule reports for different users
 Report Generation Manager
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-We **did not recommend** to use this feature, as it may add captcha to search engine results. We plan to deprecate this feature in new releases. 
+We **did not recommend** to use this feature, as it may add captcha to search engine results. We plan to **deprecate** this feature in new releases. 
 
 1) Go to **Admin Panel => Reports Manager => Report Generation Manager**
 
@@ -106,7 +106,7 @@ We **did not recommend** to use this feature, as it may add captcha to search en
 
    .. image:: _static/sp_report_generation.png
 
-   - **Website** - Select the correponding website for report generation 
+   - **Website** - Select the required website for report generation 
 
    - **Seo Tools** - Choose required seo tool from the list
    

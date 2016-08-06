@@ -2,7 +2,7 @@
 System Settings
 ~~~~~~~~~~~~~~~
 
-Next step is to update system settings accordng to your environment.
+Next step is to update system settings according to your environment.
 
 1) Go to **Admin Panel => System Settings=> System Settings**
 
@@ -24,7 +24,7 @@ Next step is to update system settings accordng to your environment.
    
    - SMTP Settings
    
-      - **Enable SMTP** - Enable / Disable smtp settings for sendung mail from seo panel
+      - **Enable SMTP** - Enable / Disable smtp settings for sending mail from seo panel
       
       - **SMTP Host** - The hostname of smtp server(default value is 'localhost')
        

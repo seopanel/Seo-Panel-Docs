@@ -1,0 +1,63 @@
+~~~~~~~~~~~
+Create User
+~~~~~~~~~~~
+
+This section help you to manage users of soe panel.
+
+1) Go to **Admin Panel => User Manager => New User**
+
+2) Enter details as following screen shot
+
+   .. image:: _static/sp_create_user.png
+
+   - **Username** - Enter username of the user
+
+   - **Password** - Enter password for user account
+
+   - **Confirm Password** - Enter confirm password for user
+
+   - **First Name** - Enter first name of the user
+
+   - **Last Name** - Enter last name of the user
+
+   - **Email** - Enter email address of the user
+   
+   - **User Type** - Select user type according to the requirement
+
+   - **Expiry Date** - The expiry date for the user account. Please add blank entry, if you do not want to set expiry date for user account. If user account expired, user could not access the features of seo panel.  
+   
+   
+You can also **edit, activate, deactivate and delete** users using options available in the **User Manager** page.
+
+   
+~~~~~~~~~~~~~~~~
+Create User Type
+~~~~~~~~~~~~~~~~
+
+Using this feature we can add new user type with custom privileges. 
+
+1) Go to **Admin Panel => User Type Manager => New User Type**
+
+2) Enter details as following screen shot
+
+   .. image:: _static/sp_create_user_type.png
+
+   - **Name** - Enter name of the user type
+
+   - **Description** - Enter description of the user type
+
+   - **Keywords Count** - Maximum number of keywords can be created by user
+
+   - **Websites Count** - Maximum number of websites can be created by user
+
+   - **Status** - Status of the user type
+   
+      
+You can also **edit, activate, deactivate and delete** user type using options available in the **User Type Manager** page.
+
+Also we can **integrate payment plugin** with **user type manager** of seo panel to do **subscription business**.
+
+**Click** on following link to **download and activate membership subscription** plugin.
+
+http://www.seopanel.in/plugin/l/65/membership-subscription/
+    
