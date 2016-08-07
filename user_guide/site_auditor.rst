@@ -42,7 +42,7 @@ This section help you to generate reports of site auditor projects.
 
 We have 2 methods to generate reports, we **recommend to use cron job** method for report generation.
 
-   - Cron Job
+   - **Cron Job**
    
    1) Go to **Seo Tools => Site Auditor => Cron Command**
    
@@ -53,7 +53,7 @@ We have 2 methods to generate reports, we **recommend to use cron job** method f
          */15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
     
    
-   - Manual Report Generation
+   - **Manual Report Generation**
    
    1) Go to **Seo Tools => Site Auditor => Auditor Projects**
    
@@ -64,7 +64,6 @@ We have 2 methods to generate reports, we **recommend to use cron job** method f
     .. image:: _static/sp_auditor_report_generation.png
    
  
- 
 ~~~~~~~~~~~~~~~
 Auditor Reports
 ~~~~~~~~~~~~~~~
@@ -74,4 +73,121 @@ This section will help you to understand different types of site auditor reports
 1) Go to **Seo Tools => Site Auditor => Auditor Reports**
 
 2) Reports
-    .. image:: _static/sp_auditor_reports.png
+
+   We will get different types of reports from this section
+   
+   **Filters**
+
+   - **Project** - Select required project to filter the reports
+
+   - **Page Link** - Enter page link to filter the reports
+
+   - **Crawled** - Select `Yes` to get pages with complete results generated. `No` to get all pages with partial results generated.
+
+   - **MOZ Rank** - Select MOZ rank to filter the reports  
+
+   - **Report Type** - You can select different reports types
+   
+      - **Link Reports** - Show reports based on links. Please check below screen shot
+       
+      .. image:: _static/sp_auditor_reports.png
+      
+      **Click on the page link**, you will get more detailed report like below screen shot
+      
+      .. image:: _static/sp_auditor_detailed_reports.png
+            
+   
+      - **Report Summary** - Show complete report summary of a project. Please check below screen shot
+       
+      .. image:: _static/sp_auditor_report_summary.png
+   
+      - **Duplicate Title** - Show reports based on duplicate page titles found in the project pages.  
+      - **Duplicate Description** - Show reports based on duplicate meta description found in the project pages.
+      - **Duplicate Keywords** - Show reports based on duplicate meta keywords found in the project pages.
+      
+      Please check below screen shots for more details
+       
+      .. image:: _static/sp_auditor_report_duplicate.png
+    
+    
+3) You can also choose following to download and print reports in different formats
+
+   - **PDF** - Click on `PDF icon` to download reports in PDF format
+   
+   - **Export** - Click on `Export Icon` to download reports in `.csv` format
+   
+   - **Print** - Click on `Print Icon` to print te reports
+   
+   
+~~~~~~~~~~~~~~~~~~~~
+Import Project Links
+~~~~~~~~~~~~~~~~~~~~
+
+You can also **import group of links** to site auditor project, if program failed to find any required links from your website. 
+
+1) Go to **Seo Tools => Site Auditor => Import Project Links**
+
+2) Enter details as following screen shot
+
+   .. image:: _static/sp_auditor_import.png
+   
+   - **Project** - Select project to which links have to be imported
+      
+   - **Links** - Add project links to be imported separated with comma 
+   
+   **Eg:** http://www.seopanel.in/plugin/l/, http://www.seopanel.in/plugin/d/
+
+3) Proceed with the values in the form, you will be redirected to projects page with the stats of import.
+
+
+~~~~~~~~~~~~~~~~~
+Sitemap Generator
+~~~~~~~~~~~~~~~~~
+
+You can also **generate sitemap** for your website using this feature. 
+
+1) Go to **Seo Tools => Site Auditor => Sitemap Generator**
+
+2) Enter details as following screen shot
+
+   .. image:: _static/sp_auditor_sitemap.png
+   
+   - **Project** - Select a project to generate sitemap
+   
+   - **Sitemap Type** - Select type of sitemap according to your requirement
+   
+      - **XML** - Can be used to submit in google web master tools
+   
+      - **Text** - Can be used to submit in google web master tools 
+   
+      - **HTML** - Can be used to publish in your website 
+   
+   - **Change frequency** - Select frequency of search engine crawl
+   
+   - **Priority** - Select priority of search engine crawl
+   
+   - **Exclude Url** - Enter links separated with comma needs to be excluded from sitemap **Eg:** Eg: http://www.seopanel.in/plugin/l/, http://www.seopanel.in/plugin/d/
+      
+3) Proceed with the values in the form, you will get **download link** for generated sitemap as above screenshot.
+
+4) **Click on sitemap link** to **download** the sitemap.
+
+
+~~~~~~~~~~~~~~~~
+Auditor Settings
+~~~~~~~~~~~~~~~~
+
+In this section you can configure site auditor general settings.
+
+1) Go to **Seo Tools => Site Auditor => Auditor Settings**
+
+2) Enter details as following screen shot
+
+   .. image:: _static/sp_auditor_settings.png
+   
+   - **Maximum number of pages allowed per website** - The maximum number of pages can be crawled in a project(Default value is `500`) 
+   
+   - **Site auditor crawl delay between each pages** - Delay between each page reports generation(Default value is `20`). We recommend not decrease this value for betetr report generation. 
+   
+   - **Crawl relative links in a page** - Allow project to crawl the relative links in each page
+
