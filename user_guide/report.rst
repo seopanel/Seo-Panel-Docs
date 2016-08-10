@@ -120,7 +120,7 @@ Here you can see overall reports of websites added in seo panel.
 
 1) Go to **Admin Panel => Reports Manager => Archived Reports**
 
-2) Check details in following screen shot
+2) Enter search filter value according to your requirements.
 
    .. image:: _static/sp_report_archived.png
    

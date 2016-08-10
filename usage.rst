@@ -39,7 +39,25 @@ This guide explains, how user setup seo panel according to their requirement.
 .. include:: user_guide/directory.rst
 
 
-7. User Management
+7. Rank Checker
+~~~~~~~~~~~~~~~
+
+.. include:: user_guide/rank.rst
+
+
+8. Backlinks Checker
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/backlink.rst
+
+
+9. Search Engine Saturation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/saturation.rst
+
+
+10. User Management
 ~~~~~~~~~~~~~~~~~~
 
 .. include:: user_guide/user.rst

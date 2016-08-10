@@ -28,10 +28,25 @@
     <link rel="prev" title="1. INSTALLATION" href="installation.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
 
   </head>
-  <body role="document">  
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="support.html" title="4. SUPPORT"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="installation.html" title="1. INSTALLATION"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Seo Panel Docs 3.7.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
 
     <div class="document">
       <div class="documentwrapper">
@@ -267,7 +282,7 @@
 <li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Cron Command</strong></p>
 </li>
 <li><p class="first">Add following command to your cron tab</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
+<div class="highlight-bash"><div class="highlight"><pre>*/15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
 </pre></div>
 </div>
 <img alt="_images/sp_report_cronjob.png" src="_images/sp_report_cronjob.png" />
@@ -318,7 +333,7 @@
 <ol class="arabic">
 <li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Archived Reports</strong></p>
 </li>
-<li><p class="first">Check details in following screen shot</p>
+<li><p class="first">Enter search filter value according to your requirements.</p>
 <img alt="_images/sp_report_archived.png" src="_images/sp_report_archived.png" />
 <p><strong>Filters</strong></p>
 <ul>
@@ -387,7 +402,7 @@
 <li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Cron Command</strong></p>
 </li>
 <li><p class="first">Add following command to your cron tab</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
+<div class="highlight-bash"><div class="highlight"><pre>*/15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
 </pre></div>
 </div>
 </li>
@@ -605,7 +620,7 @@ increase backlinks to your website.</p>
 <li><p class="first"><strong>Click on &#8216;Submit&#8217;</strong>, you will be redirected to following page</p>
 <img alt="_images/sp_directory_submit4.png" src="_images/sp_directory_submit4.png" />
 <p>You can see message like above screen shot.</p>
-<p><strong>Link submitted and awaiting for approval</strong></p>
+<p><strong>&#8216;Link submitted and awaiting for approval&#8217;</strong></p>
 </li>
 </ol>
 </div>
@@ -685,9 +700,9 @@ increase backlinks to your website.</p>
 <li><p class="first">Go to <strong>Admin Panel =&gt; Directory Manager =&gt; Check Directory</strong></p>
 <img alt="_images/sp_directory_check_status.png" src="_images/sp_directory_check_status.png" />
 </li>
-<li><p class="first">Enter required search filters to get the list of directories</p>
+<li><p class="first"><strong>Select &#8216;Status&#8217;</strong> of directories needs to be checked.</p>
 </li>
-<li><p class="first"><strong>Click on &#8216;Check Status&#8217;</strong> to find the current status of directory. You can also manually change the status of directory by click on the status link &#8216;Active&#8217; and &#8216;Inactive&#8217;</p>
+<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> to check the current status of all directories according to the search filter.</p>
 </li>
 </ol>
 <ol class="arabic simple" start="3">
@@ -695,8 +710,119 @@ increase backlinks to your website.</p>
 </ol>
 </div>
 </div>
+<div class="section" id="rank-checker">
+<h2>7. Rank Checker<a class="headerlink" href="#rank-checker" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quick-rank-checker">
+<h3>Quick Rank Checker<a class="headerlink" href="#quick-rank-checker" title="Permalink to this headline">¶</a></h3>
+<p>This feature used to find the <strong>rank of a website</strong> by <strong>with out storing any data</strong> in database.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Rank Checker =&gt; Quick Rank Checker</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="_images/sp_rank_quick_checker.png" src="_images/sp_rank_quick_checker.png" />
+<ul class="simple">
+<li><strong>Website</strong> - Add website links one per line needs to be checked</li>
+</ul>
+</li>
+<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> will show the &#8216;Alexa&#8217; and &#8216;MOZ&#8217; rank</p>
+</li>
+</ol>
+</div>
+<div class="section" id="rank-reports">
+<h3>Rank Reports<a class="headerlink" href="#rank-reports" title="Permalink to this headline">¶</a></h3>
+<p>This section will show the rank reports of websites</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Rank Checker =&gt; Rank Reports</strong></p>
+</li>
+<li><p class="first">Enter search filter details as following screen shot</p>
+<img alt="_images/sp_rank_report.png" src="_images/sp_rank_report.png" />
+</li>
+</ol>
+<blockquote>
+<div>Currently it will show the &#8216;Alex&#8217; and &#8216;MOZ&#8217; rank with difference in ranks</div></blockquote>
+</div>
+<div class="section" id="generate-rank-reports">
+<h3>Generate Rank Reports<a class="headerlink" href="#generate-rank-reports" title="Permalink to this headline">¶</a></h3>
+<p>This section used to generate rank reports of websites. We <strong>did not recommend to use</strong> this feature.
+<strong>Use cron job</strong> for report generation</p>
+</div>
+</div>
+<div class="section" id="backlinks-checker">
+<h2>8. Backlinks Checker<a class="headerlink" href="#backlinks-checker" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quick-backlinks-checker">
+<h3>Quick Backlinks Checker<a class="headerlink" href="#quick-backlinks-checker" title="Permalink to this headline">¶</a></h3>
+<p>This feature used to find the <strong>backlink of a website</strong> by <strong>with out storing any data</strong> in database.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Backlinks Checker =&gt; Quick Backlinks Checker</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="_images/sp_backlink_quick_checker.png" src="_images/sp_backlink_quick_checker.png" />
+<ul class="simple">
+<li><strong>Website</strong> - Add website links one per line needs to be checked</li>
+</ul>
+</li>
+<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> will show the backlink count in different search engines</p>
+</li>
+</ol>
+</div>
+<div class="section" id="backlinks-reports">
+<h3>Backlinks Reports<a class="headerlink" href="#backlinks-reports" title="Permalink to this headline">¶</a></h3>
+<p>This section will show the backlink reports of websites</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Backlinks Checker =&gt; Backlink Reports</strong></p>
+</li>
+<li><p class="first">Enter search filter details as following screen shot</p>
+<img alt="_images/sp_backlink_report.png" src="_images/sp_backlink_report.png" />
+</li>
+</ol>
+<blockquote>
+<div>Currently it will show the backlink count in different search engines.</div></blockquote>
+</div>
+<div class="section" id="generate-backlinks-reports">
+<h3>Generate Backlinks Reports<a class="headerlink" href="#generate-backlinks-reports" title="Permalink to this headline">¶</a></h3>
+<p>This section used to generate backlink reports of websites. We <strong>did not recommend to use</strong> this feature.
+<strong>Use cron job</strong> for report generation.</p>
+</div>
+</div>
+<div class="section" id="search-engine-saturation">
+<h2>9. Search Engine Saturation<a class="headerlink" href="#search-engine-saturation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="quick-saturation-checker">
+<h3>Quick Saturation Checker<a class="headerlink" href="#quick-saturation-checker" title="Permalink to this headline">¶</a></h3>
+<p>This feature used to find the <strong>search engine saturation</strong> of a website by <strong>with out storing any data</strong> in database.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt; Search Engine Saturation =&gt; Quick Saturation Checker</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="_images/sp_saturation_quick_checker.png" src="_images/sp_saturation_quick_checker.png" />
+<ul class="simple">
+<li><strong>Website</strong> - Add website links one per line needs to be checked</li>
+</ul>
+</li>
+<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> will show the saturation report in different search engines</p>
+</li>
+</ol>
+</div>
+<div class="section" id="saturation-reports">
+<h3>Saturation Reports<a class="headerlink" href="#saturation-reports" title="Permalink to this headline">¶</a></h3>
+<p>This section will show the saturation reports of websites</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Seo Tools =&gt;  Search Engine Saturation =&gt; Saturation Reports</strong></p>
+</li>
+<li><p class="first">Enter search filter details as following screen shot</p>
+<img alt="_images/sp_saturation_report.png" src="_images/sp_saturation_report.png" />
+</li>
+</ol>
+<blockquote>
+<div>Currently it will show the saturation report in different search engines</div></blockquote>
+</div>
+<div class="section" id="generate-saturation-reports">
+<h3>Generate Saturation Reports<a class="headerlink" href="#generate-saturation-reports" title="Permalink to this headline">¶</a></h3>
+<p>This section used to generate search engine saturation reports of websites. We <strong>did not recommend to use</strong> this feature.
+<strong>Use cron job</strong> for report generation</p>
+</div>
+</div>
 <div class="section" id="user-management">
-<h2>7. User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
+<h2>10. User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="create-user">
 <h3>Create User<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h3>
 <p>This section help you to manage users of soe panel.</p>
@@ -796,7 +922,25 @@ increase backlinks to your website.</p>
 <li><a class="reference internal" href="#check-directory-status">Check Directory Status</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#user-management">7. User Management</a><ul>
+<li><a class="reference internal" href="#rank-checker">7. Rank Checker</a><ul>
+<li><a class="reference internal" href="#quick-rank-checker">Quick Rank Checker</a></li>
+<li><a class="reference internal" href="#rank-reports">Rank Reports</a></li>
+<li><a class="reference internal" href="#generate-rank-reports">Generate Rank Reports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#backlinks-checker">8. Backlinks Checker</a><ul>
+<li><a class="reference internal" href="#quick-backlinks-checker">Quick Backlinks Checker</a></li>
+<li><a class="reference internal" href="#backlinks-reports">Backlinks Reports</a></li>
+<li><a class="reference internal" href="#generate-backlinks-reports">Generate Backlinks Reports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#search-engine-saturation">9. Search Engine Saturation</a><ul>
+<li><a class="reference internal" href="#quick-saturation-checker">Quick Saturation Checker</a></li>
+<li><a class="reference internal" href="#saturation-reports">Saturation Reports</a></li>
+<li><a class="reference internal" href="#generate-saturation-reports">Generate Saturation Reports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#user-management">10. User Management</a><ul>
 <li><a class="reference internal" href="#create-user">Create User</a></li>
 <li><a class="reference internal" href="#create-user-type">Create User Type</a></li>
 </ul>
@@ -804,15 +948,13 @@ increase backlinks to your website.</p>
 </ul>
 </li>
 </ul>
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="installation.html" title="previous chapter">1. INSTALLATION</a></li>
-      <li>Next: <a href="support.html" title="next chapter">4. SUPPORT</a></li>
-  </ul></li>
-</ul>
-</div>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="installation.html"
+                        title="previous chapter">1. INSTALLATION</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="support.html"
+                        title="next chapter">4. SUPPORT</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -828,6 +970,9 @@ increase backlinks to your website.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -838,12 +983,12 @@ increase backlinks to your website.</p>
       &copy;2015, seopanel.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.4</a>
       
       |
       <a href="_sources/usage.txt"
-          rel="nofollow">Page source</a>
+          rel="nofollow">Page source</a></li>
     </div>
 
     

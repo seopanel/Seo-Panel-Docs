@@ -82,7 +82,7 @@ increase backlinks to your website.
    
    You can see message like above screen shot.
    
-   **Link submitted and awaiting for approval**
+   **'Link submitted and awaiting for approval'**
    
 ~~~~~~~~~~~~~~~~~~
 Submission Reports
@@ -174,9 +174,9 @@ This section will help you check status of all directories in your seo panel.
 
    .. image:: _static/sp_directory_check_status.png
 
-2) Enter required search filters to get the list of directories
+2) **Select 'Status'** of directories needs to be checked.
 
-3) **Click on 'Check Status'** to find the current status of directory. You can also manually change the status of directory by click on the status link 'Active' and 'Inactive'
+3) **Click on 'Proceed'** to check the current status of all directories according to the search filter.
 
 
 
