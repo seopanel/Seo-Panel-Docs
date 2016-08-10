@@ -33,7 +33,13 @@ This guide explains, how user setup seo panel according to their requirement.
 .. include:: user_guide/site_auditor.rst
 
 
-6. User Management
+6. Directory Submission
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/directory.rst
+
+
+7. User Management
 ~~~~~~~~~~~~~~~~~~
 
 .. include:: user_guide/user.rst
