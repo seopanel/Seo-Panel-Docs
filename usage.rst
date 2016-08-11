@@ -57,7 +57,67 @@ This guide explains, how user setup seo panel according to their requirement.
 .. include:: user_guide/saturation.rst
 
 
-10. User Management
-~~~~~~~~~~~~~~~~~~
+10. Dashboard
+~~~~~~~~~~~~~
+
+.. include:: user_guide/dashboard.rst
+
+
+11. User Management
+~~~~~~~~~~~~~~~~~~~
 
 .. include:: user_guide/user.rst
+
+
+12. Seo Tools Manager
+~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/seo_tools.rst
+
+
+13. Plugins Manager
+~~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/plugins.rst
+
+
+14. Themes Manager
+~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/themes.rst
+
+
+15. Proxy
+~~~~~~~~~
+
+.. include:: user_guide/proxy.rst
+
+
+16. Search Engine Manager
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: user_guide/search_engine.rst
+
+
+17. Log Manager
+~~~~~~~~~~~~~~~
+
+.. include:: user_guide/logs.rst
+
+
+18. API Manager
+~~~~~~~~~~~~~~~
+
+.. include:: user_guide/api.rst
+
+
+19. My Profile
+~~~~~~~~~~~~~~
+
+.. include:: user_guide/profile.rst
+
+
+20. About Us
+~~~~~~~~~~~~
+
+.. include:: user_guide/aboutus.rst

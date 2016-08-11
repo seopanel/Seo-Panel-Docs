@@ -5,15 +5,16 @@
 
 
 Seo Panel Documentation
-=====================
+=======================
 
 .. toctree::
    :maxdepth: 3
 
    installation
    usage
-   support
    api
+   developer
+   support
 ..   references
 
 

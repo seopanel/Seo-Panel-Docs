@@ -24,29 +24,14 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="top" title="Seo Panel Docs 3.7.0 documentation" href="index.html" />
-    <link rel="next" title="4. SUPPORT" href="support.html" />
+    <link rel="next" title="3. API" href="api.html" />
     <link rel="prev" title="1. INSTALLATION" href="installation.html" />
    
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="support.html" title="4. SUPPORT"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="installation.html" title="1. INSTALLATION"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Seo Panel Docs 3.7.0 documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body role="document">  
 
     <div class="document">
       <div class="documentwrapper">
@@ -282,7 +267,7 @@
 <li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Cron Command</strong></p>
 </li>
 <li><p class="first">Add following command to your cron tab</p>
-<div class="highlight-bash"><div class="highlight"><pre>*/15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
+<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
 </pre></div>
 </div>
 <img alt="_images/sp_report_cronjob.png" src="_images/sp_report_cronjob.png" />
@@ -402,7 +387,7 @@
 <li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Cron Command</strong></p>
 </li>
 <li><p class="first">Add following command to your cron tab</p>
-<div class="highlight-bash"><div class="highlight"><pre>*/15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
+<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
 </pre></div>
 </div>
 </li>
@@ -821,8 +806,52 @@ increase backlinks to your website.</p>
 <strong>Use cron job</strong> for report generation</p>
 </div>
 </div>
+<div class="section" id="dashboard">
+<h2>10. Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dashboard-reports">
+<h3>Dashboard Reports<a class="headerlink" href="#dashboard-reports" title="Permalink to this headline">¶</a></h3>
+<p>Here you can see overall reports of websites added in seo panel.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Dashboard</strong></p>
+</li>
+<li><p class="first">Enter search filter value according to your requirements.</p>
+<img alt="_images/sp_dashboard.png" src="_images/sp_dashboard.png" />
+<p><strong>Filters</strong></p>
+<ul>
+<li><p class="first"><strong>Name</strong> - Enter required keyword filter the reports</p>
+</li>
+<li><p class="first"><strong>Period</strong> - Enter date interval to filter the reports</p>
+</li>
+<li><p class="first"><strong>Website</strong> - Choose required website to filter the results</p>
+</li>
+<li><p class="first"><strong>Report Type</strong> - You can select different reports types</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Keyword Position Summary</strong> - Select to get keyword reports only</li>
+<li><strong>Website Statistics</strong> - Select to get website reports only</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p class="first"><strong>Click on &#8216;graph&#8217;</strong> icon to see reports in graph as below screen shot</p>
+<img alt="_images/sp_dashboard_graph.png" src="_images/sp_dashboard_graph.png" />
+</li>
+<li><p class="first"><strong>Click on &#8216;rank&#8217;</strong> link to see reports in more detailed format as below screen shot</p>
+<img alt="_images/sp_dashboard_difference.png" src="_images/sp_dashboard_difference.png" />
+</li>
+<li><p class="first">You can also choose following to download and print reports in different formats</p>
+<ul class="simple">
+<li><strong>PDF</strong> - Click on <cite>PDF icon</cite> to download reports in PDF format</li>
+<li><strong>Export</strong> - Click on <cite>Export Icon</cite> to download reports in <cite>.csv</cite> format</li>
+<li><strong>Print</strong> - Click on <cite>Print Icon</cite> to print te reports</li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
 <div class="section" id="user-management">
-<h2>10. User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
+<h2>11. User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="create-user">
 <h3>Create User<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h3>
 <p>This section help you to manage users of soe panel.</p>
@@ -867,6 +896,33 @@ increase backlinks to your website.</p>
 <p><strong>Click</strong> on following link to <strong>download and activate membership subscription</strong> plugin.</p>
 <p><a class="reference external" href="http://www.seopanel.in/plugin/l/65/membership-subscription/">http://www.seopanel.in/plugin/l/65/membership-subscription/</a></p>
 </div>
+</div>
+<div class="section" id="seo-tools-manager">
+<h2>12. Seo Tools Manager<a class="headerlink" href="#seo-tools-manager" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="plugins-manager">
+<h2>13. Plugins Manager<a class="headerlink" href="#plugins-manager" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="themes-manager">
+<h2>14. Themes Manager<a class="headerlink" href="#themes-manager" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="proxy">
+<h2>15. Proxy<a class="headerlink" href="#proxy" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="search-engine-manager">
+<h2>16. Search Engine Manager<a class="headerlink" href="#search-engine-manager" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="log-manager">
+<h2>17. Log Manager<a class="headerlink" href="#log-manager" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="api-manager">
+<h2>18. API Manager<a class="headerlink" href="#api-manager" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="my-profile">
+<h2>19. My Profile<a class="headerlink" href="#my-profile" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="about-us">
+<h2>20. About Us<a class="headerlink" href="#about-us" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -940,21 +996,36 @@ increase backlinks to your website.</p>
 <li><a class="reference internal" href="#generate-saturation-reports">Generate Saturation Reports</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#user-management">10. User Management</a><ul>
+<li><a class="reference internal" href="#dashboard">10. Dashboard</a><ul>
+<li><a class="reference internal" href="#dashboard-reports">Dashboard Reports</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#user-management">11. User Management</a><ul>
 <li><a class="reference internal" href="#create-user">Create User</a></li>
 <li><a class="reference internal" href="#create-user-type">Create User Type</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#seo-tools-manager">12. Seo Tools Manager</a></li>
+<li><a class="reference internal" href="#plugins-manager">13. Plugins Manager</a></li>
+<li><a class="reference internal" href="#themes-manager">14. Themes Manager</a></li>
+<li><a class="reference internal" href="#proxy">15. Proxy</a></li>
+<li><a class="reference internal" href="#search-engine-manager">16. Search Engine Manager</a></li>
+<li><a class="reference internal" href="#log-manager">17. Log Manager</a></li>
+<li><a class="reference internal" href="#api-manager">18. API Manager</a></li>
+<li><a class="reference internal" href="#my-profile">19. My Profile</a></li>
+<li><a class="reference internal" href="#about-us">20. About Us</a></li>
 </ul>
 </li>
 </ul>
-
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="installation.html"
-                        title="previous chapter">1. INSTALLATION</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="support.html"
-                        title="next chapter">4. SUPPORT</a></p>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="installation.html" title="previous chapter">1. INSTALLATION</a></li>
+      <li>Next: <a href="api.html" title="next chapter">3. API</a></li>
+  </ul></li>
+</ul>
+</div>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
@@ -970,9 +1041,6 @@ increase backlinks to your website.</p>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -983,12 +1051,12 @@ increase backlinks to your website.</p>
       &copy;2015, seopanel.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.1</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.4</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
       <a href="_sources/usage.txt"
-          rel="nofollow">Page source</a></li>
+          rel="nofollow">Page source</a>
     </div>
 
     
