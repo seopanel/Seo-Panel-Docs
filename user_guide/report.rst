@@ -1,3 +1,6 @@
+Reports Management
+~~~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~~
 Report Settings
 ~~~~~~~~~~~~~~~
@@ -8,7 +11,7 @@ Next step is to configure seo panel reports
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_report_settings.png
+   .. image:: ../_static/sp_report_settings.png
 
    - **Delay between each spider crawl(seconds)** - The delay between each crawling in your seo panel(Default value is `5 seconds`)  
 
@@ -38,7 +41,7 @@ Cron job is the best method to generate reports effectively with out failures.
 
       */15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
 
-   .. image:: _static/sp_report_cronjob.png
+   .. image:: ../_static/sp_report_cronjob.png
    
    
    Check following tutorials to setup cron job in different environments
@@ -83,7 +86,7 @@ You can also schedule reports for different users
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_report_schedule.png
+   .. image:: ../_static/sp_report_schedule.png
 
    - **User** - Select corresponding user to schedule reports  
 
@@ -104,7 +107,7 @@ We **did not recommend** to use this feature, as it may add captcha to search en
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_report_generation.png
+   .. image:: ../_static/sp_report_generation.png
 
    - **Website** - Select the required website for report generation 
 
@@ -122,7 +125,7 @@ Here you can see overall reports of websites added in seo panel.
 
 2) Enter search filter value according to your requirements.
 
-   .. image:: _static/sp_report_archived.png
+   .. image:: ../_static/sp_report_archived.png
    
    **Filters**
 

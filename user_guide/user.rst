@@ -1,3 +1,6 @@
+User Management
+~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~
 Create User
 ~~~~~~~~~~~
@@ -8,7 +11,7 @@ This section help you to manage users of soe panel.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_create_user.png
+   .. image:: ../_static/sp_create_user.png
 
    - **Username** - Enter username of the user
 
@@ -40,7 +43,7 @@ Using this feature we can add new user type with custom privileges.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_create_user_type.png
+   .. image:: ../_static/sp_create_user_type.png
 
    - **Name** - Enter name of the user type
 

@@ -1,3 +1,6 @@
+Site Auditor
+~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~
 Create Project
 ~~~~~~~~~~~~~~
@@ -10,7 +13,7 @@ This section will help you to audit your website to know the stats related to SE
 
 3) Enter details as following screen shot
 
-   .. image:: _static/sp_create_auditor_project.png
+   .. image:: ../_static/sp_create_auditor_project.png
 
    - **Website** - Select a website needs to be audited
 
@@ -61,7 +64,7 @@ We have 2 methods to generate reports, we **recommend to use cron job** method f
    
       You will get a window like following screen shot with stats.
    
-    .. image:: _static/sp_auditor_report_generation.png
+    .. image:: ../_static/sp_auditor_report_generation.png
    
  
 ~~~~~~~~~~~~~~~
@@ -90,16 +93,16 @@ This section will help you to understand different types of site auditor reports
    
       - **Link Reports** - Show reports based on links. Please check below screen shot
        
-      .. image:: _static/sp_auditor_reports.png
+      .. image:: ../_static/sp_auditor_reports.png
       
       **Click on the page link**, you will get more detailed report like below screen shot
       
-      .. image:: _static/sp_auditor_detailed_reports.png
+      .. image:: ../_static/sp_auditor_detailed_reports.png
             
    
       - **Report Summary** - Show complete report summary of a project. Please check below screen shot
        
-      .. image:: _static/sp_auditor_report_summary.png
+      .. image:: ../_static/sp_auditor_report_summary.png
    
       - **Duplicate Title** - Show reports based on duplicate page titles found in the project pages.  
       - **Duplicate Description** - Show reports based on duplicate meta description found in the project pages.
@@ -107,7 +110,7 @@ This section will help you to understand different types of site auditor reports
       
       Please check below screen shots for more details
        
-      .. image:: _static/sp_auditor_report_duplicate.png
+      .. image:: ../_static/sp_auditor_report_duplicate.png
     
     
 3) You can also choose following to download and print reports in different formats
@@ -129,7 +132,7 @@ You can also **import group of links** to site auditor project, if program faile
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_auditor_import.png
+   .. image:: ../_static/sp_auditor_import.png
    
    - **Project** - Select project to which links have to be imported
       
@@ -150,7 +153,7 @@ You can also **generate sitemap** for your website using this feature.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_auditor_sitemap.png
+   .. image:: ../_static/sp_auditor_sitemap.png
    
    - **Project** - Select a project to generate sitemap
    
@@ -183,7 +186,7 @@ In this section you can configure site auditor general settings.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_auditor_settings.png
+   .. image:: ../_static/sp_auditor_settings.png
    
    - **Maximum number of pages allowed per website** - The maximum number of pages can be crawled in a project(Default value is `500`) 
    

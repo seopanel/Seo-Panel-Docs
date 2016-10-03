@@ -1,3 +1,6 @@
+Rank Checker
+~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~
 Quick Rank Checker
 ~~~~~~~~~~~~~~
@@ -9,7 +12,7 @@ This feature used to find the **rank of a website** by **with out storing any da
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_rank_quick_checker.png
+   .. image:: ../_static/sp_rank_quick_checker.png
 
    - **Website** - Add website links one per line needs to be checked
    
@@ -26,7 +29,7 @@ This section will show the rank reports of websites
 
 2) Enter search filter details as following screen shot
 
-   .. image:: _static/sp_rank_report.png
+   .. image:: ../_static/sp_rank_report.png
 
   Currently it will show the 'Alex' and 'MOZ' rank with difference in ranks
   

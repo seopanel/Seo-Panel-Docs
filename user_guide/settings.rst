@@ -1,3 +1,6 @@
+Settings
+~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~~
 System Settings
 ~~~~~~~~~~~~~~~
@@ -8,7 +11,7 @@ Next step is to update system settings according to your environment.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_settings1.png
+   .. image:: ../_static/sp_settings1.png
 
    - **Seo Panel Title** - The title of your seo panel installation *Eg:* Smith's seo panel 
    
@@ -56,7 +59,7 @@ Setup MOZ API to get website ranking related informations
 
 3) Enter details as following screen shot
 
-   .. image:: _static/sp_moz_settings.png
+   .. image:: ../_static/sp_moz_settings.png
 
    - **Access ID** - The access id of MOZ API
    
