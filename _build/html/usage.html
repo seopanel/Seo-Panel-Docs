@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2. User Guide &mdash; Seo Panel Docs 3.9.0 documentation</title>
+    <title>2. User Guide &#8212; Seo Panel Docs 3.9.0 documentation</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,8 +24,9 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="Seo Panel Docs 3.9.0 documentation" href="index.html" />
-    <link rel="next" title="3. API" href="api.html" />
+    <link rel="next" title="Website Management" href="user_guide/website.html" />
     <link rel="prev" title="1. INSTALLATION" href="installation.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,12 +34,10 @@
     <link rel="stylesheet" href="http://www.seopanel.in/css/new.css?v1.2" type="text/css" />
     <script type="text/javascript" src="http://www.seopanel.in/js/bootstrap.min.js?v1.2" defer></script>
     <style type="text/css">
-        div.body {
-		    font-size: 1.00em;
-		}
-        div.sphinxsidebar {
-		    font-size: 1.00em;
-		}
+        div.body {font-size: 1.00em;}
+        div.sphinxsidebar {font-size: 1.00em;}
+		.body img{margin: 20px 0px;}
+		.related:nth-of-type(1){display: none;}
     </style>
   </head>
   <body role="document">
@@ -46,7 +45,7 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="api.html" title="3. API"
+          <a href="user_guide/website.html" title="Website Management"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="installation.html" title="1. INSTALLATION"
@@ -84,7 +83,7 @@
 	                        <a href="http://www.seopanel.in/demo/" id="" title="Seo Panel Demo">Demo</a>
 	                    </li>       
 	                    <li>
-	                        <a href="http://www.seopanel.in/donate/" id="" title="Donate Seo Panel">Join</a>
+	                        <a href="http://www.seopanel.in/donate/" id="" title="Donate Seo Panel">Donate</a>
 	                    </li>
 	                    <li class="dropdown">
 	                        <a href="http://www.seopanel.in/plugins/" id="" data-toggle="dropdown" class="dropdown-toggle">Extensions
@@ -145,888 +144,88 @@
   <div class="section" id="user-guide">
 <h1>2. User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline">¶</a></h1>
 <p>This guide explains, how user setup seo panel according to their requirement.</p>
-<div class="section" id="website-management">
-<h2>1. Website Management<a class="headerlink" href="#website-management" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-website">
-<h3>Create Website<a class="headerlink" href="#create-website" title="Permalink to this headline">¶</a></h3>
-<p>After installation of seo panel, next step is to create website.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Website Manager =&gt; New Website</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_website_add.png" src="_images/sp_website_add.png" />
+<div class="toctree-wrapper compound">
 <ul>
-<li><p class="first"><strong>User</strong> - The owner of the website  <em>Eg:</em> spadmin</p>
-</li>
-<li><p class="first"><strong>Name</strong> - The name of the website  <em>Eg:</em> Seo Panel</p>
-</li>
-<li><p class="first"><strong>Url</strong> - The url to website page   <em>Eg:</em> <a class="reference external" href="http://www.seopanel.in/">http://www.seopanel.in/</a></p>
-<blockquote>
-<div><p><strong>Click on `Crawl Meta Data`</strong> link to get the following details of website. You can also edit this details later.</p>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>Title</strong> - The title of the website</p>
-</li>
-<li><p class="first"><strong>Description</strong> - The description of the website</p>
-</li>
-<li><p class="first"><strong>Keywords</strong> - The keywords related to the website</p>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/website.html">Website Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/website.html#create-website">Create Website</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/website.html#import-websites">Import Websites</a></li>
 </ul>
 </li>
-</ol>
-<p>You can also <strong>edit, activate, deactivate and delete</strong> websites using options available in the <strong>Website Manager</strong> page.</p>
-</div>
-<div class="section" id="import-websites">
-<h3>Import Websites<a class="headerlink" href="#import-websites" title="Permalink to this headline">¶</a></h3>
-<p>You can also <strong>import group of websites</strong> to seo panel using this feature.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Website Manager =&gt; Import Websites</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_website_import1.png" src="_images/sp_website_import1.png" />
-<ul>
-<li><p class="first"><strong>User</strong> - The owner of the website  <em>Eg:</em> spadmin</p>
-</li>
-<li><p class="first"><strong>Website CSV File:</strong> - The group of websites added in csv format</p>
-<blockquote>
-<div><p><strong>CSV format:</strong></p>
-<p><em>name, url, meta title, meta description, meta keywords, status</em></p>
-<p><strong>Click on `Sample CSV File`</strong> link to get sample csv file and create your website csv file using it.</p>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>Delimiter</strong> - The delimiter character used in the csv format(default value is coma <strong>`,`</strong>)</p>
-</li>
-<li><p class="first"><strong>Enclosure</strong> - The enclosure character used in the csv format when value contains delimiter(default value is double quotes <strong>`&#8221;`</strong>). <em>Eg:</em> <cite>mango,orange</cite></p>
-</li>
-<li><p class="first"><strong>Escape</strong> - The escape character used in the csv format(Default value is forward backslash <strong>`\`</strong>)</p>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/settings.html">Settings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/settings.html#system-settings">System Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/settings.html#moz-settings">MOZ Settings</a></li>
 </ul>
 </li>
-<li><p class="first">Proceed with the values in the form, you will get following window with the stats of import.</p>
-<img alt="_images/sp_website_import2.png" src="_images/sp_website_import2.png" />
-</li>
-</ol>
-</div>
-</div>
-<div class="section" id="settings">
-<h2>2. Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="system-settings">
-<h3>System Settings<a class="headerlink" href="#system-settings" title="Permalink to this headline">¶</a></h3>
-<p>Next step is to update system settings according to your environment.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings=&gt; System Settings</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_settings1.png" src="_images/sp_settings1.png" />
-<ul>
-<li><p class="first"><strong>Seo Panel Title</strong> - The title of your seo panel installation <em>Eg:</em> Smith&#8217;s seo panel</p>
-</li>
-<li><p class="first"><strong>Seo Panel Description</strong> - The meta description of your seo panel installation</p>
-</li>
-<li><p class="first"><strong>Seo Panel Keywords</strong> - The meta keywords of your seo panel installation</p>
-</li>
-<li><p class="first"><strong>Number of entries per page</strong> - The max number of entries to start pagination(Default value is &#8216;10&#8217;)</p>
-</li>
-<li><p class="first"><strong>User registration interface</strong> - Enable / Disable users to register in your seo panel</p>
-</li>
-<li><p class="first"><strong>Default Language</strong> - The default language of your seo panel</p>
-</li>
-<li><p class="first">SMTP Settings</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Enable SMTP</strong> - Enable / Disable smtp settings for sending mail from seo panel</li>
-<li><strong>SMTP Host</strong> - The hostname of smtp server(default value is &#8216;localhost&#8217;)</li>
-<li><strong>SMTP Username</strong> - SMTP account username</li>
-<li><strong>SMTP Password</strong> - SMTP account password</li>
-<li><strong>SMTP Mail Port</strong> - SMTP mail port used(default value is &#8216;25&#8217;)</li>
-</ul>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>Time Zone:</strong> - Your timezone to see reports in your time</p>
-</li>
-<li><p class="first"><strong>Company Name</strong> - The name of your company</p>
-</li>
-<li><p class="first"><strong>Currency</strong> - Currency used in seo panel transactions</p>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/keyword.html">Keyword Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/keyword.html#create-keyword">Create Keyword</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/keyword.html#import-keywords">Import Keywords</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/keyword.html#quick-position-checker">Quick Position Checker</a></li>
 </ul>
 </li>
-</ol>
-</div>
-<div class="section" id="moz-settings">
-<h3>MOZ Settings<a class="headerlink" href="#moz-settings" title="Permalink to this headline">¶</a></h3>
-<p>Setup MOZ API to get website ranking related informations</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings=&gt; MOZ Settings</strong></p>
-</li>
-<li><p class="first"><strong>Click on `Click here to get MOZ account`</strong> link to get free MOZ API account</p>
-<p><a class="reference external" href="https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account">https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account</a></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_moz_settings.png" src="_images/sp_moz_settings.png" />
-<ul class="simple">
-<li><strong>Access ID</strong> - The access id of MOZ API</li>
-<li><strong>Secret Key</strong> - The secret key of MOZ API</li>
-</ul>
-<p><strong>Click on `Verify connection`</strong> link to verify the API settings are working</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="section" id="keyword-management">
-<h2>3. Keyword Management<a class="headerlink" href="#keyword-management" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-keyword">
-<h3>Create Keyword<a class="headerlink" href="#create-keyword" title="Permalink to this headline">¶</a></h3>
-<p>Next step is to create keywords under websites</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Keyword Position Checker =&gt; New Keyword</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_keyword_add.png" src="_images/sp_keyword_add.png" />
-<ul class="simple">
-<li><strong>Name</strong> - Add keyword to search in search engine</li>
-<li><strong>Website</strong> - The website needs to be checked with keyword search results</li>
-<li><strong>Language</strong> - The language in which keyword search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</li>
-<li><strong>Country</strong> - The country in which keyword search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</li>
-<li><strong>Search Engine</strong> - Select the search engines in which keyword needs to checked. <strong>Click on &#8216;Select All&#8217;</strong> to select all or use <strong>`CTRL`</strong> key to select multiple entries.</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/report.html">Reports Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/report.html#report-settings">Report Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/report.html#cron-command">Cron Command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/report.html#schedule-reports">Schedule Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/report.html#report-generation-manager">Report Generation Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/report.html#archived-reports">Archived Reports</a></li>
 </ul>
 </li>
-</ol>
-<p>You can also <strong>edit, activate, deactivate and delete</strong> keywords using options available in the <strong>Keyword Manager</strong> page.</p>
-</div>
-<div class="section" id="import-keywords">
-<h3>Import Keywords<a class="headerlink" href="#import-keywords" title="Permalink to this headline">¶</a></h3>
-<p>You can also <strong>import group of keywords</strong> to seo panel using this feature.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Keyword Position Checker =&gt; Import Keywords</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_keyword_import1.png" src="_images/sp_keyword_import1.png" />
-<ul>
-<li><p class="first"><strong>Website</strong> - The website needs to be checked with keyword search results</p>
-<blockquote>
-<div><p><strong>Click on `Crawl Meta Data`</strong> link to get keywords of website. You can also edit this details before proceed.</p>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>Language</strong> - The language in which keyword search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</p>
-</li>
-<li><p class="first"><strong>Country</strong> - The country in which keyword search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</p>
-</li>
-<li><p class="first"><strong>Search Engine</strong> - Select the search engines in which keyword needs to checked. <strong>Click on &#8216;Select All&#8217;</strong> to select all or use <strong>`CTRL`</strong> key to select multiple entries.</p>
-</li>
-<li><p class="first"><strong>Keywords</strong> - Add keywords to be imported to seo panel separated with comma <em>Eg:</em> google seo tools,seo tools,seo</p>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/site_auditor.html">Site Auditor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html#create-project">Create Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html#generate-reports">Generate Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html#auditor-reports">Auditor Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html#import-project-links">Import Project Links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html#sitemap-generator">Sitemap Generator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html#auditor-settings">Auditor Settings</a></li>
 </ul>
 </li>
-<li><p class="first">Proceed with the values in the form, you will get following window with the stats of import.</p>
-<img alt="_images/sp_keyword_import2.png" src="_images/sp_keyword_import2.png" />
-</li>
-</ol>
-</div>
-<div class="section" id="quick-position-checker">
-<h3>Quick Position Checker<a class="headerlink" href="#quick-position-checker" title="Permalink to this headline">¶</a></h3>
-<p>This feature used to find the <strong>rank of a website</strong> in keyword search results by <strong>with out storing any data</strong> in database.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Keyword Position Checker =&gt; Quick Position Checker</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_keyword_quick_position.png" src="_images/sp_keyword_quick_position.png" />
-<ul class="simple">
-<li><strong>Search Engine</strong> - Select the search engines in which keyword needs to checked</li>
-<li><strong>Language</strong> - The language in which keyword search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</li>
-<li><strong>Country</strong> - The country in which keyword search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</li>
-<li><strong>Website</strong> - The website needs to be checked in keyword search results</li>
-<li><strong>Keyword</strong> - Add keyword to search in search engine</li>
-<li><strong>Show All results</strong> - Checked to see all results in of keyword search in search engine</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/directory.html">Directory Submission</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#directory-submission-tool">Directory Submission Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#submission-reports">Submission Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#skipped-directories">Skipped Directories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#featured-submission">Featured Submission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#check-submission-status">Check Submission Status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#directory-manager">Directory Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html#check-directory-status">Check Directory Status</a></li>
 </ul>
 </li>
-</ol>
-</div>
-</div>
-<div class="section" id="reports-management">
-<h2>4. Reports Management<a class="headerlink" href="#reports-management" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="report-settings">
-<h3>Report Settings<a class="headerlink" href="#report-settings" title="Permalink to this headline">¶</a></h3>
-<p>Next step is to configure seo panel reports</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Report Settings</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_report_settings.png" src="_images/sp_report_settings.png" />
-<ul class="simple">
-<li><strong>Delay between each spider crawl(seconds)</strong> - The delay between each crawling in your seo panel(Default value is <cite>5 seconds</cite>)</li>
-<li><strong>Allow user to generate reports</strong> - Allow users to generate reports or not(Default value is <cite>No</cite>)</li>
-<li><strong>User agent</strong> - User agent used while crawling a page in seo panel</li>
-<li><strong>Allow users to schedule report</strong> - Allow users to edit their report generation settings(Default value is <cite>Yes</cite>)</li>
-<li><strong>System report generation interval</strong> - Seo panel report generation interval. We can set it as Daily, 2 days, Weekly and Monthly(Default value is <cite>Daily</cite>)</li>
-<li><strong>Enable report email notification</strong> - Enable this feature to send reports in email</li>
-<li><strong>Number of keywords needs to be checked in each cron execution</strong> - The number of keywords used in reports generation for each cron job execution(default value is <cite>1</cite>). For efficient report generation keep it as <cite>1</cite></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/rank.html">Rank Checker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/rank.html#quick-rank-checker">Quick Rank Checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/rank.html#rank-reports">Rank Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/rank.html#generate-rank-reports">Generate Rank Reports</a></li>
 </ul>
 </li>
-</ol>
-</div>
-<div class="section" id="cron-command">
-<h3>Cron Command<a class="headerlink" href="#cron-command" title="Permalink to this headline">¶</a></h3>
-<p>Cron job is the best method to generate reports effectively with out failures.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Cron Command</strong></p>
-</li>
-<li><p class="first">Add following command to your cron tab</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/cron.php
-</pre></div>
-</div>
-<img alt="_images/sp_report_cronjob.png" src="_images/sp_report_cronjob.png" />
-<p>Check following tutorials to setup cron job in different environments</p>
-<p><strong>Setup cron job in cpanel</strong></p>
-<p><a class="reference external" href="https://www.siteground.com/tutorials/cpanel/cron_jobs.htm">https://www.siteground.com/tutorials/cpanel/cron_jobs.htm</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bmBjg1nD5yA" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in plesk</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t0P4E6guKwU" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in linux</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UlVqobmcPuM" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in windows</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sx4vh4KdFPw" frameborder="0" allowfullscreen></iframe></li>
-</ol>
-</div>
-<div class="section" id="schedule-reports">
-<h3>Schedule Reports<a class="headerlink" href="#schedule-reports" title="Permalink to this headline">¶</a></h3>
-<p>You can also schedule reports for different users</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Schedule Reports</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_report_schedule.png" src="_images/sp_report_schedule.png" />
-<ul class="simple">
-<li><strong>User</strong> - Select corresponding user to schedule reports</li>
-<li><strong>Next report generation time</strong> - Next report generation date</li>
-<li><strong>Reports generation interval</strong> - User report generation interval. We can set it as Daily, 2 days, Weekly and Monthly(Default value is <cite>Daily</cite>)</li>
-<li><strong>Email notification</strong> - Enable this feature to send reports in user email</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/backlink.html">Backlinks Checker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/backlink.html#quick-backlinks-checker">Quick Backlinks Checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/backlink.html#backlinks-reports">Backlinks Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/backlink.html#generate-backlinks-reports">Generate Backlinks Reports</a></li>
 </ul>
 </li>
-</ol>
-</div>
-<div class="section" id="report-generation-manager">
-<h3>Report Generation Manager<a class="headerlink" href="#report-generation-manager" title="Permalink to this headline">¶</a></h3>
-<p>We <strong>did not recommend</strong> to use this feature, as it may add captcha to search engine results. We plan to <strong>deprecate</strong> this feature in new releases.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Report Generation Manager</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_report_generation.png" src="_images/sp_report_generation.png" />
-<ul class="simple">
-<li><strong>Website</strong> - Select the required website for report generation</li>
-<li><strong>Seo Tools</strong> - Choose required seo tool from the list</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/saturation.html">Search Engine Saturation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/saturation.html#quick-saturation-checker">Quick Saturation Checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/saturation.html#saturation-reports">Saturation Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/saturation.html#generate-saturation-reports">Generate Saturation Reports</a></li>
 </ul>
 </li>
-</ol>
-</div>
-<div class="section" id="archived-reports">
-<h3>Archived Reports<a class="headerlink" href="#archived-reports" title="Permalink to this headline">¶</a></h3>
-<p>Here you can see overall reports of websites added in seo panel.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Reports Manager =&gt; Archived Reports</strong></p>
-</li>
-<li><p class="first">Enter search filter value according to your requirements.</p>
-<img alt="_images/sp_report_archived.png" src="_images/sp_report_archived.png" />
-<p><strong>Filters</strong></p>
-<ul>
-<li><p class="first"><strong>Name</strong> - Enter required keyword filter the reports</p>
-</li>
-<li><p class="first"><strong>Period</strong> - Enter date interval to filter the reports</p>
-</li>
-<li><p class="first"><strong>Website</strong> - Choose required website to filter the results</p>
-</li>
-<li><p class="first"><strong>Report Type</strong> - You can select different reports types</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Keyword Position Summary</strong> - Select to get keyword reports only</li>
-<li><strong>Website Statistics</strong> - Select to get website reports only</li>
-</ul>
-</div></blockquote>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/dashboard.html">Dashboard</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/dashboard.html#dashboard-reports">Dashboard Reports</a></li>
 </ul>
 </li>
-<li><p class="first">You can also choose following to download and print reports in different formats</p>
-<ul class="simple">
-<li><strong>PDF</strong> - Click on <cite>PDF icon</cite> to download reports in PDF format</li>
-<li><strong>Export</strong> - Click on <cite>Export Icon</cite> to download reports in <cite>.csv</cite> format</li>
-<li><strong>Print</strong> - Click on <cite>Print Icon</cite> to print te reports</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/user.html">User Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/user.html#create-user">Create User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/user.html#create-user-type">Create User Type</a></li>
 </ul>
 </li>
-</ol>
-</div>
-</div>
-<div class="section" id="site-auditor">
-<h2>5. Site Auditor<a class="headerlink" href="#site-auditor" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-project">
-<h3>Create Project<a class="headerlink" href="#create-project" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to audit your website to know the stats related to SEO</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Projects</strong></p>
-</li>
-<li><p class="first"><strong>Click on &#8216;New Project&#8217; button</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_create_auditor_project.png" src="_images/sp_create_auditor_project.png" />
-<ul class="simple">
-<li><strong>Website</strong> - Select a website needs to be audited</li>
-<li><strong>Maximum number of pages to be checked</strong> - Maximum number of pages needs to be audited(default value is <cite>500</cite>, it can be changed from <cite>Auditor Settings</cite>)</li>
-<li><strong>Exclude links</strong> - Insert links separated with comma needs to be excluded to prevent infinite links in reports. <strong>Eg:</strong> /plugin/l/, &amp;lang_code=</li>
-<li><strong>Check pagerank of pages</strong> - Check pagerank of pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
-<li><strong>Check backlinks of pages</strong> - Check backlinks of pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
-<li><strong>Check pages indexed or not</strong> - Check index status of pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
-<li><strong>Store all links found in a page</strong> - Store links found in pages for more detailed reports</li>
-<li><strong>Check broken links in a page</strong> - Check brocken links in pages(<strong>Note:</strong> it will increase the execution time of a project)</li>
-<li><strong>Execute with cron</strong> - Execute report generation with cron job. We recommened to <strong>select &#8216;Yes&#8217;</strong> for better report generation.</li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/seo_tools.html">Seo Tools Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/plugins_manager.html">Plugins Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/themes_manager.html">Themes Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/proxy_manager.html">Proxy Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/search_engine_manager.html">Search Engine Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/log_manager.html">Logs Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/api_manager.html">API Manager</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/profile.html">My Profile</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_guide/aboutus.html">My Profile</a></li>
 </ul>
-</li>
-</ol>
-<p>You can also <strong>edit, activate, deactivate and delete</strong> projects using options available in the <strong>Auditor Projects</strong> page.</p>
-</div>
-<div class="section" id="generate-reports">
-<h3>Generate Reports<a class="headerlink" href="#generate-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section help you to generate reports of site auditor projects.</p>
-<p>We have 2 methods to generate reports, we <strong>recommend to use cron job</strong> method for report generation.</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Cron Job</strong></li>
-</ul>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Cron Command</strong></p>
-</li>
-<li><p class="first">Add following command to your cron tab</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>*/15 * * * * php /opt/lampp/htdocs/seopanel/siteauditorcron.php
-</pre></div>
-</div>
-</li>
-</ol>
-<ul class="simple">
-<li><strong>Manual Report Generation</strong></li>
-</ul>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Projects</strong></p>
-</li>
-<li><p class="first"><strong>Select &#8216;Run Project&#8217;</strong> from <cite>Action</cite> select box of corresponding project and proceed.</p>
-<p>You will get a window like following screen shot with stats.</p>
-</li>
-</ol>
-<blockquote>
-<div><img alt="_images/sp_auditor_report_generation.png" src="_images/sp_auditor_report_generation.png" />
-</div></blockquote>
-</div></blockquote>
-</div>
-<div class="section" id="auditor-reports">
-<h3>Auditor Reports<a class="headerlink" href="#auditor-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to understand different types of site auditor reports</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Reports</strong></p>
-</li>
-<li><p class="first">Reports</p>
-<p>We will get different types of reports from this section</p>
-<p><strong>Filters</strong></p>
-<ul>
-<li><p class="first"><strong>Project</strong> - Select required project to filter the reports</p>
-</li>
-<li><p class="first"><strong>Page Link</strong> - Enter page link to filter the reports</p>
-</li>
-<li><p class="first"><strong>Crawled</strong> - Select <cite>Yes</cite> to get pages with complete results generated. <cite>No</cite> to get all pages with partial results generated.</p>
-</li>
-<li><p class="first"><strong>MOZ Rank</strong> - Select MOZ rank to filter the reports</p>
-</li>
-<li><p class="first"><strong>Report Type</strong> - You can select different reports types</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Link Reports</strong> - Show reports based on links. Please check below screen shot</li>
-</ul>
-<img alt="_images/sp_auditor_reports.png" src="_images/sp_auditor_reports.png" />
-<p><strong>Click on the page link</strong>, you will get more detailed report like below screen shot</p>
-<img alt="_images/sp_auditor_detailed_reports.png" src="_images/sp_auditor_detailed_reports.png" />
-<ul class="simple">
-<li><strong>Report Summary</strong> - Show complete report summary of a project. Please check below screen shot</li>
-</ul>
-<img alt="_images/sp_auditor_report_summary.png" src="_images/sp_auditor_report_summary.png" />
-<ul class="simple">
-<li><strong>Duplicate Title</strong> - Show reports based on duplicate page titles found in the project pages.</li>
-<li><strong>Duplicate Description</strong> - Show reports based on duplicate meta description found in the project pages.</li>
-<li><strong>Duplicate Keywords</strong> - Show reports based on duplicate meta keywords found in the project pages.</li>
-</ul>
-<p>Please check below screen shots for more details</p>
-<img alt="_images/sp_auditor_report_duplicate.png" src="_images/sp_auditor_report_duplicate.png" />
-</div></blockquote>
-</li>
-</ul>
-</li>
-<li><p class="first">You can also choose following to download and print reports in different formats</p>
-<ul class="simple">
-<li><strong>PDF</strong> - Click on <cite>PDF icon</cite> to download reports in PDF format</li>
-<li><strong>Export</strong> - Click on <cite>Export Icon</cite> to download reports in <cite>.csv</cite> format</li>
-<li><strong>Print</strong> - Click on <cite>Print Icon</cite> to print te reports</li>
-</ul>
-</li>
-</ol>
-</div>
-<div class="section" id="import-project-links">
-<h3>Import Project Links<a class="headerlink" href="#import-project-links" title="Permalink to this headline">¶</a></h3>
-<p>You can also <strong>import group of links</strong> to site auditor project, if program failed to find any required links from your website.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Import Project Links</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_auditor_import.png" src="_images/sp_auditor_import.png" />
-<ul class="simple">
-<li><strong>Project</strong> - Select project to which links have to be imported</li>
-<li><strong>Links</strong> - Add project links to be imported separated with comma</li>
-</ul>
-<p><strong>Eg:</strong> <a class="reference external" href="http://www.seopanel.in/plugin/l/">http://www.seopanel.in/plugin/l/</a>, <a class="reference external" href="http://www.seopanel.in/plugin/d/">http://www.seopanel.in/plugin/d/</a></p>
-</li>
-<li><p class="first">Proceed with the values in the form, you will be redirected to projects page with the stats of import.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="sitemap-generator">
-<h3>Sitemap Generator<a class="headerlink" href="#sitemap-generator" title="Permalink to this headline">¶</a></h3>
-<p>You can also <strong>generate sitemap</strong> for your website using this feature.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Sitemap Generator</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_auditor_sitemap.png" src="_images/sp_auditor_sitemap.png" />
-<ul>
-<li><p class="first"><strong>Project</strong> - Select a project to generate sitemap</p>
-</li>
-<li><p class="first"><strong>Sitemap Type</strong> - Select type of sitemap according to your requirement</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>XML</strong> - Can be used to submit in google web master tools</li>
-<li><strong>Text</strong> - Can be used to submit in google web master tools</li>
-<li><strong>HTML</strong> - Can be used to publish in your website</li>
-</ul>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>Change frequency</strong> - Select frequency of search engine crawl</p>
-</li>
-<li><p class="first"><strong>Priority</strong> - Select priority of search engine crawl</p>
-</li>
-<li><p class="first"><strong>Exclude Url</strong> - Enter links separated with comma needs to be excluded from sitemap <strong>Eg:</strong> Eg: <a class="reference external" href="http://www.seopanel.in/plugin/l/">http://www.seopanel.in/plugin/l/</a>, <a class="reference external" href="http://www.seopanel.in/plugin/d/">http://www.seopanel.in/plugin/d/</a></p>
-</li>
-</ul>
-</li>
-<li><p class="first">Proceed with the values in the form, you will get <strong>download link</strong> for generated sitemap as above screenshot.</p>
-</li>
-<li><p class="first"><strong>Click on sitemap link</strong> to <strong>download</strong> the sitemap.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="auditor-settings">
-<h3>Auditor Settings<a class="headerlink" href="#auditor-settings" title="Permalink to this headline">¶</a></h3>
-<p>In this section you can configure site auditor general settings.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Site Auditor =&gt; Auditor Settings</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_auditor_settings.png" src="_images/sp_auditor_settings.png" />
-<ul class="simple">
-<li><strong>Maximum number of pages allowed per website</strong> - The maximum number of pages can be crawled in a project(Default value is <cite>500</cite>)</li>
-<li><strong>Site auditor crawl delay between each pages</strong> - Delay between each page reports generation(Default value is <cite>20</cite>). We recommend not decrease this value for betetr report generation.</li>
-<li><strong>Crawl relative links in a page</strong> - Allow project to crawl the relative links in each page</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-<div class="section" id="directory-submission">
-<h2>6. Directory Submission<a class="headerlink" href="#directory-submission" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="directory-submission-tool">
-<h3>Directory Submission Tool<a class="headerlink" href="#directory-submission-tool" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to <strong>submit</strong> your <strong>website to internet directories</strong>. That will help you to
-increase backlinks to your website.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Directory Submission =&gt; Automatic Submission</strong></p>
-<img alt="_images/sp_directory_submit1.png" src="_images/sp_directory_submit1.png" />
-</li>
-<li><p class="first">Enter details in filter according to your requirements</p>
-<ul class="simple">
-<li><strong>Website</strong> - The website needs to be submitted to the directories</li>
-<li><strong>Directories with out captcha</strong> - Check this, if you want to submit to directories with out captcha only</li>
-<li><strong>Directories with out Reciprocal Link</strong> - Check this, if you want to submit to directories with out reciprocal link only</li>
-<li><strong>Pagerank</strong> - Select to submit to directories with particular pagerank</li>
-<li><strong>Language</strong> - Select to submit to directories with particular language</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;Show Details&#8217;</strong>, you will be redirected to folowing page</p>
-<img alt="_images/sp_directory_submit2.png" src="_images/sp_directory_submit2.png" />
-</li>
-<li><p class="first">Enter details in form according to above screen shot</p>
-<ul>
-<li><p class="first"><strong>Owner Name</strong> - The name of the owner of website</p>
-</li>
-<li><p class="first"><strong>Owner Email</strong> - The email address of the owner of website</p>
-</li>
-<li><p class="first"><strong>Website Category</strong> - Enter categories, separated with comma according to the priority. Start with Top priority category. Seo panel will <cite>auto select submission category</cite> according to this value.</p>
-</li>
-<li><p class="first"><strong>Website Url</strong> - The url of the website needs to be submitted</p>
-<blockquote>
-<div><p><strong>Click on `Crawl Meta Data`</strong> link to get the page title and meta tags. You can also edit this details later.</p>
-</div></blockquote>
-</li>
-<li><p class="first"><strong>Submit Title1</strong> - The title of the submission entry</p>
-</li>
-<li><p class="first"><strong>Submit Description1</strong> - The description of the submission entry</p>
-</li>
-<li><p class="first"><strong>Submit Keywords</strong> - The keyword of the submission entry</p>
-</li>
-<li><p class="first"><strong>Reciprocal Link:</strong> - The reciprocal page link, where you have added submission directory website link. This entry required when directory submission requires reciprocal link.</p>
-</li>
-<li><p class="first"><strong>Submit Title(2-5)</strong> - The optional title of the submission entry. If we add it, each submission will take random entry from this page title list</p>
-</li>
-<li><p class="first"><strong>Submit Description(2-5)</strong> - The optional description of the submission entry. If we add it, each submission will take random entry from this description list</p>
-</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong>, you will be redirected to folowing page</p>
-<img alt="_images/sp_directory_submit_reciprocal.png" src="_images/sp_directory_submit_reciprocal.png" />
-</li>
-<li><p class="first">Enter details in form according to above screen shot</p>
-<ul>
-<li><p class="first"><strong>Directory</strong> - Show the directory link where wbesite id submitted</p>
-</li>
-<li><p class="first"><strong>Pagerank</strong> - The pagerank of directory</p>
-</li>
-<li><p class="first"><strong>Category</strong> - The category to which website is submitted. You can change it according to the requirements.</p>
-</li>
-<li><p class="first"><strong>Reciprocal Link</strong> - The reciprocal page link, where you have added submission directory website link. You can change it according to the requirements.</p>
-</li>
-<li><p class="first"><strong>Enter the code shown</strong> - Enter the captacha text shown in the image. If image is not clear, please click on <strong>Reload</strong> button to reload the captcha again.</p>
-</li>
-<li><p class="first"><strong>Submit Options</strong></p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Cancel</strong> - To cancel the submission</li>
-<li><strong>Skip</strong> - To skip the current directory. It wil load next directory, with out submission to current directory.</li>
-<li><strong>Reload</strong> - To relead the current directory submission form <strong>Eg:</strong> If captcha image is not clear, reload to get new captcha image</li>
-<li><strong>Submit</strong> - Submit to the current directory shown in the form</li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;Submit&#8217;</strong>, you will be redirected to following page</p>
-<img alt="_images/sp_directory_submit4.png" src="_images/sp_directory_submit4.png" />
-<p>You can see message like above screen shot.</p>
-<p><strong>&#8216;Link submitted and awaiting for approval&#8217;</strong></p>
-</li>
-</ol>
-</div>
-<div class="section" id="submission-reports">
-<h3>Submission Reports<a class="headerlink" href="#submission-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to track the directory submission done earlier.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Directory Submission =&gt; Submission Reports</strong></p>
-</li>
-<li><p class="first">Enter details in search filter according to your requirements</p>
-<ul class="simple">
-<li><strong>Name</strong> - Enter name of the directory to add in search filter</li>
-<li><strong>Website</strong> - Select website to add in search filter</li>
-<li><strong>Status</strong> - Select the status of directory submission to add in search filter</li>
-</ul>
-</li>
-<li><p class="first">It will show the directory submission reports with details like directory name, date of submission, page rank, status etc</p>
-<img alt="_images/sp_directory_submit_report.png" src="_images/sp_directory_submit_report.png" />
-</li>
-<li><p class="first"><strong>Check Status</strong> of directory submission</p>
-<p><strong>Select ‘Check Status’</strong> from right most action select box. You can also delete the submission from reports.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="skipped-directories">
-<h3>Skipped Directories<a class="headerlink" href="#skipped-directories" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to track the directory submission skipped earlier.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Directory Submission =&gt; Skipped Directories</strong></p>
-<img alt="_images/sp_directory_submit_skipped.png" src="_images/sp_directory_submit_skipped.png" />
-</li>
-<li><p class="first">This report will show the directories skipped during submission. Select particular website to get skipped directories of it.</p>
-</li>
-<li><p class="first"><strong>Click on &#8216;Add back to directory list&#8217;</strong> to add it again for directory subsmission.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="featured-submission">
-<h3>Featured Submission<a class="headerlink" href="#featured-submission" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to submit your website to featured directories. These submission will be <strong>approved with in 24 hours</strong> and also it will show as featured websites.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Directory Submission =&gt; Featured Submission</strong></p>
-<img alt="_images/sp_directory_submit_featured.png" src="_images/sp_directory_submit_featured.png" />
-</li>
-<li><p class="first"><strong>Click on &#8216;Submit &gt;&gt;&#8217;</strong> to submit your website to these directories.</p>
-</li>
-</ol>
-</div>
-<div class="section" id="check-submission-status">
-<h3>Check Submission Status<a class="headerlink" href="#check-submission-status" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you to check status of all directory submissions of a website.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Directory Submission =&gt; Check Submission Status</strong></p>
-<img alt="_images/sp_directory_submit_status_check.png" src="_images/sp_directory_submit_status_check.png" />
-</li>
-<li><p class="first">Select website and click on &#8216;Proceed&#8217; to check status of all directory submission of a website</p>
-</li>
-</ol>
-</div>
-<div class="section" id="directory-manager">
-<h3>Directory Manager<a class="headerlink" href="#directory-manager" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you manage directories in your seo panel.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Directory Manager =&gt; Directory Manager</strong></p>
-<img alt="_images/sp_directory_manager.png" src="_images/sp_directory_manager.png" />
-</li>
-<li><p class="first">Enter required search filters to get the list of directories</p>
-</li>
-<li><p class="first"><strong>Click on &#8216;Check Status&#8217;</strong> to find the current status of directory. You can also manually change the status of directory by click on the status link &#8216;Active&#8217; and &#8216;Inactive&#8217;</p>
-</li>
-</ol>
-</div>
-<div class="section" id="check-directory-status">
-<h3>Check Directory Status<a class="headerlink" href="#check-directory-status" title="Permalink to this headline">¶</a></h3>
-<p>This section will help you check status of all directories in your seo panel.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; Directory Manager =&gt; Check Directory</strong></p>
-<img alt="_images/sp_directory_check_status.png" src="_images/sp_directory_check_status.png" />
-</li>
-<li><p class="first"><strong>Select &#8216;Status&#8217;</strong> of directories needs to be checked.</p>
-</li>
-<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> to check the current status of all directories according to the search filter.</p>
-</li>
-</ol>
-<ol class="arabic simple" start="3">
-<li></li>
-</ol>
-</div>
-</div>
-<div class="section" id="rank-checker">
-<h2>7. Rank Checker<a class="headerlink" href="#rank-checker" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="quick-rank-checker">
-<h3>Quick Rank Checker<a class="headerlink" href="#quick-rank-checker" title="Permalink to this headline">¶</a></h3>
-<p>This feature used to find the <strong>rank of a website</strong> by <strong>with out storing any data</strong> in database.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Rank Checker =&gt; Quick Rank Checker</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_rank_quick_checker.png" src="_images/sp_rank_quick_checker.png" />
-<ul class="simple">
-<li><strong>Website</strong> - Add website links one per line needs to be checked</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> will show the &#8216;Alexa&#8217; and &#8216;MOZ&#8217; rank</p>
-</li>
-</ol>
-</div>
-<div class="section" id="rank-reports">
-<h3>Rank Reports<a class="headerlink" href="#rank-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section will show the rank reports of websites</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Rank Checker =&gt; Rank Reports</strong></p>
-</li>
-<li><p class="first">Enter search filter details as following screen shot</p>
-<img alt="_images/sp_rank_report.png" src="_images/sp_rank_report.png" />
-</li>
-</ol>
-<blockquote>
-<div>Currently it will show the &#8216;Alex&#8217; and &#8216;MOZ&#8217; rank with difference in ranks</div></blockquote>
-</div>
-<div class="section" id="generate-rank-reports">
-<h3>Generate Rank Reports<a class="headerlink" href="#generate-rank-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section used to generate rank reports of websites. We <strong>did not recommend to use</strong> this feature.
-<strong>Use cron job</strong> for report generation</p>
-</div>
-</div>
-<div class="section" id="backlinks-checker">
-<h2>8. Backlinks Checker<a class="headerlink" href="#backlinks-checker" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="quick-backlinks-checker">
-<h3>Quick Backlinks Checker<a class="headerlink" href="#quick-backlinks-checker" title="Permalink to this headline">¶</a></h3>
-<p>This feature used to find the <strong>backlink of a website</strong> by <strong>with out storing any data</strong> in database.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Backlinks Checker =&gt; Quick Backlinks Checker</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_backlink_quick_checker.png" src="_images/sp_backlink_quick_checker.png" />
-<ul class="simple">
-<li><strong>Website</strong> - Add website links one per line needs to be checked</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> will show the backlink count in different search engines</p>
-</li>
-</ol>
-</div>
-<div class="section" id="backlinks-reports">
-<h3>Backlinks Reports<a class="headerlink" href="#backlinks-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section will show the backlink reports of websites</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Backlinks Checker =&gt; Backlink Reports</strong></p>
-</li>
-<li><p class="first">Enter search filter details as following screen shot</p>
-<img alt="_images/sp_backlink_report.png" src="_images/sp_backlink_report.png" />
-</li>
-</ol>
-<blockquote>
-<div>Currently it will show the backlink count in different search engines.</div></blockquote>
-</div>
-<div class="section" id="generate-backlinks-reports">
-<h3>Generate Backlinks Reports<a class="headerlink" href="#generate-backlinks-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section used to generate backlink reports of websites. We <strong>did not recommend to use</strong> this feature.
-<strong>Use cron job</strong> for report generation.</p>
-</div>
-</div>
-<div class="section" id="search-engine-saturation">
-<h2>9. Search Engine Saturation<a class="headerlink" href="#search-engine-saturation" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="quick-saturation-checker">
-<h3>Quick Saturation Checker<a class="headerlink" href="#quick-saturation-checker" title="Permalink to this headline">¶</a></h3>
-<p>This feature used to find the <strong>search engine saturation</strong> of a website by <strong>with out storing any data</strong> in database.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt; Search Engine Saturation =&gt; Quick Saturation Checker</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_saturation_quick_checker.png" src="_images/sp_saturation_quick_checker.png" />
-<ul class="simple">
-<li><strong>Website</strong> - Add website links one per line needs to be checked</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;Proceed&#8217;</strong> will show the saturation report in different search engines</p>
-</li>
-</ol>
-</div>
-<div class="section" id="saturation-reports">
-<h3>Saturation Reports<a class="headerlink" href="#saturation-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section will show the saturation reports of websites</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Seo Tools =&gt;  Search Engine Saturation =&gt; Saturation Reports</strong></p>
-</li>
-<li><p class="first">Enter search filter details as following screen shot</p>
-<img alt="_images/sp_saturation_report.png" src="_images/sp_saturation_report.png" />
-</li>
-</ol>
-<blockquote>
-<div>Currently it will show the saturation report in different search engines</div></blockquote>
-</div>
-<div class="section" id="generate-saturation-reports">
-<h3>Generate Saturation Reports<a class="headerlink" href="#generate-saturation-reports" title="Permalink to this headline">¶</a></h3>
-<p>This section used to generate search engine saturation reports of websites. We <strong>did not recommend to use</strong> this feature.
-<strong>Use cron job</strong> for report generation</p>
-</div>
-</div>
-<div class="section" id="dashboard">
-<h2>10. Dashboard<a class="headerlink" href="#dashboard" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="dashboard-reports">
-<h3>Dashboard Reports<a class="headerlink" href="#dashboard-reports" title="Permalink to this headline">¶</a></h3>
-<p>Here you can see overall reports of websites added in seo panel.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Dashboard</strong></p>
-</li>
-<li><p class="first">Enter search filter value according to your requirements.</p>
-<img alt="_images/sp_dashboard.png" src="_images/sp_dashboard.png" />
-<p><strong>Filters</strong></p>
-<ul>
-<li><p class="first"><strong>Name</strong> - Enter required keyword filter the reports</p>
-</li>
-<li><p class="first"><strong>Period</strong> - Enter date interval to filter the reports</p>
-</li>
-<li><p class="first"><strong>Website</strong> - Choose required website to filter the results</p>
-</li>
-<li><p class="first"><strong>Report Type</strong> - You can select different reports types</p>
-<blockquote>
-<div><ul class="simple">
-<li><strong>Keyword Position Summary</strong> - Select to get keyword reports only</li>
-<li><strong>Website Statistics</strong> - Select to get website reports only</li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-</li>
-<li><p class="first"><strong>Click on &#8216;graph&#8217;</strong> icon to see reports in graph as below screen shot</p>
-<img alt="_images/sp_dashboard_graph.png" src="_images/sp_dashboard_graph.png" />
-</li>
-<li><p class="first"><strong>Click on &#8216;rank&#8217;</strong> link to see reports in more detailed format as below screen shot</p>
-<img alt="_images/sp_dashboard_difference.png" src="_images/sp_dashboard_difference.png" />
-</li>
-<li><p class="first">You can also choose following to download and print reports in different formats</p>
-<ul class="simple">
-<li><strong>PDF</strong> - Click on <cite>PDF icon</cite> to download reports in PDF format</li>
-<li><strong>Export</strong> - Click on <cite>Export Icon</cite> to download reports in <cite>.csv</cite> format</li>
-<li><strong>Print</strong> - Click on <cite>Print Icon</cite> to print te reports</li>
-</ul>
-</li>
-</ol>
-</div>
-</div>
-<div class="section" id="user-management">
-<h2>11. User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-user">
-<h3>Create User<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h3>
-<p>This section help you to manage users of soe panel.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; User Manager =&gt; New User</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_create_user.png" src="_images/sp_create_user.png" />
-<ul class="simple">
-<li><strong>Username</strong> - Enter username of the user</li>
-<li><strong>Password</strong> - Enter password for user account</li>
-<li><strong>Confirm Password</strong> - Enter confirm password for user</li>
-<li><strong>First Name</strong> - Enter first name of the user</li>
-<li><strong>Last Name</strong> - Enter last name of the user</li>
-<li><strong>Email</strong> - Enter email address of the user</li>
-<li><strong>User Type</strong> - Select user type according to the requirement</li>
-<li><strong>Expiry Date</strong> - The expiry date for the user account. Please add blank entry, if you do not want to set expiry date for user account. If user account expired, user could not access the features of seo panel.</li>
-</ul>
-</li>
-</ol>
-<p>You can also <strong>edit, activate, deactivate and delete</strong> users using options available in the <strong>User Manager</strong> page.</p>
-</div>
-<div class="section" id="create-user-type">
-<h3>Create User Type<a class="headerlink" href="#create-user-type" title="Permalink to this headline">¶</a></h3>
-<p>Using this feature we can add new user type with custom privileges.</p>
-<ol class="arabic">
-<li><p class="first">Go to <strong>Admin Panel =&gt; User Type Manager =&gt; New User Type</strong></p>
-</li>
-<li><p class="first">Enter details as following screen shot</p>
-<img alt="_images/sp_create_user_type.png" src="_images/sp_create_user_type.png" />
-<ul class="simple">
-<li><strong>Name</strong> - Enter name of the user type</li>
-<li><strong>Description</strong> - Enter description of the user type</li>
-<li><strong>Keywords Count</strong> - Maximum number of keywords can be created by user</li>
-<li><strong>Websites Count</strong> - Maximum number of websites can be created by user</li>
-<li><strong>Status</strong> - Status of the user type</li>
-</ul>
-</li>
-</ol>
-<p>You can also <strong>edit, activate, deactivate and delete</strong> user type using options available in the <strong>User Type Manager</strong> page.</p>
-<p>Also we can <strong>integrate payment plugin</strong> with <strong>user type manager</strong> of seo panel to do <strong>subscription business</strong>.</p>
-<p><strong>Click</strong> on following link to <strong>download and activate membership subscription</strong> plugin.</p>
-<p><a class="reference external" href="http://www.seopanel.in/plugin/l/65/membership-subscription/">http://www.seopanel.in/plugin/l/65/membership-subscription/</a></p>
-</div>
-</div>
-<div class="section" id="seo-tools-manager">
-<h2>12. Seo Tools Manager<a class="headerlink" href="#seo-tools-manager" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="plugins-manager">
-<h2>13. Plugins Manager<a class="headerlink" href="#plugins-manager" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="themes-manager">
-<h2>14. Themes Manager<a class="headerlink" href="#themes-manager" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="proxy">
-<h2>15. Proxy<a class="headerlink" href="#proxy" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="search-engine-manager">
-<h2>16. Search Engine Manager<a class="headerlink" href="#search-engine-manager" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="log-manager">
-<h2>17. Log Manager<a class="headerlink" href="#log-manager" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="api-manager">
-<h2>18. API Manager<a class="headerlink" href="#api-manager" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="my-profile">
-<h2>19. My Profile<a class="headerlink" href="#my-profile" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="about-us">
-<h2>20. About Us<a class="headerlink" href="#about-us" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -1040,85 +239,26 @@ increase backlinks to your website.</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installation.html">1. INSTALLATION</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">2. User Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#website-management">1. Website Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-website">Create Website</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#import-websites">Import Websites</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#settings">2. Settings</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#system-settings">System Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#moz-settings">MOZ Settings</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#keyword-management">3. Keyword Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-keyword">Create Keyword</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#import-keywords">Import Keywords</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#quick-position-checker">Quick Position Checker</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#reports-management">4. Reports Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#report-settings">Report Settings</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cron-command">Cron Command</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#schedule-reports">Schedule Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#report-generation-manager">Report Generation Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#archived-reports">Archived Reports</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#site-auditor">5. Site Auditor</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-project">Create Project</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#generate-reports">Generate Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#auditor-reports">Auditor Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#import-project-links">Import Project Links</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sitemap-generator">Sitemap Generator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#auditor-settings">Auditor Settings</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#directory-submission">6. Directory Submission</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#directory-submission-tool">Directory Submission Tool</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#submission-reports">Submission Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#skipped-directories">Skipped Directories</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#featured-submission">Featured Submission</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#check-submission-status">Check Submission Status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#directory-manager">Directory Manager</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#check-directory-status">Check Directory Status</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#rank-checker">7. Rank Checker</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#quick-rank-checker">Quick Rank Checker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rank-reports">Rank Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#generate-rank-reports">Generate Rank Reports</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#backlinks-checker">8. Backlinks Checker</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#quick-backlinks-checker">Quick Backlinks Checker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#backlinks-reports">Backlinks Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#generate-backlinks-reports">Generate Backlinks Reports</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#search-engine-saturation">9. Search Engine Saturation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#quick-saturation-checker">Quick Saturation Checker</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#saturation-reports">Saturation Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#generate-saturation-reports">Generate Saturation Reports</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#dashboard">10. Dashboard</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#dashboard-reports">Dashboard Reports</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#user-management">11. User Management</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-user">Create User</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#create-user-type">Create User Type</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#seo-tools-manager">12. Seo Tools Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#plugins-manager">13. Plugins Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#themes-manager">14. Themes Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#proxy">15. Proxy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#search-engine-manager">16. Search Engine Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#log-manager">17. Log Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#api-manager">18. API Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#my-profile">19. My Profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#about-us">20. About Us</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/website.html">Website Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/settings.html">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/keyword.html">Keyword Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/report.html">Reports Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/site_auditor.html">Site Auditor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/directory.html">Directory Submission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/rank.html">Rank Checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/backlink.html">Backlinks Checker</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/saturation.html">Search Engine Saturation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/dashboard.html">Dashboard</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/user.html">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/seo_tools.html">Seo Tools Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/plugins_manager.html">Plugins Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/themes_manager.html">Themes Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/proxy_manager.html">Proxy Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/search_engine_manager.html">Search Engine Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/log_manager.html">Logs Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/api_manager.html">API Manager</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/profile.html">My Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/aboutus.html">My Profile</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">3. API</a></li>
@@ -1129,8 +269,8 @@ increase backlinks to your website.</p>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -1144,7 +284,7 @@ increase backlinks to your website.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="api.html" title="3. API"
+          <a href="user_guide/website.html" title="Website Management"
              >next</a></li>
         <li class="right" >
           <a href="installation.html" title="1. INSTALLATION"

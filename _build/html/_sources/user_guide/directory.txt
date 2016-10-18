@@ -1,3 +1,6 @@
+Directory Submission
+~~~~~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Directory Submission Tool
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -7,7 +10,7 @@ increase backlinks to your website.
 
 1) Go to **Seo Tools => Directory Submission => Automatic Submission**
 
-   .. image:: _static/sp_directory_submit1.png
+   .. image:: ../_static/sp_directory_submit1.png
 
 2) Enter details in filter according to your requirements
 
@@ -23,7 +26,7 @@ increase backlinks to your website.
       
 3) **Click on 'Show Details'**, you will be redirected to folowing page
 
-   .. image:: _static/sp_directory_submit2.png
+   .. image:: ../_static/sp_directory_submit2.png
 
 4) Enter details in form according to above screen shot
 
@@ -52,7 +55,7 @@ increase backlinks to your website.
       
 5) **Click on 'Proceed'**, you will be redirected to folowing page
 
-   .. image:: _static/sp_directory_submit_reciprocal.png
+   .. image:: ../_static/sp_directory_submit_reciprocal.png
    
 6) Enter details in form according to above screen shot
 
@@ -78,7 +81,7 @@ increase backlinks to your website.
    
 7) **Click on 'Submit'**, you will be redirected to following page 
 
-   .. image:: _static/sp_directory_submit4.png
+   .. image:: ../_static/sp_directory_submit4.png
    
    You can see message like above screen shot.
    
@@ -102,7 +105,7 @@ This section will help you to track the directory submission done earlier.
 
 3) It will show the directory submission reports with details like directory name, date of submission, page rank, status etc
 
-   .. image:: _static/sp_directory_submit_report.png
+   .. image:: ../_static/sp_directory_submit_report.png
 
 4) **Check Status** of directory submission
 
@@ -116,7 +119,7 @@ This section will help you to track the directory submission skipped earlier.
 
 1) Go to **Seo Tools => Directory Submission => Skipped Directories**
 
-   .. image:: _static/sp_directory_submit_skipped.png
+   .. image:: ../_static/sp_directory_submit_skipped.png
    
 2) This report will show the directories skipped during submission. Select particular website to get skipped directories of it.
 
@@ -131,7 +134,7 @@ This section will help you to submit your website to featured directories. These
 
 1) Go to **Seo Tools => Directory Submission => Featured Submission**
 
-   .. image:: _static/sp_directory_submit_featured.png
+   .. image:: ../_static/sp_directory_submit_featured.png
 
 2) **Click on 'Submit >>'** to submit your website to these directories.
 
@@ -144,7 +147,7 @@ This section will help you to check status of all directory submissions of a web
 
 1) Go to **Seo Tools => Directory Submission => Check Submission Status**
 
-   .. image:: _static/sp_directory_submit_status_check.png
+   .. image:: ../_static/sp_directory_submit_status_check.png
    
 2) Select website and click on 'Proceed' to check status of all directory submission of a website
 
@@ -157,7 +160,7 @@ This section will help you manage directories in your seo panel.
 
 1) Go to **Admin Panel => Directory Manager => Directory Manager**
 
-   .. image:: _static/sp_directory_manager.png
+   .. image:: ../_static/sp_directory_manager.png
 
 2) Enter required search filters to get the list of directories
 
@@ -172,7 +175,7 @@ This section will help you check status of all directories in your seo panel.
 
 1) Go to **Admin Panel => Directory Manager => Check Directory**
 
-   .. image:: _static/sp_directory_check_status.png
+   .. image:: ../_static/sp_directory_check_status.png
 
 2) **Select 'Status'** of directories needs to be checked.
 

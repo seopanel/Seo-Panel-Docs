@@ -10,6 +10,9 @@ Theme Installation Steps
 3. Go to **Admin Panel => Themes Manager**
 
 
+.. image:: _static/sp_theme_installation.png
+
+
 4. **Activate** the theme by **Clicking on 'Activate'**
 
 

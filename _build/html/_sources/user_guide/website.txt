@@ -1,3 +1,6 @@
+Website Management
+~~~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~
 Create Website
 ~~~~~~~~~~~~~~
@@ -8,7 +11,7 @@ After installation of seo panel, next step is to create website.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_website_add.png
+   .. image:: ../_static/sp_website_add.png
 
    - **User** - The owner of the website  *Eg:* spadmin
    
@@ -38,7 +41,7 @@ You can also **import group of websites** to seo panel using this feature.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_website_import1.png
+   .. image:: ../_static/sp_website_import1.png
 
    - **User** - The owner of the website  *Eg:* spadmin
    
@@ -61,5 +64,5 @@ You can also **import group of websites** to seo panel using this feature.
 
 3) Proceed with the values in the form, you will get following window with the stats of import.
 
-   .. image:: _static/sp_website_import2.png
+   .. image:: ../_static/sp_website_import2.png
     

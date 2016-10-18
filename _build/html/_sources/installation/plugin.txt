@@ -10,10 +10,17 @@ Plugin Installation Steps
 3. Go to **Admin Panel => Seo Plugins Manager**
 
 
+.. image:: _static/sp_plugin_installation1.png
+
+
 4. **Activate** the plugin by **Click 'Active'**
 
 
 5. **Accesss** plugin by **'Seo Plugins'** from horizontal main menu.
+
+
+.. image:: _static/sp_plugin_installation2.png
+
 
 
 Plugin Upgrade Steps

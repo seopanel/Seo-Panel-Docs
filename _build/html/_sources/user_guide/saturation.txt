@@ -1,3 +1,6 @@
+Search Engine Saturation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~
 Quick Saturation Checker
 ~~~~~~~~~~~~~~
@@ -9,7 +12,7 @@ This feature used to find the **search engine saturation** of a website by **wit
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_saturation_quick_checker.png
+   .. image:: ../_static/sp_saturation_quick_checker.png
 
    - **Website** - Add website links one per line needs to be checked
    
@@ -26,7 +29,7 @@ This section will show the saturation reports of websites
 
 2) Enter search filter details as following screen shot
 
-   .. image:: _static/sp_saturation_report.png
+   .. image:: ../_static/sp_saturation_report.png
 
   Currently it will show the saturation report in different search engines
   

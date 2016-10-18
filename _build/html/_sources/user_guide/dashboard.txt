@@ -1,3 +1,6 @@
+Dashboard
+~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~~~~
 Dashboard Reports
 ~~~~~~~~~~~~~~~~~
@@ -8,7 +11,7 @@ Here you can see overall reports of websites added in seo panel.
 
 2) Enter search filter value according to your requirements.
 
-   .. image:: _static/sp_dashboard.png
+   .. image:: ../_static/sp_dashboard.png
    
    **Filters**
 
@@ -27,12 +30,12 @@ Here you can see overall reports of websites added in seo panel.
 
 3) **Click on 'graph'** icon to see reports in graph as below screen shot
 
-   .. image:: _static/sp_dashboard_graph.png 
+   .. image:: ../_static/sp_dashboard_graph.png 
 
 
 4) **Click on 'rank'** link to see reports in more detailed format as below screen shot
 
-   .. image:: _static/sp_dashboard_difference.png 
+   .. image:: ../_static/sp_dashboard_difference.png 
 
 
 5) You can also choose following to download and print reports in different formats

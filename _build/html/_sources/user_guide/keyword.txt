@@ -1,3 +1,6 @@
+Keyword Management
+~~~~~~~~~~~~~~~~~~~~~
+
 ~~~~~~~~~~~~~~
 Create Keyword
 ~~~~~~~~~~~~~~
@@ -8,7 +11,7 @@ Next step is to create keywords under websites
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_keyword_add.png
+   .. image:: ../_static/sp_keyword_add.png
 
    - **Name** - Add keyword to search in search engine 
    
@@ -33,7 +36,7 @@ You can also **import group of keywords** to seo panel using this feature.
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_keyword_import1.png
+   .. image:: ../_static/sp_keyword_import1.png
    
    - **Website** - The website needs to be checked with keyword search results
    
@@ -49,7 +52,7 @@ You can also **import group of keywords** to seo panel using this feature.
 
 3) Proceed with the values in the form, you will get following window with the stats of import.
 
-   .. image:: _static/sp_keyword_import2.png
+   .. image:: ../_static/sp_keyword_import2.png
 
 
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -62,7 +65,7 @@ This feature used to find the **rank of a website** in keyword search results by
 
 2) Enter details as following screen shot
 
-   .. image:: _static/sp_keyword_quick_position.png
+   .. image:: ../_static/sp_keyword_quick_position.png
    
    - **Search Engine** - Select the search engines in which keyword needs to checked 
 
