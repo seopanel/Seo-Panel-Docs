@@ -36,7 +36,3 @@ From this section we can manage seo panel plugins
 		
 		- **Re-install** - To re install the plugin again to fix any issues occured
 		
-		
-
-		
-		
