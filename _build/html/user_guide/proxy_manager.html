@@ -145,6 +145,9 @@
             
   <div class="section" id="proxy-manager">
 <h1>Proxy Manager<a class="headerlink" href="#proxy-manager" title="Permalink to this headline">¶</a></h1>
+<p>Proxy is mainly used, when you have to generate reports for many keywords and websites.
+It will make a balanced query to search engines and will help to get more efficient reports.</p>
+<p><strong>Check this link, to get efficient proxy list to add in your seo panel</strong> =&gt; <a class="reference external" href="http://www.squidproxies.com/billing/aff.php?aff=249">Click Here to Get Proxy</a></p>
 <div class="section" id="new-proxy">
 <h2>New Proxy<a class="headerlink" href="#new-proxy" title="Permalink to this headline">¶</a></h2>
 <p>This section is to create proxy under websites</p>
@@ -171,39 +174,100 @@
 <li><p class="first">Go to <strong>Admin Panel =&gt; Proxy Manager =&gt; Import Proxy</strong></p>
 </li>
 <li><p class="first">Enter details as following screen shot</p>
-<img alt="user_guide/../_static/sp_proxy_import1.png" src="user_guide/../_static/sp_proxy_import1.png" />
+<img alt="../_images/sp_proxy_import.png" src="../_images/sp_proxy_import.png" />
 <ul>
-<li><p class="first"><strong>Website</strong> - The website needs to be checked with proxy search results</p>
+<li><p class="first"><strong>Links</strong> - Enter proxy one per line in comma seperated format</p>
 <blockquote>
-<div><p><strong>Click on `Crawl Meta Data`</strong> link to get proxy of website. You can also edit this details before proceed.</p>
+<div><blockquote>
+<div><blockquote>
+<div><p><strong>Input format:</strong></p>
+</div></blockquote>
+<p><em>Proxy Hostname, Proxy Port, Proxy Username, Proxy Password</em></p>
+</div></blockquote>
+<p><strong>Eg:</strong></p>
+<blockquote>
+<div><dl class="docutils">
+<dt>123.66.2.3, 67, sp456, s$4A1</dt>
+<dd><p class="first last">pr1.proxylist.com, 82, ,</p>
+</dd>
+</dl>
+</div></blockquote>
 </div></blockquote>
 </li>
-<li><p class="first"><strong>Language</strong> - The language in which proxy search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</p>
-</li>
-<li><p class="first"><strong>Country</strong> - The country in which proxy search to be done. If you are using <strong>localized search engines like google.de</strong>, no need to select language.</p>
-</li>
-<li><p class="first"><strong>Search Engine</strong> - Select the search engines in which proxy needs to checked. <strong>Click on &#8216;Select All&#8217;</strong> to select all or use <strong>`CTRL`</strong> key to select multiple entries.</p>
-</li>
-<li><p class="first"><strong>Proxy</strong> - Add proxy to be imported to seo panel separated with comma <em>Eg:</em> google seo tools,seo tools,seo</p>
+<li><p class="first"><strong>Check Status</strong> - Checked to enable verification of current status of proxy during import. If it is checked, import will take more time.</p>
 </li>
 </ul>
 </li>
 <li><p class="first">Proceed with the values in the form, you will get following window with the stats of import.</p>
-<img alt="user_guide/../_static/sp_proxy_import2.png" src="user_guide/../_static/sp_proxy_import2.png" />
+<img alt="../_images/sp_proxy_import_result.png" src="../_images/sp_proxy_import_result.png" />
 </li>
 </ol>
 </div>
 <div class="section" id="check-status">
 <h2>Check Status<a class="headerlink" href="#check-status" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="proxy-perfomance">
-<h2>Proxy Perfomance<a class="headerlink" href="#proxy-perfomance" title="Permalink to this headline">¶</a></h2>
+<p>This section will help you to check status of proxy list added in seo panel</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Proxy Manager =&gt; Check Status</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="../_images/sp_proxy_import.png" src="../_images/sp_proxy_import.png" />
+<ul class="simple">
+<li><strong>Proxy</strong> - Select type of proxy needs to be verified. If not selected it will check all proxy list.</li>
+<li><strong>Check Status</strong> - Click on this button will trigger verification of proxy list. It will take some time to complete. You will get summary as above screen shot after execution.</li>
+</ul>
+</li>
+</ol>
 </div>
 <div class="section" id="proxy-settings">
 <h2>Proxy Settings<a class="headerlink" href="#proxy-settings" title="Permalink to this headline">¶</a></h2>
+<p>Next step is to update proxy settings.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Proxy Manager =&gt; Proxy Settings</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="../_images/sp_proxy_settings.png" src="../_images/sp_proxy_settings.png" />
+<ul class="simple">
+<li><strong>Enable Proxy:</strong> - This will enable to use a random proxy in each system crawl or query</li>
+<li><strong>Enable HTTP Proxy Tunnel:</strong> - Tunneling needs to be enabled / disabled according to your proxy settings</li>
+<li><strong>Deactivate Proxy When Crawling Failed:</strong> - This will make a particular proxy disabled, if any crawling failed with that proxy</li>
+<li><strong>Check With Another Proxy When Crawling Failed:</strong> - If one crawling failed with a proxy, this will enable to use another proxy to resume crawling of same request.</li>
+<li><strong>Maximum number of proxies used in single execution:</strong> - If above settings is enabled, this will limit number of proxies should be used to check a failed crawl.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="proxy-perfomance">
+<h2>Proxy Perfomance<a class="headerlink" href="#proxy-perfomance" title="Permalink to this headline">¶</a></h2>
+<p>In this section you can see proxy perfomance.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Proxy Manager =&gt; Proxy Perfomance</strong></p>
+</li>
+<li><p class="first">Check details in following screen shot</p>
+<img alt="../_images/sp_proxy_perfomance.png" src="../_images/sp_proxy_perfomance.png" />
+<p>The reports are displayed in default order by number of success requests sent by a proxy</p>
+<ul class="simple">
+<li><strong>Request Count</strong> - The number of requests sent using a proxy</li>
+<li><strong>Success</strong> - The number of success requests sent using a proxy</li>
+<li><strong>Fail</strong> - The number of failed requests sent using a proxy</li>
+</ul>
+<p>If we click on the above number, it will show more detailed reports.</p>
+<img alt="../_images/sp_proxy_perfomance_detailed.png" src="../_images/sp_proxy_perfomance_detailed.png" />
+<p>By checking the reports, we can easily find out which proxy is failed more. We can disable it by clicking on the proxy name and edit proxy properties.</p>
+</li>
+</ol>
 </div>
 <div class="section" id="cron-command">
 <h2>Cron Command<a class="headerlink" href="#cron-command" title="Permalink to this headline">¶</a></h2>
+<p>Cron job is the best method to check status of proxy periodically.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Proxy Manager =&gt; Cron Command</strong></p>
+</li>
+<li><p class="first">Add following command to your cron tab</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="m">0</span> 0,6 * * * php /opt/lampp/htdocs/seopanel/proxycheckercron.php
+</pre></div>
+</div>
+</li>
+</ol>
 </div>
 </div>
 
@@ -235,8 +299,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#new-proxy">New Proxy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#import-proxy">Import Proxy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#check-status">Check Status</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#proxy-perfomance">Proxy Perfomance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#proxy-settings">Proxy Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proxy-perfomance">Proxy Perfomance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#cron-command">Cron Command</a></li>
 </ul>
 </li>
