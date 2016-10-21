@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Plugin Dvelopment Guide &mdash; Seo Panel Docs 3.9.0 documentation</title>
+    <title>Plugin Dvelopment Guide &#8212; Seo Panel Docs 3.9.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,6 +24,7 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="Seo Panel Docs 3.9.0 documentation" href="../index.html" />
     <link rel="up" title="3. Developer Guide" href="../developer.html" />
     <link rel="next" title="5. SUPPORT" href="../support.html" />
@@ -51,7 +52,7 @@
           <a href="../developer.html" title="3. Developer Guide"
              accesskey="P">previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../developer.html" accesskey="U">3. Developer Guide</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../developer.html" accesskey="U">3. Developer Guide</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -146,11 +147,11 @@
 <h1>Plugin Dvelopment Guide<a class="headerlink" href="#plugin-dvelopment-guide" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Seo Panel Plugins help us to modify, customize, and extend the features of Seo Panel according to our requirement. Instead of changing the core programming of Seo Panel, you can add extra functionality to Seo Panel with Seo Panel Plugins.</p>
-<p>Seo Panel Plugin: A Seo Panel Plugin is a independant program with a set of extra features, written in the PHP scripting language, that adds a specific set of features or services to the Seo Panel.</p>
+<p>Seo Panel Plugins help us to <strong>modify, customize, and extend</strong> the features of Seo Panel according to our requirement. Instead of changing the core programming of Seo Panel, you can add extra functionality to Seo Panel with Seo Panel Plugins.</p>
+<p><strong>Seo Panel Plugin:</strong> A Seo Panel Plugin is a independant program with a set of extra features, written in the PHP scripting language, that adds a specific set of features or services to the Seo Panel.</p>
 <p>If you would like to create a new Seo Panel plugin, then first search the plugin in Seo Panel plugin repository - <a class="reference external" href="http://www.seopanel.in/plugins/">http://www.seopanel.in/plugins/</a>
 If it is not existing any where, then use following articles to create a new plugin for Seo Panel and publish it through Seo Panel repository.</p>
-<p>Note: This article assumes you are already familiar with the basic functionality of Seo Panel, and PHP programming.</p>
+<p><strong>Note:</strong> This article assumes you are already familiar with the basic functionality of Seo Panel, and PHP programming.</p>
 </div>
 <div class="section" id="steps-to-create-a-seo-panel-plugin">
 <h2>Steps to Create a Seo Panel Plugin<a class="headerlink" href="#steps-to-create-a-seo-panel-plugin" title="Permalink to this headline">¶</a></h2>
@@ -159,12 +160,31 @@ If it is not existing any where, then use following articles to create a new plu
 <h3>Names, Files, and Locations<a class="headerlink" href="#names-files-and-locations" title="Permalink to this headline">¶</a></h3>
 <p><strong>Plugin Name</strong></p>
 <p>The first step for plugin creation is finding a name for your plugin according to the features you would like to implement with it.</p>
-<p>Eg: The name for a search engine submission plugin can be named like &#8220;Search Engine Submitter&#8221;</p>
+<p><strong>Eg:</strong> The name for a search engine submission plugin can be named like &#8220;Search Engine Submitter&#8221;</p>
 <p>Once you found a name for your plugin, then search it in <a class="reference external" href="http://www.seopanel.in/plugins">Seo Panel plugin repository</a> to find any other plugin existing with the same name. If it is already existing, then choose another name or create plugin for another feature.</p>
 <p><strong>License</strong></p>
-<p>It is customary to follow the standard header with information about licensing for the Plugin. Most Plugins use the GPL2 license used by Seo Panel  or a license compatible with the GPL2. To indicate a GPL2 license, include the following lines in all files of your Plugin:</p>
+<p>It is customary to follow the standard header with information about licensing for the Plugin. Most Plugins use the <a class="reference external" href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html">GPL2</a> license used by Seo Panel  or a license <a class="reference external" href="http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses">compatible with the GPL2</a>. To indicate a GPL2 license, include the following lines in all files of your Plugin:</p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="cm">/*  Copyright YEAR  PLUGIN_AUTHOR_NAME  (email : PLUGIN AUTHOR EMAIL)</span>
+
+<span class="cm"> This program is free software; you can redistribute it and/or modify</span>
+<span class="cm"> it under the terms of the GNU General Public License, version 2, as</span>
+<span class="cm"> published by the Free Software Foundation.</span>
+
+<span class="cm"> This program is distributed in the hope that it will be useful,</span>
+<span class="cm"> but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="cm"> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="cm"> GNU General Public License for more details.</span>
+
+<span class="cm"> You should have received a copy of the GNU General Public License</span>
+<span class="cm"> along with this program; if not, write to the Free Software</span>
+<span class="cm"> Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA</span>
+<span class="cm">*/</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</div>
 <p><strong>Plugin Files</strong></p>
-<p>If you are creating a plugin Named &#8220;Test Plugin&#8221;, Then plugin file structure should be like below list</p>
+<p>If you are creating a plugin Named <strong>Test Plugin</strong>, Then plugin file structure should be like below list</p>
 <blockquote>
 <div><ul>
 <li><dl class="first docutils">
@@ -200,7 +220,112 @@ If it is not existing any where, then use following articles to create a new plu
 </li>
 </ul>
 <p><strong>i) TestPlugin</strong></p>
-<p>First step is to create a folder named “TestPlugin”,  which contains all plugin files and folders. The plugin directory name should not contain spaces and other special characters.</p>
+<p>First step is to create a folder named <strong>&#8220;TestPlugin&#8221;</strong>,  which contains all plugin files and folders. The plugin directory name should not contain spaces and other special characters.</p>
+<p><strong>ii) TestPlugin.ctrl.php</strong></p>
+<p>Next step is to create a controller class file with the same name as plugin directory and with an extension <strong>&#8221;.ctrl.php&#8221;</strong> The controller class file will extends the Seo Panel plugin class.</p>
+<p><strong>Syntax:</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">TestPlugin</span> <span class="k">extends</span> <span class="nx">SeoPluginsController</span><span class="p">{</span>
+        <span class="k">function</span> <span class="nf">index</span><span class="p">()</span> <span class="p">{</span>
+                <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">&#39;sectionHead&#39;</span><span class="p">,</span> <span class="s2">&quot;Test Plugin Index Section&quot;</span><span class="p">);</span>
+                <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">pluginRender</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</div>
+<p><strong>$this-&gt;set(&#8220;sectionHead&#8221;, &#8220;Test Plugin Index section&#8221;)</strong> - This function will set data  to view helpers and  in above code it will set the &#8220;Test Plugin Index Section&#8221; to &#8220;sectionHead&#8221; variable  and it can be accessed in template as &#8220;$sectionHead&#8221;.</p>
+<p><strong>$this-&gt;pluginRender(&#8216;index&#8217;)</strong> - This function will  call template file to output the data processed in plugin controller functions. This code will display the template file &#8220;index.ctp&#8221; in the folder &#8220;views&#8221;. In this file we can  access all values set from controller functions.</p>
+<p><strong>iii) views</strong></p>
+<p>Create a “views” folder to add all template files required by plugin to show the HTML output.</p>
+<p><strong>menu.ctp</strong>
+After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp” file inside the folder “views”. This file will display the left menu for a plugin and using that different features of plugin is accessed by user.</p>
+<p><strong>Syntax:</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">&lt;ul id=&#39;subui&#39;&gt;</span>
+<span class="x">        &lt;li&gt;</span>
+<span class="x">                &lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">pluginMenu</span><span class="p">(</span><span class="s1">&#39;action=index&#39;</span><span class="p">);</span><span class="cp">?&gt;</span><span class="x">&quot;&gt;Test Plugin&lt;/a&gt;</span>
+<span class="x">        &lt;/li&gt;</span>
+<span class="x">        </span><span class="cp">&lt;?php</span> <span class="k">if</span><span class="p">(</span><span class="nx">isAdmin</span><span class="p">()){</span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">                &lt;li&gt;</span>
+<span class="x">                        &lt;a href=&quot;javascript:void(0);&quot; onclick=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">pluginMenu</span><span class="p">(</span><span class="s1">&#39;action=settings&#39;</span><span class="p">);</span><span class="cp">?&gt;</span><span class="x">&quot;&gt;Settings&lt;/a&gt;</span>
+<span class="x">                &lt;/li&gt;</span>
+<span class="x">        </span><span class="cp">&lt;?php</span> <span class="p">}</span><span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">&lt;/ul&gt;</span>
+</pre></div>
+</div>
+<p>The above code will show two menu items under plugin &#8220;TestPlugin&#8221;  in &#8220;Seo Plugins&#8221; page of Seo Panel.</p>
+<p><strong>isAdmin()</strong> - This function is used to find whether logged in user is admin and then restrict some menu items to only for Seo Panel admin.</p>
+<p><strong>pluginMenu(&#8216;action=settings&#8217;), pluginMenu(&#8216;action=index&#8217;)</strong> - This function will create an ajax function for &#8220;onClick&#8221; event and while click on this menu link it will call “settings” and “index” functions of “TestPlugin.ctrl.php” respectively.</p>
+<p>All templates files are created inside “ views” folder with “.ctp.php” extension.</p>
+<p>Sample <strong>&#8220;index.ctp.php&#8221;</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">showSectionHead</span><span class="p">(</span><span class="nv">$sectionHead</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+<span class="x">&lt;form id=&#39;search_form&#39;&gt;</span>
+<span class="x">&lt;table width=&quot;45%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot; class=&quot;search&quot;&gt;</span>
+<span class="x">        &lt;tr&gt;</span>
+<span class="x">                &lt;th&gt;Test Plugin Type: &lt;/th&gt;</span>
+<span class="x">                &lt;td&gt;</span>
+<span class="x">                        &lt;select name=&quot;tp_type&quot;&gt;</span>
+<span class="x">                                &lt;option value=&quot;1&quot;&gt;active&lt;/option&gt;</span>
+<span class="x">                                &lt;option value=&quot;0&quot;&gt;inactive&lt;/option&gt;</span>
+<span class="x">                        &lt;/select&gt;</span>
+<span class="x">                &lt;/td&gt;</span>
+<span class="x">                &lt;td align=&#39;left&#39;&gt;</span>
+<span class="x">                        &lt;a onclick=&quot;</span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">pluginPOSTMethod</span><span class="p">(</span><span class="s1">&#39;search_form&#39;</span><span class="p">,</span> <span class="s1">&#39;subcontent&#39;</span><span class="p">,</span> <span class="s1">&#39;action=show&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x">&quot; href=&quot;javascript:void(0);&quot;&gt;</span>
+<span class="x">                                &lt;img border=&quot;0&quot; alt=&quot;&quot; src=&quot;</span><span class="cp">&lt;?</span><span class="o">=</span><span class="nx">SP_IMGPATH</span><span class="cp">?&gt;</span><span class="x">/show_records.gif&quot;/&gt;</span>
+<span class="x">                        &lt;/a&gt;</span>
+<span class="x">                &lt;/td&gt;</span>
+<span class="x">        &lt;/tr&gt;</span>
+<span class="x">&lt;/table&gt;</span>
+<span class="x">&lt;/form&gt;</span>
+<span class="x">&lt;div id=&#39;subcontent&#39;&gt;</span>
+<span class="x">        &lt;p class=&#39;note&#39;&gt;Click Show Records to &lt;b class=&quot;testplugin&quot;&gt;Show&lt;/b&gt; Test Plugin Records.&lt;/p&gt;</span>
+<span class="x">&lt;/div&gt;</span>
+</pre></div>
+</div>
+<p><strong>showSectionHead</strong> - This function will display the header text for a page</p>
+<p><strong>pluginPOSTMethod(&#8216;search_form&#8217;, &#8216;subcontent&#8217;, &#8216;action=show&#8217;)</strong> - This function will create an AJAX POST method for “onClick” event and it will post the elements in the HTML form  “search_form” with extra arguments  &#8216;action=show&#8217;. The result will be updated in  the div with id “subcontent”.</p>
+<p>There are lots of useful functions are available in Seo Panel and explained under section the “Common Functions” .</p>
+<p><strong>iv) conf.php</strong></p>
+<p>This file is used to include common constants used in plugin functions.</p>
+<p><strong>Eg:</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">// contant used to get the name of test head section</span>
+<span class="x">define(&#39;TEST_HEAD&#39;, &#39;Seo Panel Test Plugin&#39;);</span>
+</pre></div>
+</div>
+<p>This &#8220;TEST_HEAD&#8221; constant can be used in any part of the plugin code.</p>
+<p><strong>v) css</strong></p>
+<p>The folder contains all css files required by plugin. The plugin <strong>automatically include</strong> it in seo panel and will help you to customise plugin interface.</p>
+<p><strong>vi) js</strong></p>
+<p>The folder contains all javascript files required by plugin. The plugin <strong>automatically include</strong> it in seo panel and will help you to create new javascript functions for plugin.</p>
+<p><strong>vii) images</strong></p>
+<p>This folder contains all images required for a plugin. The images can be accessed in templates using the constant “PLUGIN_IMGPATH”.</p>
+<p><strong>Eg:</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">&lt;img src=&quot;</span><span class="cp">&lt;?</span><span class="o">=</span><span class="nx">PLUGIN_IMGPATH</span><span class="cp">?&gt;</span><span class="x">/star.gif&quot;&gt;</span>
+</pre></div>
+</div>
+<p><strong>viii) database.sql</strong></p>
+<p>This file contains the MYSQL dump of all database tables and data required to install plugin in to Seo Panel. This file is imported to Seo Panel database during the time of installation of plugin.</p>
+<p><strong>ix) upgrade.sql</strong></p>
+<p>This file contains the MYSQL dump of all database tables and data required to upgrade intstalled plugin in Seo Panel. This file is imported to Seo Panel database during the time of upgradation of plugin.</p>
+<p><strong>x) plugin.xml</strong></p>
+<p>This XML file is used to add the details about the plugin. Please check below sample “plugin.xml” file.</p>
+<p><strong>Eg:</strong></p>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;plugin&gt;</span>
+       <span class="nt">&lt;author&gt;</span>Geo Varghese<span class="nt">&lt;/author&gt;</span>
+       <span class="nt">&lt;label&gt;</span>Test Plugin<span class="nt">&lt;/label&gt;</span>
+       <span class="nt">&lt;description&gt;</span>Seo Panel Test Plugin: Check the structure of test plugin and it will help you to create new Seo Panel Plugins.<span class="nt">&lt;/description&gt;</span>
+       <span class="nt">&lt;version&gt;</span>1.0.0<span class="nt">&lt;/version&gt;</span>
+       <span class="nt">&lt;website&gt;</span>http://www.seopanel.in/plugins/<span class="nt">&lt;/website&gt;</span>
+<span class="nt">&lt;/plugin&gt;</span>
+</pre></div>
+</div>
+<p><strong>author</strong> - The name of the person who created plugin</p>
+<p><strong>label</strong> - The name of the plugin</p>
+<p><strong>description</strong> - The description of the plugin</p>
+<p><strong>version</strong> - The current version of the plugin</p>
+<p><strong>website</strong> - A link to a website where user can download plugin.</p>
+<p>Once you are familiar with these files and functions, it really easy to create plugins for seo Panel.</p>
 </div></blockquote>
 </div>
 </div>
@@ -231,8 +356,8 @@ If it is not existing any where, then use following articles to create a new plu
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -252,7 +377,7 @@ If it is not existing any where, then use following articles to create a new plu
           <a href="../developer.html" title="3. Developer Guide"
              >previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../developer.html" >3. Developer Guide</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../developer.html" >3. Developer Guide</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">

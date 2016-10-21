@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Logs Manager &mdash; Seo Panel Docs 3.9.0 documentation</title>
+    <title>Logs Manager &#8212; Seo Panel Docs 3.9.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,9 +24,10 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="Seo Panel Docs 3.9.0 documentation" href="../index.html" />
     <link rel="up" title="2. User Guide" href="../usage.html" />
-    <link rel="next" title="My Profile" href="profile.html" />
+    <link rel="next" title="3. API" href="../api.html" />
     <link rel="prev" title="Search Engine Manager" href="search_engine_manager.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,13 +46,13 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="profile.html" title="My Profile"
+          <a href="../api.html" title="3. API"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="search_engine_manager.html" title="Search Engine Manager"
              accesskey="P">previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../usage.html" accesskey="U">2. User Guide</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../usage.html" accesskey="U">2. User Guide</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -144,6 +145,51 @@
             
   <div class="section" id="logs-manager">
 <h1>Logs Manager<a class="headerlink" href="#logs-manager" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="crawl-log-manager">
+<h2>Crawl Log Manager<a class="headerlink" href="#crawl-log-manager" title="Permalink to this headline">¶</a></h2>
+<p>In this section we will manage all crawl logs of the system.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; Logs Manager =&gt; Crawl Log Manager</strong></p>
+</li>
+<li><p class="first">Check details in following screen shot</p>
+<img alt="../_images/sp_crawl_log1.png" src="../_images/sp_crawl_log1.png" />
+<p><strong>Search Filters</strong></p>
+<ul>
+<li><p class="first"><strong>Search</strong> - Enter a string to do common search through most of the log fields. <cite>Eg:</cite> website name or keyword name</p>
+</li>
+<li><p class="first"><strong>Period</strong> - Enter date interval to filter the logs</p>
+</li>
+<li><p class="first"><strong>Status</strong> - Select status of log to filter[Success / Fail]</p>
+</li>
+<li><p class="first"><strong>Report Type</strong> - You can select different reports types</p>
+<blockquote>
+<div><ul class="simple">
+<li><strong>Keyword</strong> - Select to get keyword logs only</li>
+<li><strong>Other</strong> - Select to get other logs excluding keywords</li>
+</ul>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Search Engine</strong> - Select particular search engine to filter the logs</p>
+</li>
+<li><p class="first"><strong>Proxy</strong> - Select particular proxy to filter the logs</p>
+</li>
+</ul>
+<p><strong>Display Columns</strong></p>
+<ul class="simple">
+<li><strong>Reference</strong> - The object crawled in seo panel. <cite>Eg:</cite> website url, keyword name etc</li>
+<li><strong>Subject</strong> - The object crawled through which subject <cite>Eg:</cite> search engine name</li>
+<li><strong>Details</strong> - The details of the crawl log and it help us to find the root cause of errors</li>
+<li><strong>Action</strong> - Using it we can delete a particular log. Using bottom &#8216;Delete&#8217; button we can delete</li>
+</ul>
+<p>Using bottom &#8216;Clear All Logs&#8217; button, we can delete all logs in the system.</p>
+<p><cite>Note:</cite> Also <strong>daily cron job</strong> will <strong>delete all logs before 3 months</strong>.</p>
+</li>
+<li><p class="first"><strong>Click on &#8216;Id&#8217;</strong> in logs reports will show more detailed report of a crawl log</p>
+<img alt="../_images/sp_crawl_log2.png" src="../_images/sp_crawl_log2.png" />
+<p>It will show details like cookie, Referer, Post Fields, User agent etc</p>
+</li>
+</ol>
+</div>
 </div>
 
 
@@ -172,8 +218,10 @@
 <li class="toctree-l2"><a class="reference internal" href="themes_manager.html">Themes Manager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="proxy_manager.html">Proxy Manager</a></li>
 <li class="toctree-l2"><a class="reference internal" href="search_engine_manager.html">Search Engine Manager</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Logs Manager</a></li>
-<li class="toctree-l2"><a class="reference internal" href="profile.html">My Profile</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Logs Manager</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#crawl-log-manager">Crawl Log Manager</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">3. API</a></li>
@@ -184,8 +232,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -199,13 +247,13 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="profile.html" title="My Profile"
+          <a href="../api.html" title="3. API"
              >next</a></li>
         <li class="right" >
           <a href="search_engine_manager.html" title="Search Engine Manager"
              >previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../usage.html" >2. User Guide</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../usage.html" >2. User Guide</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
