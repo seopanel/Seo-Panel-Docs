@@ -1,5 +1,5 @@
 3. API
-======================
+======
 
 The Seo Panel API provides an interface to allow you to access and perform actions 
 in Seo Panel both from external applications and scripts as well as internal modules and addons.
@@ -7,7 +7,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 The Seo Panel API supports response type: JSON
 
 1. API Setup
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 Login as admin and go to following page
 
@@ -19,7 +19,7 @@ Change values of API Key and Secret for security according to the below screen s
 
 
 2. Functions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
 
 The API currently supports the following functions
 
@@ -35,7 +35,7 @@ Website Management
 
 
 Add Website
-************************
+***********
 
 **Purpose**
 
@@ -59,7 +59,8 @@ This command is used to add a new website in seo panel.
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "website";
 	$paramList['action'] = "createWebsite";
@@ -79,7 +80,7 @@ This command is used to add a new website in seo panel.
 	- error_msg = * Website already exist
 
 Update Website
-************************
+**************
 
 **Purpose**
 
@@ -104,7 +105,8 @@ This command is used to update existing website in seo panel.
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "website";
 	$paramList['action'] = "updateWebsite";
@@ -123,7 +125,7 @@ This command is used to update existing website in seo panel.
 
 
 Delete Website
-************************
+**************
 
 **Purpose**
 
@@ -141,7 +143,8 @@ This command is used to delete existing website in seo panel.
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "website";
 	$paramList['action'] = "deleteWebsite";
@@ -160,7 +163,7 @@ This command is used to delete existing website in seo panel.
 
 
 Get Website Details
-********************
+*******************
 
 **Purpose**
 
@@ -178,15 +181,14 @@ This command is used to get details of a website
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "website";
 	$paramList['action'] = "getWebsiteInfo";
 	$paramList['id'] = 1;
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object(
@@ -219,7 +221,7 @@ This command is used to get details of a website
 
 
 Get Website Reports
-************************
+*******************
 
 **Purpose**
 
@@ -240,7 +242,8 @@ This command is used to get reports of a website
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "website";
 	$paramList['action'] = "getReportById";
@@ -248,9 +251,7 @@ This command is used to get reports of a website
 	$paramList['from_time'] = "2015-06-26";
 	$paramList['to_time'] = "2015-06-29";
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -375,7 +376,8 @@ This command is used to get reports of all user websites
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "website";
 	$paramList['action'] = "getReportByUserId";
@@ -383,9 +385,7 @@ This command is used to get reports of all user websites
 	$paramList['from_time'] = "2015-06-26";
 	$paramList['to_time'] = "2015-06-29";
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -504,7 +504,7 @@ Keyword Management
 
 
 Add Keyword
-************************
+***********
 
 **Purpose**
 
@@ -527,7 +527,8 @@ This command is used to add a new keyword in seo panel.
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
 	$paramList['action'] = "createKeyword";
@@ -548,7 +549,7 @@ This command is used to add a new keyword in seo panel.
 	
 
 Update Keyword
-************************
+**************
 
 **Purpose**
 
@@ -572,7 +573,8 @@ This command is used to update existing keyword in seo panel.
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
 	$paramList['action'] = "updateKeyword";
@@ -591,7 +593,7 @@ This command is used to update existing keyword in seo panel.
 
 
 Delete Keyword
-************************
+**************
 
 **Purpose**
 
@@ -609,7 +611,8 @@ This command is used to delete existing keyword in seo panel.
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
 	$paramList['action'] = "deleteKeyword";
@@ -627,7 +630,7 @@ This command is used to delete existing keyword in seo panel.
 
 
 Get Keyword Details
-********************
+*******************
 
 **Purpose**
 
@@ -645,15 +648,14 @@ This command is used to get details of a keyword
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+	<?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
 	$paramList['action'] = "getKeywordInfo";
 	$paramList['id'] = 1;
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -675,7 +677,7 @@ This command is used to get details of a keyword
 
 
 Get Keyword Reports
-************************
+*******************
 
 **Purpose**
 
@@ -696,7 +698,8 @@ This command is used to get reports of a keyword
 
 .. code-block:: php
 	
-	$paramList['SP_API_KEY'] = "*******";
+   <?php
+   $paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
 	$paramList['action'] = "getReportById";
@@ -704,9 +707,7 @@ This command is used to get reports of a keyword
 	$paramList['from_time'] = "2015-06-26";
 	$paramList['to_time'] = "2015-06-29";
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -776,6 +777,7 @@ This command is used to get reports of a keywords of a website
 
 .. code-block:: php
 	
+   <?php
 	$paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
@@ -784,9 +786,7 @@ This command is used to get reports of a keywords of a website
 	$paramList['from_time'] = "2015-06-26";
 	$paramList['to_time'] = "2015-06-29";
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -864,6 +864,7 @@ This command is used to get reports of a keywords of a user
 
 .. code-block:: php
 	
+   <?php
 	$paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "keyword";
@@ -872,9 +873,7 @@ This command is used to get reports of a keywords of a user
 	$paramList['from_time'] = "2015-06-26";
 	$paramList['to_time'] = "2015-06-29";
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -930,7 +929,7 @@ This command is used to get reports of a keywords of a user
 
 
 User Management
-------------------
+---------------
 
 **Common Attributes**
 
@@ -940,7 +939,7 @@ User Management
 
 
 Add User
-************************
+********
 
 **Purpose**
 
@@ -964,6 +963,7 @@ This command is used to add a new user in seo panel.
 
 .. code-block:: php
 	
+   <?php
 	$paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "user";
@@ -987,7 +987,7 @@ This command is used to add a new user in seo panel.
 	- error_msg = * Username already exist
 
 Update User
-************************
+***********
 
 **Purpose**
 
@@ -1012,6 +1012,7 @@ This command is used to update existing user in seo panel.
 
 .. code-block:: php
 	
+   <?php
 	$paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "user";
@@ -1031,7 +1032,7 @@ This command is used to update existing user in seo panel.
 
 
 Get User Details
-********************
+****************
 
 **Purpose**
 
@@ -1049,15 +1050,14 @@ This command is used to get details of a user
 
 .. code-block:: php
 	
+   <?php
 	$paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "user";
 	$paramList['action'] = "getUserInfo";
 	$paramList['id'] = 1;
 
-**Successful Response**
-
-.. code-block:: php
+**Successful Response**::
 
 	[response] => success
 	[result] => stdClass Object
@@ -1082,7 +1082,7 @@ This command is used to get details of a user
 
 
 Delete User
-************************
+***********
 
 **Purpose**
 
@@ -1100,6 +1100,7 @@ This command is used to delete existing user in seo panel.
 
 .. code-block:: php
 	
+   <?php
 	$paramList['SP_API_KEY'] = "*******";
 	$paramList['API_SECRET'] = "*******";
 	$paramList['category'] = "user";
@@ -1118,13 +1119,14 @@ This command is used to delete existing user in seo panel.
 	
 	
 3. Sample Code
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 Create User
-------------------
+-----------
 
 .. code-block:: php
 
+   <?php
 	function doCurlPost($apiUrl, $paramList) {
 		
 		// create field string
@@ -1175,10 +1177,11 @@ Create User
 
 
 User Website Reports
----------------------
+--------------------
 
 .. code-block:: php
 
+   <?php
 	function doCurlPost($apiUrl, $paramList) {
 		
 		// create field string
@@ -1229,10 +1232,11 @@ User Website Reports
 	
 	
 Keyword Reports
-------------------
+---------------
 
 .. code-block:: php
 
+   <?php
 	function doCurlPost($apiUrl, $paramList) {
 		
 		// create field string

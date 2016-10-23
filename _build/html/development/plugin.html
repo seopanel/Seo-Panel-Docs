@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Plugin Dvelopment Guide &#8212; Seo Panel Docs 3.9.0 documentation</title>
+    <title>Plugin Development Guide &mdash; Seo Panel Docs 3.9.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -24,10 +24,9 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="Seo Panel Docs 3.9.0 documentation" href="../index.html" />
     <link rel="up" title="3. Developer Guide" href="../developer.html" />
-    <link rel="next" title="5. SUPPORT" href="../support.html" />
+    <link rel="next" title="Theme Development Guide" href="theme.html" />
     <link rel="prev" title="3. Developer Guide" href="../developer.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,13 +45,13 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../support.html" title="5. SUPPORT"
+          <a href="theme.html" title="Theme Development Guide"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="../developer.html" title="3. Developer Guide"
              accesskey="P">previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../developer.html" accesskey="U">3. Developer Guide</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../developer.html" accesskey="U">3. Developer Guide</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -143,8 +142,8 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="plugin-dvelopment-guide">
-<h1>Plugin Dvelopment Guide<a class="headerlink" href="#plugin-dvelopment-guide" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="plugin-development-guide">
+<h1>Plugin Development Guide<a class="headerlink" href="#plugin-development-guide" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Seo Panel Plugins help us to <strong>modify, customize, and extend</strong> the features of Seo Panel according to our requirement. Instead of changing the core programming of Seo Panel, you can add extra functionality to Seo Panel with Seo Panel Plugins.</p>
@@ -226,10 +225,12 @@ If it is not existing any where, then use following articles to create a new plu
 <p><strong>Syntax:</strong></p>
 <div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="k">class</span> <span class="nc">TestPlugin</span> <span class="k">extends</span> <span class="nx">SeoPluginsController</span><span class="p">{</span>
+
         <span class="k">function</span> <span class="nf">index</span><span class="p">()</span> <span class="p">{</span>
                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">set</span><span class="p">(</span><span class="s1">&#39;sectionHead&#39;</span><span class="p">,</span> <span class="s2">&quot;Test Plugin Index Section&quot;</span><span class="p">);</span>
                 <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">pluginRender</span><span class="p">(</span><span class="s1">&#39;index&#39;</span><span class="p">);</span>
         <span class="p">}</span>
+
 <span class="p">}</span>
 <span class="cp">?&gt;</span><span class="x"></span>
 </pre></div>
@@ -237,9 +238,9 @@ If it is not existing any where, then use following articles to create a new plu
 <p><strong>$this-&gt;set(&#8220;sectionHead&#8221;, &#8220;Test Plugin Index section&#8221;)</strong> - This function will set data  to view helpers and  in above code it will set the &#8220;Test Plugin Index Section&#8221; to &#8220;sectionHead&#8221; variable  and it can be accessed in template as &#8220;$sectionHead&#8221;.</p>
 <p><strong>$this-&gt;pluginRender(&#8216;index&#8217;)</strong> - This function will  call template file to output the data processed in plugin controller functions. This code will display the template file &#8220;index.ctp&#8221; in the folder &#8220;views&#8221;. In this file we can  access all values set from controller functions.</p>
 <p><strong>iii) views</strong></p>
-<p>Create a “views” folder to add all template files required by plugin to show the HTML output.</p>
+<p>Create a &#8220;views&#8221; folder to add all template files required by plugin to show the HTML output.</p>
 <p><strong>menu.ctp</strong>
-After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp” file inside the folder “views”. This file will display the left menu for a plugin and using that different features of plugin is accessed by user.</p>
+After creating a &#8220;views&#8221; folder next step is to create a &#8220;menu.ctp&#8221; file inside the folder &#8220;views&#8221;. This file will display the left menu for a plugin and using that different features of plugin is accessed by user.</p>
 <p><strong>Syntax:</strong></p>
 <div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">&lt;ul id=&#39;subui&#39;&gt;</span>
 <span class="x">        &lt;li&gt;</span>
@@ -255,8 +256,8 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 </div>
 <p>The above code will show two menu items under plugin &#8220;TestPlugin&#8221;  in &#8220;Seo Plugins&#8221; page of Seo Panel.</p>
 <p><strong>isAdmin()</strong> - This function is used to find whether logged in user is admin and then restrict some menu items to only for Seo Panel admin.</p>
-<p><strong>pluginMenu(&#8216;action=settings&#8217;), pluginMenu(&#8216;action=index&#8217;)</strong> - This function will create an ajax function for &#8220;onClick&#8221; event and while click on this menu link it will call “settings” and “index” functions of “TestPlugin.ctrl.php” respectively.</p>
-<p>All templates files are created inside “ views” folder with “.ctp.php” extension.</p>
+<p><strong>pluginMenu(&#8216;action=settings&#8217;), pluginMenu(&#8216;action=index&#8217;)</strong> - This function will create an ajax function for &#8220;onClick&#8221; event and while click on this menu link it will call &#8220;settings&#8221; and &#8220;index&#8221; functions of &#8220;TestPlugin.ctrl.php&#8221; respectively.</p>
+<p>All templates files are created inside &#8221; views&#8221; folder with &#8221;.ctp.php&#8221; extension.</p>
 <p>Sample <strong>&#8220;index.ctp.php&#8221;</strong></p>
 <div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span> <span class="k">echo</span> <span class="nx">showSectionHead</span><span class="p">(</span><span class="nv">$sectionHead</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
 <span class="x">&lt;form id=&#39;search_form&#39;&gt;</span>
@@ -283,8 +284,8 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 </pre></div>
 </div>
 <p><strong>showSectionHead</strong> - This function will display the header text for a page</p>
-<p><strong>pluginPOSTMethod(&#8216;search_form&#8217;, &#8216;subcontent&#8217;, &#8216;action=show&#8217;)</strong> - This function will create an AJAX POST method for “onClick” event and it will post the elements in the HTML form  “search_form” with extra arguments  &#8216;action=show&#8217;. The result will be updated in  the div with id “subcontent”.</p>
-<p>There are lots of useful functions are available in Seo Panel and explained under section the “Common Functions” .</p>
+<p><strong>pluginPOSTMethod(&#8216;search_form&#8217;, &#8216;subcontent&#8217;, &#8216;action=show&#8217;)</strong> - This function will create an AJAX POST method for &#8220;onClick&#8221; event and it will post the elements in the HTML form  &#8220;search_form&#8221; with extra arguments  &#8216;action=show&#8217;. The result will be updated in  the div with id &#8220;subcontent&#8221;.</p>
+<p>There are lots of useful functions are available in Seo Panel and explained under section the &#8220;Common Functions&#8221; .</p>
 <p><strong>iv) conf.php</strong></p>
 <p>This file is used to include common constants used in plugin functions.</p>
 <p><strong>Eg:</strong></p>
@@ -298,7 +299,7 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 <p><strong>vi) js</strong></p>
 <p>The folder contains all javascript files required by plugin. The plugin <strong>automatically include</strong> it in seo panel and will help you to create new javascript functions for plugin.</p>
 <p><strong>vii) images</strong></p>
-<p>This folder contains all images required for a plugin. The images can be accessed in templates using the constant “PLUGIN_IMGPATH”.</p>
+<p>This folder contains all images required for a plugin. The images can be accessed in templates using the constant &#8220;PLUGIN_IMGPATH&#8221;.</p>
 <p><strong>Eg:</strong></p>
 <div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">&lt;img src=&quot;</span><span class="cp">&lt;?</span><span class="o">=</span><span class="nx">PLUGIN_IMGPATH</span><span class="cp">?&gt;</span><span class="x">/star.gif&quot;&gt;</span>
 </pre></div>
@@ -308,7 +309,7 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 <p><strong>ix) upgrade.sql</strong></p>
 <p>This file contains the MYSQL dump of all database tables and data required to upgrade intstalled plugin in Seo Panel. This file is imported to Seo Panel database during the time of upgradation of plugin.</p>
 <p><strong>x) plugin.xml</strong></p>
-<p>This XML file is used to add the details about the plugin. Please check below sample “plugin.xml” file.</p>
+<p>This XML file is used to add the details about the plugin. Please check below sample &#8220;plugin.xml&#8221; file.</p>
 <p><strong>Eg:</strong></p>
 <div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;plugin&gt;</span>
@@ -329,6 +330,212 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 </div></blockquote>
 </div>
 </div>
+<div class="section" id="common-plugin-functions">
+<h2>Common Plugin Functions<a class="headerlink" href="#common-plugin-functions" title="Permalink to this headline">¶</a></h2>
+<p>The common plugin functions available to create seo panel plugins are</p>
+<div class="section" id="plugingetmethod-args-area-content">
+<h3>1) pluginGETMethod($args=&#8217;&#8216;, $area=&#8217;content&#8217;)<a class="headerlink" href="#plugingetmethod-args-area-content" title="Permalink to this headline">¶</a></h3>
+<p>Function to create an plugin ajax GET method using automatically created plugin url according to corresponding plugin.</p>
+<p><strong>$args</strong>
+The arguments to be send with ajax GET request</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;&amp;id=2&amp;col=refid&quot;</span>
+</pre></div>
+</div>
+<p><strong>$area</strong>
+The area(div id) to be updated with result of ajax request.
+The default value is &#8220;content&#8221;, the content div  will be updated with result of ajax request.</p>
+<p><strong>Return</strong>
+Returns ajax GET request function call and can be used in javascript trigger events like &#8220;onClick&#8221;</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>&lt;a href=&quot;javascript:void(0);&#39; onclick=&quot;&lt;?php echo pluginGETMethod(&#39;action=settings&#39;, &#39;content&#39;); ?&gt;&quot;&gt;Click&lt;/a&gt;
+</pre></div>
+</div>
+<p>It will create a code like below according to plugin:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;javascript:void(0);&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;scriptDoLoad(&#39;seo-plugins.php?pid=18&#39;, &#39;content&#39;, &#39;action=settings&#39;)&quot;</span><span class="o">&gt;</span><span class="n">Click</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>while click on above link the method &#8220;settings&#8221; of plugin id 18 is called and result after the execution of request will be updated in the div &#8220;content&#8221;.</p>
+</div>
+<div class="section" id="pluginpostmethod-formname-area-content-args">
+<h3>2) pluginPOSTMethod($formName, $area=&#8217;content&#8217;, $args=&#8217;&#8216;)<a class="headerlink" href="#pluginpostmethod-formname-area-content-args" title="Permalink to this headline">¶</a></h3>
+<p>Function to create an plugin ajax POST method to post elements of particular form to plugin method.</p>
+<p><strong>$formName</strong>
+The name of the form element should be submitted</p>
+<p><strong>$area</strong>
+The area(div id) to be updated with result of ajax request.
+The default value is &#8220;content&#8221;, the content div  will be updated with result of ajax request.</p>
+<p><strong>$args</strong>
+Using this we can pass extra arguments with form submission.</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="s2">&quot;&amp;action=submitmsg&amp;val=1&quot;</span>
+</pre></div>
+</div>
+<p><strong>Return</strong>
+Returns ajax POST request function call and can be used in javascript trigger events like &#8220;onClick&#8221;</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;javascript:void(0);&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;&lt;?php echo pluginPOSTMethod(&#39;projectform&#39;, &#39;content&#39;, &#39;action=createproject&#39;); ?&gt;&quot;</span> <span class="o">&gt;</span><span class="n">Click</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>It will create a code like below according to plugin:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;javascript:void(0);&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;scriptDoLoadPost(&#39;seo-plugins.php&#39;, &#39;projectform&#39;, &#39;content&#39;, &#39;&amp;pid=18&amp;action=createproject&#39;)&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>While click on above link, it will submit elements of form with name &#8220;projectform&#8221; to the method &#8220;createproject&#8221; of plugin id 18 and result after the execution of request will be updated in the div &#8220;content&#8221;.</p>
+</div>
+<div class="section" id="pluginconfirmgetmethod-args-area-content">
+<h3>3) pluginConfirmGETMethod($args=&#8217;&#8216;, $area=&#8217;content&#8217;)<a class="headerlink" href="#pluginconfirmgetmethod-args-area-content" title="Permalink to this headline">¶</a></h3>
+<p>Same as <strong>&#8220;pluginGETMethod&#8221;</strong> but before execution of request a confirm box is displayed to confirm the user to allow action. Used while delete a project,user etc.</p>
+</div>
+<div class="section" id="pluginconfirmpostmethod-formname-area-content-args">
+<h3>4) pluginConfirmPOSTMethod($formName, $area=&#8217;content&#8217;, $args=&#8217;&#8216;)<a class="headerlink" href="#pluginconfirmpostmethod-formname-area-content-args" title="Permalink to this headline">¶</a></h3>
+<p>Same as <strong>&#8220;pluginPOSTMethod&#8221;</strong> but before execution of request a confirm box is displayed to confirm the user to allow action. Used while edit,update project,user etc.</p>
+</div>
+<div class="section" id="pluginmenu-args-area-content">
+<h3>5) pluginMenu($args=&#8217;&#8216;, $area=&#8217;content&#8217;)<a class="headerlink" href="#pluginmenu-args-area-content" title="Permalink to this headline">¶</a></h3>
+<p>Same as <strong>&#8220;pluginGETMethod&#8221;</strong>  and used to create plugin left submenus while loading a plugin first.</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;&lt;</span><span class="n">a</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;javascript:void(0);&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;&lt;?php echo pluginMenu(&#39;action=viewreports&#39;); ?&gt;&quot;</span><span class="o">&gt;</span><span class="n">Reports</span> <span class="n">Manager</span><span class="o">&lt;/</span><span class="n">a</span><span class="o">&gt;&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="plugin-constants">
+<h2>Plugin Constants<a class="headerlink" href="#plugin-constants" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="plugin-path">
+<h3>1) PLUGIN_PATH<a class="headerlink" href="#plugin-path" title="Permalink to this headline">¶</a></h3>
+<p>The absolute path to plugin directory</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">lampp</span><span class="o">/</span><span class="n">htdocs</span><span class="o">/</span><span class="n">seopanel</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">TestPlugin</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugin-viewpath">
+<h3>2) PLUGIN_VIEWPATH<a class="headerlink" href="#plugin-viewpath" title="Permalink to this headline">¶</a></h3>
+<p>The absolute path to plugin  views folder</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">lampp</span><span class="o">/</span><span class="n">htdocs</span><span class="o">/</span><span class="n">seopanel</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">TestPlugin</span><span class="o">/</span><span class="n">views</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugin-id">
+<h3>3) PLUGIN_ID<a class="headerlink" href="#plugin-id" title="Permalink to this headline">¶</a></h3>
+<p>The id of the plugin, can used to create plugin specific urls</p>
+</div>
+<div class="section" id="plugin-webpath">
+<h3>4) PLUGIN_WEBPATH<a class="headerlink" href="#plugin-webpath" title="Permalink to this headline">¶</a></h3>
+<p>The web path to directory of a plugin.</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="o">/</span><span class="n">seopanel</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">TestPlugin</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugin-imgpath">
+<h3>5) PLUGIN_IMGPATH<a class="headerlink" href="#plugin-imgpath" title="Permalink to this headline">¶</a></h3>
+<p>The web path to plugin image directory</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="o">/</span><span class="n">seopanel</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">TestPlugin</span><span class="o">/</span><span class="n">images</span><span class="o">/</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugin-csspath">
+<h3>6) PLUGIN_CSSPATH<a class="headerlink" href="#plugin-csspath" title="Permalink to this headline">¶</a></h3>
+<p>The web path to plugin css directory</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="o">/</span><span class="n">seopanel</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">TestPlugin</span><span class="o">/</span><span class="n">css</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugin-jspath">
+<h3>7) PLUGIN_JSPATH<a class="headerlink" href="#plugin-jspath" title="Permalink to this headline">¶</a></h3>
+<p>The web path to plugin javascript directory</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">localhost</span><span class="o">/</span><span class="n">seopanel</span><span class="o">/</span><span class="n">plugins</span><span class="o">/</span><span class="n">TestPlugin</span><span class="o">/</span><span class="n">js</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="plugin-script-url">
+<h3>8) PLUGIN_SCRIPT_URL<a class="headerlink" href="#plugin-script-url" title="Permalink to this headline">¶</a></h3>
+<p>The web url to access a specific plugin</p>
+<p><strong>Eg</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>http://localhost/seopanel/seo-plugins.php?pid=18
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="common-database-functions">
+<h2>Common Database Functions<a class="headerlink" href="#common-database-functions" title="Permalink to this headline">¶</a></h2>
+<p>Inside a plugin functions database object can be accessed by <strong>$this-&gt;db</strong></p>
+<p><strong>Eg:</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&quot;Select * from projects&quot;</span><span class="p">;</span>
+<span class="nx">projectList</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The above code will assign the projects list  as an array to variable $projectList</p>
+<p>The important functions can be used for database operation are</p>
+<div class="section" id="select-query-fetchfirst-false">
+<h3>1) select($query, $fetchFirst = false)<a class="headerlink" href="#select-query-fetchfirst-false" title="Permalink to this headline">¶</a></h3>
+<p>This function is used for database select statement and will return the database table rows as an array.</p>
+<p><strong>$query</strong>
+The sql select query to be executed to get the results.</p>
+<p><strong>$fetchFirst</strong>
+<em>true</em> - Will return only first row of the results
+<em>false</em> - Will return all rows and default value is &#8220;false&#8221;</p>
+<p><strong>Return</strong>
+The array contains the result list. Returns empty  array if query fails or when empty rows retrieved. The return array can be accessed like below example</p>
+<p><strong>Eg</strong></p>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&quot;select * from projects&quot;</span><span class="p">;</span>
+<span class="nv">$projectList</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+<span class="k">foreach</span> <span class="p">(</span><span class="nv">$projectList</span> <span class="k">as</span> <span class="nv">$i</span> <span class="o">=&gt;</span> <span class="nv">$prInfo</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">echo</span> <span class="nv">$prInfo</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">];</span>
+<span class="p">}</span>
+
+<span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&quot;select * from projects&quot;</span><span class="p">;</span>
+<span class="nv">$prInfo</span> <span class="o">=</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">db</span><span class="o">-&gt;</span><span class="na">select</span><span class="p">(</span><span class="nv">$sql</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="k">echo</span> <span class="nv">$prInfo</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">];</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="query-query-norows-false">
+<h3>2) query($query, $noRows=false)<a class="headerlink" href="#query-query-norows-false" title="Permalink to this headline">¶</a></h3>
+<p>This function is used to execute the sql query like update,delete etc</p>
+<p><strong>$query</strong>
+The sql query to be executed.</p>
+<p><strong>$noRows</strong>
+true - It will set number of database entries affected by execution of query in the variable $this-&gt;db-&gt;noRows
+false - will not set number of database entries affected, default value is &#8220;false&#8221;</p>
+<p><strong>Return</strong>
+Return the result of the execution like the return variable of php mysql query function</p>
+</div>
+</div>
+<div class="section" id="session-management-functions">
+<h2>Session Management Functions<a class="headerlink" href="#session-management-functions" title="Permalink to this headline">¶</a></h2>
+<p>The common session management functions are</p>
+<div class="section" id="checkloggedin">
+<h3>1) checkLoggedIn()<a class="headerlink" href="#checkloggedin" title="Permalink to this headline">¶</a></h3>
+<p>Function to check whether user logged in to the seo panel or not. If not logged in, current page will be redirected to login page.</p>
+</div>
+<div class="section" id="checkadminloggedin">
+<h3>2) checkAdminLoggedIn()<a class="headerlink" href="#checkadminloggedin" title="Permalink to this headline">¶</a></h3>
+<p>Function to check whether admin logged in to the seo panel or not. If not logged in, current page will be redirected to login page.</p>
+</div>
+<div class="section" id="isloggedin">
+<h3>3) isLoggedIn()<a class="headerlink" href="#isloggedin" title="Permalink to this headline">¶</a></h3>
+<p>Function to get logged in user’s id in seo panel.</p>
+<p><strong>Return:</strong>
+If user logged in, &#8220;user id&#8221; will be returned.
+If user not logged in, false will be returned.</p>
+</div>
+<div class="section" id="isadmin">
+<h3>4) isAdmin()<a class="headerlink" href="#isadmin" title="Permalink to this headline">¶</a></h3>
+<p>Function to get logged in admin’s id in seo panel.</p>
+<p><strong>Return:</strong>
+If admin logged in, &#8220;admin id&#8221; will be returned.
+If admin not logged in, false will be returned.</p>
+</div>
+</div>
 </div>
 
 
@@ -343,11 +550,16 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">3. API</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../developer.html">3. Developer Guide</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Plugin Dvelopment Guide</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Plugin Development Guide</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#steps-to-create-a-seo-panel-plugin">Steps to Create a Seo Panel Plugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-plugin-functions">Common Plugin Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-constants">Plugin Constants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#common-database-functions">Common Database Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#session-management-functions">Session Management Functions</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">Theme Development Guide</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../support.html">5. SUPPORT</a></li>
@@ -356,8 +568,8 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -371,13 +583,13 @@ After creating a &#8220;views&#8221; folder next step is to create a “menu.ctp
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="../support.html" title="5. SUPPORT"
+          <a href="theme.html" title="Theme Development Guide"
              >next</a></li>
         <li class="right" >
           <a href="../developer.html" title="3. Developer Guide"
              >previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../developer.html" >3. Developer Guide</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../developer.html" >3. Developer Guide</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">

@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>3. API &#8212; Seo Panel Docs 3.9.0 documentation</title>
+    <title>3. API &mdash; Seo Panel Docs 3.9.0 documentation</title>
     
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,7 +24,6 @@
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
-    <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="Seo Panel Docs 3.9.0 documentation" href="index.html" />
     <link rel="next" title="3. Developer Guide" href="developer.html" />
     <link rel="prev" title="Logs Manager" href="user_guide/log_manager.html" />       
@@ -189,13 +188,14 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;createWebsite&quot;;</span>
-<span class="x">$paramList[&#39;name&#39;] = &quot;test.com&quot;;</span>
-<span class="x">$paramList[&#39;user_id&#39;] = &quot;1&quot;;</span>
-<span class="x">$paramList[&#39;url&#39;] = &quot;http://test.com/&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;createWebsite&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;test.com&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;http://test.com/&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -238,12 +238,13 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;updateWebsite&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;name&#39;] = &quot;Test Website&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;updateWebsite&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Test Website&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -274,11 +275,12 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;deleteWebsite&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;deleteWebsite&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -309,37 +311,38 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getWebsiteInfo&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getWebsiteInfo&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object(</span>
-<span class="x">        [id] =&gt; website id</span>
-<span class="x">        [name] =&gt; website name</span>
-<span class="x">        [url] =&gt; website url</span>
-<span class="x">        [owner_name] =&gt; owner name</span>
-<span class="x">        [owner_email] =&gt; owner email</span>
-<span class="x">        [category] =&gt; website category</span>
-<span class="x">        [title] =&gt; website title</span>
-<span class="x">        [description] =&gt; website description</span>
-<span class="x">        [keywords] =&gt; website keywords</span>
-<span class="x">        [title2] =&gt; website title2 for directory submission</span>
-<span class="x">        [title3] =&gt; website title3 for directory submission</span>
-<span class="x">        [title4] =&gt; website title4 for directory submission</span>
-<span class="x">        [title5] =&gt; website title5 for directory submission</span>
-<span class="x">        [description2] =&gt; website description2 for directory submission</span>
-<span class="x">        [description3] =&gt; website description3 for directory submission</span>
-<span class="x">        [description4] =&gt; website description4 for directory submission</span>
-<span class="x">        [description5] =&gt; website description5 for directory submission</span>
-<span class="x">        [reciprocal_url] =&gt; reciprocal url for directory submission</span>
-<span class="x">        [user_id] =&gt; user id</span>
-<span class="x">        [status] =&gt; website status</span>
-<span class="x">)</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span><span class="p">(</span>
+        <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="nb">id</span>
+        <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">name</span>
+        <span class="p">[</span><span class="n">url</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">url</span>
+        <span class="p">[</span><span class="n">owner_name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">owner</span> <span class="n">name</span>
+        <span class="p">[</span><span class="n">owner_email</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">owner</span> <span class="n">email</span>
+        <span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">category</span>
+        <span class="p">[</span><span class="n">title</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">title</span>
+        <span class="p">[</span><span class="n">description</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">description</span>
+        <span class="p">[</span><span class="n">keywords</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">keywords</span>
+        <span class="p">[</span><span class="n">title2</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">title2</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">title3</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">title3</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">title4</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">title4</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">title5</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">title5</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">description2</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">description2</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">description3</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">description3</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">description4</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">description4</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">description5</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">description5</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">reciprocal_url</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">reciprocal</span> <span class="n">url</span> <span class="k">for</span> <span class="n">directory</span> <span class="n">submission</span>
+        <span class="p">[</span><span class="n">user_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">user</span> <span class="nb">id</span>
+        <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">status</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -369,110 +372,111 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportById&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportById&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-26&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-29&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [id] =&gt; 1</span>
-<span class="x">    [name] =&gt; Test Website</span>
-<span class="x">    [url] =&gt; http://www.seopanel.in/</span>
-<span class="x">    [owner_name] =&gt;</span>
-<span class="x">    [owner_email] =&gt;</span>
-<span class="x">    [category] =&gt;</span>
-<span class="x">    [title] =&gt; Seo Panel: World&#39;s first open source seo control panel for multiple web sites</span>
-<span class="x">    [description] =&gt; A complete free control panel for managing search engine optimization of your websites.</span>
-<span class="x">    [keywords] =&gt; Seo Panel,seo control panel,search engine optimization panel,seo tools kit</span>
-<span class="x">    [title2] =&gt;</span>
-<span class="x">    [title3] =&gt;</span>
-<span class="x">    [title4] =&gt;</span>
-<span class="x">    [title5] =&gt;</span>
-<span class="x">    [description2] =&gt;</span>
-<span class="x">    [description3] =&gt;</span>
-<span class="x">    [description4] =&gt;</span>
-<span class="x">    [description5] =&gt;</span>
-<span class="x">    [reciprocal_url] =&gt;</span>
-<span class="x">    [user_id] =&gt; 1</span>
-<span class="x">    [status] =&gt; 1</span>
-<span class="x">    [alexa] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [alexarank] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 68690</span>
-<span class="x">                    [diff] =&gt; -974</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">Test</span> <span class="n">Website</span>
+    <span class="p">[</span><span class="n">url</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">seopanel</span><span class="o">.</span><span class="ow">in</span><span class="o">/</span>
+    <span class="p">[</span><span class="n">owner_name</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">owner_email</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">title</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">Seo</span> <span class="n">Panel</span><span class="p">:</span> <span class="n">World</span><span class="s1">&#39;s first open source seo control panel for multiple web sites</span>
+    <span class="p">[</span><span class="n">description</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">A</span> <span class="n">complete</span> <span class="n">free</span> <span class="n">control</span> <span class="n">panel</span> <span class="k">for</span> <span class="n">managing</span> <span class="n">search</span> <span class="n">engine</span> <span class="n">optimization</span> <span class="n">of</span> <span class="n">your</span> <span class="n">websites</span><span class="o">.</span>
+    <span class="p">[</span><span class="n">keywords</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">Seo</span> <span class="n">Panel</span><span class="p">,</span><span class="n">seo</span> <span class="n">control</span> <span class="n">panel</span><span class="p">,</span><span class="n">search</span> <span class="n">engine</span> <span class="n">optimization</span> <span class="n">panel</span><span class="p">,</span><span class="n">seo</span> <span class="n">tools</span> <span class="n">kit</span>
+    <span class="p">[</span><span class="n">title2</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">title3</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">title4</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">title5</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">description2</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">description3</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">description4</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">description5</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">reciprocal_url</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">user_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">alexa</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="n">alexarank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">68690</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">974</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">            [backlinks] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 717</span>
-<span class="x">                    [diff] =&gt;</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="n">backlinks</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">717</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">    [google] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [pagerank] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 5</span>
-<span class="x">                    [diff] =&gt;</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+    <span class="p">[</span><span class="n">google</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="n">pagerank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">5</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">            [backlinks] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 39</span>
-<span class="x">                    [diff] =&gt; (-1)</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="n">backlinks</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">39</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">            [indexed] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 413</span>
-<span class="x">                    [diff] =&gt; (1)</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="n">indexed</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">413</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">    [bing] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [backlinks] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 22</span>
-<span class="x">                    [diff] =&gt; (1)</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+    <span class="p">[</span><span class="n">bing</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="n">backlinks</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">22</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">            [indexed] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank] =&gt; 2720</span>
-<span class="x">                    [diff] =&gt; (440)</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="n">indexed</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2720</span>
+                    <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">440</span><span class="p">)</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">    [dirsub] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [total] =&gt; 0</span>
-<span class="x">            [active] =&gt; 0</span>
-<span class="x">            [date] =&gt; 2015-06-29</span>
-<span class="x">        )</span>
+    <span class="p">[</span><span class="n">dirsub</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="n">total</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+            <span class="p">[</span><span class="n">active</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+        <span class="p">)</span>
 
-<span class="x">)</span>
+<span class="p">)</span>
 
-<span class="x">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -502,112 +506,113 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByUserId&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportByUserId&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-26&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-29&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [1] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [id] =&gt; 1</span>
-<span class="x">            [name] =&gt; sp</span>
-<span class="x">            [url] =&gt; http://www.seopanel.in/</span>
-<span class="x">            [owner_name] =&gt;</span>
-<span class="x">            [owner_email] =&gt;</span>
-<span class="x">            [category] =&gt;</span>
-<span class="x">            [title] =&gt; Seo Panel: World&#39;s first open source seo control panel for multiple web sites</span>
-<span class="x">            [description] =&gt; A complete free control panel for managing search engine optimization of your websites.</span>
-<span class="x">            [keywords] =&gt; Seo Panel,seo control panel,search engine optimization panel,seo tools kit,keyword rank checker</span>
-<span class="x">            [title2] =&gt;</span>
-<span class="x">            [title3] =&gt;</span>
-<span class="x">            [title4] =&gt;</span>
-<span class="x">            [title5] =&gt;</span>
-<span class="x">            [description2] =&gt;</span>
-<span class="x">            [description3] =&gt;</span>
-<span class="x">            [description4] =&gt;</span>
-<span class="x">            [description5] =&gt;</span>
-<span class="x">            [reciprocal_url] =&gt;</span>
-<span class="x">            [user_id] =&gt; 1</span>
-<span class="x">            [status] =&gt; 1</span>
-<span class="x">            [alexa] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [alexarank] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 68690</span>
-<span class="x">                            [diff] =&gt; -974</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">sp</span>
+            <span class="p">[</span><span class="n">url</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">seopanel</span><span class="o">.</span><span class="ow">in</span><span class="o">/</span>
+            <span class="p">[</span><span class="n">owner_name</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">owner_email</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">category</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">title</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">Seo</span> <span class="n">Panel</span><span class="p">:</span> <span class="n">World</span><span class="s1">&#39;s first open source seo control panel for multiple web sites</span>
+            <span class="p">[</span><span class="n">description</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">A</span> <span class="n">complete</span> <span class="n">free</span> <span class="n">control</span> <span class="n">panel</span> <span class="k">for</span> <span class="n">managing</span> <span class="n">search</span> <span class="n">engine</span> <span class="n">optimization</span> <span class="n">of</span> <span class="n">your</span> <span class="n">websites</span><span class="o">.</span>
+            <span class="p">[</span><span class="n">keywords</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">Seo</span> <span class="n">Panel</span><span class="p">,</span><span class="n">seo</span> <span class="n">control</span> <span class="n">panel</span><span class="p">,</span><span class="n">search</span> <span class="n">engine</span> <span class="n">optimization</span> <span class="n">panel</span><span class="p">,</span><span class="n">seo</span> <span class="n">tools</span> <span class="n">kit</span><span class="p">,</span><span class="n">keyword</span> <span class="n">rank</span> <span class="n">checker</span>
+            <span class="p">[</span><span class="n">title2</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">title3</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">title4</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">title5</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">description2</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">description3</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">description4</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">description5</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">reciprocal_url</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">user_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">alexa</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">alexarank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">68690</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">974</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [backlinks] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 717</span>
-<span class="x">                            [diff] =&gt;</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="n">backlinks</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">717</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                )</span>
+                <span class="p">)</span>
 
-<span class="x">            [google] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [pagerank] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 5</span>
-<span class="x">                            [diff] =&gt;</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+            <span class="p">[</span><span class="n">google</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">pagerank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">5</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [backlinks] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 39</span>
-<span class="x">                            [diff] =&gt; (-1)</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="n">backlinks</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">39</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [indexed] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 413</span>
-<span class="x">                            [diff] =&gt; (1)</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="n">indexed</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">413</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                )</span>
+                <span class="p">)</span>
 
-<span class="x">            [bing] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [backlinks] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 22</span>
-<span class="x">                            [diff] =&gt; (1)</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+            <span class="p">[</span><span class="n">bing</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">backlinks</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">22</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [indexed] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank] =&gt; 2720</span>
-<span class="x">                            [diff] =&gt; (440)</span>
-<span class="x">                            [date] =&gt; 2015-06-29</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="n">indexed</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2720</span>
+                            <span class="p">[</span><span class="n">diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="p">(</span><span class="mi">440</span><span class="p">)</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                        <span class="p">)</span>
 
-<span class="x">                )</span>
+                <span class="p">)</span>
 
-<span class="x">            [dirsub] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [total] =&gt; 0</span>
-<span class="x">                    [active] =&gt; 0</span>
-<span class="x">                    [date] =&gt; 2015-06-29</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="n">dirsub</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">total</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+                    <span class="p">[</span><span class="n">active</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">0</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">06</span><span class="o">-</span><span class="mi">29</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -651,13 +656,14 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;createKeyword&quot;;</span>
-<span class="x">$paramList[&#39;name&#39;] = &quot;seo panel&quot;;</span>
-<span class="x">$paramList[&#39;website_id&#39;] = &quot;1&quot;;</span>
-<span class="x">$paramList[&#39;searchengines&#39;] = &quot;1:2:3&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;createKeyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;seo panel&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;website_id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;searchengines&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;1:2:3&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -699,12 +705,13 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;updateKeyword&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;searchengines&#39;] = &quot;1:2&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;updateKeyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;searchengines&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;1:2&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -735,11 +742,12 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;deleteKeyword&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;deleteKeyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -770,25 +778,26 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getKeywordInfo&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getKeywordInfo&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [id] =&gt; 1</span>
-<span class="x">    [name] =&gt; seo panel</span>
-<span class="x">    [lang_code] =&gt;</span>
-<span class="x">    [country_code] =&gt;</span>
-<span class="x">    [website_id] =&gt; 1</span>
-<span class="x">    [searchengines] =&gt; 1:2:3</span>
-<span class="x">    [status] =&gt; 1</span>
-<span class="x">)</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">seo</span> <span class="n">panel</span>
+    <span class="p">[</span><span class="n">lang_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">country_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">website_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">searchengines</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span>
+    <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -818,55 +827,56 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportById&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportById&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-26&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-29&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [id] =&gt; 1</span>
-<span class="x">    [name] =&gt; seo panel</span>
-<span class="x">    [lang_code] =&gt;</span>
-<span class="x">    [country_code] =&gt;</span>
-<span class="x">    [website_id] =&gt; 1</span>
-<span class="x">    [searchengines] =&gt; 1:2:3</span>
-<span class="x">    [status] =&gt; 1</span>
-<span class="x">    [position_info] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [1] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank_diff] =&gt; -1</span>
-<span class="x">                    [rank] =&gt; 2</span>
-<span class="x">                    [search_engine] =&gt; www.google.com</span>
-<span class="x">                    [date] =&gt; 2015-07-01</span>
-<span class="x">                )</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">seo</span> <span class="n">panel</span>
+    <span class="p">[</span><span class="n">lang_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">country_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">website_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">searchengines</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span>
+    <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+    <span class="p">[</span><span class="n">position_info</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">1</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+                    <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                <span class="p">)</span>
 
-<span class="x">            [2] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank_diff] =&gt; 1</span>
-<span class="x">                    [rank] =&gt; 1</span>
-<span class="x">                    [search_engine] =&gt; www.yahoo.com</span>
-<span class="x">                    [date] =&gt; 2015-07-01</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                    <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">yahoo</span><span class="o">.</span><span class="n">com</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                <span class="p">)</span>
 
-<span class="x">            [3] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [rank_diff] =&gt;</span>
-<span class="x">                    [rank] =&gt; 1</span>
-<span class="x">                    [search_engine] =&gt; www.bing.com</span>
-<span class="x">                    [date] =&gt; 2015-07-01</span>
-<span class="x">                )</span>
+            <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                    <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                    <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">bing</span><span class="o">.</span><span class="n">com</span>
+                    <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -896,61 +906,62 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByWebsiteId&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportByWebsiteId&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-26&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-29&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [1] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [id] =&gt; 1</span>
-<span class="x">            [name] =&gt; seo panel</span>
-<span class="x">            [lang_code] =&gt;</span>
-<span class="x">            [country_code] =&gt;</span>
-<span class="x">            [website_id] =&gt; 1</span>
-<span class="x">            [searchengines] =&gt; 1:2:3</span>
-<span class="x">            [status] =&gt; 1</span>
-<span class="x">            [website] =&gt; sp</span>
-<span class="x">            [weburl] =&gt; http://www.seopanel.in/</span>
-<span class="x">            [position_info] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [1] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank_diff] =&gt; -1</span>
-<span class="x">                            [rank] =&gt; 2</span>
-<span class="x">                            [search_engine] =&gt; www.google.com</span>
-<span class="x">                            [date] =&gt; 2015-07-01</span>
-<span class="x">                        )</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">seo</span> <span class="n">panel</span>
+            <span class="p">[</span><span class="n">lang_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">country_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">website_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">searchengines</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span>
+            <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">website</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">sp</span>
+            <span class="p">[</span><span class="n">weburl</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">seopanel</span><span class="o">.</span><span class="ow">in</span><span class="o">/</span>
+            <span class="p">[</span><span class="n">position_info</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">1</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+                            <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [2] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank_diff] =&gt; 1</span>
-<span class="x">                            [rank] =&gt; 1</span>
-<span class="x">                            [search_engine] =&gt; www.yahoo.com</span>
-<span class="x">                            [date] =&gt; 2015-07-01</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                            <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">yahoo</span><span class="o">.</span><span class="n">com</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [3] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank_diff] =&gt;</span>
-<span class="x">                            [rank] =&gt; 1</span>
-<span class="x">                            [search_engine] =&gt; www.bing.com</span>
-<span class="x">                            [date] =&gt; 2015-07-01</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                            <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">bing</span><span class="o">.</span><span class="n">com</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                        <span class="p">)</span>
 
-<span class="x">                )</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -980,61 +991,62 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByUserId&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportByUserId&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-26&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-29&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [1] =&gt; stdClass Object</span>
-<span class="x">        (</span>
-<span class="x">            [id] =&gt; 1</span>
-<span class="x">            [name] =&gt; seo panel</span>
-<span class="x">            [lang_code] =&gt;</span>
-<span class="x">            [country_code] =&gt;</span>
-<span class="x">            [website_id] =&gt; 1</span>
-<span class="x">            [searchengines] =&gt; 1:2:3</span>
-<span class="x">            [status] =&gt; 1</span>
-<span class="x">            [website] =&gt; sp</span>
-<span class="x">            [weburl] =&gt; http://www.seopanel.in/</span>
-<span class="x">            [position_info] =&gt; stdClass Object</span>
-<span class="x">                (</span>
-<span class="x">                    [1] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank_diff] =&gt; -1</span>
-<span class="x">                            [rank] =&gt; 2</span>
-<span class="x">                            [search_engine] =&gt; www.google.com</span>
-<span class="x">                            [date] =&gt; 2015-07-01</span>
-<span class="x">                        )</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+        <span class="p">(</span>
+            <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">seo</span> <span class="n">panel</span>
+            <span class="p">[</span><span class="n">lang_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">country_code</span><span class="p">]</span> <span class="o">=&gt;</span>
+            <span class="p">[</span><span class="n">website_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">searchengines</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">3</span>
+            <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+            <span class="p">[</span><span class="n">website</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">sp</span>
+            <span class="p">[</span><span class="n">weburl</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">seopanel</span><span class="o">.</span><span class="ow">in</span><span class="o">/</span>
+            <span class="p">[</span><span class="n">position_info</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                <span class="p">(</span>
+                    <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="o">-</span><span class="mi">1</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+                            <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">google</span><span class="o">.</span><span class="n">com</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [2] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank_diff] =&gt; 1</span>
-<span class="x">                            [rank] =&gt; 1</span>
-<span class="x">                            [search_engine] =&gt; www.yahoo.com</span>
-<span class="x">                            [date] =&gt; 2015-07-01</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                            <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">yahoo</span><span class="o">.</span><span class="n">com</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                        <span class="p">)</span>
 
-<span class="x">                    [3] =&gt; stdClass Object</span>
-<span class="x">                        (</span>
-<span class="x">                            [rank_diff] =&gt;</span>
-<span class="x">                            [rank] =&gt; 1</span>
-<span class="x">                            [search_engine] =&gt; www.bing.com</span>
-<span class="x">                            [date] =&gt; 2015-07-01</span>
-<span class="x">                        )</span>
+                    <span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+                        <span class="p">(</span>
+                            <span class="p">[</span><span class="n">rank_diff</span><span class="p">]</span> <span class="o">=&gt;</span>
+                            <span class="p">[</span><span class="n">rank</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+                            <span class="p">[</span><span class="n">search_engine</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">www</span><span class="o">.</span><span class="n">bing</span><span class="o">.</span><span class="n">com</span>
+                            <span class="p">[</span><span class="n">date</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2015</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">01</span>
+                        <span class="p">)</span>
 
-<span class="x">                )</span>
+                <span class="p">)</span>
 
-<span class="x">        )</span>
+        <span class="p">)</span>
 
-<span class="x">)</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -1079,15 +1091,16 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;createUser&quot;;</span>
-<span class="x">$paramList[&#39;username&#39;] = &quot;spuser&quot;;</span>
-<span class="x">$paramList[&#39;password&#39;] = &quot;spuser123&quot;;</span>
-<span class="x">$paramList[&#39;first_name&#39;] = &quot;SP&quot;;</span>
-<span class="x">$paramList[&#39;last_name&#39;] = &quot;User&quot;;</span>
-<span class="x">$paramList[&#39;email&#39;] = &quot;spuser@seopanel.in&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;createUser&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spuser&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spuser123&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;first_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;SP&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;last_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;User&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spuser@seopanel.in&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -1130,12 +1143,13 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;updateUser&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 2;</span>
-<span class="x">$paramList[&#39;first_name&#39;] = &quot;Test User&quot;;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;updateUser&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;first_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Test User&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -1166,28 +1180,29 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getUserInfo&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getUserInfo&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 </pre></div>
 </div>
-<p><strong>Successful Response</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">[response] =&gt; success</span>
-<span class="x">[result] =&gt; stdClass Object</span>
-<span class="x">(</span>
-<span class="x">    [id] =&gt; 2</span>
-<span class="x">    [utype_id] =&gt; 2</span>
-<span class="x">    [username] =&gt; spuser</span>
-<span class="x">    [password] =&gt;</span>
-<span class="x">    [first_name] =&gt; Test</span>
-<span class="x">    [last_name] =&gt; User</span>
-<span class="x">    [email] =&gt; spuser@seopanel.in</span>
-<span class="x">    [lang_code] =&gt; en</span>
-<span class="x">    [created] =&gt; 1435781740</span>
-<span class="x">    [status] =&gt; 1</span>
-<span class="x">)</span>
+<p><strong>Successful Response</strong>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
+<span class="p">(</span>
+    <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+    <span class="p">[</span><span class="n">utype_id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2</span>
+    <span class="p">[</span><span class="n">username</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">spuser</span>
+    <span class="p">[</span><span class="n">password</span><span class="p">]</span> <span class="o">=&gt;</span>
+    <span class="p">[</span><span class="n">first_name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">Test</span>
+    <span class="p">[</span><span class="n">last_name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">User</span>
+    <span class="p">[</span><span class="n">email</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">spuser</span><span class="nd">@seopanel</span><span class="o">.</span><span class="ow">in</span>
+    <span class="p">[</span><span class="n">lang_code</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">en</span>
+    <span class="p">[</span><span class="n">created</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1435781740</span>
+    <span class="p">[</span><span class="n">status</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
+<span class="p">)</span>
 </pre></div>
 </div>
 <p><strong>Error Response</strong></p>
@@ -1211,11 +1226,12 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;*******&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;deleteUser&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 2;</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;deleteUser&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
 </pre></div>
 </div>
 <p><strong>Successful Response</strong></p>
@@ -1239,157 +1255,160 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <h2>3. Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="create-user">
 <h3>Create User<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">function doCurlPost($apiUrl, $paramList) {</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="k">function</span> <span class="nf">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">)</span> <span class="p">{</span>
 
-<span class="x">        // create field string</span>
-<span class="x">        $fieldString = &quot;&quot;;</span>
+             <span class="c1">// create field string</span>
+             <span class="nv">$fieldString</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 
-<span class="x">        foreach($paramList as $key =&gt; $value) {</span>
-<span class="x">                $fieldString .= &quot;$key=$value&amp;&quot;;</span>
+             <span class="k">foreach</span><span class="p">(</span><span class="nv">$paramList</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+                     <span class="nv">$fieldString</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="si">$key</span><span class="s2">=</span><span class="si">$value</span><span class="s2">&amp;&quot;</span><span class="p">;</span>
 
-<span class="x">        }</span>
+             <span class="p">}</span>
 
-<span class="x">        rtrim($fieldString, &#39;&amp;&#39;);</span>
+             <span class="nb">rtrim</span><span class="p">(</span><span class="nv">$fieldString</span><span class="p">,</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">);</span>
 
-<span class="x">        // open connection</span>
-<span class="x">        $ch = curl_init();</span>
+             <span class="c1">// open connection</span>
+             <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
 
-<span class="x">        // set the url, number of POST vars, POST data</span>
-<span class="x">        curl_setopt($ch,CURLOPT_URL, $apiUrl);</span>
-<span class="x">        curl_setopt($ch,CURLOPT_POST, count($paramList));</span>
-<span class="x">        curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);</span>
-<span class="x">        curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);</span>
-<span class="x">        curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);</span>
+             <span class="c1">// set the url, number of POST vars, POST data</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$apiUrl</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$paramList</span><span class="p">));</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$fieldString</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">,</span> <span class="nx">CURLOPT_FOLLOWLOCATION</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
 
-<span class="x">        // execute post</span>
-<span class="x">        $result = curl_exec($ch);</span>
+             <span class="c1">// execute post</span>
+             <span class="nv">$result</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
 
-<span class="x">        // close connection</span>
-<span class="x">        curl_close($ch);</span>
-<span class="x">        return $result;</span>
+             <span class="c1">// close connection</span>
+             <span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+             <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
 
-<span class="x">}</span>
+     <span class="p">}</span>
 
-<span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;sss&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;sss&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;user&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;createUser&quot;;</span>
-<span class="x">$paramList[&#39;username&#39;] = &quot;spuser&quot;;</span>
-<span class="x">$paramList[&#39;password&#39;] = &quot;spuser123&quot;;</span>
-<span class="x">$paramList[&#39;first_name&#39;] = &quot;SP&quot;;</span>
-<span class="x">$paramList[&#39;last_name&#39;] = &quot;User&quot;;</span>
-<span class="x">$paramList[&#39;email&#39;] = &quot;spuser@seopanel.in&quot;;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sss&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sss&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;createUser&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;username&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spuser&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;password&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spuser123&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;first_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;SP&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;last_name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;User&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;email&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;spuser@seopanel.in&quot;</span><span class="p">;</span>
 
-<span class="x">$apiUrl = &quot;http://localhost/seopanel/api/api.php&quot;;</span>
-<span class="x">$result = doCurlPost($apiUrl, $paramList);</span>
-<span class="x">$resultInfo = json_decode($result);</span>
-<span class="x">echo &quot;&lt;pre&gt;&quot;;</span>
-<span class="x">print_r($resultInfo);</span>
-<span class="x">echo &quot;&lt;/pre&gt;&quot;;</span>
+     <span class="nv">$apiUrl</span> <span class="o">=</span> <span class="s2">&quot;http://localhost/seopanel/api/api.php&quot;</span><span class="p">;</span>
+     <span class="nv">$result</span> <span class="o">=</span> <span class="nx">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">);</span>
+     <span class="nv">$resultInfo</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$result</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;pre&gt;&quot;</span><span class="p">;</span>
+     <span class="nb">print_r</span><span class="p">(</span><span class="nv">$resultInfo</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;/pre&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="user-website-reports">
 <h3>User Website Reports<a class="headerlink" href="#user-website-reports" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">function doCurlPost($apiUrl, $paramList) {</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="k">function</span> <span class="nf">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">)</span> <span class="p">{</span>
 
-<span class="x">        // create field string</span>
-<span class="x">        $fieldString = &quot;&quot;;</span>
+             <span class="c1">// create field string</span>
+             <span class="nv">$fieldString</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 
-<span class="x">        foreach($paramList as $key =&gt; $value) {</span>
-<span class="x">                $fieldString .= &quot;$key=$value&amp;&quot;;</span>
+             <span class="k">foreach</span><span class="p">(</span><span class="nv">$paramList</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+                     <span class="nv">$fieldString</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="si">$key</span><span class="s2">=</span><span class="si">$value</span><span class="s2">&amp;&quot;</span><span class="p">;</span>
 
-<span class="x">        }</span>
+             <span class="p">}</span>
 
-<span class="x">        rtrim($fieldString, &#39;&amp;&#39;);</span>
+             <span class="nb">rtrim</span><span class="p">(</span><span class="nv">$fieldString</span><span class="p">,</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">);</span>
 
-<span class="x">        // open connection</span>
-<span class="x">        $ch = curl_init();</span>
+             <span class="c1">// open connection</span>
+             <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
 
-<span class="x">        // set the url, number of POST vars, POST data</span>
-<span class="x">        curl_setopt($ch,CURLOPT_URL, $apiUrl);</span>
-<span class="x">        curl_setopt($ch,CURLOPT_POST, count($paramList));</span>
-<span class="x">        curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);</span>
-<span class="x">        curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);</span>
-<span class="x">        curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);</span>
+             <span class="c1">// set the url, number of POST vars, POST data</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$apiUrl</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$paramList</span><span class="p">));</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$fieldString</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">,</span> <span class="nx">CURLOPT_FOLLOWLOCATION</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
 
-<span class="x">        // execute post</span>
-<span class="x">        $result = curl_exec($ch);</span>
+             <span class="c1">// execute post</span>
+             <span class="nv">$result</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
 
-<span class="x">        // close connection</span>
-<span class="x">        curl_close($ch);</span>
-<span class="x">        return $result;</span>
+             <span class="c1">// close connection</span>
+             <span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+             <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
 
-<span class="x">}</span>
+     <span class="p">}</span>
 
-<span class="x"># get user website reports</span>
-<span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;sss&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;sss&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;website&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportByUserId&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 5;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-26&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-06-29&quot;;</span>
+     <span class="c1"># get user website reports</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sss&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sss&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportByUserId&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-26&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-29&quot;</span><span class="p">;</span>
 
-<span class="x">$apiUrl = &quot;http://localhost/seopanel/api/api.php&quot;;</span>
-<span class="x">$result = doCurlPost($apiUrl, $paramList);</span>
-<span class="x">print $result;</span>
-<span class="x">$resultInfo = json_decode($result);</span>
-<span class="x">echo &quot;&lt;pre&gt;&quot;;</span>
-<span class="x">print_r($resultInfo);</span>
-<span class="x">echo &quot;&lt;/pre&gt;&quot;;</span>
+     <span class="nv">$apiUrl</span> <span class="o">=</span> <span class="s2">&quot;http://localhost/seopanel/api/api.php&quot;</span><span class="p">;</span>
+     <span class="nv">$result</span> <span class="o">=</span> <span class="nx">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">);</span>
+     <span class="k">print</span> <span class="nv">$result</span><span class="p">;</span>
+     <span class="nv">$resultInfo</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$result</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;pre&gt;&quot;</span><span class="p">;</span>
+     <span class="nb">print_r</span><span class="p">(</span><span class="nv">$resultInfo</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;/pre&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="keyword-reports">
 <h3>Keyword Reports<a class="headerlink" href="#keyword-reports" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">function doCurlPost($apiUrl, $paramList) {</span>
+<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+     <span class="k">function</span> <span class="nf">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">)</span> <span class="p">{</span>
 
-<span class="x">        // create field string</span>
-<span class="x">        $fieldString = &quot;&quot;;</span>
+             <span class="c1">// create field string</span>
+             <span class="nv">$fieldString</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
 
-<span class="x">        foreach($paramList as $key =&gt; $value) {</span>
-<span class="x">                $fieldString .= &quot;$key=$value&amp;&quot;;</span>
+             <span class="k">foreach</span><span class="p">(</span><span class="nv">$paramList</span> <span class="k">as</span> <span class="nv">$key</span> <span class="o">=&gt;</span> <span class="nv">$value</span><span class="p">)</span> <span class="p">{</span>
+                     <span class="nv">$fieldString</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="si">$key</span><span class="s2">=</span><span class="si">$value</span><span class="s2">&amp;&quot;</span><span class="p">;</span>
 
-<span class="x">        }</span>
+             <span class="p">}</span>
 
-<span class="x">        rtrim($fieldString, &#39;&amp;&#39;);</span>
+             <span class="nb">rtrim</span><span class="p">(</span><span class="nv">$fieldString</span><span class="p">,</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">);</span>
 
-<span class="x">        // open connection</span>
-<span class="x">        $ch = curl_init();</span>
+             <span class="c1">// open connection</span>
+             <span class="nv">$ch</span> <span class="o">=</span> <span class="nb">curl_init</span><span class="p">();</span>
 
-<span class="x">        // set the url, number of POST vars, POST data</span>
-<span class="x">        curl_setopt($ch,CURLOPT_URL, $apiUrl);</span>
-<span class="x">        curl_setopt($ch,CURLOPT_POST, count($paramList));</span>
-<span class="x">        curl_setopt($ch,CURLOPT_POSTFIELDS, $fieldString);</span>
-<span class="x">        curl_setopt( $ch , CURLOPT_FOLLOWLOCATION, true);</span>
-<span class="x">        curl_setopt( $ch , CURLOPT_RETURNTRANSFER, true);</span>
+             <span class="c1">// set the url, number of POST vars, POST data</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_URL</span><span class="p">,</span> <span class="nv">$apiUrl</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$paramList</span><span class="p">));</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span><span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$fieldString</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">,</span> <span class="nx">CURLOPT_FOLLOWLOCATION</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+             <span class="nb">curl_setopt</span><span class="p">(</span> <span class="nv">$ch</span> <span class="p">,</span> <span class="nx">CURLOPT_RETURNTRANSFER</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
 
-<span class="x">        // execute post</span>
-<span class="x">        $result = curl_exec($ch);</span>
+             <span class="c1">// execute post</span>
+             <span class="nv">$result</span> <span class="o">=</span> <span class="nb">curl_exec</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
 
-<span class="x">        // close connection</span>
-<span class="x">        curl_close($ch);</span>
-<span class="x">        return $result;</span>
+             <span class="c1">// close connection</span>
+             <span class="nb">curl_close</span><span class="p">(</span><span class="nv">$ch</span><span class="p">);</span>
+             <span class="k">return</span> <span class="nv">$result</span><span class="p">;</span>
 
-<span class="x">}</span>
+     <span class="p">}</span>
 
-<span class="x"># get keyword reports by id</span>
-<span class="x">$paramList[&#39;SP_API_KEY&#39;] = &quot;sss&quot;;</span>
-<span class="x">$paramList[&#39;API_SECRET&#39;] = &quot;sss&quot;;</span>
-<span class="x">$paramList[&#39;category&#39;] = &quot;keyword&quot;;</span>
-<span class="x">$paramList[&#39;action&#39;] = &quot;getReportById&quot;;</span>
-<span class="x">$paramList[&#39;id&#39;] = 1;</span>
-<span class="x">$paramList[&#39;from_time&#39;] = &quot;2015-06-30&quot;;</span>
-<span class="x">$paramList[&#39;to_time&#39;] = &quot;2015-07-01&quot;;</span>
+     <span class="c1"># get keyword reports by id</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sss&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;sss&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;action&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;getReportById&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;from_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-06-30&quot;</span><span class="p">;</span>
+     <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;to_time&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;2015-07-01&quot;</span><span class="p">;</span>
 
-<span class="x">$apiUrl = &quot;http://localhost/seopanel/api/api.php&quot;;</span>
-<span class="x">$result = doCurlPost($apiUrl, $paramList);</span>
-<span class="x">print $result;</span>
-<span class="x">$resultInfo = json_decode($result);</span>
-<span class="x">echo &quot;&lt;pre&gt;&quot;;</span>
-<span class="x">print_r($resultInfo);</span>
-<span class="x">echo &quot;&lt;/pre&gt;&quot;;</span>
+     <span class="nv">$apiUrl</span> <span class="o">=</span> <span class="s2">&quot;http://localhost/seopanel/api/api.php&quot;</span><span class="p">;</span>
+     <span class="nv">$result</span> <span class="o">=</span> <span class="nx">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">);</span>
+     <span class="k">print</span> <span class="nv">$result</span><span class="p">;</span>
+     <span class="nv">$resultInfo</span> <span class="o">=</span> <span class="nb">json_decode</span><span class="p">(</span><span class="nv">$result</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;pre&gt;&quot;</span><span class="p">;</span>
+     <span class="nb">print_r</span><span class="p">(</span><span class="nv">$resultInfo</span><span class="p">);</span>
+     <span class="k">echo</span> <span class="s2">&quot;&lt;/pre&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -1429,8 +1448,8 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
