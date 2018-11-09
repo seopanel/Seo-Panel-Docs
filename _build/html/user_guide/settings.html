@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Settings &mdash; Seo Panel Docs 3.9.0 documentation</title>
+    <title>Settings &#8212; Seo Panel Docs 3.15.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -14,7 +14,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '3.9.0',
+        VERSION:     '3.15.0',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,7 +24,8 @@
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-    <link rel="top" title="Seo Panel Docs 3.9.0 documentation" href="../index.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="top" title="Seo Panel Docs 3.15.0 documentation" href="../index.html" />
     <link rel="up" title="2. User Guide" href="../usage.html" />
     <link rel="next" title="Keyword Management" href="keyword.html" />
     <link rel="prev" title="Website Management" href="website.html" />       
@@ -55,7 +56,7 @@
           <a href="website.html" title="Website Management"
              accesskey="P">previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../usage.html" accesskey="U">2. User Guide</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../usage.html" accesskey="U">2. User Guide</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -209,6 +210,128 @@
 </li>
 </ol>
 </div>
+<div class="section" id="google-settings">
+<h2>Google Settings<a class="headerlink" href="#google-settings" title="Permalink to this headline">¶</a></h2>
+<p>Setup <strong>Google API Key</strong> and <strong>OAuth2 credentials</strong>  to get website informations from google api resources.</p>
+</div>
+<div class="section" id="google-api-key">
+<h2>Google API Key<a class="headerlink" href="#google-api-key" title="Permalink to this headline">¶</a></h2>
+<p><strong>Google API</strong> key is mainly used for accessing public api resources like <strong>Pagespeed checker</strong></p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings=&gt; Google Settings</strong></p>
+</li>
+<li><p class="first"><strong>Click on `Click here to get Google API Key`</strong> link to get google API key</p>
+<p><a class="reference external" href="https://support.google.com/googleapi/answer/6158862?hl=en">https://support.google.com/googleapi/answer/6158862?hl=en</a></p>
+</li>
+<li><p class="first">Enter google api key generated from above step.</p>
+<img alt="../_images/sp_google_settings.png" src="../_images/sp_google_settings.png" />
+<ul class="simple">
+<li><strong>Google API Key</strong> - The google API key generated using above step</li>
+</ul>
+</li>
+</ol>
+<p><strong>Click on `Verify connection`</strong> link to verify the API Key settings are working</p>
+</div>
+<div class="section" id="google-oauth2-credentials">
+<h2>Google OAuth2 credentials<a class="headerlink" href="#google-oauth2-credentials" title="Permalink to this headline">¶</a></h2>
+<p>Google OAuth2 credentials used for accessing private api resources using secured connection.
+It requires user authentication to access the api resources.</p>
+<p><strong>Eg:</strong> Webmaster Tools</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings=&gt; Google Settings</strong></p>
+</li>
+<li><p class="first"><strong>Click on `Click here to get Google API Client Id`</strong> link to get OAuth2 credentials</p>
+<p><a class="reference external" href="https://developers.google.com/adwords/api/docs/guides/authentication">https://developers.google.com/adwords/api/docs/guides/authentication</a></p>
+<p><strong>Steps to create the OAuth2 credentials</strong></p>
+<ol class="arabic">
+<li><p class="first">Go to the <strong>API Console</strong></p>
+<p><a class="reference external" href="https://console.developers.google.com/">https://console.developers.google.com/</a></p>
+</li>
+<li><p class="first">From the projects list, select a project or create a new one.</p>
+</li>
+<li><p class="first">If the APIs &amp; services page isn&#8217;t already open, open the left side menu and select <strong>APIs &amp; services</strong>.</p>
+</li>
+<li><p class="first">On the left, choose <strong>Credentials</strong></p>
+</li>
+<li><p class="first">Click <strong>Create credentials</strong> and then select <strong>OAuth client ID</strong></p>
+<img alt="../_images/google_qauth_step1.png" src="../_images/google_qauth_step1.png" />
+</li>
+<li><p class="first">Configure <strong>Consent Screen</strong>, If you didn&#8217;t configure earlier. Click on <strong>Configure consent screen</strong></p>
+<img alt="../_images/google_qauth_step2.png" src="../_images/google_qauth_step2.png" />
+</li>
+<li><p class="first">Configure <strong>Consent Screen</strong> like below image</p>
+<img alt="../_images/google_qauth_step3.png" src="../_images/google_qauth_step3.png" />
+<p>If your seo panel is setup in a link</p>
+<p><a class="reference external" href="http://testdomain.com/seopanel">http://testdomain.com/seopanel</a> or <a class="reference external" href="http://seopanel.testdomain.com/">http://seopanel.testdomain.com/</a></p>
+<p>Add <strong>testdomain.com</strong> in <strong>Authorised domains</strong> section.</p>
+</li>
+<li><p class="first">Once Consent Screen is configured, Click on <strong>Create credentials</strong> and then select <strong>OAuth client ID</strong></p>
+<img alt="../_images/google_qauth_step1.png" src="../_images/google_qauth_step1.png" />
+</li>
+<li><p class="first">You will be redirected to a page like below image and Select <strong>Application type</strong>  as <strong>Web application</strong></p>
+<blockquote>
+<div><img alt="../_images/google_qauth_step4.png" src="../_images/google_qauth_step4.png" />
+</div></blockquote>
+<ul>
+<li><p class="first"><strong>Authorised JavaScript origins</strong></p>
+<blockquote>
+<div><p>If your seo panel is setup in a link <a class="reference external" href="http://testdomain.com/seopanel">http://testdomain.com/seopanel</a> use <a class="reference external" href="http://testdomain.com">http://testdomain.com</a></p>
+<p>If your seo panel is setup in a link <a class="reference external" href="http://seopanel.testdomain.com/">http://seopanel.testdomain.com/</a> use <a class="reference external" href="http://seopanel.testdomain.com">http://seopanel.testdomain.com</a></p>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Authorised redirect URIs</strong> - From below image screen copy <strong>Authorised redirect URI</strong></p>
+<blockquote>
+<div><img alt="../_images/sp_google_settings.png" src="../_images/sp_google_settings.png" />
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p class="first">After submission you will get Google <strong>Client Id</strong> and <strong>Client Secret</strong> from below screen</p>
+</li>
+</ol>
+<blockquote>
+<div><img alt="../_images/google_qauth_step5.png" src="../_images/google_qauth_step5.png" />
+<p>Enter details as following screen shot</p>
+<blockquote>
+<div><img alt="../_images/sp_google_settings.png" src="../_images/sp_google_settings.png" />
+<ul class="simple">
+<li><strong>Google API Client Id</strong> - The google <strong>Client Id</strong> generated using above step</li>
+<li><strong>Google API Client Secret</strong> - The google <strong>Client Secret</strong> generated using above step</li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</li>
+<li><p class="first"><strong>Enable Google API</strong> used for seo panel</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first"><strong>Webmaster Tools</strong></p>
+<p>Go to <a class="reference external" href="https://console.developers.google.com/apis/library/webmasters.googleapis.com">https://console.developers.google.com/apis/library/webmasters.googleapis.com</a></p>
+<p>Then click on <strong>ENABLE</strong> button</p>
+</li>
+<li><p class="first"><strong>PageSpeed Insights API</strong></p>
+<p>Go to <a class="reference external" href="https://console.developers.google.com/apis/library/pagespeedonline.googleapis.com">https://console.developers.google.com/apis/library/pagespeedonline.googleapis.com</a></p>
+<p>Then click on <strong>ENABLE</strong> button</p>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="google-analytics">
+<h2>Google Analytics<a class="headerlink" href="#google-analytics" title="Permalink to this headline">¶</a></h2>
+<p>Google analytics code used to know the number of visitors accessing your seo panel.</p>
+<ol class="arabic">
+<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings=&gt; Google Settings</strong></p>
+</li>
+<li><p class="first">Enter details as following screen shot</p>
+<img alt="../_images/sp_google_settings.png" src="../_images/sp_google_settings.png" />
+<ul class="simple">
+<li><strong>Google Analytics Tracking Code</strong> - Enter the corresponding code from google analytics for your seo panel.</li>
+</ul>
+</li>
+</ol>
+<p>Go to google analytics dashboard and verify the code is working.</p>
+</div>
 </div>
 
 
@@ -225,6 +348,10 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Settings</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#system-settings">System Settings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#moz-settings">MOZ Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#google-settings">Google Settings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#google-api-key">Google API Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#google-oauth2-credentials">Google OAuth2 credentials</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#google-analytics">Google Analytics</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="keyword.html">Keyword Management</a></li>
@@ -252,8 +379,8 @@
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
     <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
@@ -273,7 +400,7 @@
           <a href="website.html" title="Website Management"
              >previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../usage.html" >2. User Guide</a> &raquo;</li> 
+          <li class="nav-item nav-item-1"><a href="../usage.html" >2. User Guide</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">

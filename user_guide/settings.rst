@@ -72,14 +72,15 @@ Setup MOZ API to get website ranking related informations
 Google Settings
 ~~~~~~~~~~~~~~~
 
-Setup Google API to get website informations from google api resources.
+Setup **Google API Key** and **OAuth2 credentials**  to get website informations from google api resources.
 
 
 ~~~~~~~~~~~~~~
 Google API Key
 ~~~~~~~~~~~~~~
 
-Google API key is mainly used for accessing public api resources like Pagespeed checker
+**Google API** key is mainly used for accessing public api resources like **Pagespeed checker**
+
 
 1) Go to **Admin Panel => System Settings=> Google Settings**
 
@@ -87,22 +88,24 @@ Google API key is mainly used for accessing public api resources like Pagespeed 
 
    https://support.google.com/googleapi/answer/6158862?hl=en
 
-3) Enter details as following screen shot
+3) Enter google api key generated from above step.
 
    .. image:: ../_static/sp_google_settings.png
 
    - **Google API Key** - The google API key generated using above step
    
-   **Click on `Verify connection`** link to verify the API Key settings are working
+
+**Click on `Verify connection`** link to verify the API Key settings are working
 
    
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Google OAuth2 credentials
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Google OAuth2 credentials used for accessing private resources api using secured connection. It requires user authentication to access the api resources.
+Google OAuth2 credentials used for accessing private api resources using secured connection.
+It requires user authentication to access the api resources.
 
-Eg: Webmaster Tools
+**Eg:** Webmaster Tools
 
 1) Go to **Admin Panel => System Settings=> Google Settings**
 
@@ -134,30 +137,39 @@ Eg: Webmaster Tools
    
       .. image:: ../_static/google_qauth_step3.png
    
-      If your seo panel is setup in a link http://testdomain.com/seopanel or http://seopanel.testdomain.com/, add **testdomain.com** in **Authorised domains** section.
+      
+      If your seo panel is setup in a link 
+      
+      http://testdomain.com/seopanel or http://seopanel.testdomain.com/ 
+      
+      Add **testdomain.com** in **Authorised domains** section.
+      
    
-   8) Click **Create credentials** and then select **OAuth client ID**
+   8) Once Consent Screen is configured, Click on **Create credentials** and then select **OAuth client ID**
    
       .. image:: ../_static/google_qauth_step1.png
       
-      You will be redirected to a page like below image
-   
-      .. image:: ../_static/google_qauth_step4.png
-   
-   9) Select **Application type**  as **Web application**
+   9) You will be redirected to a page like below image and Select **Application type**  as **Web application**
+		
+	  .. image:: ../_static/google_qauth_step4.png
+   	  
 
-      - **Authorised JavaScript origins** - 
+      - **Authorised JavaScript origins** 
       
          If your seo panel is setup in a link http://testdomain.com/seopanel use http://testdomain.com
+         
          If your seo panel is setup in a link http://seopanel.testdomain.com/ use http://seopanel.testdomain.com
+         
 
-      - **Authorised redirect URIs** - From below image enter **Authorised redirect URI**
+      - **Authorised redirect URIs** - From below image screen copy **Authorised redirect URI**
 
          .. image:: ../_static/sp_google_settings.png
+         
    
-   9) After submission you will get Google **Client Id** and **Client Secret** from below screen
+   10) After submission you will get Google **Client Id** and **Client Secret** from below screen
    
-      .. image:: ../_static/google_qauth_step1.png
+      .. image:: ../_static/google_qauth_step5.png
+      
       
       Enter details as following screen shot
 
@@ -168,15 +180,17 @@ Eg: Webmaster Tools
          - **Google API Client Secret** - The google **Client Secret** generated using above step
          
       
-3) Enable Google API used for seo panel
+3) **Enable Google API** used for seo panel
+
    
-      1) Webmaster Tools
+      1) **Webmaster Tools**
       
          Go to https://console.developers.google.com/apis/library/webmasters.googleapis.com
          
          Then click on **ENABLE** button
+         
       
-      2) PageSpeed Insights API
+      2) **PageSpeed Insights API**
       
          Go to https://console.developers.google.com/apis/library/pagespeedonline.googleapis.com
          
@@ -197,4 +211,5 @@ Google analytics code used to know the number of visitors accessing your seo pan
 
    - **Google Analytics Tracking Code** - Enter the corresponding code from google analytics for your seo panel.
    
-   Go to google analytics dashboard and verify the code is working.
+
+Go to google analytics dashboard and verify the code is working.
