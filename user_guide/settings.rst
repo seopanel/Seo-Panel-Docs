@@ -199,11 +199,10 @@ It requires user authentication to access the api resources.
 4) **Connect to your google account**
 
 
-      Each user needs to **connect** to their own google account to provide access to their webmaster tools, analytics etc
+	Each user needs to **connect** to their own google account to provide access to their webmaster tools, analytics etc
       
-      :ref:`How to connect to google account? <user_guide/my_account>` 
+	.. include:: google_connection.rst
       
-      .. include:: user_guide/my_account
    
 
 ~~~~~~~~~~~~~~~~

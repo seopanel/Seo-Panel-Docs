@@ -23,3 +23,4 @@ This guide explains, how user setup seo panel according to their requirement.
    user_guide/proxy_manager
    user_guide/search_engine_manager
    user_guide/log_manager
+   user_guide/my_account

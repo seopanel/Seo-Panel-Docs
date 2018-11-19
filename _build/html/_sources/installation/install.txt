@@ -21,19 +21,16 @@ Simply use **Bitnami / Softaculous / Installatron / Webuzo / AMPPS** to install 
 
 5. Using your web browser visit the location you placed Seo Panel with the addition of **install/index.php** or pointing directly to install/
 
-    Eg: http://www.yourdomain.com/seopanel/install/
-    
-
-	.. image:: _static/sp_install1.png
+	Eg: http://www.yourdomain.com/seopanel/install/
 	
+	.. image:: _static/sp_install1.png	
 	
 	**Enter database details**
 	
 	.. image:: _static/sp_install2.png
-	
-	
+
 	**Select admin language and timezone**
-    
+	
 	.. image:: _static/sp_install3.png
 	
 
