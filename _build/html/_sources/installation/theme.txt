@@ -38,4 +38,4 @@ Theme Upgrade Steps
 5. **Check the version** of theme, you can see it is changed.
 
 
-Get Seo Panel Themes from => http://www.seopanel.in/themes/
+Get Seo Panel Themes from => https://www.seopanel.in/themes/

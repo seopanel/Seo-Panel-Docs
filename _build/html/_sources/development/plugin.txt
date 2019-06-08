@@ -9,7 +9,7 @@ Seo Panel Plugins help us to **modify, customize, and extend** the features of S
  
 **Seo Panel Plugin:** A Seo Panel Plugin is a independant program with a set of extra features, written in the PHP scripting language, that adds a specific set of features or services to the Seo Panel.
  
-If you would like to create a new Seo Panel plugin, then first search the plugin in Seo Panel plugin repository - http://www.seopanel.in/plugins/
+If you would like to create a new Seo Panel plugin, then first search the plugin in Seo Panel plugin repository - https://www.seopanel.in/plugins/
 If it is not existing any where, then use following articles to create a new plugin for Seo Panel and publish it through Seo Panel repository. 
 
 **Note:** This article assumes you are already familiar with the basic functionality of Seo Panel, and PHP programming.
@@ -32,7 +32,7 @@ The first step for plugin creation is finding a name for your plugin according t
 
 **Eg:** The name for a search engine submission plugin can be named like "Search Engine Submitter"
 
-Once you found a name for your plugin, then search it in `Seo Panel plugin repository <http://www.seopanel.in/plugins>`_ to find any other plugin existing with the same name. If it is already existing, then choose another name or create plugin for another feature.
+Once you found a name for your plugin, then search it in `Seo Panel plugin repository <https://www.seopanel.in/plugins>`_ to find any other plugin existing with the same name. If it is already existing, then choose another name or create plugin for another feature.
 
 
 
@@ -231,7 +231,7 @@ If you are creating a plugin Named **Test Plugin**, Then plugin file structure s
 	       <label>Test Plugin</label>
 	       <description>Seo Panel Test Plugin: Check the structure of test plugin and it will help you to create new Seo Panel Plugins.</description>
 	       <version>1.0.0</version>
-	       <website>http://www.seopanel.in/plugins/</website>
+	       <website>https://www.seopanel.in/plugins/</website>
 	</plugin>
 	
 

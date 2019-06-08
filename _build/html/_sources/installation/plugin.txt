@@ -45,4 +45,4 @@ Plugin Upgrade Steps
 5. **Check the version** of plugin, you can see it is changed.
 
 
-Get Seo Panel Plugins from => http://www.seopanel.in/plugins/
+Get Seo Panel Plugins from => https://www.seopanel.in/plugins/

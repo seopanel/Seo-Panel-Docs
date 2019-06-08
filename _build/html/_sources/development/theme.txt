@@ -7,7 +7,7 @@ Introduction
 
 Seo Panel Themes help us to **modify, customize, and extend** the features of Seo Panel interface according to our requirement. 
  
-If you would like to create a new Seo Panel theme, then first search the theme in Seo Panel theme repository - http://www.seopanel.in/themes/
+If you would like to create a new Seo Panel theme, then first search the theme in Seo Panel theme repository - https://www.seopanel.in/themes/
 If it is not existing any where, then use following articles to create a new theme for Seo Panel and publish it through Seo Panel repository. 
 
 **Note:** This article assumes you are already familiar with the basic functionality of Seo Panel, and PHP, HTML, CSS, JS programming.
@@ -30,7 +30,7 @@ The first step for theme creation is finding a name for your theme according to 
 
 **Eg:** "Test Theme"
 
-Once you found a name for your theme, then search it in `Seo Panel theme repository <http://www.seopanel.in/themes>`_ to find any other theme existing with the same name. If it is already existing, then choose another name for your theme.
+Once you found a name for your theme, then search it in `Seo Panel theme repository <https://www.seopanel.in/themes>`_ to find any other theme existing with the same name. If it is already existing, then choose another name for your theme.
    
    
 **Theme Files**
@@ -81,7 +81,7 @@ If you are creating a theme Named **Test Theme**, Then theme file structure shou
          <name>Classic</name>
          <description>Classic theme of Seo Panel</description>
          <version>1.0.0</version>
-         <website>http://www.seopanel.in/theme/l/1/classic/</website>   
+         <website>https://www.seopanel.in/theme/l/1/classic/</website>   
       </theme>	
 
    **author** - The name of the person who created theme

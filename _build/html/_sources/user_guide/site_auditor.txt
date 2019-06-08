@@ -138,7 +138,7 @@ You can also **import group of links** to site auditor project, if program faile
       
    - **Links** - Add project links to be imported separated with comma 
    
-   **Eg:** http://www.seopanel.in/plugin/l/, http://www.seopanel.in/plugin/d/
+   **Eg:** https://www.seopanel.in/plugin/l/, https://www.seopanel.in/plugin/d/
 
 3) Proceed with the values in the form, you will be redirected to projects page with the stats of import.
 
@@ -169,7 +169,7 @@ You can also **generate sitemap** for your website using this feature.
    
    - **Priority** - Select priority of search engine crawl
    
-   - **Exclude Url** - Enter links separated with comma needs to be excluded from sitemap **Eg:** Eg: http://www.seopanel.in/plugin/l/, http://www.seopanel.in/plugin/d/
+   - **Exclude Url** - Enter links separated with comma needs to be excluded from sitemap **Eg:** Eg: https://www.seopanel.in/plugin/l/, https://www.seopanel.in/plugin/d/
       
 3) Proceed with the values in the form, you will get **download link** for generated sitemap as above screenshot.
 
