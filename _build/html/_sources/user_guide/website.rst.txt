@@ -17,7 +17,7 @@ After installation of seo panel, next step is to create website.
    
    - **Name** - The name of the website  *Eg:* Seo Panel
 
-   - **Url** - The url to website page   *Eg:* https://www.seopanel.in/
+   - **Url** - The url to website page   *Eg:* https://www.seopanel.org/
    
       **Click on `Crawl Meta Data`** link to get the following details of website. You can also edit this details later. 
    

@@ -24,15 +24,15 @@ Contents
 
 This document covers the installation, usage, api guides for Seo Panel.
 
-The latest version of this guide can be obtained from http://docs.seopanel.in/
+The latest version of this guide can be obtained from https://www.seopanel.org/docs/
 
-A live demo of seo panel is available at http://demo.seopanel.in/
+A live demo of seo panel is available at https://www.seopanel.org/demopanel/
 
 You can interact with the seo panel user community at http://forum.seopanel.in
 
-Contact us for additional support via https://www.seopanel.in/contact/
+Contact us for additional support via https://www.seopanel.org/contact/
 
 **References:**
-    - https://www.seopanel.in/
+    - https://www.seopanel.org/
 
 

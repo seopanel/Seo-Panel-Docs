@@ -11,7 +11,7 @@
 - `Forum <http://forum.seopanel.in/>`_
 
 
-- `Contact Us <https://www.seopanel.in/contact/>`_
+- `Contact Us <https://www.seopanel.org/contact/>`_
 
  
 - `Blog <http://blog.seopanel.in/>`_

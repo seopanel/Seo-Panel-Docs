@@ -258,7 +258,7 @@ This command is used to get reports of a website
         (
             [id] => 1
             [name] => Test Website
-            [url] => https://www.seopanel.in/
+            [url] => https://www.seopanel.org/
             [owner_name] => 
             [owner_email] => 
             [category] => 
@@ -394,7 +394,7 @@ This command is used to get reports of all user websites
                 (
                     [id] => 1
                     [name] => sp
-                    [url] => https://www.seopanel.in/
+                    [url] => https://www.seopanel.org/
                     [owner_name] => 
                     [owner_email] => 
                     [category] => 
@@ -801,7 +801,7 @@ This command is used to get reports of a keywords of a website
                     [searchengines] => 1:2:3
                     [status] => 1
                     [website] => sp
-                    [weburl] => https://www.seopanel.in/
+                    [weburl] => https://www.seopanel.org/
                     [position_info] => stdClass Object
                         (
                             [1] => stdClass Object
@@ -888,7 +888,7 @@ This command is used to get reports of a keywords of a user
                     [searchengines] => 1:2:3
                     [status] => 1
                     [website] => sp
-                    [weburl] => https://www.seopanel.in/
+                    [weburl] => https://www.seopanel.org/
                     [position_info] => stdClass Object
                         (
                             [1] => stdClass Object

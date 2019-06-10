@@ -62,5 +62,5 @@ Also we can **integrate payment plugin** with **user type manager** of seo panel
 
 **Click** on following link to **download and activate membership subscription** plugin.
 
-https://www.seopanel.in/plugin/l/65/membership-subscription/
+https://www.seopanel.org/plugin/l/65/membership-subscription/
     

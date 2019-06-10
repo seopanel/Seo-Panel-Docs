@@ -1,9 +1,9 @@
 Backlinks Checker
-~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 Quick Backlinks Checker
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 This feature used to find the **backlink of a website** by **with out storing any data** in database. 
 
@@ -19,9 +19,9 @@ This feature used to find the **backlink of a website** by **with out storing an
 3) **Click on 'Proceed'** will show the backlink count in different search engines    
    
 
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 Backlinks Reports
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
 
 This section will show the backlink reports of websites
 
@@ -34,9 +34,9 @@ This section will show the backlink reports of websites
   Currently it will show the backlink count in different search engines.
   
   
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 Generate Backlinks Reports
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This section used to generate backlink reports of websites. We **did not recommend to use** this feature. 
 **Use cron job** for report generation.

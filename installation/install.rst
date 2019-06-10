@@ -11,7 +11,7 @@ Simply use **Bitnami / Softaculous / Installatron / Webuzo / AMPPS** to install 
 
 1. **Download** latest version from following link and **Unzip** the package.
 
-   https://www.seopanel.in/download/
+   https://www.seopanel.org/download/
 
 2. **Upload** all the files contained in this folder (retaining the directory structure) to a web accessible directory on your server or hosting account.
 
