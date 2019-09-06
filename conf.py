@@ -46,8 +46,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Seo Panel Docs'
-copyright = u'2018, seopanel'
+project = u'Seo Panel'
+copyright = u'2019, seopanel'
 author = u'seopanel'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -122,7 +122,7 @@ html_theme = 'nature'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = 'Seo Panel Documentation' 
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None

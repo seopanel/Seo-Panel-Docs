@@ -15,6 +15,11 @@ This guide explains, how user setup seo panel according to their requirement.
    user_guide/rank
    user_guide/backlink
    user_guide/saturation
+   user_guide/webmaster-tools
+   user_guide/pagespeed-insights
+   user_guide/website-analytics
+   user_guide/pagespeed-insights
+   user_guide/social-media-checker
    user_guide/dashboard
    user_guide/user
    user_guide/seo_tools

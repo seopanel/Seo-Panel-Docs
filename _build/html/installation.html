@@ -1,31 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>1. INSTALLATION &#8212; Seo Panel Docs 4.1.0 documentation</title>
-    
+    <title>1. INSTALLATION &#8212; Seo Panel Documentation</title>
     <link rel="stylesheet" href="_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="shortcut icon" href="_static/favicon.ico"/>
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="Seo Panel Docs 4.1.0 documentation" href="index.html" />
     <link rel="next" title="2. User Guide" href="usage.html" />
     <link rel="prev" title="Seo Panel Documentation" href="index.html" />       
      
@@ -38,13 +28,18 @@
         div.sphinxsidebar {font-size: 1.00em;}
 		.body img{margin: 20px 0px;}
 		.related:nth-of-type(1){display: none;}
+		a{font-size: 16px;}
+		p{font-size: 16px;}
+		div.body p, div.body dd, div.body li, div.sphinxsidebar {
+		    line-height: 2.0em;
+		}
+		div.body{min-width: auto; max-width: inherit;}
     </style> 
     <script type="text/javascript">$(document).ready(function() {
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -182,7 +177,7 @@
 <img alt="_images/sp_install3.png" src="_images/sp_install3.png" />
 </div></blockquote>
 </li>
-<li><p class="first">Change the permissions on <strong>config/sp-config.php</strong> to be writable only by yourself (644 or -rw-r&#8211;r&#8211; within your FTP Client)</p>
+<li><p class="first">Change the permissions on <strong>config/sp-config.php</strong> to be writable only by yourself (644 or -rw-r–r– within your FTP Client)</p>
 </li>
 </ol>
 <ol class="arabic" start="8">
@@ -238,7 +233,7 @@
 </li>
 <li><p class="first">Open up <strong>config/sp-config.php</strong> with a text editor like Notepad or similar editor.</p>
 <p>Then <strong>modify the following sections</strong> with your <strong>server and database settings of previous version</strong> of seo panel.</p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x"># The web path or url to access seo panel through browser.</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x"># The web path or url to access seo panel through browser.</span>
 <span class="x">define(&#39;SP_WEBPATH&#39;, &#39;http://localhost/seopanel&#39;);</span>
 
 <span class="x"># DB settings - You can get this info from your web hosting provider.</span>
@@ -258,7 +253,7 @@
 </li>
 <li><p class="first"><strong>Save</strong> the contents of file <strong>config/sp-config.php</strong></p>
 </li>
-<li><p class="first">Change the permissions on the <strong>&#8216;tmp&#8217; directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
+<li><p class="first">Change the permissions on the <strong>‘tmp’ directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
 </li>
 <li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/upgrade.php</strong></p>
 <blockquote>
@@ -274,7 +269,7 @@
 <div class="admonition-warning admonition">
 <p class="first admonition-title">Warning</p>
 <p>Remove install directory of seo panel</p>
-<p class="last">Copy all plugins from <strong>&#8216;plugins&#8217;</strong> folder of old seo panel folder to &#8216;plugins&#8217; folder of new Seo Panel.</p>
+<p class="last">Copy all plugins from <strong>‘plugins’</strong> folder of old seo panel folder to ‘plugins’ folder of new Seo Panel.</p>
 </div>
 <p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
 </div>
@@ -282,13 +277,13 @@
 <h2>Plugin Installation Steps<a class="headerlink" href="#plugin-installation-steps" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><strong>Download</strong> and <strong>unzip</strong> plugin file</li>
-<li><strong>Upload</strong> the plugin folder eg: &#8216;linkdiagnosis&#8217; to the <strong>&#8216;/plugins/&#8217; directory</strong> of seo panel</li>
+<li><strong>Upload</strong> the plugin folder eg: ‘linkdiagnosis’ to the <strong>‘/plugins/’ directory</strong> of seo panel</li>
 <li>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></li>
 </ol>
 <img alt="_images/sp_plugin_installation1.png" src="_images/sp_plugin_installation1.png" />
 <ol class="arabic simple" start="4">
-<li><strong>Activate</strong> the plugin by <strong>Click &#8216;Active&#8217;</strong></li>
-<li><strong>Accesss</strong> plugin by <strong>&#8216;Seo Plugins&#8217;</strong> from horizontal main menu.</li>
+<li><strong>Activate</strong> the plugin by <strong>Click ‘Active’</strong></li>
+<li><strong>Accesss</strong> plugin by <strong>‘Seo Plugins’</strong> from horizontal main menu.</li>
 </ol>
 <img alt="_images/sp_plugin_installation2.png" src="_images/sp_plugin_installation2.png" />
 </div>
@@ -296,12 +291,12 @@
 <h2>Plugin Upgrade Steps<a class="headerlink" href="#plugin-upgrade-steps" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first"><strong>Replace plugin folder</strong> with <strong>new version</strong> of plugin folder</p>
-<p>eg: replace folder &#8216;seopanel/plugins/linkdiagnosis&#8217;</p>
-<p>with new version of &#8216;linkdiagnosis&#8217; plugin folder</p>
+<p>eg: replace folder ‘seopanel/plugins/linkdiagnosis’</p>
+<p>with new version of ‘linkdiagnosis’ plugin folder</p>
 </li>
 <li><p class="first">Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
 </li>
-<li><p class="first"><strong>Select &#8216;Upgrade&#8217;</strong> from <strong>right most action select box</strong></p>
+<li><p class="first"><strong>Select ‘Upgrade’</strong> from <strong>right most action select box</strong></p>
 </li>
 <li><p class="first"><strong>Confirm</strong> upgrade process.</p>
 </li>
@@ -314,24 +309,24 @@
 <h2>Theme Installation Steps<a class="headerlink" href="#theme-installation-steps" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><strong>Download</strong> and <strong>unzip</strong> theme file</li>
-<li><strong>Upload</strong> the theme folder eg: &#8216;odbox&#8217; to the <strong>&#8216;/themes/&#8217; directory</strong> of seo panel</li>
+<li><strong>Upload</strong> the theme folder eg: ‘odbox’ to the <strong>‘/themes/’ directory</strong> of seo panel</li>
 <li>Go to <strong>Admin Panel =&gt; Themes Manager</strong></li>
 </ol>
 <img alt="_images/sp_theme_installation.png" src="_images/sp_theme_installation.png" />
 <ol class="arabic simple" start="4">
-<li><strong>Activate</strong> the theme by <strong>Clicking on &#8216;Activate&#8217;</strong></li>
+<li><strong>Activate</strong> the theme by <strong>Clicking on ‘Activate’</strong></li>
 </ol>
 </div>
 <div class="section" id="theme-upgrade-steps">
 <h2>Theme Upgrade Steps<a class="headerlink" href="#theme-upgrade-steps" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
 <li><p class="first"><strong>Replace theme folder</strong> with <strong>new version</strong> of theme folder</p>
-<p>eg: replace folder &#8216;seopanel/themes/odbox&#8217;</p>
-<p>with new version of &#8216;odbox&#8217; theme folder</p>
+<p>eg: replace folder ‘seopanel/themes/odbox’</p>
+<p>with new version of ‘odbox’ theme folder</p>
 </li>
 <li><p class="first">Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
 </li>
-<li><p class="first"><strong>Select &#8216;Upgrade&#8217;</strong> from <strong>right most action select box</strong></p>
+<li><p class="first"><strong>Select ‘Upgrade’</strong> from <strong>right most action select box</strong></p>
 </li>
 <li><p class="first"><strong>Confirm</strong> upgrade process.</p>
 </li>
@@ -348,7 +343,7 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="index.html">Table Of Contents</a></h3>
+<h3><a href="index.html">Table of Contents</a></h3>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">1. INSTALLATION</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#installation-requirements">Installation Requirements</a></li>
@@ -371,12 +366,14 @@
 
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -396,7 +393,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2016, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.in</a>.
+        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

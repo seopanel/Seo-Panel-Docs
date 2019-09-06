@@ -1,32 +1,21 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Theme Development Guide &#8212; Seo Panel Docs 4.1.0 documentation</title>
-    
+    <title>Theme Development Guide &#8212; Seo Panel Documentation</title>
     <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="Seo Panel Docs 4.1.0 documentation" href="../index.html" />
-    <link rel="up" title="3. Developer Guide" href="../developer.html" />
     <link rel="next" title="5. SUPPORT" href="../support.html" />
     <link rel="prev" title="Plugin Development Guide" href="plugin.html" />       
      
@@ -39,13 +28,18 @@
         div.sphinxsidebar {font-size: 1.00em;}
 		.body img{margin: 20px 0px;}
 		.related:nth-of-type(1){display: none;}
+		a{font-size: 16px;}
+		p{font-size: 16px;}
+		div.body p, div.body dd, div.body li, div.sphinxsidebar {
+		    line-height: 2.0em;
+		}
+		div.body{min-width: auto; max-width: inherit;}
     </style> 
     <script type="text/javascript">$(document).ready(function() {
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -163,15 +157,15 @@ If it is not existing any where, then use following articles to create a new the
 <h3>Names, Files, and Locations<a class="headerlink" href="#names-files-and-locations" title="Permalink to this headline">¶</a></h3>
 <p><strong>Theme Name</strong></p>
 <p>The first step for theme creation is finding a name for your theme according to the features you would like to implement with it.</p>
-<p><strong>Eg:</strong> &#8220;Test Theme&#8221;</p>
+<p><strong>Eg:</strong> “Test Theme”</p>
 <p>Once you found a name for your theme, then search it in <a class="reference external" href="https://www.seopanel.org/themes">Seo Panel theme repository</a> to find any other theme existing with the same name. If it is already existing, then choose another name for your theme.</p>
 <p><strong>Theme Files</strong></p>
 <p>If you are creating a theme Named <strong>Test Theme</strong>, Then theme file structure should be like below list</p>
 <blockquote>
-<div><ul>
+<div><ul class="simple">
 <li><dl class="first docutils">
 <dt>TestTheme</dt>
-<dd><ul class="first last simple">
+<dd><ul class="first last">
 <li>css</li>
 <li>js</li>
 <li>images</li>
@@ -183,9 +177,9 @@ If it is not existing any where, then use following articles to create a new the
 </li>
 </ul>
 <p><strong>i) TestTheme</strong></p>
-<p>First step is to create a folder named <strong>&#8220;TestTheme&#8221;</strong>,  which contains all theme files and folders. The theme directory name should not contain spaces and other special characters.</p>
+<p>First step is to create a folder named <strong>“TestTheme”</strong>,  which contains all theme files and folders. The theme directory name should not contain spaces and other special characters.</p>
 <p><strong>ii) views</strong></p>
-<p>Create a &#8220;views&#8221; folder to add all template files required by theme to show the HTML output.</p>
+<p>Create a “views” folder to add all template files required by theme to show the HTML output.</p>
 <p><strong>iii) css</strong></p>
 <p>The folder contains all css files required by theme.</p>
 <p><strong>iv) js</strong></p>
@@ -193,9 +187,9 @@ If it is not existing any where, then use following articles to create a new the
 <p><strong>v) images</strong></p>
 <p>This folder contains all images required for a theme.</p>
 <p><strong>vi) theme.xml</strong></p>
-<p>This XML file is used to add the details about the theme. Please check below sample &#8220;theme.xml&#8221; file.</p>
+<p>This XML file is used to add the details about the theme. Please check below sample “theme.xml” file.</p>
 <p><strong>Eg:</strong></p>
-<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;theme&gt;</span>
    <span class="nt">&lt;author&gt;</span>Geo Varghese<span class="nt">&lt;/author&gt;</span>
    <span class="nt">&lt;name&gt;</span>Classic<span class="nt">&lt;/name&gt;</span>
@@ -222,7 +216,7 @@ If it is not existing any where, then use following articles to create a new the
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
+<h3><a href="../index.html">Table of Contents</a></h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
@@ -241,12 +235,14 @@ If it is not existing any where, then use following articles to create a new the
 
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -267,7 +263,7 @@ If it is not existing any where, then use following articles to create a new the
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2016, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.in</a>.
+        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->
