@@ -1,3 +1,9 @@
+.. title:: Keyword position checker, SERP Tracker, Import keyword with Management
+
+.. meta::
+   :description: Guide for seo panel Keyword position checker, SERP Tracker, Import keywords,  Keyword Management in google, yahoo, bing etc 
+
+
 Keyword Management
 ~~~~~~~~~~~~~~~~~~~~~
 

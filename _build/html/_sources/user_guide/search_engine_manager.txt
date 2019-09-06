@@ -1,3 +1,10 @@
+.. title:: Search Engine Manager, search engine settings for SEO panel 
+
+.. meta::
+   :description: Guide for seo panel Search Engine Manager, search engine settings for generate search results and track rank. 
+
+
+
 Search Engine Manager
 ~~~~~~~~~~~~~~~~~~
 

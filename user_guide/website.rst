@@ -1,3 +1,9 @@
+.. title:: Seo panel website Manager guide to manage seo panel websites
+
+.. meta::
+   :description: Guide for Seo panel website Manager to add, edit, import, delete, activate websites of seo panel.
+
+
 Website Management
 ~~~~~~~~~~~~~~~~~~~~~
 

@@ -1,3 +1,9 @@
+.. title:: SEO Rank Checker for a website, alexa rank checker, moz rank checker 
+
+.. meta::
+   :description: Guide for seo panel Rank Checker for a website with alexa rank checker, moz rank checker, website rank checker  
+
+
 Rank Checker
 ~~~~~~~~~~~~~~
 

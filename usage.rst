@@ -1,3 +1,8 @@
+.. title:: Seo panel user guide with tutorials to manage seo panel.
+
+.. meta::
+   :description: Guide for Seo panel users to manage websites, keywords, reports etc. Helps to setup and generate reports in seo panel using scheduling features.
+
 2. User Guide
 =============
 
@@ -18,7 +23,6 @@ This guide explains, how user setup seo panel according to their requirement.
    user_guide/webmaster-tools
    user_guide/pagespeed-insights
    user_guide/website-analytics
-   user_guide/pagespeed-insights
    user_guide/social-media-checker
    user_guide/dashboard
    user_guide/user

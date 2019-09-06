@@ -1,3 +1,9 @@
+.. title:: Seo panel settings manager guide to setup overall settings
+
+.. meta::
+   :description: Guide for seo panel setting manager with email settings, Time zone, company name etc  
+
+
 Settings
 ~~~~~~~~
 
@@ -195,6 +201,14 @@ It requires user authentication to access the api resources.
          Go to https://console.developers.google.com/apis/library/pagespeedonline.googleapis.com
          
          Then click on **ENABLE** button
+         
+      
+      3) **Google Analytics API**
+      
+         Go to https://console.developers.google.com/apis/library/analyticsreporting.googleapis.com
+         
+         Then click on **ENABLE** button
+         
          
 4) **Connect to your google account**
 

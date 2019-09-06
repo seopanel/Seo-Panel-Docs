@@ -1,3 +1,10 @@
+.. title:: SEO Site Auditor, Generate Auditor Reports, Sitemap Generator
+
+.. meta::
+   :description: Guide for seo panel Site Auditor, Generate Auditor Reports, Sitemap Generator, external link checker, website auditor checker 
+
+
+
 Site Auditor
 ~~~~~~~~~~~~~~~
 

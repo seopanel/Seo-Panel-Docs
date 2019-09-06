@@ -1,3 +1,8 @@
+.. title:: Seo panel installation and upgrade guide, plugin and theme installation and upgrade steps
+
+.. meta::
+   :description: Guide for Seo panel installation and upgrade. Tutorial for seo panel plugins and themes installation and upgrade.
+
 1. INSTALLATION
 ===============
 

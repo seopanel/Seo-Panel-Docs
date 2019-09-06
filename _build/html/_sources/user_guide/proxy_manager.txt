@@ -1,3 +1,10 @@
+.. title:: Proxy Manager for SEO panel with import, perfomaance reports
+
+.. meta::
+   :description: Guide for seo panel Proxy Manager with import proxy, perfomaance reports, check status of proxy and Proxy Settings 
+
+
+
 Proxy Manager
 ~~~~~~~~~~~~~~~~~~
 

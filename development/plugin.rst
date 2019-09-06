@@ -1,3 +1,9 @@
+.. title:: Seo Panel Plugin Development Guide with Steps to Create a Seo Panel Plugin
+
+.. meta::
+   :description: Guide for Seo panel developers to create new plugin for seo panel. Functions and features are explained with code samples and test plugin.
+
+
 Plugin Development Guide
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
