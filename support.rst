@@ -3,7 +3,7 @@
 .. meta::
    :description: Support system for seo panel with forum, blog, email, github environments of seo panel. 
 
-5. SUPPORT
+6. SUPPORT
 ==========
 
 

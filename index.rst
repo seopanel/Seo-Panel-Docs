@@ -17,6 +17,7 @@ Seo Panel Documentation
 
    installation
    usage
+   plugins
    api
    developer
    support

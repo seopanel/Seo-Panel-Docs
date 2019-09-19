@@ -4,7 +4,7 @@
    :description: API guide to setup and call seo panel api with code examples. Website, Keyword, user  and reports management API functions.
 
 
-3. API
+4. API
 ======
 
 The Seo Panel API provides an interface to allow you to access and perform actions 
