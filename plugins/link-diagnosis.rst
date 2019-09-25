@@ -24,7 +24,7 @@ Inorder to create a new project, follow the below mentioned steps after selectin
 
 2. Enter a name for the project and click proceed
 
-    .. image:: _static/sp_ld1.png
+    .. image:: ../_static/sp_ld1.png
 
 The newly created project will be listed there. Actions including Edit, Inactive, Report and Delete will be provided along with the project list.
 
@@ -42,7 +42,7 @@ To create a new report, follow the below steps:
 
 3. Click on **Proceed**
 
-    .. image:: _static/sp_ld2.png
+    .. image:: ../_static/sp_ld2.png
 
 The newly created report will be listed there. Actions including Edit, Delete, Run, View Reports along with other options will be provided..
 
@@ -60,7 +60,7 @@ To import backlink, all you have to do is the following:
 
 3. Add the links required (multiple links can be added seperated by comma. Eg: http://www.seofree.net/, http://www.seofreetools.net/scripts/)
 
-    .. image:: _static/sp_ld3.png
+    .. image:: ../_static/sp_ld3.png
 
 4. Click on **Proceed**
 
