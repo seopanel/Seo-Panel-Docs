@@ -16,3 +16,13 @@ Link Diagnosis
 Projects Manager 
 ~~~~~~~~~~~~~~~~
 
+    Creating a project is the starting step for using the **Link Diagnosis** plugin.
+
+Inorder to create a new project, follow the below mentioned steps after selecting **Projects Manager** from **Link Diagnosis** plugin.
+
+1. Click on **New Project**
+
+2. Enter a name for the project and click proceed
+
+The newly created project will be listed there.
+
