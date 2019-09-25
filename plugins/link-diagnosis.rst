@@ -18,7 +18,7 @@ Projects Manager
 
     Creating a project is the starting step for using the **Link Diagnosis** plugin.
 
-Inorder to create a new project, follow the below mentioned steps after selecting **Projects Manager** from **Link Diagnosis** plugin.
+Inorder to create a new project, follow the below mentioned steps after selecting **Projects Manager** from **Link Diagnosis** plugin :
 
 1. Click on **New Project**
 
@@ -28,3 +28,40 @@ Inorder to create a new project, follow the below mentioned steps after selectin
 
 The newly created project will be listed there. Actions including Edit, Inactive, Report and Delete will be provided along with the project list.
 
+~~~~~~~~~~~~~~~~
+Reports Manager 
+~~~~~~~~~~~~~~~~
+
+    Reports manager helps in creating report for projects created.
+
+To create a new report, follow the below steps:
+
+1. Click on **New Report**
+
+2. Select the project, enter a report name, the url, maximum number of links and the backlink search engine to be used.
+
+3. Click on **Proceed**
+
+    .. image:: _static/sp_ld2.png
+
+The newly created report will be listed there. Actions including Edit, Delete, Run, View Reports along with other options will be provided..
+
+~~~~~~~~~~~~~~~~
+Import Backlinks 
+~~~~~~~~~~~~~~~~
+
+    This featire can be utilized to import banklinks to a particular report corresponding to a project.
+
+To import backlink, all you have to do is the following:
+
+1. Select the project
+
+2. Select the report
+
+3. Add the links required (multiple links can be added seperated by comma. Eg: http://www.seofree.net/, http://www.seofreetools.net/scripts/)
+
+    .. image:: _static/sp_ld3.png
+
+4. Click on **Proceed**
+
+A table showing result regarding the backlink addition will be shown instantly.
