@@ -24,5 +24,7 @@ Inorder to create a new project, follow the below mentioned steps after selectin
 
 2. Enter a name for the project and click proceed
 
-The newly created project will be listed there.
+    .. image:: _static/sp_ld1.png
+
+The newly created project will be listed there. Actions including Edit, Inactive, Report and Delete will be provided along with the project list.
 
