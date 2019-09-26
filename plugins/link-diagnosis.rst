@@ -65,3 +65,77 @@ To import backlink, all you have to do is the following:
 4. Click on **Proceed**
 
 A table showing result regarding the backlink addition will be shown instantly.
+
+~~~~~~~~~~~~
+View Reports 
+~~~~~~~~~~~~
+
+    All the reports associated with projects can ve viewed here. Options to export and print the reports are provided.
+
+Filtering the required reports from the database is made easy with the filters provided. The check status action provided can be also utilized to actively get the lastest status of a URL.
+
+    .. image:: _static/sp_ld4.png
+
+~~~~~~~~~~~~~~~
+Reports Summary
+~~~~~~~~~~~~~~~
+
+    **Reports Summary** provided an overall summary of the reports collected in the database. It quickly helps in determining the possibilities and rectifications that can be made.
+
+    .. image:: _static/sp_ld5.png    
+
+    **Export and Print** options are also provided.
+
+~~~~~~~~~~~~~~~
+Popular Anchors
+~~~~~~~~~~~~~~~
+
+    This is a reporting feature based on the **Popular Anchors**. All sorts of filters are also provided here.
+
+    .. image:: _static/sp_ld6.png   
+
+    **Export and Print** options are also provided.
+
+~~~~~~~~~~~~~~~
+Plugin Settings
+~~~~~~~~~~~~~~~
+
+    Settings related with the plugin can be configured here.
+
+To change a setting:
+
+1. Select or Update the fields like **Backlinks Search Engine**, **Allow user to access reports manager**, **Allow user to generate reports**, **Maximum links in report**.
+
+2. Click on **Proceed** to update the values.
+
+~~~~~~~~~~~~~~~~~~
+User Type Settings
+~~~~~~~~~~~~~~~~~~
+
+    Settings related to the Type of user can be configured from here.
+
+There are only two options provided:
+
+1. User Type
+
+2. Backlink Count
+
+~~~~~~~~~~~~~~~~~~~~~
+Search Engine Manager
+~~~~~~~~~~~~~~~~~~~~~
+
+    This feature helps in managing the search engines associated. You can either change the status of each search engine to **Active** or **Inactive**.
+
+A table dislpaying the overall details will be present in this page:
+
+    .. image:: _static/sp_ld7.png 
+
+
+~~~~~~~~~~~~
+Cron Command
+~~~~~~~~~~~~
+
+    The **Cron Command** menu briefs the command that can be added in order to make the report cron work perfectly.
+
+    0 0 * * * php /opt/lampp/htdocs/seopanel/plugins/linkdiagnosis/reportcron.php
+
