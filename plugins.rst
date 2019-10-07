@@ -13,4 +13,7 @@ This guide explains, how to use seo panel plugins according to your requirements
 
    plugins/link-diagnosis
    plugins/seo-panel-customizer
+   plugins/blog-commenter
+   plugins/directory-importer
+   plugins/social-bookmarker
 
