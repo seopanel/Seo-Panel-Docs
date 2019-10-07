@@ -74,7 +74,7 @@ View Reports
 
 Filtering the required reports from the database is made easy with the filters provided. The check status action provided can be also utilized to actively get the lastest status of a URL.
 
-    .. image:: _static/sp_ld4.png
+    .. image:: ../_static/sp_ld4.png
 
 ~~~~~~~~~~~~~~~
 Reports Summary
@@ -82,7 +82,7 @@ Reports Summary
 
     **Reports Summary** provided an overall summary of the reports collected in the database. It quickly helps in determining the possibilities and rectifications that can be made.
 
-    .. image:: _static/sp_ld5.png    
+    .. image:: ../_static/sp_ld5.png    
 
     **Export and Print** options are also provided.
 
@@ -92,7 +92,7 @@ Popular Anchors
 
     This is a reporting feature based on the **Popular Anchors**. All sorts of filters are also provided here.
 
-    .. image:: _static/sp_ld6.png   
+    .. image:: ../_static/sp_ld6.png   
 
     **Export and Print** options are also provided.
 
@@ -128,7 +128,7 @@ Search Engine Manager
 
 A table dislpaying the overall details will be present in this page:
 
-    .. image:: _static/sp_ld7.png 
+    .. image:: ../_static/sp_ld7.png 
 
 
 ~~~~~~~~~~~~
