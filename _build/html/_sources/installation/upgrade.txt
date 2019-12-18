@@ -49,7 +49,7 @@ Simply use **Bitnami / Softaculous / Installatron / Webuzo / AMPPS** to upgrade 
 
 8. Using your web browser visit the location you placed Seo Panel with the addition of **install/upgrade.php** 
 
-    e.g. http://www.yourdomain.com/seopanel/install/upgrade.php
+    e.g. http://yourdomain/seopanel/install/upgrade.php
 
 9. Follow the steps and fill out all the requested information.
 

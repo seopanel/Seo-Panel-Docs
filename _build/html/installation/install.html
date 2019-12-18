@@ -42,6 +42,13 @@
 		    line-height: 1.8em;
 		}
 		div.body{min-width: auto; max-width: inherit;}
+		
+		@media screen and ( max-width: 768px ) {
+			div.sphinxsidebar{width: 150px;}
+			div.bodywrapper {margin: 0 0 0 150px;}
+			div.sphinxsidebar ul { margin: 10px 6px;}
+			div.sphinxsidebar #searchbox input[type="text"] { width: 120px;margin-left: 2px;}
+			div.body {padding: 0 10px 10px 10px;}
     </style> 
     <script type="text/javascript">$(document).ready(function() {
         $(".body a[href^='http']").attr('target','_blank');
@@ -162,7 +169,7 @@
 </li>
 <li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/index.php</strong> or pointing directly to install/</p>
 <blockquote>
-<div><p>Eg: <a class="reference external" href="http://www.yourdomain.com/seopanel/install/">http://www.yourdomain.com/seopanel/install/</a></p>
+<div><p>Eg: <a class="reference external" href="http://yourdomain/seopanel/install/">http://yourdomain/seopanel/install/</a></p>
 <img alt="installation/_static/sp_install1.png" src="installation/_static/sp_install1.png" />
 <p><strong>Enter database details</strong></p>
 <img alt="installation/_static/sp_install2.png" src="installation/_static/sp_install2.png" />
@@ -194,9 +201,15 @@
 <div class="section" id="video-tutorials">
 <h2>Video Tutorials<a class="headerlink" href="#video-tutorials" title="Permalink to this headline">¶</a></h2>
 <p><strong>Tutorial 1</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pVjoJDbi9KI" frameborder="0" allowfullscreen></iframe><p><strong>Tutorial 2</strong></p>
-<iframe width="420" height="315" src="https://www.youtube.com/embed/9CN4MDu2eNY" frameborder="0" allowfullscreen></iframe><p><strong>How to Install Seo Panel Using Softaculous</strong></p>
-<iframe src="https://player.vimeo.com/video/31817285" width="640" height="352" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pVjoJDbi9KI" frameborder="0" allowfullscreen></iframe>
+</div><p><strong>Tutorial 2</strong></p>
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9CN4MDu2eNY" frameborder="0" allowfullscreen></iframe>
+</div><p><strong>How to Install Seo Panel Using Softaculous</strong></p>
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe src="https://player.vimeo.com/video/31817285" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div><p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
 </div>
 </div>
 

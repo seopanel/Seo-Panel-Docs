@@ -45,6 +45,13 @@
 		    line-height: 1.8em;
 		}
 		div.body{min-width: auto; max-width: inherit;}
+		
+		@media screen and ( max-width: 768px ) {
+			div.sphinxsidebar{width: 150px;}
+			div.bodywrapper {margin: 0 0 0 150px;}
+			div.sphinxsidebar ul { margin: 10px 6px;}
+			div.sphinxsidebar #searchbox input[type="text"] { width: 120px;margin-left: 2px;}
+			div.body {padding: 0 10px 10px 10px;}
     </style> 
     <script type="text/javascript">$(document).ready(function() {
         $(".body a[href^='http']").attr('target','_blank');
@@ -318,9 +325,10 @@
 <li class="toctree-l2"><a class="reference internal" href="user_guide/my_account.html">My Account</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="api.html">3. API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="developer.html">3. Developer Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="support.html">5. SUPPORT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="plugins.html">3. Plugins</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">4. API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">5. Developer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">6. SUPPORT</a></li>
 </ul>
 
 <div id="searchbox" style="display: none" role="search">

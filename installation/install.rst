@@ -21,7 +21,7 @@ Simply use **Bitnami / Softaculous / Installatron / Webuzo / AMPPS** to install 
 
 5. Using your web browser visit the location you placed Seo Panel with the addition of **install/index.php** or pointing directly to install/
 
-	Eg: http://www.yourdomain.com/seopanel/install/
+	Eg: http://yourdomain/seopanel/install/
 	
 	.. image:: _static/sp_install1.png	
 	
@@ -64,21 +64,27 @@ Video Tutorials
 
 .. raw:: html
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pVjoJDbi9KI" frameborder="0" allowfullscreen></iframe>
+	<div class="embed-responsive embed-responsive-16by9">
+    	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pVjoJDbi9KI" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 
 **Tutorial 2**    
     
 .. raw:: html
 
-    <iframe width="420" height="315" src="https://www.youtube.com/embed/9CN4MDu2eNY" frameborder="0" allowfullscreen></iframe>
+	<div class="embed-responsive embed-responsive-16by9">
+    	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9CN4MDu2eNY" frameborder="0" allowfullscreen></iframe>
+    </div>
     
 
 **How to Install Seo Panel Using Softaculous**    
     
 .. raw:: html
 
-    <iframe src="https://player.vimeo.com/video/31817285" width="640" height="352" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+	<div class="embed-responsive embed-responsive-16by9">
+    	<iframe src="https://player.vimeo.com/video/31817285" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 
 
 If you have any issues while installation, Please contact seo panel team or open a ticket in support system 
