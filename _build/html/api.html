@@ -46,12 +46,23 @@
 		}
 		div.body{min-width: auto; max-width: inherit;}
 		
+		blockquote {
+		    padding: 10px 20px;
+		    font-size: 15px;
+		    border-left: 1px solid #eee;
+		}
+		
 		@media screen and ( max-width: 768px ) {
 			div.sphinxsidebar{width: 150px;}
-			div.bodywrapper {margin: 0 0 0 150px;}
+			div.bodywrapper {margin: 0 0 0 150px; overflow: auto;}
 			div.sphinxsidebar ul { margin: 10px 6px;}
 			div.sphinxsidebar #searchbox input[type="text"] { width: 120px;margin-left: 2px;}
 			div.body {padding: 0 10px 10px 10px;}
+			ol, ul{padding-left: 16px;}
+			blockquote {
+				padding: 0px;
+				border-left: none;
+			}
     </style> 
     <script type="text/javascript">$(document).ready(function() {
         $(".body a[href^='http']").attr('target','_blank');

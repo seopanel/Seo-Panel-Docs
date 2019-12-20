@@ -47,12 +47,23 @@
 		}
 		div.body{min-width: auto; max-width: inherit;}
 		
+		blockquote {
+		    padding: 10px 20px;
+		    font-size: 15px;
+		    border-left: 1px solid #eee;
+		}
+		
 		@media screen and ( max-width: 768px ) {
 			div.sphinxsidebar{width: 150px;}
-			div.bodywrapper {margin: 0 0 0 150px;}
+			div.bodywrapper {margin: 0 0 0 150px; overflow: auto;}
 			div.sphinxsidebar ul { margin: 10px 6px;}
 			div.sphinxsidebar #searchbox input[type="text"] { width: 120px;margin-left: 2px;}
 			div.body {padding: 0 10px 10px 10px;}
+			ol, ul{padding-left: 16px;}
+			blockquote {
+				padding: 0px;
+				border-left: none;
+			}
     </style> 
     <script type="text/javascript">$(document).ready(function() {
         $(".body a[href^='http']").attr('target','_blank');
@@ -197,10 +208,18 @@
 <p>Check following tutorials to setup cron job in different environments</p>
 <p><strong>Setup cron job in cpanel</strong></p>
 <p><a class="reference external" href="https://www.siteground.com/tutorials/cpanel/cron_jobs.htm">https://www.siteground.com/tutorials/cpanel/cron_jobs.htm</a></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bmBjg1nD5yA" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in plesk</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/t0P4E6guKwU" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in linux</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UlVqobmcPuM" frameborder="0" allowfullscreen></iframe><p><strong>Setup cron job in windows</strong></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sx4vh4KdFPw" frameborder="0" allowfullscreen></iframe></li>
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bmBjg1nD5yA" frameborder="0" allowfullscreen></iframe>
+  </div><p><strong>Setup cron job in plesk</strong></p>
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t0P4E6guKwU" frameborder="0" allowfullscreen></iframe>
+  </div><p><strong>Setup cron job in linux</strong></p>
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UlVqobmcPuM" frameborder="0" allowfullscreen></iframe>
+  </div><p><strong>Setup cron job in windows</strong></p>
+  <div class="embed-responsive embed-responsive-16by9">
+<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sx4vh4KdFPw" frameborder="0" allowfullscreen></iframe>
+  </div></li>
 </ol>
 </div>
 <div class="section" id="schedule-reports">

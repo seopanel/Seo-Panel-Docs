@@ -58,29 +58,33 @@ Cron job is the best method to generate reports effectively with out failures.
  
    .. raw:: html
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/bmBjg1nD5yA" frameborder="0" allowfullscreen></iframe>
-   
+	  <div class="embed-responsive embed-responsive-16by9">
+      	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bmBjg1nD5yA" frameborder="0" allowfullscreen></iframe>
+   	  </div>
    
    **Setup cron job in plesk**    
     
    .. raw:: html
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/t0P4E6guKwU" frameborder="0" allowfullscreen></iframe>
-   
+	  <div class="embed-responsive embed-responsive-16by9">
+      	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t0P4E6guKwU" frameborder="0" allowfullscreen></iframe>
+   	  </div>
    
    **Setup cron job in linux**    
     
    .. raw:: html
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/UlVqobmcPuM" frameborder="0" allowfullscreen></iframe>
-   
+	  <div class="embed-responsive embed-responsive-16by9">
+      	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/UlVqobmcPuM" frameborder="0" allowfullscreen></iframe>
+   	  </div>
    
    **Setup cron job in windows**    
     
    .. raw:: html
 
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/sx4vh4KdFPw" frameborder="0" allowfullscreen></iframe>
-      
+	  <div class="embed-responsive embed-responsive-16by9">
+      	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sx4vh4KdFPw" frameborder="0" allowfullscreen></iframe>
+	  </div>
      
 ~~~~~~~~~~~~~~~~
 Schedule Reports
