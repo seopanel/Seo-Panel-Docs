@@ -11,7 +11,7 @@ Proxy Manager
 Proxy is mainly used, when you have to generate reports for many keywords and websites. 
 It will make a balanced query to search engines and will help to get more efficient reports.
 
-**Check this link, to get efficient proxy list to add in your seo panel** => `Click Here to Get Proxy <http://www.squidproxies.com/billing/aff.php?aff=249>`_  
+**Check this link, to get efficient proxy list to add in your seo panel** => `Click Here to Get Proxy <https://www.seopanel.org/proxies/>`_  
 
 ~~~~~~~~~~~~~~~~~~
 New Proxy
