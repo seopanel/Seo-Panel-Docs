@@ -191,7 +191,7 @@ It requires user authentication to access the api resources.
    
       1) **Webmaster Tools**
       
-         Go to https://console.developers.google.com/apis/library/webmasters.googleapis.com
+         Go to https://console.developers.google.com/apis/library/searchconsole.googleapis.com
          
          Then click on **ENABLE** button
          
