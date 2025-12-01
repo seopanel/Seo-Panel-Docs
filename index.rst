@@ -35,7 +35,7 @@ The latest version of this guide can be obtained from https://www.seopanel.org/d
 
 A live demo of seo panel is available at https://www.seopanel.org/demopanel/
 
-You can interact with the seo panel user community at http://forum.seopanel.in
+You can interact with the seo panel user community through our GitHub issues at https://github.com/seopanel/Seo-Panel/issues and blog at http://blog.seopanel.in
 
 Contact us for additional support via https://www.seopanel.org/contact/
 

@@ -1,7 +1,7 @@
-.. title:: Seo panel support system with forum, blog, email, github of seo panel 
+.. title:: Seo panel support system with blog, email, github of seo panel
 
 .. meta::
-   :description: Support system for seo panel with forum, blog, email, github environments of seo panel. 
+   :description: Support system for seo panel with blog, email, github environments of seo panel. 
 
 SUPPORT
 =======
@@ -11,9 +11,6 @@ SUPPORT
 
 
 - `Click Here to Open issues <https://github.com/seopanel/Seo-Panel/issues>`_
-
-
-- `Forum <http://forum.seopanel.in/>`_
 
 
 - `Contact Us <https://www.seopanel.org/contact/>`_
