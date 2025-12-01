@@ -1,3 +1,8 @@
+.. title:: Seo Panel Documentation- Installation, User Guide, Support, Developer Guide  
+
+.. meta::
+   :description: Seo Panel Documentation with Installation tutorials, User Guide, Support Sytem Details, Developer Guide for plugins and themes.
+
 .. Seo Panel Docs documentation master file, created by
    sphinx-quickstart on Mon Jun  8 00:36:28 2015.
    You can adapt this file completely to your liking, but it should at least
@@ -9,9 +14,11 @@ Seo Panel Documentation
 
 .. toctree::
    :maxdepth: 3
+   :numbered:
 
    installation
    usage
+   plugins
    api
    developer
    support

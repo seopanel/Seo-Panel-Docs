@@ -1,31 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="../">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Upgrade Steps</title>
-    
-    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1.3. SEO Panel Upgrade</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=af458843" />
+    <script src="../_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="" href="../index.html" />       
+    <link rel="next" title="1.4. Plugin Management" href="plugin.html" />
+    <link rel="prev" title="1.2. SEO Panel Installation" href="install.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -65,12 +55,19 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="plugin.html" title="1.4. Plugin Management"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="install.html" title="1.2. SEO Panel Installation"
+             accesskey="P">previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" accesskey="U"><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.3. </span>SEO Panel Upgrade</a></li> 
       </ul>
     </div>  
 
@@ -161,83 +158,445 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="upgrade-steps">
-<h1>Upgrade Steps<a class="headerlink" href="#upgrade-steps" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<p class="last">Before upgrade please take the <strong>backup</strong> of your current seo panel database and code</p>
+  <section id="seo-panel-upgrade">
+<h1><span class="section-number">1.3. </span>SEO Panel Upgrade<a class="headerlink" href="#seo-panel-upgrade" title="Link to this heading">¶</a></h1>
+<div class="admonition-critical-read-before-upgrading admonition">
+<p class="admonition-title">Critical - Read Before Upgrading</p>
+<ul class="simple">
+<li><p><strong>Always backup</strong> your database and files before upgrading</p></li>
+<li><p>Test the upgrade on a staging environment first if possible</p></li>
+<li><p>Plan for maintenance window - put site in maintenance mode</p></li>
+<li><p>Keep the old version until you confirm the upgrade is successful</p></li>
+<li><p>Document your current version and target version</p></li>
+</ul>
 </div>
-<p>Simply use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> to upgrade SEO Panel or Follow the below steps</p>
+<section id="upgrade-methods">
+<h2><span class="section-number">1.3.1. </span>Upgrade Methods<a class="headerlink" href="#upgrade-methods" title="Link to this heading">¶</a></h2>
+<p><strong>Method 1: Quick Upgrade (Recommended for Beginners)</strong></p>
+<p>Use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> one-click upgrade tools.</p>
+<p><strong>Method 2: Manual Upgrade</strong></p>
+<p>Follow the detailed steps below for manual upgrade with full control.</p>
+<p><strong>Method 3: Docker Upgrade</strong></p>
+<p>See Docker Upgrade section for containerized deployments.</p>
+</section>
+<section id="pre-upgrade-checklist">
+<h2><span class="section-number">1.3.2. </span>Pre-Upgrade Checklist<a class="headerlink" href="#pre-upgrade-checklist" title="Link to this heading">¶</a></h2>
+<p>Before starting the upgrade, complete these essential steps:</p>
 <ol class="arabic">
-<li><p class="first"><strong>Change</strong> the current seo panel directory name or move it to another place, e.g seopanel to seopanel_bak</p>
+<li><p><strong>Check Current Version</strong></p>
+<p>Log in to SEO Panel and note your current version from the dashboard.</p>
 </li>
-<li><p class="first"><strong>Download</strong> latest version from following link and <strong>Unzip</strong> the package.</p>
-<p><a class="reference external" href="https://www.seopanel.org/download/">https://www.seopanel.org/download/</a></p>
+<li><p><strong>Review Release Notes</strong></p>
+<p>Visit <a class="reference external" href="https://www.seopanel.org/changelog/">https://www.seopanel.org/changelog/</a> to review changes and breaking updates.</p>
 </li>
-<li><dl class="first docutils">
-<dt><strong>Upload</strong> all the files contained in this folder (retaining the directory structure) to a web accessible directory on</dt>
-<dd><p class="first last">your server or hosting account.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt><strong>Copy</strong> the contents of sample config file <strong>config/sp-config-sample.php</strong> to <strong>config/sp-config.php</strong> or remove</dt>
-<dd><p class="first last">config/sp-config.php and rename config/sp-config-sample.php to config/sp-config.php</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Open up <strong>config/sp-config.php</strong> with a text editor like Notepad or similar editor.</p>
-<p>Then <strong>modify the following sections</strong> with your <strong>server and database settings of previous version</strong> of seo panel.</p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x"># The web path or url to access seo panel through browser.</span>
-<span class="x">define(&#39;SP_WEBPATH&#39;, &#39;http://localhost/seopanel&#39;);</span>
-
-<span class="x"># DB settings - You can get this info from your web hosting provider.</span>
-<span class="x"># The name of the database for seo panel</span>
-<span class="x">define(&#39;DB_NAME&#39;, &#39;seopanel&#39;);</span>
-
-<span class="x"># DB database username</span>
-<span class="x">define(&#39;DB_USER&#39;, &#39;root&#39;);</span>
-
-<span class="x"># DB database password</span>
-<span class="x">define(&#39;DB_PASSWORD&#39;, &#39;&#39;);</span>
-
-<span class="x"># DB hostname</span>
-<span class="x">define(&#39;DB_HOST&#39;, &#39;localhost&#39;);</span>
+<li><p><strong>Check PHP Compatibility</strong></p>
+<p>Ensure your server meets the requirements for the new version:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>php<span class="w"> </span>-v<span class="w">  </span><span class="c1"># Should be PHP 7.4 or higher</span>
 </pre></div>
 </div>
 </li>
-<li><p class="first"><strong>Save</strong> the contents of file <strong>config/sp-config.php</strong></p>
+<li><p><strong>Verify Disk Space</strong></p>
+<p>Ensure you have enough disk space (at least 500MB free recommended).</p>
 </li>
-<li><p class="first">Change the permissions on the <strong>&#8216;tmp&#8217; directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
-</li>
-<li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/upgrade.php</strong></p>
-<blockquote>
-<div><p>e.g. <a class="reference external" href="http://yourdomain/seopanel/install/upgrade.php">http://yourdomain/seopanel/install/upgrade.php</a></p>
-</div></blockquote>
-</li>
-<li><p class="first">Follow the steps and fill out all the requested information.</p>
-<img alt="installation/_static/sp_upgrade1.png" src="installation/_static/sp_upgrade1.png" />
-<p><strong>Proceed to next step</strong></p>
-<img alt="installation/_static/sp_upgrade2.png" src="installation/_static/sp_upgrade2.png" />
+<li><p><strong>Put Site in Maintenance Mode</strong></p>
+<p>Create a maintenance page or use your hosting control panel to enable maintenance mode.</p>
 </li>
 </ol>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<p>Remove install directory of seo panel</p>
-<p class="last">Copy all plugins from <strong>&#8216;plugins&#8217;</strong> folder of old seo panel folder to &#8216;plugins&#8217; folder of new Seo Panel.</p>
+</section>
+<section id="complete-backup-procedure">
+<h2><span class="section-number">1.3.3. </span>Complete Backup Procedure<a class="headerlink" href="#complete-backup-procedure" title="Link to this heading">¶</a></h2>
+<p><strong>Critical:</strong> Never skip this step!</p>
+<ol class="arabic">
+<li><p><strong>Backup Database</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Using mysqldump</span>
+mysqldump<span class="w"> </span>-u<span class="w"> </span>seopanel_user<span class="w"> </span>-p<span class="w"> </span>seopanel_db<span class="w"> </span>&gt;<span class="w"> </span>seopanel_backup_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d_%H%M%S<span class="k">)</span>.sql
+
+<span class="c1"># Or using MySQL Workbench / phpMyAdmin export feature</span>
+</pre></div>
 </div>
-<p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
+</li>
+<li><p><strong>Backup Files</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create complete backup of SEO Panel directory</span>
+tar<span class="w"> </span>-czf<span class="w"> </span>seopanel_backup_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d_%H%M%S<span class="k">)</span>.tar.gz<span class="w"> </span>/path/to/seopanel/
+
+<span class="c1"># Or using FTP client, download the entire seopanel folder</span>
+</pre></div>
 </div>
+</li>
+<li><p><strong>Verify Backups</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check backup file exists and has content</span>
+ls<span class="w"> </span>-lh<span class="w"> </span>seopanel_backup_*.sql
+ls<span class="w"> </span>-lh<span class="w"> </span>seopanel_backup_*.tar.gz
+</pre></div>
+</div>
+</li>
+<li><p><strong>Store Backups Safely</strong></p>
+<ul class="simple">
+<li><p>Copy backups to a different server or local machine</p></li>
+<li><p>Do not store backups in the same directory as SEO Panel</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="manual-upgrade-steps">
+<h2><span class="section-number">1.3.4. </span>Manual Upgrade Steps<a class="headerlink" href="#manual-upgrade-steps" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>Rename Current Installation</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Via SSH/Terminal</span>
+<span class="nb">cd</span><span class="w"> </span>/var/www/html<span class="w">  </span><span class="c1"># or your web root</span>
+mv<span class="w"> </span>seopanel<span class="w"> </span>seopanel_old_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
+
+<span class="c1"># Or via FTP: Rename seopanel to seopanel_old</span>
+</pre></div>
+</div>
+<p>This preserves your old installation for quick rollback if needed.</p>
+</li>
+<li><p><strong>Download Latest Version</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download latest version</span>
+wget<span class="w"> </span>https://www.seopanel.org/download/seo-panel-latest.zip
+
+<span class="c1"># Or download from: https://www.seopanel.org/download/</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Extract New Version</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extract the package</span>
+unzip<span class="w"> </span>seo-panel-latest.zip
+
+<span class="c1"># Rename to your desired directory name</span>
+mv<span class="w"> </span>seopanel-x.x.x<span class="w"> </span>seopanel
+</pre></div>
+</div>
+<p>Or extract locally and upload via FTP to your web server.</p>
+</li>
+<li><p><strong>Copy Configuration File</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copy your old config to new installation</span>
+cp<span class="w"> </span>seopanel_old_*/config/sp-config.php<span class="w"> </span>seopanel/config/
+
+<span class="c1"># If that file doesn&#39;t exist, copy from sample</span>
+cp<span class="w"> </span>seopanel/config/sp-config-sample.php<span class="w"> </span>seopanel/config/sp-config.php
+</pre></div>
+</div>
+</li>
+<li><p><strong>Update Configuration Settings</strong></p>
+<p>Edit <strong>config/sp-config.php</strong> with your existing database credentials:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1"># The web path or url to access seo panel through browser.</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;SP_WEBPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;https://yourdomain.com/seopanel&#39;</span><span class="p">);</span>
+
+<span class="c1"># DB settings - Use your existing database credentials</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_NAME&#39;</span><span class="p">,</span> <span class="s1">&#39;seopanel_db&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_USER&#39;</span><span class="p">,</span> <span class="s1">&#39;seopanel_user&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_PASSWORD&#39;</span><span class="p">,</span> <span class="s1">&#39;your_secure_password&#39;</span><span class="p">);</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_HOST&#39;</span><span class="p">,</span> <span class="s1">&#39;localhost&#39;</span><span class="p">);</span>
+
+<span class="c1"># Database type (mysqli is recommended for PHP 7+)</span>
+<span class="nb">define</span><span class="p">(</span><span class="s1">&#39;DB_ENGINE&#39;</span><span class="p">,</span> <span class="s1">&#39;mysqli&#39;</span><span class="p">);</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+<p><strong>Important:</strong> Update SP_WEBPATH to use HTTPS if you have SSL enabled.</p>
+</li>
+<li><p><strong>Copy Custom Files and Plugins</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copy custom plugins</span>
+cp<span class="w"> </span>-r<span class="w"> </span>seopanel_old_*/plugins/custom_*<span class="w"> </span>seopanel/plugins/
+
+<span class="c1"># Copy custom themes (if any)</span>
+cp<span class="w"> </span>-r<span class="w"> </span>seopanel_old_*/themes/custom_*<span class="w"> </span>seopanel/themes/
+
+<span class="c1"># Copy any custom uploads or data</span>
+cp<span class="w"> </span>-r<span class="w"> </span>seopanel_old_*/uploads/*<span class="w"> </span>seopanel/uploads/
+</pre></div>
+</div>
+</li>
+<li><p><strong>Set File Permissions</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set proper ownership (replace www-data with your web server user)</span>
+chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>seopanel/
+
+<span class="c1"># Set directory permissions</span>
+find<span class="w"> </span>seopanel/<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+
+<span class="c1"># Set file permissions</span>
+find<span class="w"> </span>seopanel/<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+
+<span class="c1"># Set tmp directory writable</span>
+chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>seopanel/tmp/
+</pre></div>
+</div>
+</li>
+<li><p><strong>Run Database Upgrade</strong></p>
+<p>Visit the upgrade script in your web browser:</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://yourdomain.com/seopanel/install/upgrade.php</span></code></p>
+<img alt="installation/_static/sp_upgrade1.png" src="installation/_static/sp_upgrade1.png" />
+<p><strong>Follow the upgrade wizard:</strong></p>
+<ul class="simple">
+<li><p>The system will detect your current version</p></li>
+<li><p>Review the changes to be made</p></li>
+<li><p>Click “Proceed” to start the database upgrade</p></li>
+</ul>
+<img alt="installation/_static/sp_upgrade2.png" src="installation/_static/sp_upgrade2.png" />
+</li>
+<li><p><strong>Complete Upgrade</strong></p>
+<p>After successful database upgrade:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove install directory (Critical for security!)</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>seopanel/install/
+
+<span class="c1"># Or via FTP: Delete the install folder</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Verify Upgrade</strong></p>
+<ul class="simple">
+<li><p>Log in to SEO Panel admin panel</p></li>
+<li><p>Check the version number in the dashboard</p></li>
+<li><p>Test key functionality:
+- Check websites are listed correctly
+- Run a quick rank check
+- Verify reports are accessible
+- Test user permissions</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="post-upgrade-tasks">
+<h2><span class="section-number">1.3.5. </span>Post-Upgrade Tasks<a class="headerlink" href="#post-upgrade-tasks" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>Clear Cache</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clear application cache</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>seopanel/tmp/cache/*
+</pre></div>
+</div>
+</li>
+<li><p><strong>Test All Features</strong></p>
+<ul class="simple">
+<li><p>Verify all plugins are working</p></li>
+<li><p>Check scheduled tasks/cron jobs</p></li>
+<li><p>Test API integrations (MOZ, Google, etc.)</p></li>
+<li><p>Verify email notifications</p></li>
+</ul>
+</li>
+<li><p><strong>Update Cron Jobs</strong></p>
+<p>Check if cron job paths need updating:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Edit crontab</span>
+crontab<span class="w"> </span>-e
+
+<span class="c1"># Ensure paths point to new installation</span>
+*/30<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>php<span class="w"> </span>/var/www/html/seopanel/cron.php
+</pre></div>
+</div>
+</li>
+<li><p><strong>Disable Maintenance Mode</strong></p>
+<p>Remove maintenance page and restore normal operation.</p>
+</li>
+<li><p><strong>Monitor for Issues</strong></p>
+<ul class="simple">
+<li><p>Check error logs: <code class="docutils literal notranslate"><span class="pre">seopanel/tmp/logs/</span></code></p></li>
+<li><p>Monitor server logs for any PHP errors</p></li>
+<li><p>Watch for user-reported issues</p></li>
+</ul>
+</li>
+<li><p><strong>Keep Old Version Temporarily</strong></p>
+<p>Keep <code class="docutils literal notranslate"><span class="pre">seopanel_old_*</span></code> directory for 7-14 days before deleting, in case rollback is needed.</p>
+</li>
+</ol>
+</section>
+<section id="docker-upgrade">
+<h2><span class="section-number">1.3.6. </span>Docker Upgrade<a class="headerlink" href="#docker-upgrade" title="Link to this heading">¶</a></h2>
+<p>For Docker-based installations:</p>
+<ol class="arabic">
+<li><p><strong>Backup Database</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Backup database from Docker container</span>
+docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>seopanel_mysql<span class="w"> </span>mysqldump<span class="w"> </span>-u<span class="w"> </span>seopanel_user<span class="w"> </span>-pYOUR_PASSWORD<span class="w"> </span>seopanel_db<span class="w"> </span>&gt;<span class="w"> </span>backup.sql
+</pre></div>
+</div>
+</li>
+<li><p><strong>Update docker-compose.yml</strong></p>
+<p>Update the SEO Panel image version or rebuild with new code:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">seopanel</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">php:8.1-apache</span><span class="w">  </span><span class="c1"># Update PHP version if needed</span>
+<span class="w">    </span><span class="c1"># ... rest of configuration</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Pull New Images</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker-compose<span class="w"> </span>pull
+</pre></div>
+</div>
+</li>
+<li><p><strong>Stop Containers</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker-compose<span class="w"> </span>down
+</pre></div>
+</div>
+</li>
+<li><p><strong>Update Application Files</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Download and extract new version to mounted volume</span>
+<span class="nb">cd</span><span class="w"> </span>/path/to/docker/volumes/seopanel
+wget<span class="w"> </span>https://www.seopanel.org/download/seo-panel-latest.zip
+unzip<span class="w"> </span>seo-panel-latest.zip
+<span class="c1"># Copy files to mounted directory</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Start Containers</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</pre></div>
+</div>
+</li>
+<li><p><strong>Run Upgrade Script</strong></p>
+<p>Access upgrade.php through your browser and follow the wizard.</p>
+</li>
+<li><p><strong>Remove Install Directory</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>seopanel<span class="w"> </span>rm<span class="w"> </span>-rf<span class="w"> </span>/var/www/html/install
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="rollback-procedure">
+<h2><span class="section-number">1.3.7. </span>Rollback Procedure<a class="headerlink" href="#rollback-procedure" title="Link to this heading">¶</a></h2>
+<p>If the upgrade fails or causes issues:</p>
+<ol class="arabic">
+<li><p><strong>Stop Web Server</strong> (if possible)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>stop<span class="w"> </span>apache2<span class="w">  </span><span class="c1"># or nginx</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Restore Database</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Drop current database and restore backup</span>
+mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;DROP DATABASE seopanel_db;&quot;</span>
+mysql<span class="w"> </span>-u<span class="w"> </span>root<span class="w"> </span>-p<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;CREATE DATABASE seopanel_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;&quot;</span>
+mysql<span class="w"> </span>-u<span class="w"> </span>seopanel_user<span class="w"> </span>-p<span class="w"> </span>seopanel_db<span class="w"> </span>&lt;<span class="w"> </span>seopanel_backup_YYYYMMDD_HHMMSS.sql
+</pre></div>
+</div>
+</li>
+<li><p><strong>Restore Files</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove failed upgrade</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>seopanel/
+
+<span class="c1"># Restore old version</span>
+mv<span class="w"> </span>seopanel_old_YYYYMMDD<span class="w"> </span>seopanel
+</pre></div>
+</div>
+</li>
+<li><p><strong>Restart Web Server</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>systemctl<span class="w"> </span>start<span class="w"> </span>apache2<span class="w">  </span><span class="c1"># or nginx</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Verify Rollback</strong></p>
+<ul class="simple">
+<li><p>Access SEO Panel and confirm it’s working</p></li>
+<li><p>Check that you’re back to the previous version</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="troubleshooting-upgrade-issues">
+<h2><span class="section-number">1.3.8. </span>Troubleshooting Upgrade Issues<a class="headerlink" href="#troubleshooting-upgrade-issues" title="Link to this heading">¶</a></h2>
+<p><strong>Issue: Database upgrade fails</strong></p>
+<ul class="simple">
+<li><p>Check database user has ALTER, CREATE, DROP privileges</p></li>
+<li><p>Verify database connection settings in sp-config.php</p></li>
+<li><p>Check MySQL/PHP error logs for specific errors</p></li>
+<li><p>Try running upgrade.php again (it should be safe to re-run)</p></li>
+</ul>
+<p><strong>Issue: White screen after upgrade</strong></p>
+<ul class="simple">
+<li><p>Enable PHP error display temporarily</p></li>
+<li><p>Check file permissions (644 for files, 755 for directories)</p></li>
+<li><p>Verify PHP version compatibility</p></li>
+<li><p>Check Apache/Nginx error logs</p></li>
+</ul>
+<p><strong>Issue: Plugins not working</strong></p>
+<ul class="simple">
+<li><p>Deactivate and reactivate plugins</p></li>
+<li><p>Check plugin compatibility with new version</p></li>
+<li><p>Update plugins to latest versions</p></li>
+<li><p>Check plugin directory permissions</p></li>
+</ul>
+<p><strong>Issue: Missing data after upgrade</strong></p>
+<ul class="simple">
+<li><p>This should not happen if upgrade completed successfully</p></li>
+<li><p>Restore from backup and try upgrade again</p></li>
+<li><p>Check database tables are present: <code class="docutils literal notranslate"><span class="pre">SHOW</span> <span class="pre">TABLES</span> <span class="pre">LIKE</span> <span class="pre">'seopanel_%';</span></code></p></li>
+</ul>
+<p><strong>Issue: Performance degraded after upgrade</strong></p>
+<ul class="simple">
+<li><p>Clear all caches: <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">seopanel/tmp/cache/*</span></code></p></li>
+<li><p>Optimize database tables</p></li>
+<li><p>Check PHP memory_limit and max_execution_time</p></li>
+<li><p>Review new version’s system requirements</p></li>
+</ul>
+</section>
+<section id="version-specific-upgrade-notes">
+<h2><span class="section-number">1.3.9. </span>Version-Specific Upgrade Notes<a class="headerlink" href="#version-specific-upgrade-notes" title="Link to this heading">¶</a></h2>
+<p><strong>Upgrading from very old versions (3.x to 4.x)</strong></p>
+<ul class="simple">
+<li><p>Major version upgrades may require intermediate upgrades</p></li>
+<li><p>Review all changelogs between versions</p></li>
+<li><p>Expect longer upgrade time for database migrations</p></li>
+<li><p>Consider fresh install + data migration for very old versions</p></li>
+</ul>
+<p><strong>PHP Version Upgrades</strong></p>
+<p>If upgrading PHP version alongside SEO Panel:</p>
+<ul class="simple">
+<li><p>Test compatibility thoroughly</p></li>
+<li><p>Update PHP extensions as needed</p></li>
+<li><p>Review deprecated PHP functions in custom code</p></li>
+<li><p>Update configuration files if needed</p></li>
+</ul>
+</section>
+<section id="support-resources">
+<h2><span class="section-number">1.3.10. </span>Support Resources<a class="headerlink" href="#support-resources" title="Link to this heading">¶</a></h2>
+<p>If you encounter issues during upgrade:</p>
+<ul class="simple">
+<li><p>Official Documentation: <a class="reference external" href="https://www.seopanel.org/docs/">https://www.seopanel.org/docs/</a></p></li>
+<li><p>GitHub Issues: <a class="reference external" href="https://github.com/seopanel/seopanel">https://github.com/seopanel/seopanel</a></p></li>
+<li><p>Support System: Open a ticket through the official website</p></li>
+</ul>
+<p><strong>Before contacting support, gather:</strong></p>
+<ul class="simple">
+<li><p>Current SEO Panel version</p></li>
+<li><p>Target upgrade version</p></li>
+<li><p>PHP version (<code class="docutils literal notranslate"><span class="pre">php</span> <span class="pre">-v</span></code>)</p></li>
+<li><p>MySQL version (<code class="docutils literal notranslate"><span class="pre">mysql</span> <span class="pre">-V</span></code>)</p></li>
+<li><p>Error messages from logs</p></li>
+<li><p>Steps you’ve already tried</p></li>
+</ul>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../installation.html">1. Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="requirements.html">1.1. System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">1.2. SEO Panel Installation</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. SEO Panel Upgrade</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#upgrade-methods">1.3.1. Upgrade Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pre-upgrade-checklist">1.3.2. Pre-Upgrade Checklist</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#complete-backup-procedure">1.3.3. Complete Backup Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-upgrade-steps">1.3.4. Manual Upgrade Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#post-upgrade-tasks">1.3.5. Post-Upgrade Tasks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docker-upgrade">1.3.6. Docker Upgrade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rollback-procedure">1.3.7. Rollback Procedure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting-upgrade-issues">1.3.8. Troubleshooting Upgrade Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-specific-upgrade-notes">1.3.9. Version-Specific Upgrade Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#support-resources">1.3.10. Support Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html">1.4. Plugin Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">1.5. Theme Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#quick-links">1.6. Quick Links</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">3. Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">4. API</a></li>
@@ -246,15 +605,15 @@
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -262,11 +621,19 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="plugin.html" title="1.4. Plugin Management"
+             >next</a></li>
+        <li class="right" >
+          <a href="install.html" title="1.2. SEO Panel Installation"
+             >previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" ><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.3. </span>SEO Panel Upgrade</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

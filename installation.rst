@@ -3,17 +3,29 @@
 .. meta::
    :description: Guide for Seo panel installation and upgrade. Tutorial for seo panel plugins and themes installation and upgrade.
 
-1. INSTALLATION
-===============
+Installation Guide
+==================
 
-.. include:: installation/requirements.rst
+This guide covers everything you need to install, upgrade, and manage SEO Panel, including plugins and themes.
 
-.. include:: installation/install.rst
+.. toctree::
+   :maxdepth: 2
+   :caption: Installation Topics
 
-.. include:: installation/upgrade.rst
+   installation/requirements
+   installation/install
+   installation/upgrade
+   installation/plugin
+   installation/theme
 
-.. include:: installation/plugin.rst
 
-.. include:: installation/theme.rst
+Quick Links
+-----------
+
+- :doc:`installation/requirements` - System requirements for SEO Panel
+- :doc:`installation/install` - Fresh installation steps
+- :doc:`installation/upgrade` - Upgrade existing installation
+- :doc:`installation/plugin` - Install and upgrade plugins
+- :doc:`installation/theme` - Install and upgrade themes
 
 

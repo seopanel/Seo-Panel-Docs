@@ -1,3 +1,9 @@
+.. title:: Seo panel settings manager guide to setup overall settings
+
+.. meta::
+   :description: Guide for seo panel setting manager with email settings, Time zone, company name etc  
+
+
 Settings
 ~~~~~~~~
 
@@ -55,7 +61,7 @@ Setup MOZ API to get website ranking related informations
 
 2) **Click on `Click here to get MOZ account`** link to get free MOZ API account
 
-   https://moz.com/help/guides/moz-api/mozscape/getting-started-with-mozscape/create-and-manage-your-account
+   https://moz.com/checkout/api
 
 3) Enter details as following screen shot
 
@@ -185,7 +191,7 @@ It requires user authentication to access the api resources.
    
       1) **Webmaster Tools**
       
-         Go to https://console.developers.google.com/apis/library/webmasters.googleapis.com
+         Go to https://console.developers.google.com/apis/library/searchconsole.googleapis.com
          
          Then click on **ENABLE** button
          
@@ -195,6 +201,14 @@ It requires user authentication to access the api resources.
          Go to https://console.developers.google.com/apis/library/pagespeedonline.googleapis.com
          
          Then click on **ENABLE** button
+         
+      
+      3) **Google Analytics API**
+      
+         Go to https://console.developers.google.com/apis/library/analyticsreporting.googleapis.com
+         
+         Then click on **ENABLE** button
+         
          
 4) **Connect to your google account**
 

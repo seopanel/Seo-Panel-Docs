@@ -3,8 +3,8 @@
 .. meta::
    :description: Guide for Seo panel users to manage websites, keywords, reports etc. Helps to setup and generate reports in seo panel using scheduling features.
 
-2. User Guide
-=============
+User Guide
+==========
 
 This guide explains, how user setup seo panel according to their requirement.
 

@@ -47,8 +47,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Seo Panel'
-copyright = u'2019, seopanel'
-author = u'seopanel'
+copyright = u'2025, Seo Panel'
+author = u'Seo Panel'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -140,6 +140,11 @@ html_favicon = '_static/favicon.ico'
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# Custom CSS files
+html_css_files = [
+    'custom.css',
+]
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied

@@ -1,31 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="../">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Theme Installation Steps</title>
-    
-    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1.5. Theme Management</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=af458843" />
+    <script src="../_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="" href="../index.html" />       
+    <link rel="next" title="2. User Guide" href="../usage.html" />
+    <link rel="prev" title="1.4. Plugin Management" href="plugin.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -65,12 +55,19 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="../usage.html" title="2. User Guide"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="plugin.html" title="1.4. Plugin Management"
+             accesskey="P">previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" accesskey="U"><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.5. </span>Theme Management</a></li> 
       </ul>
     </div>  
 
@@ -161,46 +158,492 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="theme-installation-steps">
-<h1>Theme Installation Steps<a class="headerlink" href="#theme-installation-steps" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic simple">
-<li><strong>Download</strong> and <strong>unzip</strong> theme file</li>
-<li><strong>Upload</strong> the theme folder eg: &#8216;odbox&#8217; to the <strong>&#8216;/themes/&#8217; directory</strong> of seo panel</li>
-<li>Go to <strong>Admin Panel =&gt; Themes Manager</strong></li>
-</ol>
-<img alt="installation/_static/sp_theme_installation.png" src="installation/_static/sp_theme_installation.png" />
-<ol class="arabic simple" start="4">
-<li><strong>Activate</strong> the theme by <strong>Clicking on &#8216;Activate&#8217;</strong></li>
-</ol>
+  <section id="theme-management">
+<h1><span class="section-number">1.5. </span>Theme Management<a class="headerlink" href="#theme-management" title="Link to this heading">¶</a></h1>
+<div class="admonition-important admonition">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Only install themes from trusted sources</p></li>
+<li><p>Always backup your database before installing new themes</p></li>
+<li><p>Check theme compatibility with your SEO Panel version</p></li>
+<li><p>Preview themes before activating on production sites</p></li>
+</ul>
 </div>
-<div class="section" id="theme-upgrade-steps">
-<h1>Theme Upgrade Steps<a class="headerlink" href="#theme-upgrade-steps" title="Permalink to this headline">¶</a></h1>
+<section id="theme-installation-process">
+<h2><span class="section-number">1.5.1. </span>Theme Installation Process<a class="headerlink" href="#theme-installation-process" title="Link to this heading">¶</a></h2>
+<p>Themes must be installed manually by uploading files to the server via FTP/SSH.</p>
+</section>
+<section id="manual-theme-installation-steps">
+<h2><span class="section-number">1.5.2. </span>Manual Theme Installation Steps<a class="headerlink" href="#manual-theme-installation-steps" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
-<li><p class="first"><strong>Replace theme folder</strong> with <strong>new version</strong> of theme folder</p>
-<p>eg: replace folder &#8216;seopanel/themes/odbox&#8217;</p>
-<p>with new version of &#8216;odbox&#8217; theme folder</p>
+<li><p><strong>Download Theme</strong></p>
+<p>Download the theme from the official SEO Panel themes repository:</p>
+<p><a class="reference external" href="https://www.seopanel.org/themes/">https://www.seopanel.org/themes/</a></p>
+<p>Save the theme ZIP file to your local computer.</p>
 </li>
-<li><p class="first">Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
+<li><p><strong>Extract Theme Archive</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extract the theme ZIP file</span>
+unzip<span class="w"> </span>theme-name.zip
+
+<span class="c1"># This will create a theme folder, e.g., &#39;odbox&#39;</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Select &#8216;Upgrade&#8217;</strong> from <strong>right most action select box</strong></p>
+<li><p><strong>Upload Theme Files</strong></p>
+<p>Upload the extracted theme folder to the <code class="docutils literal notranslate"><span class="pre">/themes/</span></code> directory:</p>
+<p><strong>Via FTP:</strong>
+- Connect to your server via FTP
+- Navigate to <code class="docutils literal notranslate"><span class="pre">/seopanel/themes/</span></code>
+- Upload the entire theme folder (e.g., <code class="docutils literal notranslate"><span class="pre">odbox</span></code>)</p>
+<p><strong>Via SSH:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copy theme to themes directory</span>
+cp<span class="w"> </span>-r<span class="w"> </span>odbox<span class="w"> </span>/var/www/html/seopanel/themes/
+
+<span class="c1"># Set proper permissions</span>
+chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/seopanel/themes/odbox
+find<span class="w"> </span>/var/www/html/seopanel/themes/odbox<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+find<span class="w"> </span>/var/www/html/seopanel/themes/odbox<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Confirm</strong> upgrade process.</p>
+<li><p><strong>Verify Theme Files</strong></p>
+<p>Ensure the theme directory structure is correct:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>seopanel/
+└── themes/
+    └── odbox/
+        ├── theme.php         # Main theme file
+        ├── style.css         # Theme stylesheet
+        ├── images/           # Theme images
+        ├── js/               # JavaScript files (if any)
+        ├── readme.txt        # Theme documentation
+        └── [other files]
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Check the version</strong> of theme, you can see it is changed.</p>
+<li><p><strong>Access Theme Manager</strong></p>
+<p>Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
+<p>The new theme should appear in the themes list.</p>
+<img alt="installation/_static/sp_theme_installation.png" src="installation/_static/sp_theme_installation.png" />
+</li>
+<li><p><strong>Preview Theme</strong> (Optional but Recommended)</p>
+<p>Before activating:</p>
+<ul class="simple">
+<li><p>Click <strong>“Preview”</strong> to see how the theme looks</p></li>
+<li><p>Test theme responsiveness</p></li>
+<li><p>Check compatibility with your content</p></li>
+<li><p>Verify all elements display correctly</p></li>
+</ul>
+</li>
+<li><p><strong>Activate Theme</strong></p>
+<p>When ready to switch themes:</p>
+<ul class="simple">
+<li><p>Locate the theme in the list</p></li>
+<li><p>Click <strong>“Activate”</strong> button</p></li>
+<li><p>Wait for confirmation message</p></li>
+<li><p>The theme status will change to “Active”</p></li>
+</ul>
+</li>
+<li><p><strong>Configure Theme Settings</strong></p>
+<p>After activation:</p>
+<ul class="simple">
+<li><p>Access theme customization options (if available)</p></li>
+<li><p>Upload custom logos or images</p></li>
+<li><p>Configure color schemes</p></li>
+<li><p>Set layout preferences</p></li>
+<li><p>Adjust responsive breakpoints</p></li>
+</ul>
+</li>
+<li><p><strong>Test Theme Functionality</strong></p>
+<p>Thoroughly test the new theme:</p>
+<ul class="simple">
+<li><p>Check all pages render correctly</p></li>
+<li><p>Test navigation menus</p></li>
+<li><p>Verify mobile responsiveness</p></li>
+<li><p>Check browser compatibility (Chrome, Firefox, Safari, Edge)</p></li>
+<li><p>Test form submissions</p></li>
+<li><p>Verify print styles (if applicable)</p></li>
+</ul>
+</li>
+<li><p><strong>Clear Browser Cache</strong></p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Clear server-side cache</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>/var/www/html/seopanel/tmp/cache/*
+</pre></div>
+</div>
+<p>Also clear browser cache (Ctrl+Shift+Delete) to see changes.</p>
+</div></blockquote>
+<section id="theme-upgrade-steps">
+<h3><span class="section-number">1.5.2.1. </span>Theme Upgrade Steps<a class="headerlink" href="#theme-upgrade-steps" title="Link to this heading">¶</a></h3>
+<div class="admonition-critical admonition">
+<p class="admonition-title">Critical</p>
+<ul class="simple">
+<li><p>Always backup your theme customizations before upgrading</p></li>
+<li><p>Document any custom CSS or template modifications</p></li>
+<li><p>Test theme upgrades on staging environment first</p></li>
+<li><p>Keep old theme folder as backup for 7-14 days</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="theme-upgrade-process">
+<h2><span class="section-number">1.5.3. </span>Theme Upgrade Process<a class="headerlink" href="#theme-upgrade-process" title="Link to this heading">¶</a></h2>
+<p>Themes must be upgraded manually by replacing theme files on the server.</p>
+</section>
+<section id="manual-theme-upgrade-steps">
+<h2><span class="section-number">1.5.4. </span>Manual Theme Upgrade Steps<a class="headerlink" href="#manual-theme-upgrade-steps" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>Check Current Version</strong></p>
+<p>Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
+<p>Note the current version of your active theme.</p>
+</li>
+<li><p><strong>Backup Current Theme</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create timestamped backup of current theme</span>
+<span class="nb">cd</span><span class="w"> </span>/var/www/html/seopanel/themes/
+cp<span class="w"> </span>-r<span class="w"> </span>odbox<span class="w"> </span>odbox_backup_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d_%H%M%S<span class="k">)</span>
+
+<span class="c1"># Or via FTP: Download the theme folder</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Document Custom Changes</strong></p>
+<p>Create a list of any custom modifications:</p>
+<ul class="simple">
+<li><p>Custom CSS in style.css</p></li>
+<li><p>Modified template files</p></li>
+<li><p>Custom images or logos</p></li>
+<li><p>Configuration changes</p></li>
+</ul>
+</li>
+<li><p><strong>Export Customizations</strong></p>
+<p>Save any custom code or settings:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Save custom CSS</span>
+cp<span class="w"> </span>odbox/style.css<span class="w"> </span>odbox_custom_styles_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>.css
+
+<span class="c1"># Save custom images</span>
+cp<span class="w"> </span>-r<span class="w"> </span>odbox/images/custom<span class="w"> </span>odbox_custom_images_backup/
+</pre></div>
+</div>
+</li>
+<li><p><strong>Download New Version</strong></p>
+<p>Download the latest theme version from:</p>
+<p><a class="reference external" href="https://www.seopanel.org/themes/">https://www.seopanel.org/themes/</a></p>
+</li>
+<li><p><strong>Switch to Default Theme</strong> (Recommended)</p>
+<p>Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
+<p>Activate the default theme temporarily to avoid issues during upgrade.</p>
+</li>
+<li><p><strong>Replace Theme Files</strong></p>
+<p><strong>Via FTP:</strong>
+- Delete the old theme folder (after backing up!)
+- Upload the new theme folder</p>
+<p><strong>Via SSH:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove old theme (backup already created)</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>/var/www/html/seopanel/themes/odbox
+
+<span class="c1"># Extract and copy new version</span>
+unzip<span class="w"> </span>odbox-new.zip
+cp<span class="w"> </span>-r<span class="w"> </span>odbox<span class="w"> </span>/var/www/html/seopanel/themes/
+
+<span class="c1"># Set proper permissions</span>
+chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/seopanel/themes/odbox
+find<span class="w"> </span>/var/www/html/seopanel/themes/odbox<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+find<span class="w"> </span>/var/www/html/seopanel/themes/odbox<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Reapply Customizations</strong></p>
+<p>Carefully merge your custom changes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Review differences between old and new</span>
+diff<span class="w"> </span>-r<span class="w"> </span>odbox_backup_*<span class="w"> </span>odbox/
+
+<span class="c1"># Manually merge custom changes into new theme</span>
+<span class="c1"># DO NOT simply copy old files over new ones!</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Run Theme Upgrade</strong> (If Required)</p>
+<p>Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
+<ul class="simple">
+<li><p>Find the upgraded theme</p></li>
+<li><p>Select <strong>“Upgrade”</strong> from the action dropdown</p></li>
+<li><p>Confirm to run any database updates</p></li>
+<li><p>Wait for completion</p></li>
+</ul>
+</li>
+<li><p><strong>Reactivate Theme</strong></p>
+<ul class="simple">
+<li><p>Click <strong>“Activate”</strong> on the upgraded theme</p></li>
+<li><p>Clear cache: <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">seopanel/tmp/cache/*</span></code></p></li>
+<li><p>Refresh browser cache</p></li>
+</ul>
+</li>
+<li><p><strong>Verify Upgrade</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Test all pages thoroughly</p></li>
+<li><p>Check responsive design on mobile devices</p></li>
+<li><p>Verify custom features still work</p></li>
+<li><p>Test in multiple browsers</p></li>
+<li><p>Review logs for any errors</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="theme-compatibility-check">
+<h2><span class="section-number">1.5.5. </span>Theme Compatibility Check<a class="headerlink" href="#theme-compatibility-check" title="Link to this heading">¶</a></h2>
+<p>Before installing or upgrading themes:</p>
+<ol class="arabic">
+<li><p><strong>Check SEO Panel Version</strong></p>
+<p>View your SEO Panel version in the dashboard.</p>
+</li>
+<li><p><strong>Review Theme Requirements</strong></p>
+<p>Check the theme’s readme.txt for:</p>
+<ul class="simple">
+<li><p>Minimum SEO Panel version</p></li>
+<li><p>PHP version requirements</p></li>
+<li><p>Browser compatibility</p></li>
+<li><p>Required features or plugins</p></li>
+</ul>
+</li>
+<li><p><strong>Check Browser Support</strong></p>
+<p>Ensure the theme supports:</p>
+<ul class="simple">
+<li><p>Chrome (latest 2 versions)</p></li>
+<li><p>Firefox (latest 2 versions)</p></li>
+<li><p>Safari (latest 2 versions)</p></li>
+<li><p>Edge (latest 2 versions)</p></li>
+<li><p>Mobile browsers</p></li>
+</ul>
+</li>
+<li><p><strong>Test Responsive Design</strong></p>
+<p>Preview theme on various screen sizes:</p>
+<ul class="simple">
+<li><p>Desktop (1920px, 1366px, 1024px)</p></li>
+<li><p>Tablet (768px, 1024px)</p></li>
+<li><p>Mobile (375px, 414px, 360px)</p></li>
+</ul>
 </li>
 </ol>
-<p>Get Seo Panel Themes from =&gt; <a class="reference external" href="https://www.seopanel.org/themes/">https://www.seopanel.org/themes/</a></p>
+</section>
+<section id="theme-customization-best-practices">
+<h2><span class="section-number">1.5.6. </span>Theme Customization Best Practices<a class="headerlink" href="#theme-customization-best-practices" title="Link to this heading">¶</a></h2>
+<p><strong>Child Themes (Advanced)</strong></p>
+<p>For extensive customizations, consider creating a child theme:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>seopanel/
+└── themes/
+    ├── parent-theme/          # Original theme
+    └── parent-theme-child/    # Your customizations
+</pre></div>
 </div>
+<p><strong>Custom CSS</strong></p>
+<p>Add custom CSS without modifying theme files:</p>
+<div class="highlight-css notranslate"><div class="highlight"><pre><span></span><span class="c">/* Create custom.css in theme folder */</span>
+<span class="c">/* Add your custom styles here */</span>
+
+<span class="p">.</span><span class="nc">custom-header</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#your</span><span class="o">-</span><span class="kc">color</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>Version Control</strong></p>
+<p>Track theme customizations with Git:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/var/www/html/seopanel/themes/your-theme
+git<span class="w"> </span>init
+git<span class="w"> </span>add<span class="w"> </span>.
+git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial theme customization&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="troubleshooting-theme-issues">
+<h2><span class="section-number">1.5.7. </span>Troubleshooting Theme Issues<a class="headerlink" href="#troubleshooting-theme-issues" title="Link to this heading">¶</a></h2>
+<p><strong>Issue: Theme doesn’t appear in Theme Manager</strong></p>
+<ul class="simple">
+<li><p>Check the theme folder is in <code class="docutils literal notranslate"><span class="pre">/themes/</span></code> directory</p></li>
+<li><p>Verify the theme has a valid <code class="docutils literal notranslate"><span class="pre">theme.php</span></code> file</p></li>
+<li><p>Check file permissions (755 for directories, 644 for files)</p></li>
+<li><p>Review error logs: <code class="docutils literal notranslate"><span class="pre">seopanel/tmp/logs/</span></code></p></li>
+</ul>
+<p><strong>Issue: Theme activation fails</strong></p>
+<ul class="simple">
+<li><p>Check if theme is compatible with SEO Panel version</p></li>
+<li><p>Verify all required theme files are present</p></li>
+<li><p>Check PHP error logs for specific errors</p></li>
+<li><p>Try activating default theme first</p></li>
+</ul>
+<p><strong>Issue: Broken layout after theme activation</strong></p>
+<ul class="simple">
+<li><p>Clear browser cache (Ctrl+Shift+Delete)</p></li>
+<li><p>Clear server cache: <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">seopanel/tmp/cache/*</span></code></p></li>
+<li><p>Check CSS file is loading (view page source)</p></li>
+<li><p>Verify file permissions on CSS files</p></li>
+<li><p>Check for JavaScript errors in browser console</p></li>
+</ul>
+<p><strong>Issue: Theme looks different than preview</strong></p>
+<ul class="simple">
+<li><p>Clear all caches (browser and server)</p></li>
+<li><p>Check if custom CSS is interfering</p></li>
+<li><p>Verify all theme files uploaded correctly</p></li>
+<li><p>Compare file sizes with original download</p></li>
+<li><p>Check for missing images or assets</p></li>
+</ul>
+<p><strong>Issue: Mobile responsive issues</strong></p>
+<ul class="simple">
+<li><p>Test with browser developer tools</p></li>
+<li><p>Check viewport meta tag in theme header</p></li>
+<li><p>Verify media queries in CSS</p></li>
+<li><p>Test on actual mobile devices</p></li>
+<li><p>Check for JavaScript conflicts</p></li>
+</ul>
+<p><strong>Issue: Theme performance is slow</strong></p>
+<ul class="simple">
+<li><p>Optimize images (compress, use appropriate formats)</p></li>
+<li><p>Minimize CSS and JavaScript files</p></li>
+<li><p>Enable browser caching</p></li>
+<li><p>Remove unused CSS/JS</p></li>
+<li><p>Consider using a CDN for assets</p></li>
+</ul>
+</section>
+<section id="theme-security-best-practices">
+<h2><span class="section-number">1.5.8. </span>Theme Security Best Practices<a class="headerlink" href="#theme-security-best-practices" title="Link to this heading">¶</a></h2>
+<div class="admonition-security-checklist admonition">
+<p class="admonition-title">Security Checklist</p>
+<ul class="simple">
+<li><p>✓ Only install themes from official SEO Panel repository</p></li>
+<li><p>✓ Verify theme developer/author reputation</p></li>
+<li><p>✓ Read theme reviews before installation</p></li>
+<li><p>✓ Keep themes updated to latest versions</p></li>
+<li><p>✓ Remove unused themes completely</p></li>
+<li><p>✓ Review theme code for suspicious functions</p></li>
+<li><p>✓ Check for hardcoded external links</p></li>
+<li><p>✓ Validate theme doesn’t load external resources</p></li>
+<li><p>✓ Backup before installing or upgrading themes</p></li>
+<li><p>✓ Test themes in staging environment first</p></li>
+</ul>
+</div>
+</section>
+<section id="theme-optimization-tips">
+<h2><span class="section-number">1.5.9. </span>Theme Optimization Tips<a class="headerlink" href="#theme-optimization-tips" title="Link to this heading">¶</a></h2>
+<p><strong>Performance:</strong></p>
+<ul class="simple">
+<li><p>Use optimized images (WebP format when possible)</p></li>
+<li><p>Minimize HTTP requests</p></li>
+<li><p>Combine and minify CSS/JS files</p></li>
+<li><p>Use lazy loading for images</p></li>
+<li><p>Enable GZIP compression</p></li>
+</ul>
+<p><strong>Accessibility:</strong></p>
+<ul class="simple">
+<li><p>Ensure proper color contrast ratios</p></li>
+<li><p>Use semantic HTML elements</p></li>
+<li><p>Add ARIA labels where needed</p></li>
+<li><p>Test with screen readers</p></li>
+<li><p>Ensure keyboard navigation works</p></li>
+</ul>
+<p><strong>SEO:</strong></p>
+<ul class="simple">
+<li><p>Use proper heading hierarchy (H1, H2, H3)</p></li>
+<li><p>Include schema markup</p></li>
+<li><p>Optimize meta tags</p></li>
+<li><p>Ensure fast page load times</p></li>
+<li><p>Make theme mobile-friendly</p></li>
+</ul>
+<p><strong>Maintenance:</strong></p>
+<ul class="simple">
+<li><p>Document all customizations</p></li>
+<li><p>Keep themes updated regularly</p></li>
+<li><p>Remove unused theme assets</p></li>
+<li><p>Monitor theme performance</p></li>
+<li><p>Test after each update</p></li>
+</ul>
+</section>
+<section id="theme-resources">
+<h2><span class="section-number">1.5.10. </span>Theme Resources<a class="headerlink" href="#theme-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Official Theme Repository:</strong> <a class="reference external" href="https://www.seopanel.org/themes/">https://www.seopanel.org/themes/</a></p></li>
+<li><p><strong>Theme Documentation:</strong> Available in each theme’s readme.txt</p></li>
+<li><p><strong>GitHub Issues:</strong> <a class="reference external" href="https://github.com/seopanel/seopanel/issues">https://github.com/seopanel/seopanel/issues</a></p></li>
+<li><p><strong>Support System:</strong> Open tickets through official website</p></li>
+</ul>
+<p><strong>Popular SEO Panel Themes:</strong></p>
+<ul class="simple">
+<li><p>Classic Theme - Traditional SEO Panel design</p></li>
+<li><p>Modern Theme - Contemporary flat design</p></li>
+<li><p>Dark Theme - Dark mode interface</p></li>
+<li><p>Minimal Theme - Clean, minimalist design</p></li>
+<li><p>Responsive Theme - Mobile-first responsive design</p></li>
+</ul>
+</section>
+<section id="custom-theme-development">
+<h2><span class="section-number">1.5.11. </span>Custom Theme Development<a class="headerlink" href="#custom-theme-development" title="Link to this heading">¶</a></h2>
+<p>For developers wanting to create custom themes:</p>
+<p><strong>Basic Theme Structure:</strong></p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>mytheme/
+├── theme.php          # Theme configuration
+├── style.css          # Main stylesheet
+├── header.php         # Header template
+├── footer.php         # Footer template
+├── sidebar.php        # Sidebar template
+├── functions.php      # Theme functions
+├── images/            # Theme images
+├── js/                # JavaScript files
+└── readme.txt         # Documentation
+</pre></div>
+</div>
+<p><strong>Theme Configuration (theme.php):</strong></p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<span class="c1">// Theme Name: My Custom Theme</span>
+<span class="c1">// Description: A custom theme for SEO Panel</span>
+<span class="c1">// Version: 1.0.0</span>
+<span class="c1">// Author: Your Name</span>
+<span class="c1">// Requires: SEO Panel 4.x or higher</span>
+<span class="cp">?&gt;</span>
+</pre></div>
+</div>
+<p><strong>Development Best Practices:</strong></p>
+<ul class="simple">
+<li><p>Follow SEO Panel coding standards</p></li>
+<li><p>Use proper PHP templating</p></li>
+<li><p>Implement responsive design</p></li>
+<li><p>Test cross-browser compatibility</p></li>
+<li><p>Document all custom functions</p></li>
+<li><p>Include theme preview screenshot</p></li>
+<li><p>Provide detailed readme.txt</p></li>
+</ul>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../installation.html">1. Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="requirements.html">1.1. System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">1.2. SEO Panel Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html">1.3. SEO Panel Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html">1.4. Plugin Management</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.5. Theme Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#theme-installation-process">1.5.1. Theme Installation Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-theme-installation-steps">1.5.2. Manual Theme Installation Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme-upgrade-process">1.5.3. Theme Upgrade Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-theme-upgrade-steps">1.5.4. Manual Theme Upgrade Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme-compatibility-check">1.5.5. Theme Compatibility Check</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme-customization-best-practices">1.5.6. Theme Customization Best Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting-theme-issues">1.5.7. Troubleshooting Theme Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme-security-best-practices">1.5.8. Theme Security Best Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme-optimization-tips">1.5.9. Theme Optimization Tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#theme-resources">1.5.10. Theme Resources</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#custom-theme-development">1.5.11. Custom Theme Development</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#quick-links">1.6. Quick Links</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">3. Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">4. API</a></li>
@@ -209,15 +652,15 @@
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -225,11 +668,19 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="../usage.html" title="2. User Guide"
+             >next</a></li>
+        <li class="right" >
+          <a href="plugin.html" title="1.4. Plugin Management"
+             >previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" ><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.5. </span>Theme Management</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

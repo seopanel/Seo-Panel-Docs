@@ -1,31 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="../">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Installation Requirements</title>
-    
-    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1.1. System Requirements</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=af458843" />
+    <script src="../_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="" href="../index.html" />       
+    <link rel="next" title="1.2. SEO Panel Installation" href="install.html" />
+    <link rel="prev" title="1. Installation Guide" href="../installation.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -65,12 +55,19 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="install.html" title="1.2. SEO Panel Installation"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="../installation.html" title="1. Installation Guide"
+             accesskey="P">previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" accesskey="U"><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.1. </span>System Requirements</a></li> 
       </ul>
     </div>  
 
@@ -161,24 +158,71 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="installation-requirements">
-<h1>Installation Requirements<a class="headerlink" href="#installation-requirements" title="Permalink to this headline">¶</a></h1>
+  <section id="system-requirements">
+<h1><span class="section-number">1.1. </span>System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading">¶</a></h1>
 <ol class="arabic simple">
-<li><strong>PHP</strong> version <em>&gt;= 4.0.0 and &lt; 7.0.0</em></li>
-<li><strong>MySQL</strong> Support</li>
-<li><strong>CURL</strong> Support - Curl must be installed with php, Ref: <a class="reference external" href="http://php.net/manual/en/curl.setup.php">http://php.net/manual/en/curl.setup.php</a></li>
+<li><p><strong>PHP</strong> version <em>&gt;= 7.4</em> (PHP 8.0, 8.1, 8.2, 8.3 supported)</p>
+<ul class="simple">
+<li><p>Recommended: PHP 8.1 or higher for better performance and security</p></li>
+</ul>
+</li>
+<li><p><strong>Database Support</strong></p>
+<ul class="simple">
+<li><p>MySQL <em>&gt;= 5.7</em> or MariaDB <em>&gt;= 10.3</em></p></li>
+<li><p>MySQL 8.0+ or MariaDB 10.5+ recommended</p></li>
+</ul>
+</li>
+<li><p><strong>PHP Extensions Required</strong></p>
+<ul class="simple">
+<li><p><strong>CURL</strong> - For making HTTP requests, Ref: <a class="reference external" href="http://php.net/manual/en/curl.setup.php">http://php.net/manual/en/curl.setup.php</a></p></li>
+<li><p><strong>mysqli</strong> or <strong>PDO MySQL</strong> - For database connectivity</p></li>
+<li><p><strong>JSON</strong> - For data processing (usually enabled by default)</p></li>
+<li><p><strong>mbstring</strong> - For multibyte string handling</p></li>
+<li><p><strong>OpenSSL</strong> - For secure connections</p></li>
+</ul>
+</li>
+<li><p><strong>Web Server</strong></p>
+<ul class="simple">
+<li><p>Apache 2.4+ with mod_rewrite enabled (recommended)</p></li>
+<li><p>Nginx 1.18+ with proper PHP-FPM configuration</p></li>
+<li><p>Any web server with PHP support</p></li>
+</ul>
+</li>
+<li><p><strong>File Permissions</strong></p>
+<ul class="simple">
+<li><p>Write permissions for tmp/ directory</p></li>
+<li><p>Write permissions for config/ directory during installation</p></li>
+</ul>
+</li>
+<li><p><strong>Recommended Server Specs</strong></p>
+<ul class="simple">
+<li><p>Memory: Minimum 256MB, Recommended 512MB or higher</p></li>
+<li><p>Disk Space: Minimum 100MB for application files</p></li>
+<li><p>PHP memory_limit: 128MB or higher</p></li>
+<li><p>PHP max_execution_time: 300 seconds or higher for large operations</p></li>
+</ul>
+</li>
 </ol>
-</div>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../installation.html">1. Installation Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.1. System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">1.2. SEO Panel Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html">1.3. SEO Panel Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html">1.4. Plugin Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">1.5. Theme Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#quick-links">1.6. Quick Links</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">3. Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">4. API</a></li>
@@ -187,15 +231,15 @@
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -203,11 +247,19 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="install.html" title="1.2. SEO Panel Installation"
+             >next</a></li>
+        <li class="right" >
+          <a href="../installation.html" title="1. Installation Guide"
+             >previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" ><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.1. </span>System Requirements</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

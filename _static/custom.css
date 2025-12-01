@@ -1,0 +1,57 @@
+/* Custom CSS for SEO Panel Documentation */
+
+/* Increase sidebar width */
+div.sphinxsidebar {
+    width: 280px !important;  /* Increased from default ~230px */
+    padding-left: 15px !important;  /* Add left padding to entire sidebar */
+}
+
+div.bodywrapper {
+    margin: 0 0 0 280px !important;  /* Match sidebar width */
+}
+
+/* Adjust for smaller screens */
+@media screen and (max-width: 875px) {
+    div.sphinxsidebar {
+        width: 100% !important;
+    }
+
+    div.bodywrapper {
+        margin: 0 !important;
+    }
+}
+
+/* Improve sidebar readability with increased width */
+div.sphinxsidebar ul {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+/* Add spacing between menu items */
+div.sphinxsidebar li {
+    line-height: 1.5;
+    margin-bottom: 8px;  /* Add gap between menu items */
+}
+
+/* Add padding to menu links for better click area */
+div.sphinxsidebar a {
+    display: block;
+    padding: 4px 0;  /* Vertical padding for links */
+}
+
+/* Better spacing for nested menu items */
+div.sphinxsidebar ul ul {
+    margin-left: 15px;
+    margin-top: 5px;  /* Add space before nested items */
+}
+
+/* Nested menu items spacing */
+div.sphinxsidebar ul ul li {
+    margin-bottom: 6px;  /* Slightly less spacing for nested items */
+}
+
+/* Current page highlight - add more padding */
+div.sphinxsidebar li.current > a {
+    padding: 5px 0;
+    font-weight: bold;
+}

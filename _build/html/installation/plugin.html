@@ -1,31 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="../">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Plugin Installation Steps</title>
-    
-    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1.4. Plugin Management</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=af458843" />
+    <script src="../_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="" href="../index.html" />       
+    <link rel="next" title="1.5. Theme Management" href="theme.html" />
+    <link rel="prev" title="1.3. SEO Panel Upgrade" href="upgrade.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -65,12 +55,19 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="theme.html" title="1.5. Theme Management"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="upgrade.html" title="1.3. SEO Panel Upgrade"
+             accesskey="P">previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" accesskey="U"><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.4. </span>Plugin Management</a></li> 
       </ul>
     </div>  
 
@@ -161,48 +158,341 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="plugin-installation-steps">
-<h1>Plugin Installation Steps<a class="headerlink" href="#plugin-installation-steps" title="Permalink to this headline">¶</a></h1>
-<ol class="arabic simple">
-<li><strong>Download</strong> and <strong>unzip</strong> plugin file</li>
-<li><strong>Upload</strong> the plugin folder eg: &#8216;linkdiagnosis&#8217; to the <strong>&#8216;/plugins/&#8217; directory</strong> of seo panel</li>
-<li>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></li>
-</ol>
-<img alt="installation/_static/sp_plugin_installation1.png" src="installation/_static/sp_plugin_installation1.png" />
-<ol class="arabic simple" start="4">
-<li><strong>Activate</strong> the plugin by <strong>Click &#8216;Active&#8217;</strong></li>
-<li><strong>Accesss</strong> plugin by <strong>&#8216;Seo Plugins&#8217;</strong> from horizontal main menu.</li>
-</ol>
-<img alt="installation/_static/sp_plugin_installation2.png" src="installation/_static/sp_plugin_installation2.png" />
+  <section id="plugin-management">
+<h1><span class="section-number">1.4. </span>Plugin Management<a class="headerlink" href="#plugin-management" title="Link to this heading">¶</a></h1>
+<div class="admonition-important admonition">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>Only install plugins from trusted sources</p></li>
+<li><p>Always backup your database before installing new plugins</p></li>
+<li><p>Check plugin compatibility with your SEO Panel version</p></li>
+<li><p>Review plugin permissions and requirements</p></li>
+</ul>
 </div>
-<div class="section" id="plugin-upgrade-steps">
-<h1>Plugin Upgrade Steps<a class="headerlink" href="#plugin-upgrade-steps" title="Permalink to this headline">¶</a></h1>
+<section id="plugin-installation-process">
+<h2><span class="section-number">1.4.1. </span>Plugin Installation Process<a class="headerlink" href="#plugin-installation-process" title="Link to this heading">¶</a></h2>
+<p>Plugins must be installed manually by uploading files to the server via FTP/SSH.</p>
+</section>
+<section id="manual-plugin-installation-steps">
+<h2><span class="section-number">1.4.2. </span>Manual Plugin Installation Steps<a class="headerlink" href="#manual-plugin-installation-steps" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
-<li><p class="first"><strong>Replace plugin folder</strong> with <strong>new version</strong> of plugin folder</p>
-<p>eg: replace folder &#8216;seopanel/plugins/linkdiagnosis&#8217;</p>
-<p>with new version of &#8216;linkdiagnosis&#8217; plugin folder</p>
+<li><p><strong>Download Plugin</strong></p>
+<p>Download the plugin from the official SEO Panel plugins repository:</p>
+<p><a class="reference external" href="https://www.seopanel.org/plugins/">https://www.seopanel.org/plugins/</a></p>
+<p>Save the plugin ZIP file to your local computer.</p>
 </li>
-<li><p class="first">Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
+<li><p><strong>Extract Plugin Archive</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Extract the plugin ZIP file</span>
+unzip<span class="w"> </span>plugin-name.zip
+
+<span class="c1"># This will create a plugin folder, e.g., &#39;linkdiagnosis&#39;</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Select &#8216;Upgrade&#8217;</strong> from <strong>right most action select box</strong></p>
+<li><p><strong>Upload Plugin Files</strong></p>
+<p>Upload the extracted plugin folder to the <code class="docutils literal notranslate"><span class="pre">/plugins/</span></code> directory:</p>
+<p><strong>Via FTP:</strong>
+- Connect to your server via FTP
+- Navigate to <code class="docutils literal notranslate"><span class="pre">/seopanel/plugins/</span></code>
+- Upload the entire plugin folder (e.g., <code class="docutils literal notranslate"><span class="pre">linkdiagnosis</span></code>)</p>
+<p><strong>Via SSH:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copy plugin to plugins directory</span>
+cp<span class="w"> </span>-r<span class="w"> </span>linkdiagnosis<span class="w"> </span>/var/www/html/seopanel/plugins/
+
+<span class="c1"># Set proper permissions</span>
+chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis
+find<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+find<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Confirm</strong> upgrade process.</p>
+<li><p><strong>Verify Plugin Files</strong></p>
+<p>Ensure the plugin directory structure is correct:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>seopanel/
+└── plugins/
+    └── linkdiagnosis/
+        ├── plugin.php        # Main plugin file
+        ├── readme.txt        # Plugin documentation
+        ├── install.php       # Installation script (if any)
+        └── [other files]
+</pre></div>
+</div>
 </li>
-<li><p class="first"><strong>Check the version</strong> of plugin, you can see it is changed.</p>
+<li><p><strong>Access Plugin Manager</strong></p>
+<p>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
+<p>The new plugin should appear in the plugins list.</p>
+<img alt="installation/_static/sp_plugin_installation1.png" src="installation/_static/sp_plugin_installation1.png" />
+</li>
+<li><p><strong>Activate Plugin</strong></p>
+<ul class="simple">
+<li><p>Locate the plugin in the list</p></li>
+<li><p>Click <strong>“Activate”</strong> button</p></li>
+<li><p>Wait for confirmation message</p></li>
+<li><p>The plugin status will change to “Active”</p></li>
+</ul>
+</li>
+<li><p><strong>Configure Plugin</strong></p>
+<p>After activation:</p>
+<ul class="simple">
+<li><p>Access the plugin from <strong>“Seo Plugins”</strong> in the main menu</p></li>
+<li><p>Configure plugin settings as needed</p></li>
+<li><p>Set up any required API keys or credentials</p></li>
+</ul>
+<img alt="installation/_static/sp_plugin_installation2.png" src="installation/_static/sp_plugin_installation2.png" />
+</li>
+<li><p><strong>Test Plugin Functionality</strong></p>
+<ul class="simple">
+<li><p>Run a test operation with the plugin</p></li>
+<li><p>Check for any error messages</p></li>
+<li><p>Verify results are displayed correctly</p></li>
+</ul>
 </li>
 </ol>
-<p>Get Seo Panel Plugins from =&gt; <a class="reference external" href="https://www.seopanel.org/plugins/">https://www.seopanel.org/plugins/</a></p>
+<section id="plugin-upgrade-steps">
+<h3><span class="section-number">1.4.2.1. </span>Plugin Upgrade Steps<a class="headerlink" href="#plugin-upgrade-steps" title="Link to this heading">¶</a></h3>
+<div class="admonition-critical admonition">
+<p class="admonition-title">Critical</p>
+<ul class="simple">
+<li><p>Always backup your database before upgrading plugins</p></li>
+<li><p>Check the plugin changelog for breaking changes</p></li>
+<li><p>Test plugin upgrades on staging environment first</p></li>
+<li><p>Deactivate plugin before upgrading if experiencing issues</p></li>
+</ul>
 </div>
+</section>
+</section>
+<section id="plugin-upgrade-process">
+<h2><span class="section-number">1.4.3. </span>Plugin Upgrade Process<a class="headerlink" href="#plugin-upgrade-process" title="Link to this heading">¶</a></h2>
+<p>Plugins must be upgraded manually by replacing plugin files on the server.</p>
+</section>
+<section id="manual-plugin-upgrade-steps">
+<h2><span class="section-number">1.4.4. </span>Manual Plugin Upgrade Steps<a class="headerlink" href="#manual-plugin-upgrade-steps" title="Link to this heading">¶</a></h2>
+<ol class="arabic">
+<li><p><strong>Check Current Version</strong></p>
+<p>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
+<p>Note the current version of the plugin you want to upgrade.</p>
+</li>
+<li><p><strong>Backup Plugin Data</strong> (If Applicable)</p>
+<p>Some plugins store configuration or data:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Backup plugin database tables (if any)</span>
+mysqldump<span class="w"> </span>-u<span class="w"> </span>seopanel_user<span class="w"> </span>-p<span class="w"> </span>seopanel_db<span class="w"> </span>plugin_table_name<span class="w"> </span>&gt;<span class="w"> </span>plugin_backup.sql
+</pre></div>
+</div>
+</li>
+<li><p><strong>Backup Current Plugin</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Backup the current plugin folder</span>
+cp<span class="w"> </span>-r<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis<span class="w"> </span><span class="se">\</span>
+<span class="w">      </span>/var/www/html/seopanel/plugins/linkdiagnosis_backup_<span class="k">$(</span>date<span class="w"> </span>+%Y%m%d<span class="k">)</span>
+
+<span class="c1"># Or via FTP: Download the plugin folder to your computer</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Download New Version</strong></p>
+<p>Download the latest plugin version from:</p>
+<p><a class="reference external" href="https://www.seopanel.org/plugins/">https://www.seopanel.org/plugins/</a></p>
+</li>
+<li><p><strong>Deactivate Plugin</strong> (Optional but Recommended)</p>
+<p>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
+<p>Deactivate the plugin before replacing files.</p>
+</li>
+<li><p><strong>Replace Plugin Files</strong></p>
+<p><strong>Via FTP:</strong>
+- Delete the old plugin folder (after backing up!)
+- Upload the new plugin folder</p>
+<p><strong>Via SSH:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remove old plugin (backup already created)</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis
+
+<span class="c1"># Extract and copy new version</span>
+unzip<span class="w"> </span>linkdiagnosis-new.zip
+cp<span class="w"> </span>-r<span class="w"> </span>linkdiagnosis<span class="w"> </span>/var/www/html/seopanel/plugins/
+
+<span class="c1"># Set proper permissions</span>
+chown<span class="w"> </span>-R<span class="w"> </span>www-data:www-data<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis
+find<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis<span class="w"> </span>-type<span class="w"> </span>d<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+find<span class="w"> </span>/var/www/html/seopanel/plugins/linkdiagnosis<span class="w"> </span>-type<span class="w"> </span>f<span class="w"> </span>-exec<span class="w"> </span>chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Run Database Upgrade</strong> (If Required)</p>
+<p>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
+<ul class="simple">
+<li><p>Find the upgraded plugin</p></li>
+<li><p>Select <strong>“Upgrade”</strong> from the action dropdown</p></li>
+<li><p>Confirm to run database updates</p></li>
+<li><p>Wait for completion</p></li>
+</ul>
+</li>
+<li><p><strong>Reactivate Plugin</strong></p>
+<p>If you deactivated the plugin:</p>
+<ul class="simple">
+<li><p>Click <strong>“Activate”</strong> to enable it again</p></li>
+<li><p>Reconfigure settings if needed</p></li>
+</ul>
+</li>
+<li><p><strong>Verify Upgrade</strong></p>
+<ul class="simple">
+<li><p>Check version number in Plugin Manager</p></li>
+<li><p>Test all plugin features</p></li>
+<li><p>Review logs for any errors</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="plugin-compatibility-check">
+<h2><span class="section-number">1.4.5. </span>Plugin Compatibility Check<a class="headerlink" href="#plugin-compatibility-check" title="Link to this heading">¶</a></h2>
+<p>Before installing or upgrading plugins, verify compatibility:</p>
+<ol class="arabic">
+<li><p><strong>Check SEO Panel Version</strong></p>
+<p>View your SEO Panel version in the dashboard footer.</p>
+</li>
+<li><p><strong>Review Plugin Requirements</strong></p>
+<p>Check the plugin’s readme.txt or documentation for:</p>
+<ul class="simple">
+<li><p>Minimum SEO Panel version</p></li>
+<li><p>PHP version requirements</p></li>
+<li><p>Required PHP extensions</p></li>
+<li><p>Database requirements</p></li>
+</ul>
+</li>
+<li><p><strong>Test in Staging</strong> (Recommended)</p>
+<p>If possible, test the plugin in a staging environment first.</p>
+</li>
+</ol>
+</section>
+<section id="troubleshooting-plugin-issues">
+<h2><span class="section-number">1.4.6. </span>Troubleshooting Plugin Issues<a class="headerlink" href="#troubleshooting-plugin-issues" title="Link to this heading">¶</a></h2>
+<p><strong>Issue: Plugin doesn’t appear in Plugin Manager</strong></p>
+<ul class="simple">
+<li><p>Check the plugin folder is in <code class="docutils literal notranslate"><span class="pre">/plugins/</span></code> directory</p></li>
+<li><p>Verify the plugin has a valid <code class="docutils literal notranslate"><span class="pre">plugin.php</span></code> file</p></li>
+<li><p>Check file permissions (755 for directories, 644 for files)</p></li>
+<li><p>Review error logs: <code class="docutils literal notranslate"><span class="pre">seopanel/tmp/logs/</span></code></p></li>
+</ul>
+<p><strong>Issue: Plugin activation fails</strong></p>
+<ul class="simple">
+<li><p>Check database connectivity</p></li>
+<li><p>Verify plugin has proper install.php if required</p></li>
+<li><p>Check PHP error logs for specific errors</p></li>
+<li><p>Ensure database user has CREATE/ALTER permissions</p></li>
+</ul>
+<p><strong>Issue: Plugin causes errors after activation</strong></p>
+<ul class="simple">
+<li><p>Deactivate the plugin immediately</p></li>
+<li><p>Check PHP version compatibility</p></li>
+<li><p>Review plugin changelog for known issues</p></li>
+<li><p>Check for conflicting plugins</p></li>
+<li><p>Enable PHP error display to see specific errors</p></li>
+</ul>
+<p><strong>Issue: Plugin not working after upgrade</strong></p>
+<ul class="simple">
+<li><p>Clear SEO Panel cache: <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-rf</span> <span class="pre">seopanel/tmp/cache/*</span></code></p></li>
+<li><p>Deactivate and reactivate the plugin</p></li>
+<li><p>Check if database upgrade completed successfully</p></li>
+<li><p>Review new plugin requirements</p></li>
+<li><p>Restore backup and try again if needed</p></li>
+</ul>
+<p><strong>Issue: White screen after plugin installation</strong></p>
+<ul class="simple">
+<li><p>Access server via SSH/FTP</p></li>
+<li><p>Remove the problematic plugin folder</p></li>
+<li><p>Clear cache and restart web server</p></li>
+<li><p>Check Apache/Nginx error logs</p></li>
+<li><p>Restore from backup if needed</p></li>
+</ul>
+</section>
+<section id="plugin-security-best-practices">
+<h2><span class="section-number">1.4.7. </span>Plugin Security Best Practices<a class="headerlink" href="#plugin-security-best-practices" title="Link to this heading">¶</a></h2>
+<div class="admonition-security-checklist admonition">
+<p class="admonition-title">Security Checklist</p>
+<ul class="simple">
+<li><p>✓ Only install plugins from official SEO Panel repository</p></li>
+<li><p>✓ Verify plugin developer/author reputation</p></li>
+<li><p>✓ Read plugin reviews and ratings before installation</p></li>
+<li><p>✓ Keep plugins updated to latest versions</p></li>
+<li><p>✓ Remove unused or inactive plugins completely</p></li>
+<li><p>✓ Review plugin permissions and file access</p></li>
+<li><p>✓ Monitor plugin activity in logs</p></li>
+<li><p>✓ Use staging environment for testing new plugins</p></li>
+<li><p>✓ Backup before installing or upgrading plugins</p></li>
+<li><p>✓ Check for plugin vulnerabilities before installation</p></li>
+</ul>
+</div>
+</section>
+<section id="plugin-management-tips">
+<h2><span class="section-number">1.4.8. </span>Plugin Management Tips<a class="headerlink" href="#plugin-management-tips" title="Link to this heading">¶</a></h2>
+<p><strong>Regular Maintenance:</strong></p>
+<ul class="simple">
+<li><p>Review installed plugins quarterly</p></li>
+<li><p>Remove plugins that are no longer needed</p></li>
+<li><p>Keep all plugins updated to latest versions</p></li>
+<li><p>Monitor plugin performance impact</p></li>
+<li><p>Check for abandoned or unmaintained plugins</p></li>
+</ul>
+<p><strong>Performance Optimization:</strong></p>
+<ul class="simple">
+<li><p>Disable plugins not actively being used</p></li>
+<li><p>Monitor plugin memory usage</p></li>
+<li><p>Check plugin impact on page load times</p></li>
+<li><p>Review plugin database queries for efficiency</p></li>
+</ul>
+<p><strong>Backup Strategy:</strong></p>
+<ul class="simple">
+<li><p>Include plugins in regular backup routine</p></li>
+<li><p>Document plugin configurations</p></li>
+<li><p>Keep copies of plugin settings</p></li>
+<li><p>Test plugin restoration procedures</p></li>
+</ul>
+</section>
+<section id="plugin-resources">
+<h2><span class="section-number">1.4.9. </span>Plugin Resources<a class="headerlink" href="#plugin-resources" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Official Plugin Repository:</strong> <a class="reference external" href="https://www.seopanel.org/plugins/">https://www.seopanel.org/plugins/</a></p></li>
+<li><p><strong>Plugin Documentation:</strong> Available in each plugin’s readme.txt</p></li>
+<li><p><strong>GitHub Issues:</strong> <a class="reference external" href="https://github.com/seopanel/seopanel/issues">https://github.com/seopanel/seopanel/issues</a></p></li>
+<li><p><strong>Support System:</strong> Open tickets through official website</p></li>
+</ul>
+<p><strong>Popular SEO Panel Plugins:</strong></p>
+<ul class="simple">
+<li><p>Link Diagnosis - Analyze backlink quality</p></li>
+<li><p>Social Bookmarker - Submit to social bookmarking sites</p></li>
+<li><p>Directory Importer - Import web directory lists</p></li>
+<li><p>Blog Commenter - Automated blog commenting</p></li>
+<li><p>SEO Panel Customizer - Customize panel appearance</p></li>
+</ul>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../installation.html">1. Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="requirements.html">1.1. System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html">1.2. SEO Panel Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html">1.3. SEO Panel Upgrade</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.4. Plugin Management</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-installation-process">1.4.1. Plugin Installation Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-plugin-installation-steps">1.4.2. Manual Plugin Installation Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-upgrade-process">1.4.3. Plugin Upgrade Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-plugin-upgrade-steps">1.4.4. Manual Plugin Upgrade Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-compatibility-check">1.4.5. Plugin Compatibility Check</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting-plugin-issues">1.4.6. Troubleshooting Plugin Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-security-best-practices">1.4.7. Plugin Security Best Practices</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-management-tips">1.4.8. Plugin Management Tips</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#plugin-resources">1.4.9. Plugin Resources</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">1.5. Theme Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#quick-links">1.6. Quick Links</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">3. Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">4. API</a></li>
@@ -211,15 +501,15 @@
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -227,11 +517,19 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="theme.html" title="1.5. Theme Management"
+             >next</a></li>
+        <li class="right" >
+          <a href="upgrade.html" title="1.3. SEO Panel Upgrade"
+             >previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" ><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.4. </span>Plugin Management</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

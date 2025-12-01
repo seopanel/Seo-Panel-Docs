@@ -1,33 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="Guide for Seo panel installation and upgrade. Tutorial for seo panel plugins and themes installation and upgrade." name="description" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Guide for Seo panel installation and upgrade. Tutorial for seo panel plugins and themes installation and upgrade." name="description" />
 
     <title>Seo panel installation and upgrade guide, plugin and theme installation and upgrade steps</title>
-    
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=af458843" />
+    <script src="_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="" href="index.html" />
-    <link rel="next" title="2. User Guide" href="usage.html" />
+    <link rel="next" title="1.1. System Requirements" href="installation/requirements.html" />
     <link rel="prev" title="Seo Panel Documentation" href="index.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -68,18 +56,18 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="usage.html" title="2. User Guide"
+          <a href="installation/requirements.html" title="1.1. System Requirements"
              accesskey="N">next</a></li>
         <li class="right" >
           <a href="index.html" title="Seo Panel Documentation"
              accesskey="P">previous</a> |</li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">Seo panel installation and upgrade guide, plugin and theme installation and upgrade steps</a></li> 
       </ul>
     </div>  
 
@@ -170,228 +158,89 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="installation">
-<h1>1. INSTALLATION<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="installation-requirements">
-<h2>Installation Requirements<a class="headerlink" href="#installation-requirements" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><strong>PHP</strong> version <em>&gt;= 4.0.0 and &lt; 7.0.0</em></li>
-<li><strong>MySQL</strong> Support</li>
-<li><strong>CURL</strong> Support - Curl must be installed with php, Ref: <a class="reference external" href="http://php.net/manual/en/curl.setup.php">http://php.net/manual/en/curl.setup.php</a></li>
-</ol>
-</div>
-<div class="section" id="installation-steps">
-<h2>Installation Steps<a class="headerlink" href="#installation-steps" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<p class="last">Please install seo panel in <em>subdirectory of your website</em> like <a class="reference external" href="http://yourwebsite.com/seopanel">http://yourwebsite.com/seopanel</a> to prevent any issues with main website.</p>
-</div>
-<p>Simply use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> to install SEO Panel or Follow the below steps</p>
-<ol class="arabic">
-<li><p class="first"><strong>Download</strong> latest version from following link and <strong>Unzip</strong> the package.</p>
-<p><a class="reference external" href="https://www.seopanel.org/download/">https://www.seopanel.org/download/</a></p>
+  <section id="installation-guide">
+<h1><span class="section-number">1. </span>Installation Guide<a class="headerlink" href="#installation-guide" title="Link to this heading">¶</a></h1>
+<p>This guide covers everything you need to install, upgrade, and manage SEO Panel, including plugins and themes.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">Installation Topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation/requirements.html">1.1. System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation/install.html">1.2. SEO Panel Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/install.html#installation-methods">1.2.1. Installation Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/install.html#manual-installation-steps">1.2.2. Manual Installation Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/install.html#docker-installation">1.2.3. Docker Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/install.html#security-best-practices">1.2.4. Security Best Practices</a></li>
+</ul>
 </li>
-<li><p class="first"><strong>Upload</strong> all the files contained in this folder (retaining the directory structure) to a web accessible directory on your server or hosting account.</p>
+<li class="toctree-l1"><a class="reference internal" href="installation/upgrade.html">1.3. SEO Panel Upgrade</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#upgrade-methods">1.3.1. Upgrade Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#pre-upgrade-checklist">1.3.2. Pre-Upgrade Checklist</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#complete-backup-procedure">1.3.3. Complete Backup Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#manual-upgrade-steps">1.3.4. Manual Upgrade Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#post-upgrade-tasks">1.3.5. Post-Upgrade Tasks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#docker-upgrade">1.3.6. Docker Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#rollback-procedure">1.3.7. Rollback Procedure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#troubleshooting-upgrade-issues">1.3.8. Troubleshooting Upgrade Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#version-specific-upgrade-notes">1.3.9. Version-Specific Upgrade Notes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html#support-resources">1.3.10. Support Resources</a></li>
+</ul>
 </li>
-<li><p class="first">Change the permissions on <strong>config/sp-config.php</strong> to be writable by all (666 or -rw-rw-rw- within your FTP Client)</p>
+<li class="toctree-l1"><a class="reference internal" href="installation/plugin.html">1.4. Plugin Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#plugin-installation-process">1.4.1. Plugin Installation Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#manual-plugin-installation-steps">1.4.2. Manual Plugin Installation Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#plugin-upgrade-process">1.4.3. Plugin Upgrade Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#manual-plugin-upgrade-steps">1.4.4. Manual Plugin Upgrade Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#plugin-compatibility-check">1.4.5. Plugin Compatibility Check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#troubleshooting-plugin-issues">1.4.6. Troubleshooting Plugin Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#plugin-security-best-practices">1.4.7. Plugin Security Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#plugin-management-tips">1.4.8. Plugin Management Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html#plugin-resources">1.4.9. Plugin Resources</a></li>
+</ul>
 </li>
-<li><p class="first">Change the permissions on the <strong>tmp directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
+<li class="toctree-l1"><a class="reference internal" href="installation/theme.html">1.5. Theme Management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-installation-process">1.5.1. Theme Installation Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#manual-theme-installation-steps">1.5.2. Manual Theme Installation Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-upgrade-process">1.5.3. Theme Upgrade Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#manual-theme-upgrade-steps">1.5.4. Manual Theme Upgrade Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-compatibility-check">1.5.5. Theme Compatibility Check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-customization-best-practices">1.5.6. Theme Customization Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#troubleshooting-theme-issues">1.5.7. Troubleshooting Theme Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-security-best-practices">1.5.8. Theme Security Best Practices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-optimization-tips">1.5.9. Theme Optimization Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#theme-resources">1.5.10. Theme Resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html#custom-theme-development">1.5.11. Custom Theme Development</a></li>
+</ul>
 </li>
-<li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/index.php</strong> or pointing directly to install/</p>
-<blockquote>
-<div><p>Eg: <a class="reference external" href="http://yourdomain/seopanel/install/">http://yourdomain/seopanel/install/</a></p>
-<img alt="_images/sp_install1.png" src="_images/sp_install1.png" />
-<p><strong>Enter database details</strong></p>
-<img alt="_images/sp_install2.png" src="_images/sp_install2.png" />
-<p><strong>Select admin language and timezone</strong></p>
-<img alt="_images/sp_install3.png" src="_images/sp_install3.png" />
-</div></blockquote>
-</li>
-<li><p class="first">Change the permissions on <strong>config/sp-config.php</strong> to be writable only by yourself (644 or -rw-r&#8211;r&#8211; within your FTP Client)</p>
-</li>
-</ol>
-<ol class="arabic" start="8">
-<li><p class="first">Please use following <strong>login details</strong> to access Admin Interface.</p>
-<blockquote>
-<div><p><strong>Username:</strong> spadmin</p>
-<p><strong>Password:</strong> spadmin</p>
-</div></blockquote>
-</li>
-<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings =&gt; MOZ Settings</strong></p>
-<p>Add free <strong>moz api key</strong> in seo panel using the link shown in the page - <a class="reference external" href="https://moz.com/help/guides/moz-api/">https://moz.com/help/guides/moz-api/</a></p>
-</li>
-</ol>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<ul class="last simple">
-<li>Please change password of administrator by visiting Profile link on right top of the seo panel to prevent from security threats.</li>
-<li>Remove install directory of seo panel</li>
 </ul>
 </div>
-<div class="section" id="video-tutorials">
-<h3>Video Tutorials<a class="headerlink" href="#video-tutorials" title="Permalink to this headline">¶</a></h3>
-<p><strong>Tutorial 1</strong></p>
-    <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pVjoJDbi9KI" frameborder="0" allowfullscreen></iframe>
-</div><p><strong>Tutorial 2</strong></p>
-    <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9CN4MDu2eNY" frameborder="0" allowfullscreen></iframe>
-</div><p><strong>How to Install Seo Panel Using Softaculous</strong></p>
-    <div class="embed-responsive embed-responsive-16by9">
-    <iframe src="https://player.vimeo.com/video/31817285" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-</div><p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
-</div>
-</div>
-<div class="section" id="upgrade-steps">
-<h2>Upgrade Steps<a class="headerlink" href="#upgrade-steps" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<p class="last">Before upgrade please take the <strong>backup</strong> of your current seo panel database and code</p>
-</div>
-<p>Simply use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> to upgrade SEO Panel or Follow the below steps</p>
-<ol class="arabic">
-<li><p class="first"><strong>Change</strong> the current seo panel directory name or move it to another place, e.g seopanel to seopanel_bak</p>
-</li>
-<li><p class="first"><strong>Download</strong> latest version from following link and <strong>Unzip</strong> the package.</p>
-<p><a class="reference external" href="https://www.seopanel.org/download/">https://www.seopanel.org/download/</a></p>
-</li>
-<li><dl class="first docutils">
-<dt><strong>Upload</strong> all the files contained in this folder (retaining the directory structure) to a web accessible directory on</dt>
-<dd><p class="first last">your server or hosting account.</p>
-</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt><strong>Copy</strong> the contents of sample config file <strong>config/sp-config-sample.php</strong> to <strong>config/sp-config.php</strong> or remove</dt>
-<dd><p class="first last">config/sp-config.php and rename config/sp-config-sample.php to config/sp-config.php</p>
-</dd>
-</dl>
-</li>
-<li><p class="first">Open up <strong>config/sp-config.php</strong> with a text editor like Notepad or similar editor.</p>
-<p>Then <strong>modify the following sections</strong> with your <strong>server and database settings of previous version</strong> of seo panel.</p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x"># The web path or url to access seo panel through browser.</span>
-<span class="x">define(&#39;SP_WEBPATH&#39;, &#39;http://localhost/seopanel&#39;);</span>
-
-<span class="x"># DB settings - You can get this info from your web hosting provider.</span>
-<span class="x"># The name of the database for seo panel</span>
-<span class="x">define(&#39;DB_NAME&#39;, &#39;seopanel&#39;);</span>
-
-<span class="x"># DB database username</span>
-<span class="x">define(&#39;DB_USER&#39;, &#39;root&#39;);</span>
-
-<span class="x"># DB database password</span>
-<span class="x">define(&#39;DB_PASSWORD&#39;, &#39;&#39;);</span>
-
-<span class="x"># DB hostname</span>
-<span class="x">define(&#39;DB_HOST&#39;, &#39;localhost&#39;);</span>
-</pre></div>
-</div>
-</li>
-<li><p class="first"><strong>Save</strong> the contents of file <strong>config/sp-config.php</strong></p>
-</li>
-<li><p class="first">Change the permissions on the <strong>&#8216;tmp&#8217; directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
-</li>
-<li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/upgrade.php</strong></p>
-<blockquote>
-<div><p>e.g. <a class="reference external" href="http://yourdomain/seopanel/install/upgrade.php">http://yourdomain/seopanel/install/upgrade.php</a></p>
-</div></blockquote>
-</li>
-<li><p class="first">Follow the steps and fill out all the requested information.</p>
-<img alt="_images/sp_upgrade1.png" src="_images/sp_upgrade1.png" />
-<p><strong>Proceed to next step</strong></p>
-<img alt="_images/sp_upgrade2.png" src="_images/sp_upgrade2.png" />
-</li>
-</ol>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<p>Remove install directory of seo panel</p>
-<p class="last">Copy all plugins from <strong>&#8216;plugins&#8217;</strong> folder of old seo panel folder to &#8216;plugins&#8217; folder of new Seo Panel.</p>
-</div>
-<p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
-</div>
-<div class="section" id="plugin-installation-steps">
-<h2>Plugin Installation Steps<a class="headerlink" href="#plugin-installation-steps" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><strong>Download</strong> and <strong>unzip</strong> plugin file</li>
-<li><strong>Upload</strong> the plugin folder eg: &#8216;linkdiagnosis&#8217; to the <strong>&#8216;/plugins/&#8217; directory</strong> of seo panel</li>
-<li>Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></li>
-</ol>
-<img alt="_images/sp_plugin_installation1.png" src="_images/sp_plugin_installation1.png" />
-<ol class="arabic simple" start="4">
-<li><strong>Activate</strong> the plugin by <strong>Click &#8216;Active&#8217;</strong></li>
-<li><strong>Accesss</strong> plugin by <strong>&#8216;Seo Plugins&#8217;</strong> from horizontal main menu.</li>
-</ol>
-<img alt="_images/sp_plugin_installation2.png" src="_images/sp_plugin_installation2.png" />
-</div>
-<div class="section" id="plugin-upgrade-steps">
-<h2>Plugin Upgrade Steps<a class="headerlink" href="#plugin-upgrade-steps" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first"><strong>Replace plugin folder</strong> with <strong>new version</strong> of plugin folder</p>
-<p>eg: replace folder &#8216;seopanel/plugins/linkdiagnosis&#8217;</p>
-<p>with new version of &#8216;linkdiagnosis&#8217; plugin folder</p>
-</li>
-<li><p class="first">Go to <strong>Admin Panel =&gt; Seo Plugins Manager</strong></p>
-</li>
-<li><p class="first"><strong>Select &#8216;Upgrade&#8217;</strong> from <strong>right most action select box</strong></p>
-</li>
-<li><p class="first"><strong>Confirm</strong> upgrade process.</p>
-</li>
-<li><p class="first"><strong>Check the version</strong> of plugin, you can see it is changed.</p>
-</li>
-</ol>
-<p>Get Seo Panel Plugins from =&gt; <a class="reference external" href="https://www.seopanel.org/plugins/">https://www.seopanel.org/plugins/</a></p>
-</div>
-<div class="section" id="theme-installation-steps">
-<h2>Theme Installation Steps<a class="headerlink" href="#theme-installation-steps" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><strong>Download</strong> and <strong>unzip</strong> theme file</li>
-<li><strong>Upload</strong> the theme folder eg: &#8216;odbox&#8217; to the <strong>&#8216;/themes/&#8217; directory</strong> of seo panel</li>
-<li>Go to <strong>Admin Panel =&gt; Themes Manager</strong></li>
-</ol>
-<img alt="_images/sp_theme_installation.png" src="_images/sp_theme_installation.png" />
-<ol class="arabic simple" start="4">
-<li><strong>Activate</strong> the theme by <strong>Clicking on &#8216;Activate&#8217;</strong></li>
-</ol>
-</div>
-<div class="section" id="theme-upgrade-steps">
-<h2>Theme Upgrade Steps<a class="headerlink" href="#theme-upgrade-steps" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p class="first"><strong>Replace theme folder</strong> with <strong>new version</strong> of theme folder</p>
-<p>eg: replace folder &#8216;seopanel/themes/odbox&#8217;</p>
-<p>with new version of &#8216;odbox&#8217; theme folder</p>
-</li>
-<li><p class="first">Go to <strong>Admin Panel =&gt; Themes Manager</strong></p>
-</li>
-<li><p class="first"><strong>Select &#8216;Upgrade&#8217;</strong> from <strong>right most action select box</strong></p>
-</li>
-<li><p class="first"><strong>Confirm</strong> upgrade process.</p>
-</li>
-<li><p class="first"><strong>Check the version</strong> of theme, you can see it is changed.</p>
-</li>
-</ol>
-<p>Get Seo Panel Themes from =&gt; <a class="reference external" href="https://www.seopanel.org/themes/">https://www.seopanel.org/themes/</a></p>
-</div>
-</div>
+<section id="quick-links">
+<h2><span class="section-number">1.6. </span>Quick Links<a class="headerlink" href="#quick-links" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="installation/requirements.html"><span class="doc">System Requirements</span></a> - System requirements for SEO Panel</p></li>
+<li><p><a class="reference internal" href="installation/install.html"><span class="doc">SEO Panel Installation</span></a> - Fresh installation steps</p></li>
+<li><p><a class="reference internal" href="installation/upgrade.html"><span class="doc">SEO Panel Upgrade</span></a> - Upgrade existing installation</p></li>
+<li><p><a class="reference internal" href="installation/plugin.html"><span class="doc">Plugin Management</span></a> - Install and upgrade plugins</p></li>
+<li><p><a class="reference internal" href="installation/theme.html"><span class="doc">Theme Management</span></a> - Install and upgrade themes</p></li>
+</ul>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="index.html">Table Of Contents</a></h3>
+<h3><a href="index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. INSTALLATION</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#installation-requirements">Installation Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#installation-steps">Installation Steps</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#video-tutorials">Video Tutorials</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#upgrade-steps">Upgrade Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#plugin-installation-steps">Plugin Installation Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#plugin-upgrade-steps">Plugin Upgrade Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#theme-installation-steps">Theme Installation Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#theme-upgrade-steps">Theme Upgrade Steps</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="installation/requirements.html">1.1. System Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/install.html">1.2. SEO Panel Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/upgrade.html">1.3. SEO Panel Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/plugin.html">1.4. Plugin Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation/theme.html">1.5. Theme Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#quick-links">1.6. Quick Links</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">2. User Guide</a></li>
@@ -402,15 +251,15 @@
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -419,16 +268,17 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="usage.html" title="2. User Guide"
+          <a href="installation/requirements.html" title="1.1. System Requirements"
              >next</a></li>
         <li class="right" >
           <a href="index.html" title="Seo Panel Documentation"
              >previous</a> |</li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">Seo panel installation and upgrade guide, plugin and theme installation and upgrade steps</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

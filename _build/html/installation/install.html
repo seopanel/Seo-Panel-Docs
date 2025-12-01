@@ -1,31 +1,21 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="../">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Installation Steps</title>
-    
-    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>1.2. SEO Panel Installation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=af458843" />
+    <script src="../_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="" href="../index.html" />       
+    <link rel="next" title="1.3. SEO Panel Upgrade" href="upgrade.html" />
+    <link rel="prev" title="1.1. System Requirements" href="requirements.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -65,12 +55,19 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="upgrade.html" title="1.3. SEO Panel Upgrade"
+             accesskey="N">next</a></li>
+        <li class="right" >
+          <a href="requirements.html" title="1.1. System Requirements"
+             accesskey="P">previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" accesskey="U"><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.2. </span>SEO Panel Installation</a></li> 
       </ul>
     </div>  
 
@@ -161,56 +158,193 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="installation-steps">
-<h1>Installation Steps<a class="headerlink" href="#installation-steps" title="Permalink to this headline">¶</a></h1>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<p class="last">Please install seo panel in <em>subdirectory of your website</em> like <a class="reference external" href="http://yourwebsite.com/seopanel">http://yourwebsite.com/seopanel</a> to prevent any issues with main website.</p>
+  <section id="seo-panel-installation">
+<h1><span class="section-number">1.2. </span>SEO Panel Installation<a class="headerlink" href="#seo-panel-installation" title="Link to this heading">¶</a></h1>
+<div class="admonition-important admonition">
+<p class="admonition-title">Important</p>
+<p>Please install SEO Panel in a <em>subdirectory of your website</em> like <a class="reference external" href="https://yourwebsite.com/seopanel">https://yourwebsite.com/seopanel</a> to prevent any issues with your main website.</p>
 </div>
-<p>Simply use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> to install SEO Panel or Follow the below steps</p>
+<section id="installation-methods">
+<h2><span class="section-number">1.2.1. </span>Installation Methods<a class="headerlink" href="#installation-methods" title="Link to this heading">¶</a></h2>
+<p><strong>Method 1: Quick Install (Recommended for Beginners)</strong></p>
+<p>Simply use <strong>Bitnami / Softaculous / Installatron / Webuzo / AMPPS</strong> to install SEO Panel with one click.</p>
+<p><strong>Method 2: Manual Installation</strong></p>
+<p>Follow the steps below for manual installation.</p>
+<p><strong>Method 3: Docker Installation</strong></p>
+<p>See the Docker Installation section below for containerized deployment.</p>
+</section>
+<section id="manual-installation-steps">
+<h2><span class="section-number">1.2.2. </span>Manual Installation Steps<a class="headerlink" href="#manual-installation-steps" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
-<li><p class="first"><strong>Download</strong> latest version from following link and <strong>Unzip</strong> the package.</p>
-<p><a class="reference external" href="https://www.seopanel.org/download/">https://www.seopanel.org/download/</a></p>
+<li><p><strong>Download Latest Version</strong></p>
+<p>Download the latest version from: <a class="reference external" href="https://www.seopanel.org/download/">https://www.seopanel.org/download/</a></p>
+<p>Extract the package to your local machine.</p>
 </li>
-<li><p class="first"><strong>Upload</strong> all the files contained in this folder (retaining the directory structure) to a web accessible directory on your server or hosting account.</p>
+<li><p><strong>Upload Files</strong></p>
+<p>Upload all files (maintaining the directory structure) to a web-accessible directory on your server.</p>
+<p>Recommended path: <code class="docutils literal notranslate"><span class="pre">/var/www/html/seopanel</span></code> or <code class="docutils literal notranslate"><span class="pre">public_html/seopanel</span></code></p>
 </li>
-<li><p class="first">Change the permissions on <strong>config/sp-config.php</strong> to be writable by all (666 or -rw-rw-rw- within your FTP Client)</p>
+<li><p><strong>Set File Permissions (Temporary)</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># For Linux/Unix servers</span>
+chmod<span class="w"> </span><span class="m">666</span><span class="w"> </span>config/sp-config.php
+chmod<span class="w"> </span><span class="m">777</span><span class="w"> </span>tmp/
+</pre></div>
+</div>
+<p><strong>Note:</strong> These are temporary permissions for installation only and will be secured in step 7.</p>
 </li>
-<li><p class="first">Change the permissions on the <strong>tmp directory</strong> to be writable by all (777 or -rwxrwxrwx within your FTP Client)</p>
+<li><p><strong>Create Database</strong></p>
+<p>Create a MySQL/MariaDB database and user for SEO Panel:</p>
+<div class="highlight-sql notranslate"><div class="highlight"><pre><span></span><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">seopanel_db</span><span class="w"> </span><span class="nb">CHARACTER</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">utf8mb4</span><span class="w"> </span><span class="k">COLLATE</span><span class="w"> </span><span class="n">utf8mb4_unicode_ci</span><span class="p">;</span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="s1">&#39;seopanel_user&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="w"> </span><span class="n">IDENTIFIED</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="s1">&#39;strong_password_here&#39;</span><span class="p">;</span>
+<span class="k">GRANT</span><span class="w"> </span><span class="k">ALL</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">seopanel_db</span><span class="p">.</span><span class="o">*</span><span class="w"> </span><span class="k">TO</span><span class="w"> </span><span class="s1">&#39;seopanel_user&#39;</span><span class="o">@</span><span class="s1">&#39;localhost&#39;</span><span class="p">;</span>
+<span class="n">FLUSH</span><span class="w"> </span><span class="k">PRIVILEGES</span><span class="p">;</span>
+</pre></div>
+</div>
 </li>
-<li><p class="first">Using your web browser visit the location you placed Seo Panel with the addition of <strong>install/index.php</strong> or pointing directly to install/</p>
-<blockquote>
-<div><p>Eg: <a class="reference external" href="http://yourdomain/seopanel/install/">http://yourdomain/seopanel/install/</a></p>
+<li><p><strong>Run Web Installer</strong></p>
+<p>Visit the installation URL in your web browser:</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://yourdomain.com/seopanel/install/</span></code></p>
 <img alt="installation/_static/sp_install1.png" src="installation/_static/sp_install1.png" />
-<p><strong>Enter database details</strong></p>
+<p><strong>Enter Database Details</strong></p>
+<ul class="simple">
+<li><p>Database Host: localhost (or your database server)</p></li>
+<li><p>Database Name: seopanel_db</p></li>
+<li><p>Database Username: seopanel_user</p></li>
+<li><p>Database Password: (the password you created)</p></li>
+</ul>
 <img alt="installation/_static/sp_install2.png" src="installation/_static/sp_install2.png" />
-<p><strong>Select admin language and timezone</strong></p>
+<p><strong>Configure Admin Settings</strong></p>
+<ul class="simple">
+<li><p>Select admin language</p></li>
+<li><p>Set timezone for your location</p></li>
+<li><p>Create a strong admin password (don’t use default!)</p></li>
+</ul>
 <img alt="installation/_static/sp_install3.png" src="installation/_static/sp_install3.png" />
-</div></blockquote>
 </li>
-<li><p class="first">Change the permissions on <strong>config/sp-config.php</strong> to be writable only by yourself (644 or -rw-r&#8211;r&#8211; within your FTP Client)</p>
+<li><p><strong>Complete Installation</strong></p>
+<p>Follow the on-screen instructions to complete the installation.</p>
+</li>
+<li><p><strong>Secure Your Installation (Critical)</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Secure config file permissions</span>
+chmod<span class="w"> </span><span class="m">644</span><span class="w"> </span>config/sp-config.php
+
+<span class="c1"># Secure tmp directory (allow only web server write access)</span>
+chmod<span class="w"> </span><span class="m">755</span><span class="w"> </span>tmp/
+
+<span class="c1"># Remove installation directory</span>
+rm<span class="w"> </span>-rf<span class="w"> </span>install/
+</pre></div>
+</div>
+<p><strong>Important:</strong> Failing to remove the install directory is a serious security risk!</p>
+</li>
+<li><p><strong>First Login</strong></p>
+<p>Access the admin panel at: <code class="docutils literal notranslate"><span class="pre">https://yourdomain.com/seopanel/</span></code></p>
+<p><strong>Default Login Credentials:</strong></p>
+<ul class="simple">
+<li><p>Username: <code class="docutils literal notranslate"><span class="pre">spadmin</span></code></p></li>
+<li><p>Password: <code class="docutils literal notranslate"><span class="pre">spadmin</span></code> (or the password you set during installation)</p></li>
+</ul>
+</li>
+<li><p><strong>Immediate Security Steps (Required)</strong></p>
+<ol class="loweralpha">
+<li><p><strong>Change Admin Password</strong></p>
+<ul class="simple">
+<li><p>Click on your profile (top right corner)</p></li>
+<li><p>Change the default password immediately</p></li>
+<li><p>Use a strong password (12+ characters, mixed case, numbers, symbols)</p></li>
+</ul>
+</li>
+<li><p><strong>Configure API Keys</strong></p>
+<p>Go to <strong>Admin Panel =&gt; System Settings =&gt; MOZ Settings</strong></p>
+<p>Add your free MOZ API key: <a class="reference external" href="https://moz.com/help/guides/moz-api/">https://moz.com/help/guides/moz-api/</a></p>
+</li>
+<li><p><strong>Review Security Settings</strong></p>
+<ul class="simple">
+<li><p>Enable HTTPS/SSL if available</p></li>
+<li><p>Configure proper backup procedures</p></li>
+<li><p>Review user permissions</p></li>
+</ul>
 </li>
 </ol>
-<ol class="arabic" start="8">
-<li><p class="first">Please use following <strong>login details</strong> to access Admin Interface.</p>
-<blockquote>
-<div><p><strong>Username:</strong> spadmin</p>
-<p><strong>Password:</strong> spadmin</p>
-</div></blockquote>
 </li>
-<li><p class="first">Go to <strong>Admin Panel =&gt; System Settings =&gt; MOZ Settings</strong></p>
-<p>Add free <strong>moz api key</strong> in seo panel using the link shown in the page - <a class="reference external" href="https://moz.com/help/guides/moz-api/">https://moz.com/help/guides/moz-api/</a></p>
+<li><p><strong>Additional Configuration</strong></p>
+<ul class="simple">
+<li><p>Configure cron jobs for automated tasks</p></li>
+<li><p>Set up email settings for notifications</p></li>
+<li><p>Configure proxy settings if needed</p></li>
+</ul>
 </li>
 </ol>
-<div class="admonition-warning admonition">
-<p class="first admonition-title">Warning</p>
-<ul class="last simple">
-<li>Please change password of administrator by visiting Profile link on right top of the seo panel to prevent from security threats.</li>
-<li>Remove install directory of seo panel</li>
+</section>
+<section id="docker-installation">
+<h2><span class="section-number">1.2.3. </span>Docker Installation<a class="headerlink" href="#docker-installation" title="Link to this heading">¶</a></h2>
+<p>For a modern, containerized deployment:</p>
+<ol class="arabic">
+<li><p><strong>Create docker-compose.yml</strong></p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">seopanel</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">php:8.1-apache</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">seopanel</span>
+<span class="w">    </span><span class="nt">ports</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;8080:80&quot;</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./seopanel:/var/www/html</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_HOST=mysql</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=seopanel_db</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_USER=seopanel_user</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_PASSWORD=strong_password_here</span>
+<span class="w">    </span><span class="nt">depends_on</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql</span>
+
+<span class="w">  </span><span class="nt">mysql</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql:8.0</span>
+<span class="w">    </span><span class="nt">container_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">seopanel_mysql</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_ROOT_PASSWORD=root_password_here</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_DATABASE=seopanel_db</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_USER=seopanel_user</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MYSQL_PASSWORD=strong_password_here</span>
+<span class="w">    </span><span class="nt">volumes</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mysql_data:/var/lib/mysql</span>
+
+<span class="nt">volumes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">mysql_data</span><span class="p">:</span>
+</pre></div>
+</div>
+</li>
+<li><p><strong>Start Containers</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker-compose<span class="w"> </span>up<span class="w"> </span>-d
+</pre></div>
+</div>
+</li>
+<li><p><strong>Access Installation</strong></p>
+<p>Visit: <code class="docutils literal notranslate"><span class="pre">http://localhost:8080/install/</span></code></p>
+<p>Follow the web installer steps above.</p>
+</li>
+</ol>
+</section>
+<section id="security-best-practices">
+<h2><span class="section-number">1.2.4. </span>Security Best Practices<a class="headerlink" href="#security-best-practices" title="Link to this heading">¶</a></h2>
+<div class="admonition-security-checklist admonition">
+<p class="admonition-title">Security Checklist</p>
+<ul class="simple">
+<li><p>✓ Change default admin password immediately</p></li>
+<li><p>✓ Remove install/ directory after installation</p></li>
+<li><p>✓ Use HTTPS/SSL encryption</p></li>
+<li><p>✓ Keep SEO Panel updated to latest version</p></li>
+<li><p>✓ Use strong, unique database passwords</p></li>
+<li><p>✓ Restrict database access to localhost only</p></li>
+<li><p>✓ Regular backups of database and files</p></li>
+<li><p>✓ Use file permissions: 644 for files, 755 for directories</p></li>
+<li><p>✓ Disable directory listing in web server</p></li>
+<li><p>✓ Keep PHP and server software updated</p></li>
 </ul>
 </div>
-<div class="section" id="video-tutorials">
-<h2>Video Tutorials<a class="headerlink" href="#video-tutorials" title="Permalink to this headline">¶</a></h2>
+<section id="video-tutorials">
+<h3><span class="section-number">1.2.4.1. </span>Video Tutorials<a class="headerlink" href="#video-tutorials" title="Link to this heading">¶</a></h3>
 <p><strong>Tutorial 1</strong></p>
     <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pVjoJDbi9KI" frameborder="0" allowfullscreen></iframe>
@@ -221,18 +355,34 @@
     <div class="embed-responsive embed-responsive-16by9">
     <iframe src="https://player.vimeo.com/video/31817285" class="embed-responsive-item" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div><p>If you have any issues while installation, Please contact seo panel team or open a ticket in support system</p>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../installation.html">1. Installation Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="requirements.html">1.1. System Requirements</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.2. SEO Panel Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation-methods">1.2.1. Installation Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#manual-installation-steps">1.2.2. Manual Installation Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#docker-installation">1.2.3. Docker Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#security-best-practices">1.2.4. Security Best Practices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upgrade.html">1.3. SEO Panel Upgrade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html">1.4. Plugin Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme.html">1.5. Theme Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../installation.html#quick-links">1.6. Quick Links</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">3. Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">4. API</a></li>
@@ -241,15 +391,15 @@
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -257,11 +407,19 @@
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
- 
+        <li class="right" style="margin-right: 10px">
+          <a href="upgrade.html" title="1.3. SEO Panel Upgrade"
+             >next</a></li>
+        <li class="right" >
+          <a href="requirements.html" title="1.1. System Requirements"
+             >previous</a> |</li>
+
+          <li class="nav-item nav-item-1"><a href="../installation.html" ><span class="section-number">1. </span>Installation Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">1.2. </span>SEO Panel Installation</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

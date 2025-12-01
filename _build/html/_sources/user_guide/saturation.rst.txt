@@ -1,3 +1,9 @@
+.. title:: Search Engine Saturation checker, website indexed page checker
+
+.. meta::
+   :description: Guide for seo panel Search Engine Saturation checker, website indexed page checker with satuarion reports google, yahoo and bing 
+
+
 Search Engine Saturation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

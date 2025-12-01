@@ -4,8 +4,8 @@
    :description: Guide for Seo panel developers to create new plugins or themes for seo panel. Functions and features explained with code samples and test seo panel plugin.
 
 
-5. Developer Guide
-==================
+Developer Guide
+===============
 
 This document is to help developers to integrate and customize the features of seo panel.
 

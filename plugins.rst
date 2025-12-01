@@ -3,8 +3,8 @@
 .. meta::
    :description: Help Guide for Seo panel plugin usage steps. It includes screen shots and demo videos.
 
-3. Plugins
-===============
+Plugins
+=======
 
 This guide explains, how to use seo panel plugins according to your requirements.
 

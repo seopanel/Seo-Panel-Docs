@@ -1,3 +1,10 @@
+.. title:: Seo Tools Manager, Activate and Inactivate seo tools 
+
+.. meta::
+   :description: Guide for seo panel Tools Manager, Activate and Inactivate seo tools, seo tools reports generation  
+
+
+
 Seo Tools Manager
 ~~~~~~~~~~~~~~~~~~
 

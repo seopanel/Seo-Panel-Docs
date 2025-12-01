@@ -1,3 +1,9 @@
+.. title:: Directory Submission Tool, Automatic directory submission and Featured Submissions
+
+.. meta::
+   :description: Guide for seo panel Directory Submission Tool, Automatic directory submission and Featured Submissions. 
+
+
 Directory Submission
 ~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -181,6 +187,3 @@ This section will help you check status of all directories in your seo panel.
 
 3) **Click on 'Proceed'** to check the current status of all directories according to the search filter.
 
-
-
-3) 

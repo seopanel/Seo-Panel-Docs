@@ -14,6 +14,7 @@ Seo Panel Documentation
 
 .. toctree::
    :maxdepth: 3
+   :numbered:
 
    installation
    usage

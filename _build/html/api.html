@@ -1,34 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="./">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="API guide to setup and call seo panel api with code examples. Website, Keyword, user  and reports management API functions." name="description" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="API guide to setup and call seo panel api with code examples. Website, Keyword, user  and reports management API functions." name="description" />
 
     <title>Seo Panel API Guide with functions, setup instructions and code samples</title>
-    
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=af458843" />
+    <script src="_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="_static/favicon.ico"/>
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="" href="index.html" />
     <link rel="next" title="5. Developer Guide" href="developer.html" />
-    <link rel="prev" title="Social Bookmarker" href="plugins/social-bookmarker.html" />       
+    <link rel="prev" title="3.5. Social Bookmarker" href="plugins/social-bookmarker.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -68,8 +56,7 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -77,9 +64,10 @@
           <a href="developer.html" title="5. Developer Guide"
              accesskey="N">next</a></li>
         <li class="right" >
-          <a href="plugins/social-bookmarker.html" title="Social Bookmarker"
+          <a href="plugins/social-bookmarker.html" title="3.5. Social Bookmarker"
              accesskey="P">previous</a> |</li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">Seo Panel API Guide with functions, setup instructions and code samples</a></li> 
       </ul>
     </div>  
 
@@ -170,55 +158,55 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="api">
-<h1>4. API<a class="headerlink" href="#api" title="Permalink to this headline">¶</a></h1>
+  <section id="api">
+<h1><span class="section-number">4. </span>API<a class="headerlink" href="#api" title="Link to this heading">¶</a></h1>
 <p>The Seo Panel API provides an interface to allow you to access and perform actions
 in Seo Panel both from external applications and scripts as well as internal modules and addons.</p>
 <p>The Seo Panel API supports response type: JSON</p>
-<div class="section" id="api-setup">
-<h2>1. API Setup<a class="headerlink" href="#api-setup" title="Permalink to this headline">¶</a></h2>
+<section id="api-setup">
+<h2><span class="section-number">4.1. </span>1. API Setup<a class="headerlink" href="#api-setup" title="Link to this heading">¶</a></h2>
 <p>Login as admin and go to following page</p>
 <p>Admin Panel =&gt; API Manager =&gt; API Settings</p>
 <p>Change values of API Key and Secret for security according to the below screen shot.</p>
 <img alt="_images/sp_api_settings.png" src="_images/sp_api_settings.png" />
-</div>
-<div class="section" id="functions">
-<h2>2. Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="functions">
+<h2><span class="section-number">4.2. </span>2. Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
 <p>The API currently supports the following functions</p>
-<div class="section" id="website-management">
-<h3>Website Management<a class="headerlink" href="#website-management" title="Permalink to this headline">¶</a></h3>
+<section id="website-management">
+<h3><span class="section-number">4.2.1. </span>Website Management<a class="headerlink" href="#website-management" title="Link to this heading">¶</a></h3>
 <p><strong>Common Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>SP_API_KEY =&gt; Seo panel api key</li>
-<li>API_SECRET =&gt; Seo panel api secret key</li>
-<li>category&#8221; = website</li>
+<li><p>SP_API_KEY =&gt; Seo panel api key</p></li>
+<li><p>API_SECRET =&gt; Seo panel api secret key</p></li>
+<li><p>category” = website</p></li>
 </ul>
 </div></blockquote>
-<div class="section" id="add-website">
-<h4>Add Website<a class="headerlink" href="#add-website" title="Permalink to this headline">¶</a></h4>
+<section id="add-website">
+<h4><span class="section-number">4.2.1.1. </span>Add Website<a class="headerlink" href="#add-website" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to add a new website in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action        = createWebsite</li>
-<li>name          =&gt; The name of the website</li>
-<li>url           =&gt; The url of the website</li>
-<li>user_id       =&gt; The user id of website</li>
+<li><p>action        = createWebsite</p></li>
+<li><p>name          =&gt; The name of the website</p></li>
+<li><p>url           =&gt; The url of the website</p></li>
+<li><p>user_id       =&gt; The user id of website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>title                 =&gt; The title of the website</li>
-<li>description   =&gt; The description of website</li>
-<li>keywords              =&gt; The keywords of the website</li>
-<li>status                =&gt; The status of the website - default[1]</li>
+<li><p>title                 =&gt; The title of the website</p></li>
+<li><p>description   =&gt; The description of website</p></li>
+<li><p>keywords              =&gt; The keywords of the website</p></li>
+<li><p>status                =&gt; The status of the website - default[1]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
@@ -231,44 +219,44 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully created website</li>
-<li>website_id = The id of the website</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully created website</p></li>
+<li><p>website_id = The id of the website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = * Website already exist</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = * Website already exist</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="update-website">
-<h4>Update Website<a class="headerlink" href="#update-website" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="update-website">
+<h4><span class="section-number">4.2.1.2. </span>Update Website<a class="headerlink" href="#update-website" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to update existing website in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = updateWebsite</li>
-<li>id =&gt; The id of the website</li>
+<li><p>action = updateWebsite</p></li>
+<li><p>id =&gt; The id of the website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>name                  =&gt; The name of the website</li>
-<li>url                   =&gt; The url of the website</li>
-<li>user_id               =&gt; The user id of website</li>
-<li>title                 =&gt; The title of the website</li>
-<li>description   =&gt; The description of website</li>
-<li>keywords              =&gt; The keywords of the website</li>
-<li>status                =&gt; The status of the website - default[1]</li>
+<li><p>name                  =&gt; The name of the website</p></li>
+<li><p>url                   =&gt; The url of the website</p></li>
+<li><p>user_id               =&gt; The user id of website</p></li>
+<li><p>title                 =&gt; The title of the website</p></li>
+<li><p>description   =&gt; The description of website</p></li>
+<li><p>keywords              =&gt; The keywords of the website</p></li>
+<li><p>status                =&gt; The status of the website - default[1]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
@@ -280,32 +268,32 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully updated website</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully updated website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid website id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid website id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="delete-website">
-<h4>Delete Website<a class="headerlink" href="#delete-website" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="delete-website">
+<h4><span class="section-number">4.2.1.3. </span>Delete Website<a class="headerlink" href="#delete-website" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to delete existing website in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = deleteWebsite</li>
-<li>id =&gt; The id of the website</li>
+<li><p>action = deleteWebsite</p></li>
+<li><p>id =&gt; The id of the website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
@@ -316,32 +304,32 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully deleted website and related data</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully deleted website and related data</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid website id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid website id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-website-details">
-<h4>Get Website Details<a class="headerlink" href="#get-website-details" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-website-details">
+<h4><span class="section-number">4.2.1.4. </span>Get Website Details<a class="headerlink" href="#get-website-details" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get details of a website</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getWebsiteInfo</li>
-<li>id =&gt; The id of the website</li>
+<li><p>action = getWebsiteInfo</p></li>
+<li><p>id =&gt; The id of the website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
@@ -350,7 +338,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span><span class="p">(</span>
         <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="nb">id</span>
         <span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">website</span> <span class="n">name</span>
@@ -378,31 +366,31 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid website id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid website id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-website-reports">
-<h4>Get Website Reports<a class="headerlink" href="#get-website-reports" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-website-reports">
+<h4><span class="section-number">4.2.1.5. </span>Get Website Reports<a class="headerlink" href="#get-website-reports" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get reports of a website</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getReportById</li>
-<li>id =&gt; The id of the website</li>
+<li><p>action = getReportById</p></li>
+<li><p>id =&gt; The id of the website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
-<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+<li><p>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</p></li>
+<li><p>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
@@ -413,7 +401,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
@@ -512,31 +500,31 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid website id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid website id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-user-website-reports">
-<h4>Get User Website Reports<a class="headerlink" href="#get-user-website-reports" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-user-website-reports">
+<h4><span class="section-number">4.2.1.6. </span>Get User Website Reports<a class="headerlink" href="#get-user-website-reports" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get reports of all user websites</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getReportByUserId</li>
-<li>id =&gt; The id of the user</li>
+<li><p>action = getReportByUserId</p></li>
+<li><p>id =&gt; The id of the user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
-<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+<li><p>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</p></li>
+<li><p>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;website&quot;</span><span class="p">;</span>
@@ -547,7 +535,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
@@ -648,45 +636,45 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = No reports found!</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = No reports found!</p></li>
 </ul>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="keyword-management">
-<h3>Keyword Management<a class="headerlink" href="#keyword-management" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="keyword-management">
+<h3><span class="section-number">4.2.2. </span>Keyword Management<a class="headerlink" href="#keyword-management" title="Link to this heading">¶</a></h3>
 <p><strong>Common Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>SP_API_KEY =&gt; Seo panel api key</li>
-<li>API_SECRET =&gt; Seo panel api secret key</li>
-<li>category&#8221; = keyword</li>
+<li><p>SP_API_KEY =&gt; Seo panel api key</p></li>
+<li><p>API_SECRET =&gt; Seo panel api secret key</p></li>
+<li><p>category” = keyword</p></li>
 </ul>
 </div></blockquote>
-<div class="section" id="add-keyword">
-<h4>Add Keyword<a class="headerlink" href="#add-keyword" title="Permalink to this headline">¶</a></h4>
+<section id="add-keyword">
+<h4><span class="section-number">4.2.2.1. </span>Add Keyword<a class="headerlink" href="#add-keyword" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to add a new keyword in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action                        = createKeyword</li>
-<li>name                          =&gt; The name of the keyword</li>
-<li>website_id            =&gt; The website id of keyword</li>
-<li>searchengines         =&gt; The search engine ids of the keyword - [id1:id2] Eg. 1:2</li>
+<li><p>action                        = createKeyword</p></li>
+<li><p>name                          =&gt; The name of the keyword</p></li>
+<li><p>website_id            =&gt; The website id of keyword</p></li>
+<li><p>searchengines         =&gt; The search engine ids of the keyword - [id1:id2] Eg. 1:2</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>lang_code             =&gt;      The language code of the keyword - Eg. fr</li>
-<li>country_code          =&gt;      The country code of the keyword - Eg. de</li>
-<li>status                        =&gt;      The status of the keyword - default[1]</li>
+<li><p>lang_code             =&gt;      The language code of the keyword - Eg. fr</p></li>
+<li><p>country_code          =&gt;      The country code of the keyword - Eg. de</p></li>
+<li><p>status                        =&gt;      The status of the keyword - default[1]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -699,43 +687,43 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully created keyword</li>
-<li>keyword_id = The id of the keyword</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully created keyword</p></li>
+<li><p>keyword_id = The id of the keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = * Keyword already exist</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = * Keyword already exist</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="update-keyword">
-<h4>Update Keyword<a class="headerlink" href="#update-keyword" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="update-keyword">
+<h4><span class="section-number">4.2.2.2. </span>Update Keyword<a class="headerlink" href="#update-keyword" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to update existing keyword in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = updateKeyword</li>
-<li>id =&gt; The id of the keyword</li>
+<li><p>action = updateKeyword</p></li>
+<li><p>id =&gt; The id of the keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>name                          =&gt; The name of the keyword</li>
-<li>website_id            =&gt; The website id of keyword</li>
-<li>searchengines         =&gt; The search engine ids of the keyword - [id1:id2] Eg. 1:2</li>
-<li>lang_code             =&gt;      The language code of the keyword - Eg. fr</li>
-<li>country_code          =&gt;      The country code of the keyword - Eg. de</li>
-<li>status                        =&gt;      The status of the keyword - default[1]</li>
+<li><p>name                          =&gt; The name of the keyword</p></li>
+<li><p>website_id            =&gt; The website id of keyword</p></li>
+<li><p>searchengines         =&gt; The search engine ids of the keyword - [id1:id2] Eg. 1:2</p></li>
+<li><p>lang_code             =&gt;      The language code of the keyword - Eg. fr</p></li>
+<li><p>country_code          =&gt;      The country code of the keyword - Eg. de</p></li>
+<li><p>status                        =&gt;      The status of the keyword - default[1]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -747,32 +735,32 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully updated keyword</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully updated keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid keyword id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid keyword id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="delete-keyword">
-<h4>Delete Keyword<a class="headerlink" href="#delete-keyword" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="delete-keyword">
+<h4><span class="section-number">4.2.2.3. </span>Delete Keyword<a class="headerlink" href="#delete-keyword" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to delete existing keyword in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = deleteKeyword</li>
-<li>id =&gt; The id of the keyword</li>
+<li><p>action = deleteKeyword</p></li>
+<li><p>id =&gt; The id of the keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -783,32 +771,32 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully deleted keyword</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully deleted keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid keyword id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid keyword id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-keyword-details">
-<h4>Get Keyword Details<a class="headerlink" href="#get-keyword-details" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-keyword-details">
+<h4><span class="section-number">4.2.2.4. </span>Get Keyword Details<a class="headerlink" href="#get-keyword-details" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get details of a keyword</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getKeywordInfo</li>
-<li>id =&gt; The id of the keyword</li>
+<li><p>action = getKeywordInfo</p></li>
+<li><p>id =&gt; The id of the keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="x">     </span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -817,7 +805,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
@@ -833,31 +821,31 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid keyword id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid keyword id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-keyword-reports">
-<h4>Get Keyword Reports<a class="headerlink" href="#get-keyword-reports" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-keyword-reports">
+<h4><span class="section-number">4.2.2.5. </span>Get Keyword Reports<a class="headerlink" href="#get-keyword-reports" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get reports of a keyword</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getReportById</li>
-<li>id =&gt; The id of the keyword</li>
+<li><p>action = getReportById</p></li>
+<li><p>id =&gt; The id of the keyword</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
-<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+<li><p>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</p></li>
+<li><p>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -868,7 +856,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">1</span>
@@ -912,31 +900,31 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid keyword id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid keyword id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-website-keyword-reports">
-<h4>Get Website Keyword Reports<a class="headerlink" href="#get-website-keyword-reports" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-website-keyword-reports">
+<h4><span class="section-number">4.2.2.6. </span>Get Website Keyword Reports<a class="headerlink" href="#get-website-keyword-reports" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get reports of a keywords of a website</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getReportByWebsiteId</li>
-<li>id =&gt; The id of the website</li>
+<li><p>action = getReportByWebsiteId</p></li>
+<li><p>id =&gt; The id of the website</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
-<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+<li><p>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</p></li>
+<li><p>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -947,7 +935,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
@@ -997,31 +985,31 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = No reports found</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = No reports found</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-user-keyword-reports">
-<h4>Get User Keyword Reports<a class="headerlink" href="#get-user-keyword-reports" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-user-keyword-reports">
+<h4><span class="section-number">4.2.2.7. </span>Get User Keyword Reports<a class="headerlink" href="#get-user-keyword-reports" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get reports of a keywords of a user</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getReportByUserId</li>
-<li>id =&gt; The id of the user</li>
+<li><p>action = getReportByUserId</p></li>
+<li><p>id =&gt; The id of the user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</li>
-<li>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</li>
+<li><p>from_time =&gt;  The from time of report in (yyyy-mm-dd)- default[Yesterday]</p></li>
+<li><p>to_time =&gt; The to time of report in (yyyy-mm-dd) - default[Today]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;keyword&quot;</span><span class="p">;</span>
@@ -1032,7 +1020,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
@@ -1082,46 +1070,46 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = No reports found</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = No reports found</p></li>
 </ul>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="user-management">
-<h3>User Management<a class="headerlink" href="#user-management" title="Permalink to this headline">¶</a></h3>
+</section>
+</section>
+<section id="user-management">
+<h3><span class="section-number">4.2.3. </span>User Management<a class="headerlink" href="#user-management" title="Link to this heading">¶</a></h3>
 <p><strong>Common Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>SP_API_KEY =&gt; Seo panel api key</li>
-<li>API_SECRET =&gt; Seo panel api secret key</li>
-<li>category&#8221; = user</li>
+<li><p>SP_API_KEY =&gt; Seo panel api key</p></li>
+<li><p>API_SECRET =&gt; Seo panel api secret key</p></li>
+<li><p>category” = user</p></li>
 </ul>
 </div></blockquote>
-<div class="section" id="add-user">
-<h4>Add User<a class="headerlink" href="#add-user" title="Permalink to this headline">¶</a></h4>
+<section id="add-user">
+<h4><span class="section-number">4.2.3.1. </span>Add User<a class="headerlink" href="#add-user" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to add a new user in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action        = createUser</li>
-<li>username              =&gt;              The username of the user</li>
-<li>password              =&gt;              The password of the user</li>
-<li>first_name    =&gt;              The first name f the user</li>
-<li>email                 =&gt;              The user email</li>
+<li><p>action        = createUser</p></li>
+<li><p>username              =&gt;              The username of the user</p></li>
+<li><p>password              =&gt;              The password of the user</p></li>
+<li><p>first_name    =&gt;              The first name f the user</p></li>
+<li><p>email                 =&gt;              The user email</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>last_name     =&gt; The last name of user</li>
-<li>type_id               =&gt; The user type id of user - default[2]</li>
-<li>status                =&gt; The status of the user - default[1]</li>
+<li><p>last_name     =&gt; The last name of user</p></li>
+<li><p>type_id               =&gt; The user type id of user - default[2]</p></li>
+<li><p>status                =&gt; The status of the user - default[1]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
@@ -1136,44 +1124,44 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully created user</li>
-<li>user_id = The id of the user</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully created user</p></li>
+<li><p>user_id = The id of the user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = * Username already exist</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = * Username already exist</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="update-user">
-<h4>Update User<a class="headerlink" href="#update-user" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="update-user">
+<h4><span class="section-number">4.2.3.2. </span>Update User<a class="headerlink" href="#update-user" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to update existing user in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = updateUser</li>
-<li>id =&gt; The id of the user</li>
+<li><p>action = updateUser</p></li>
+<li><p>id =&gt; The id of the user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>username              =&gt; The username of the user</li>
-<li>password              =&gt; The password of the user</li>
-<li>first_name    =&gt; The first name f the user</li>
-<li>email                 =&gt; The user email</li>
-<li>last_name     =&gt; The last name of user</li>
-<li>type_id               =&gt; The user type id of user - default[2]</li>
-<li>status                =&gt; The status of the user - default[1]</li>
+<li><p>username              =&gt; The username of the user</p></li>
+<li><p>password              =&gt; The password of the user</p></li>
+<li><p>first_name    =&gt; The first name f the user</p></li>
+<li><p>email                 =&gt; The user email</p></li>
+<li><p>last_name     =&gt; The last name of user</p></li>
+<li><p>type_id               =&gt; The user type id of user - default[2]</p></li>
+<li><p>status                =&gt; The status of the user - default[1]</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
@@ -1185,32 +1173,32 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully updated user</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully updated user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid user id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid user id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="get-user-details">
-<h4>Get User Details<a class="headerlink" href="#get-user-details" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="get-user-details">
+<h4><span class="section-number">4.2.3.3. </span>Get User Details<a class="headerlink" href="#get-user-details" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to get details of a user</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = getUserInfo</li>
-<li>id =&gt; The id of the user</li>
+<li><p>action = getUserInfo</p></li>
+<li><p>id =&gt; The id of the user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
@@ -1219,7 +1207,7 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </pre></div>
 </div>
 <p><strong>Successful Response</strong>:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">response</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">success</span>
 <span class="p">[</span><span class="n">result</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="n">stdClass</span> <span class="n">Object</span>
 <span class="p">(</span>
     <span class="p">[</span><span class="nb">id</span><span class="p">]</span> <span class="o">=&gt;</span> <span class="mi">2</span>
@@ -1238,25 +1226,25 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid user id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid user id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="delete-user">
-<h4>Delete User<a class="headerlink" href="#delete-user" title="Permalink to this headline">¶</a></h4>
+</section>
+<section id="delete-user">
+<h4><span class="section-number">4.2.3.4. </span>Delete User<a class="headerlink" href="#delete-user" title="Link to this heading">¶</a></h4>
 <p><strong>Purpose</strong></p>
 <p>This command is used to delete existing user in seo panel.</p>
 <p><strong>Attributes</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>action = deleteUser</li>
-<li>id =&gt; The id of the user</li>
+<li><p>action = deleteUser</p></li>
+<li><p>id =&gt; The id of the user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Optional Attributes</strong></p>
 <p><strong>Example Command</strong></p>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;SP_API_KEY&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;API_SECRET&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;*******&quot;</span><span class="p">;</span>
      <span class="nv">$paramList</span><span class="p">[</span><span class="s1">&#39;category&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;user&quot;</span><span class="p">;</span>
@@ -1267,25 +1255,25 @@ in Seo Panel both from external applications and scripts as well as internal mod
 <p><strong>Successful Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = success</li>
-<li>result = Successfully deleted user</li>
+<li><p>response = success</p></li>
+<li><p>result = Successfully deleted user</p></li>
 </ul>
 </div></blockquote>
 <p><strong>Error Response</strong></p>
 <blockquote>
 <div><ul class="simple">
-<li>response = Error</li>
-<li>error_msg = The invalid user id provided</li>
+<li><p>response = Error</p></li>
+<li><p>error_msg = The invalid user id provided</p></li>
 </ul>
 </div></blockquote>
-</div>
-</div>
-</div>
-<div class="section" id="sample-code">
-<h2>3. Sample Code<a class="headerlink" href="#sample-code" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="create-user">
-<h3>Create User<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+</section>
+</section>
+</section>
+<section id="sample-code">
+<h2><span class="section-number">4.3. </span>3. Sample Code<a class="headerlink" href="#sample-code" title="Link to this heading">¶</a></h2>
+<section id="create-user">
+<h3><span class="section-number">4.3.1. </span>Create User<a class="headerlink" href="#create-user" title="Link to this heading">¶</a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="k">function</span> <span class="nf">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">)</span> <span class="p">{</span>
 
              <span class="c1">// create field string</span>
@@ -1335,10 +1323,10 @@ in Seo Panel both from external applications and scripts as well as internal mod
      <span class="k">echo</span> <span class="s2">&quot;&lt;/pre&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="user-website-reports">
-<h3>User Website Reports<a class="headerlink" href="#user-website-reports" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+</section>
+<section id="user-website-reports">
+<h3><span class="section-number">4.3.2. </span>User Website Reports<a class="headerlink" href="#user-website-reports" title="Link to this heading">¶</a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="k">function</span> <span class="nf">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">)</span> <span class="p">{</span>
 
              <span class="c1">// create field string</span>
@@ -1388,10 +1376,10 @@ in Seo Panel both from external applications and scripts as well as internal mod
      <span class="k">echo</span> <span class="s2">&quot;&lt;/pre&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="keyword-reports">
-<h3>Keyword Reports<a class="headerlink" href="#keyword-reports" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-php"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
+</section>
+<section id="keyword-reports">
+<h3><span class="section-number">4.3.3. </span>Keyword Reports<a class="headerlink" href="#keyword-reports" title="Link to this heading">¶</a></h3>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?php</span>
      <span class="k">function</span> <span class="nf">doCurlPost</span><span class="p">(</span><span class="nv">$apiUrl</span><span class="p">,</span> <span class="nv">$paramList</span><span class="p">)</span> <span class="p">{</span>
 
              <span class="c1">// create field string</span>
@@ -1441,33 +1429,34 @@ in Seo Panel both from external applications and scripts as well as internal mod
      <span class="k">echo</span> <span class="s2">&quot;&lt;/pre&gt;&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="index.html">Table Of Contents</a></h3>
+<h3><a href="index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="installation.html">1. INSTALLATION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">1. Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plugins.html">3. Plugins</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">4. API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#api-setup">1. API Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#functions">2. Functions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#website-management">Website Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#keyword-management">Keyword Management</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#user-management">User Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-setup">4.1. 1. API Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions">4.2. 2. Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#website-management">4.2.1. Website Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyword-management">4.2.2. Keyword Management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-management">4.2.3. User Management</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#sample-code">3. Sample Code</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#create-user">Create User</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#user-website-reports">User Website Reports</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#keyword-reports">Keyword Reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-code">4.3. 3. Sample Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#create-user">4.3.1. Create User</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#user-website-reports">4.3.2. User Website Reports</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keyword-reports">4.3.3. Keyword Reports</a></li>
 </ul>
 </li>
 </ul>
@@ -1477,15 +1466,15 @@ in Seo Panel both from external applications and scripts as well as internal mod
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -1497,13 +1486,14 @@ in Seo Panel both from external applications and scripts as well as internal mod
           <a href="developer.html" title="5. Developer Guide"
              >next</a></li>
         <li class="right" >
-          <a href="plugins/social-bookmarker.html" title="Social Bookmarker"
+          <a href="plugins/social-bookmarker.html" title="3.5. Social Bookmarker"
              >previous</a> |</li>
- 
+
+        <li class="nav-item nav-item-this"><a href="">Seo Panel API Guide with functions, setup instructions and code samples</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

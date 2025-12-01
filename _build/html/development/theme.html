@@ -1,35 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en" data-content_root="../">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta content="Guide for Seo panel developers to create new theme for seo panel. Functions and features are explained with code samples and test theme." name="description" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="Guide for Seo panel developers to create new theme for seo panel. Functions and features are explained with code samples and test theme." name="description" />
 
     <title>Seo Panel Theme Development Guide with Steps to Create a Seo Panel Theme</title>
-    
-    <link rel="stylesheet" href="../_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '4.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="../_static/jquery.js"></script>
-    <script type="text/javascript" src="../_static/underscore.js"></script>
-    <script type="text/javascript" src="../_static/doctools.js"></script>
-    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nature.css?v=601dbdee" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=af458843" />
+    <script src="../_static/documentation_options.js?v=42d1b3bd"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="top" title="" href="../index.html" />
-    <link rel="up" title="5. Developer Guide" href="../developer.html" />
     <link rel="next" title="6. SUPPORT" href="../support.html" />
-    <link rel="prev" title="Plugin Development Guide" href="plugin.html" />       
+    <link rel="prev" title="5.1. Plugin Development Guide" href="plugin.html" />       
      
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.seopanel.org/css/bootstrap.min.css?v1.2" type="text/css" />
@@ -69,8 +56,7 @@
         $(".body a[href^='http']").attr('target','_blank');
     });
     </script>
-  </head>
-  <body role="document">
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -78,10 +64,11 @@
           <a href="../support.html" title="6. SUPPORT"
              accesskey="N">next</a></li>
         <li class="right" >
-          <a href="plugin.html" title="Plugin Development Guide"
+          <a href="plugin.html" title="5.1. Plugin Development Guide"
              accesskey="P">previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../developer.html" accesskey="U">5. Developer Guide</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../developer.html" accesskey="U"><span class="section-number">5. </span>Developer Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Seo Panel Theme Development Guide with Steps to Create a Seo Panel Theme</a></li> 
       </ul>
     </div>  
 
@@ -172,45 +159,44 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="theme-development-guide">
-<h1>Theme Development Guide<a class="headerlink" href="#theme-development-guide" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+  <section id="theme-development-guide">
+<h1><span class="section-number">5.2. </span>Theme Development Guide<a class="headerlink" href="#theme-development-guide" title="Link to this heading">¶</a></h1>
+<section id="introduction">
+<h2><span class="section-number">5.2.1. </span>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
 <p>Seo Panel Themes help us to <strong>modify, customize, and extend</strong> the features of Seo Panel interface according to our requirement.</p>
 <p>If you would like to create a new Seo Panel theme, then first search the theme in Seo Panel theme repository - <a class="reference external" href="https://www.seopanel.org/themes/">https://www.seopanel.org/themes/</a>
 If it is not existing any where, then use following articles to create a new theme for Seo Panel and publish it through Seo Panel repository.</p>
 <p><strong>Note:</strong> This article assumes you are already familiar with the basic functionality of Seo Panel, and PHP, HTML, CSS, JS programming.</p>
-</div>
-<div class="section" id="steps-to-create-a-seo-panel-theme">
-<h2>Steps to Create a Seo Panel Theme<a class="headerlink" href="#steps-to-create-a-seo-panel-theme" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="steps-to-create-a-seo-panel-theme">
+<h2><span class="section-number">5.2.2. </span>Steps to Create a Seo Panel Theme<a class="headerlink" href="#steps-to-create-a-seo-panel-theme" title="Link to this heading">¶</a></h2>
 <p>This section guide us through the steps needs to follow while creating a new Seo Panel theme.</p>
-<div class="section" id="names-files-and-locations">
-<h3>Names, Files, and Locations<a class="headerlink" href="#names-files-and-locations" title="Permalink to this headline">¶</a></h3>
+<section id="names-files-and-locations">
+<h3><span class="section-number">5.2.2.1. </span>Names, Files, and Locations<a class="headerlink" href="#names-files-and-locations" title="Link to this heading">¶</a></h3>
 <p><strong>Theme Name</strong></p>
 <p>The first step for theme creation is finding a name for your theme according to the features you would like to implement with it.</p>
-<p><strong>Eg:</strong> &#8220;Test Theme&#8221;</p>
+<p><strong>Eg:</strong> “Test Theme”</p>
 <p>Once you found a name for your theme, then search it in <a class="reference external" href="https://www.seopanel.org/themes">Seo Panel theme repository</a> to find any other theme existing with the same name. If it is already existing, then choose another name for your theme.</p>
 <p><strong>Theme Files</strong></p>
 <p>If you are creating a theme Named <strong>Test Theme</strong>, Then theme file structure should be like below list</p>
 <blockquote>
-<div><ul>
-<li><dl class="first docutils">
-<dt>TestTheme</dt>
-<dd><ul class="first last simple">
-<li>css</li>
-<li>js</li>
-<li>images</li>
-<li>views</li>
-<li>theme.xml</li>
+<div><ul class="simple">
+<li><dl class="simple">
+<dt>TestTheme</dt><dd><ul>
+<li><p>css</p></li>
+<li><p>js</p></li>
+<li><p>images</p></li>
+<li><p>views</p></li>
+<li><p>theme.xml</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
 <p><strong>i) TestTheme</strong></p>
-<p>First step is to create a folder named <strong>&#8220;TestTheme&#8221;</strong>,  which contains all theme files and folders. The theme directory name should not contain spaces and other special characters.</p>
+<p>First step is to create a folder named <strong>“TestTheme”</strong>,  which contains all theme files and folders. The theme directory name should not contain spaces and other special characters.</p>
 <p><strong>ii) views</strong></p>
-<p>Create a &#8220;views&#8221; folder to add all template files required by theme to show the HTML output.</p>
+<p>Create a “views” folder to add all template files required by theme to show the HTML output.</p>
 <p><strong>iii) css</strong></p>
 <p>The folder contains all css files required by theme.</p>
 <p><strong>iv) js</strong></p>
@@ -218,15 +204,15 @@ If it is not existing any where, then use following articles to create a new the
 <p><strong>v) images</strong></p>
 <p>This folder contains all images required for a theme.</p>
 <p><strong>vi) theme.xml</strong></p>
-<p>This XML file is used to add the details about the theme. Please check below sample &#8220;theme.xml&#8221; file.</p>
+<p>This XML file is used to add the details about the theme. Please check below sample “theme.xml” file.</p>
 <p><strong>Eg:</strong></p>
-<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
 <span class="nt">&lt;theme&gt;</span>
-   <span class="nt">&lt;author&gt;</span>Geo Varghese<span class="nt">&lt;/author&gt;</span>
-   <span class="nt">&lt;name&gt;</span>Classic<span class="nt">&lt;/name&gt;</span>
-   <span class="nt">&lt;description&gt;</span>Classic theme of Seo Panel<span class="nt">&lt;/description&gt;</span>
-   <span class="nt">&lt;version&gt;</span>1.0.0<span class="nt">&lt;/version&gt;</span>
-   <span class="nt">&lt;website&gt;</span>https://www.seopanel.org/theme/l/1/classic/<span class="nt">&lt;/website&gt;</span>
+<span class="w">   </span><span class="nt">&lt;author&gt;</span>Geo<span class="w"> </span>Varghese<span class="nt">&lt;/author&gt;</span>
+<span class="w">   </span><span class="nt">&lt;name&gt;</span>Classic<span class="nt">&lt;/name&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Classic<span class="w"> </span>theme<span class="w"> </span>of<span class="w"> </span>Seo<span class="w"> </span>Panel<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;version&gt;</span>1.0.0<span class="nt">&lt;/version&gt;</span>
+<span class="w">   </span><span class="nt">&lt;website&gt;</span>https://www.seopanel.org/theme/l/1/classic/<span class="nt">&lt;/website&gt;</span>
 <span class="nt">&lt;/theme&gt;</span>
 </pre></div>
 </div>
@@ -237,27 +223,28 @@ If it is not existing any where, then use following articles to create a new the
 <p><strong>website</strong> - A link to a website where user can download theme.</p>
 <p>Once you are familiar with these files and functions, it really easy to create themes for seo Panel.</p>
 </div></blockquote>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
+            <div class="clearer"></div>
           </div>
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h3><a href="../index.html">Table Of Contents</a></h3>
+<h3><a href="../index.html">Table of Contents</a></h3>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. INSTALLATION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">1. Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../usage.html">2. User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../plugins.html">3. Plugins</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../api.html">4. API</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../developer.html">5. Developer Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="plugin.html">Plugin Development Guide</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Theme Development Guide</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#steps-to-create-a-seo-panel-theme">Steps to Create a Seo Panel Theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin.html">5.1. Plugin Development Guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.2. Theme Development Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">5.2.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#steps-to-create-a-seo-panel-theme">5.2.2. Steps to Create a Seo Panel Theme</a></li>
 </ul>
 </li>
 </ul>
@@ -266,15 +253,15 @@ If it is not existing any where, then use following articles to create a new the
 </ul>
 
 <div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
     </form>
+    </div>
 </div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
+<script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
@@ -286,14 +273,15 @@ If it is not existing any where, then use following articles to create a new the
           <a href="../support.html" title="6. SUPPORT"
              >next</a></li>
         <li class="right" >
-          <a href="plugin.html" title="Plugin Development Guide"
+          <a href="plugin.html" title="5.1. Plugin Development Guide"
              >previous</a> |</li>
 
-          <li class="nav-item nav-item-1"><a href="../developer.html" >5. Developer Guide</a> &#187;</li> 
+          <li class="nav-item nav-item-1"><a href="../developer.html" ><span class="section-number">5. </span>Developer Guide</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Seo Panel Theme Development Guide with Steps to Create a Seo Panel Theme</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo" style="color: #ffffff">
-        &copy; Copyright 2019, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">www.seopanel.org</a>.
+        &copy; Copyright 2025, <a href="https://www.seopanel.org" style="color: #ffffff; text-decoration: none;">Seo Panel</a>.
       Created using <a href="http://sphinx-doc.org/" style="color: #ffffff; text-decoration: none;">Sphinx</a>
     </div>
     <!-- Global site tag (gtag.js) - Google Analytics -->

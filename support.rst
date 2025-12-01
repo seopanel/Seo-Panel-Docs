@@ -3,8 +3,8 @@
 .. meta::
    :description: Support system for seo panel with forum, blog, email, github environments of seo panel. 
 
-6. SUPPORT
-==========
+SUPPORT
+=======
 
 
 - `Github <https://github.com/seopanel/>`_
