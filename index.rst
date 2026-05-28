@@ -9,7 +9,7 @@
    contain the root `toctree` directive.
 
 
-Seo Panel Documentation
+SEO Panel Documentation
 =======================
 
 .. toctree::
