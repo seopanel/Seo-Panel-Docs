@@ -1,4 +1,4 @@
-.. title:: SEO Panel logs manager, Crawl log manager, Proxy log manager 
+.. title:: SEO Panel Log Manager | Crawl Log & Proxy Log
 
 .. meta::
    :description: Guide for SEO Panel logs manager, Crawl log manager, Proxy log manager with complete details. 

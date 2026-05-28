@@ -1,4 +1,4 @@
-.. title:: Seo panel settings manager guide to setup overall settings
+.. title:: SEO Panel Settings Manager | System Configuration Guide
 
 .. meta::
    :description: Guide for seo panel setting manager with email settings, Time zone, company name etc  

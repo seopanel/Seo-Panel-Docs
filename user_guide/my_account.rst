@@ -1,4 +1,4 @@
-.. title:: SEO Panel my account manager, SEO connections, Social media Connections 
+.. title:: SEO Panel My Account | SEO & Social Media Connections
 
 .. meta::
    :description: Guide for SEO Panel my account manager, SEO connections, Social media Connections, profile management 

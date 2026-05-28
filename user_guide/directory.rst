@@ -1,4 +1,4 @@
-.. title:: Directory Submission Tool, Automatic directory submission and Featured Submissions
+.. title:: SEO Panel Directory Submission | Automatic & Featured Submissions
 
 .. meta::
    :description: Guide for seo panel Directory Submission Tool, Automatic directory submission and Featured Submissions. 

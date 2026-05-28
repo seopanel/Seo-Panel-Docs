@@ -1,57 +1,132 @@
 /* Custom CSS for SEO Panel Documentation */
 
-/* Increase sidebar width */
+/* ── Sidebar container ──────────────────────────────────── */
 div.sphinxsidebar {
-    width: 280px !important;  /* Increased from default ~230px */
-    padding-left: 15px !important;  /* Add left padding to entire sidebar */
+    width: 268px !important;
+    background: #f8fafc;
+    border-right: 1px solid #e2e8f0;
+    padding: 0 !important;
 }
 
 div.bodywrapper {
-    margin: 0 0 0 280px !important;  /* Match sidebar width */
+    margin: 0 0 0 268px !important;
 }
 
-/* Adjust for smaller screens */
+div.sphinxsidebarwrapper {
+    padding: 18px 0 24px 0 !important;
+}
+
+/* ── TOC heading label ──────────────────────────────────── */
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    color: #94a3b8 !important;
+    padding: 0 16px 10px 16px !important;
+    margin: 0 0 6px 0 !important;
+    border-bottom: 1px solid #e2e8f0;
+    background: none !important;
+}
+
+div.sphinxsidebar h3 a,
+div.sphinxsidebar h4 a {
+    color: #94a3b8 !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+
+/* ── List reset ─────────────────────────────────────────── */
+div.sphinxsidebar ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+div.sphinxsidebar li {
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+
+/* ── All links base ─────────────────────────────────────── */
+div.sphinxsidebar a {
+    display: block !important;
+    color: #374151 !important;
+    text-decoration: none !important;
+    padding: 7px 12px 7px 14px !important;
+    border-left: 3px solid transparent;
+    font-size: 14.5px !important;
+    line-height: 1.5 !important;
+    border-radius: 0 6px 6px 0;
+    margin-right: 10px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+div.sphinxsidebar a:hover {
+    background: #e8f5ee !important;
+    color: #1a6b3c !important;
+    border-left-color: #2d9e5f !important;
+    text-decoration: none !important;
+}
+
+/* ── Top-level items ────────────────────────────────────── */
+div.sphinxsidebar ul > li > a {
+    font-weight: 600 !important;
+    font-size: 14.5px !important;
+    color: #1e293b !important;
+    margin-top: 2px;
+}
+
+/* ── Second-level items ─────────────────────────────────── */
+div.sphinxsidebar ul ul {
+    margin: 2px 0 2px 0 !important;
+    padding: 0 !important;
+    border-left: 2px solid #e2e8f0;
+    margin-left: 16px !important;
+}
+
+div.sphinxsidebar ul ul > li > a {
+    font-weight: 400 !important;
+    font-size: 13.5px !important;
+    color: #4b5563 !important;
+    padding-left: 14px !important;
+}
+
+/* ── Third-level items ──────────────────────────────────── */
+div.sphinxsidebar ul ul ul {
+    margin-left: 12px !important;
+    border-left: 2px solid #e9ecef;
+}
+
+div.sphinxsidebar ul ul ul > li > a {
+    font-size: 13px !important;
+    color: #6b7280 !important;
+    padding-left: 12px !important;
+}
+
+/* ── Active / current page ──────────────────────────────── */
+div.sphinxsidebar li.current > a {
+    background: #dcfce7 !important;
+    color: #166534 !important;
+    border-left-color: #2d9e5f !important;
+    font-weight: 700 !important;
+}
+
+div.sphinxsidebar li.current > a:hover {
+    background: #bbf7d0 !important;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
 @media screen and (max-width: 875px) {
     div.sphinxsidebar {
         width: 100% !important;
+        border-right: none;
+        border-bottom: 1px solid #e2e8f0;
     }
-
     div.bodywrapper {
         margin: 0 !important;
     }
-}
-
-/* Improve sidebar readability with increased width */
-div.sphinxsidebar ul {
-    margin-left: 0;
-    margin-bottom: 0;
-}
-
-/* Add spacing between menu items */
-div.sphinxsidebar li {
-    line-height: 1.5;
-    margin-bottom: 8px;  /* Add gap between menu items */
-}
-
-/* Add padding to menu links for better click area */
-div.sphinxsidebar a {
-    display: block;
-    padding: 4px 0;  /* Vertical padding for links */
-}
-
-/* Better spacing for nested menu items */
-div.sphinxsidebar ul ul {
-    margin-left: 15px;
-    margin-top: 5px;  /* Add space before nested items */
-}
-
-/* Nested menu items spacing */
-div.sphinxsidebar ul ul li {
-    margin-bottom: 6px;  /* Slightly less spacing for nested items */
-}
-
-/* Current page highlight - add more padding */
-div.sphinxsidebar li.current > a {
-    padding: 5px 0;
-    font-weight: bold;
 }

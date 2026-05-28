@@ -1,5 +1,33 @@
+.. title:: SEO Panel Installation Guide | Manual, One-Click & Docker Setup
+
+.. meta::
+   :description: Step-by-step SEO Panel installation guide — manual setup, one-click installers (Softaculous, Installatron, Webuzo), cloud hosting and Docker deployment.
+
 SEO Panel Installation
 ======================
+
+.. raw:: html
+
+   <div style="background: linear-gradient(135deg, #1a6b3c 0%, #2d9e5f 50%, #34a85a 100%); border-radius: 10px; padding: 14px 20px; margin: 16px 0 28px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; box-shadow: 0 4px 14px rgba(26,107,60,0.35);">
+     <div style="display: flex; align-items: center; gap: 14px;">
+       <div style="background: rgba(255,255,255,0.15); border-radius: 8px; width: 42px; height: 42px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+         <i class="fa fa-download" style="color: #fff; font-size: 20px;"></i>
+       </div>
+       <div>
+         <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
+           <span style="color: #fff; font-size: 15px; font-weight: 700; line-height: 1;">SEO Panel</span>
+           <span style="background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; line-height: 1.5;">Latest</span>
+           <span style="background: rgba(255,255,255,0.15); color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; line-height: 1.5;">Free</span>
+         </div>
+         <div style="color: rgba(255,255,255,0.85); font-size: 12px; line-height: 1.4;">Download the latest stable release and get started in minutes.</div>
+       </div>
+     </div>
+     <a href="https://www.seopanel.org/download/" target="_blank"
+        style="display: inline-flex; align-items: center; gap: 8px; background: #fff; color: #1a6b3c; padding: 9px 20px; border-radius: 7px; font-weight: 700; font-size: 14px; text-decoration: none; box-shadow: 0 2px 8px rgba(0,0,0,0.18); white-space: nowrap;"
+        onmouseover="this.style.opacity='.88'" onmouseout="this.style.opacity='1'">
+       <i class="fa fa-download"></i> Download
+     </a>
+   </div>
 
 .. admonition:: Important
 
@@ -9,139 +37,129 @@ SEO Panel Installation
 Installation Methods
 --------------------
 
-**Method 1: Quick Install (Recommended for Beginners)**
+**Method 1: Cloud Hosted (Zero Setup)**
 
-Simply use **Bitnami / Softaculous / Installatron / Webuzo / AMPPS** to install SEO Panel with one click.
+Get a cloud-hosted SEO Panel instance ready in 2 minutes with no server configuration required.
 
-**Method 2: Manual Installation**
+**Method 2: One-Click Installers (Recommended for Beginners)**
 
-Follow the steps below for manual installation.
+Use **Softaculous**, **Installatron**, **Webuzo**, or **AMPPS** to install SEO Panel with a single click from your hosting control panel.
 
-**Method 3: Docker Installation**
+**Method 3: Manual Installation**
 
-See the Docker Installation section below for containerized deployment.
+Follow the steps below for a manual 5-minute installation.
+
+**Method 4: Docker Installation**
+
+See the Docker Installation section below for containerised deployment.
 
 
 Manual Installation Steps
 -------------------------
 
-1. **Download Latest Version**
+1. **Download & Extract**
 
    Download the latest version from: https://www.seopanel.org/download/
 
-   Extract the package to your local machine.
+   Unzip the package to your local computer.
 
 2. **Upload Files**
 
-   Upload all files (maintaining the directory structure) to a web-accessible directory on your server.
+   Transfer all files to a web-accessible directory on your server via FTP, maintaining the directory structure.
 
-   Recommended path: ``/var/www/html/seopanel`` or ``public_html/seopanel``
+   Recommended path: ``public_html/seopanel`` or ``/var/www/html/seopanel``
 
-3. **Set File Permissions (Temporary)**
+3. **Set Config File Permissions**
 
    .. code-block:: bash
 
-      # For Linux/Unix servers
       chmod 666 config/sp-config.php
-      chmod 777 tmp/
 
-   **Note:** These are temporary permissions for installation only and will be secured in step 7.
+   Or set to ``-rw-rw-rw-`` via your FTP client.
 
-4. **Create Database**
+4. **Set Temp Directory Permissions**
 
-   Create a MySQL/MariaDB database and user for SEO Panel:
+   .. code-block:: bash
 
-   .. code-block:: sql
+      chmod 777 tmp
 
-      CREATE DATABASE seopanel_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-      CREATE USER 'seopanel_user'@'localhost' IDENTIFIED BY 'strong_password_here';
-      GRANT ALL PRIVILEGES ON seopanel_db.* TO 'seopanel_user'@'localhost';
-      FLUSH PRIVILEGES;
+   Or set to ``-rwxrwxrwx`` via your FTP client.
 
-5. **Run Web Installer**
+5. **Run the Installation Wizard**
 
-   Visit the installation URL in your web browser:
+   Open your web browser and visit:
 
-   ``https://yourdomain.com/seopanel/install/``
+   ``http://www.yourdomain.com/seopanel/install/``
 
    .. image:: _static/sp_install1.png
 
-   **Enter Database Details**
+6. **Complete the Setup Form**
 
-   - Database Host: localhost (or your database server)
-   - Database Name: seopanel_db
-   - Database Username: seopanel_user
-   - Database Password: (the password you created)
+   Follow the on-screen instructions and fill in all required information:
+
+   - Database host, name, username and password
+   - Admin language and timezone
+   - Admin credentials
 
    .. image:: _static/sp_install2.png
 
-   **Configure Admin Settings**
-
-   - Select admin language
-   - Set timezone for your location
-   - Create a strong admin password (don't use default!)
-
    .. image:: _static/sp_install3.png
 
-6. **Complete Installation**
+7. **Secure the Config File**
 
-   Follow the on-screen instructions to complete the installation.
-
-7. **Secure Your Installation (Critical)**
+   After installation completes, lock down the config file:
 
    .. code-block:: bash
 
-      # Secure config file permissions
       chmod 644 config/sp-config.php
 
-      # Secure tmp directory (allow only web server write access)
-      chmod 755 tmp/
-
-      # Remove installation directory
-      rm -rf install/
-
-   **Important:** Failing to remove the install directory is a serious security risk!
+   Or set to ``-rw-r--r--`` via your FTP client.
 
 8. **First Login**
 
    Access the admin panel at: ``https://yourdomain.com/seopanel/``
 
-   **Default Login Credentials:**
+   **Default login credentials:**
 
    - Username: ``spadmin``
-   - Password: ``spadmin`` (or the password you set during installation)
+   - Password: ``spadmin``
 
-9. **Immediate Security Steps (Required)**
+   .. admonition:: Security Warning
 
-   a. **Change Admin Password**
+      Change the default password immediately after your first login. Click your profile link (top right) to update it.
 
-      - Click on your profile (top right corner)
-      - Change the default password immediately
-      - Use a strong password (12+ characters, mixed case, numbers, symbols)
+9. **Configure MOZ API**
 
-   b. **Configure API Keys**
+   Go to **Admin Panel → System Settings → MOZ Settings** and add your MOZ API key.
 
-      Go to **Admin Panel => System Settings => MOZ Settings**
+   Get a free API key at: https://moz.com/help/guides/moz-api/
 
-      Add your free MOZ API key: https://moz.com/help/guides/moz-api/
 
-   c. **Review Security Settings**
+Post-Installation Security Steps
+---------------------------------
 
-      - Enable HTTPS/SSL if available
-      - Configure proper backup procedures
-      - Review user permissions
+.. admonition:: Security Checklist
 
-10. **Additional Configuration**
+    - ✓ Change default admin password immediately
+    - ✓ Remove the ``install/`` directory after installation
+    - ✓ Use HTTPS/SSL encryption
+    - ✓ Keep SEO Panel updated to the latest version
+    - ✓ Use strong, unique database passwords
+    - ✓ Regular backups of database and files
 
-    - Configure cron jobs for automated tasks
-    - Set up email settings for notifications
-    - Configure proxy settings if needed
+**Remove the install directory (required):**
+
+.. code-block:: bash
+
+   rm -rf install/
+
+Failing to remove this directory is a serious security risk.
 
 
 Docker Installation
 -------------------
 
-For a modern, containerized deployment:
+For a modern, containerised deployment:
 
 1. **Create docker-compose.yml**
 
@@ -192,23 +210,6 @@ For a modern, containerized deployment:
    Follow the web installer steps above.
 
 
-Security Best Practices
------------------------
-
-.. admonition:: Security Checklist
-
-    - ✓ Change default admin password immediately
-    - ✓ Remove install/ directory after installation
-    - ✓ Use HTTPS/SSL encryption
-    - ✓ Keep SEO Panel updated to latest version
-    - ✓ Use strong, unique database passwords
-    - ✓ Restrict database access to localhost only
-    - ✓ Regular backups of database and files
-    - ✓ Use file permissions: 644 for files, 755 for directories
-    - ✓ Disable directory listing in web server
-    - ✓ Keep PHP and server software updated
-
-
 ===============
 Video Tutorials
 ===============
@@ -222,17 +223,17 @@ Video Tutorials
     </div>
 
 
-**Tutorial 2**    
-    
+**Tutorial 2**
+
 .. raw:: html
 
 	<div class="embed-responsive embed-responsive-16by9">
     	<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9CN4MDu2eNY" frameborder="0" allowfullscreen></iframe>
     </div>
-    
 
-**How to Install Seo Panel Using Softaculous**    
-    
+
+**How to Install Seo Panel Using Softaculous**
+
 .. raw:: html
 
 	<div class="embed-responsive embed-responsive-16by9">
@@ -240,4 +241,4 @@ Video Tutorials
     </div>
 
 
-If you have any issues while installation, Please contact seo panel team or open a ticket in support system 
+If you have any issues during installation, please contact the SEO Panel team or open a ticket in the support system.

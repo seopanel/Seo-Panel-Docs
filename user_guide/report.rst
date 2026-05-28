@@ -1,4 +1,4 @@
-.. title:: SEO Reports Management, Keyword and website seo reports, seo panel cron job setup 
+.. title:: SEO Panel Reports | Keyword Reports & Cron Job Setup
 
 .. meta::
    :description: Guide for seo panel Reports Management, Keyword and website seo reports generation, website rank reports  

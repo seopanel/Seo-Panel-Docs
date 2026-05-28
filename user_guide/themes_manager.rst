@@ -1,4 +1,4 @@
-.. title:: Seo panel Themes Manager guide to install, upgrade and activate themes
+.. title:: SEO Panel Themes Manager | Install, Upgrade & Activate Themes
 
 .. meta::
    :description: Guide for Seo panel Themes Manager to install, upgrade and activate seo panel themes. 
