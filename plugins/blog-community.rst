@@ -48,6 +48,9 @@ Projects Manager
 
 Projects Manager lists all blog community campaigns. Each project shows its keyword, website, language, maximum links limit, crawled links count, and status.
 
+.. image:: ../_static/sp_bc_project_manager.png
+   :alt: Blog Community Projects Manager
+
 Filter the list by **Website** to focus on a specific site.
 
 **Creating a New Project**
@@ -73,9 +76,9 @@ Filter the list by **Website** to focus on a specific site.
 - **Edit** – Modify project settings
 - **Delete** – Remove the project
 
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 Supported Platforms
-~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 Blog Community supports posting to multiple blogging platforms. Platform support is actively expanding:
 
@@ -103,6 +106,9 @@ Run Project
 
 Running a project starts the Google News RSS crawl. SEO Panel queries the RSS feed using the project's keyword and country/language settings, collects matching blog post URLs, and saves them into the project's link list.
 
+.. image:: ../_static/sp_bc_run_project.png
+   :alt: Blog Community Run Project live console
+
 The Run Project view shows a live console with timestamped entries:
 
 - **Pages Found** – Total blog URLs discovered so far
@@ -120,6 +126,9 @@ View Reports
 
 View Reports is where you submit comments and track their status. The dashboard includes stat cards with summary statistics, a submission distribution donut chart, and a latest submission logs preview.
 
+.. image:: ../_static/sp_bc_reports.png
+   :alt: Blog Community View Reports dashboard
+
 Filter the link list by:
 
 - **Website** and **Project**
@@ -127,7 +136,16 @@ Filter the link list by:
 - **Submitted** – Yes / No (whether a comment has been submitted)
 - **Approved** – Yes / No (whether the submitted comment was approved by the blog)
 
+.. image:: ../_static/sp_bc_blog_links.png
+   :alt: Blog Community blog links list
+
 Each link entry shows the blog title, description, URL, submission status, approval status, and active status. Every comment submission is logged with HTTP status code, response body, and error details.
+
+.. image:: ../_static/sp_bc_submission_logs.png
+   :alt: Blog Community submission logs
+
+.. image:: ../_static/sp_bc_submission_logs_manager.png
+   :alt: Blog Community submission logs manager
 
 **Link Actions**
 
