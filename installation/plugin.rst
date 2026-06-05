@@ -353,5 +353,5 @@ Plugin Resources
 - Link Diagnosis - Analyze backlink quality
 - Social Bookmarker - Submit to social bookmarking sites
 - Directory Importer - Import web directory lists
-- Blog Commenter - Automated blog commenting
+- Blog Community - Automated blog discovery and comment submission
 - SEO Panel Customizer - Customize panel appearance
