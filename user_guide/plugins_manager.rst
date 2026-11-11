@@ -1,4 +1,4 @@
-.. title:: Seo Plugins Manager with installation, upgrade, status management
+.. title:: SEO Panel Plugins Manager | Install, Upgrade & Status
 
 .. meta::
    :description: Guide for seo panel Plugins Manager with installation, upgrade, activate and inactivate.  

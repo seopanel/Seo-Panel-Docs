@@ -1,4 +1,4 @@
-.. title:: Seo Panel Theme Development Guide with Steps to Create a Seo Panel Theme
+.. title:: SEO Panel Theme Development Guide | Create Custom Themes
 
 .. meta::
    :description: Guide for Seo panel developers to create new theme for seo panel. Functions and features are explained with code samples and test theme.

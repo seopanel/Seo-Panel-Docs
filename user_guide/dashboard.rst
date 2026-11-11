@@ -1,4 +1,4 @@
-.. title:: SEO Dashboard with daily report summary and competitor analysis 
+.. title:: SEO Panel Dashboard | Daily Report Summary & Competitor Analysis
 
 .. meta::
    :description: Guide for SEO Dashboard of seo panel with daily report summary, competitor analysis and overall summary. 

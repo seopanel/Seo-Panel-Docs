@@ -1,4 +1,4 @@
-.. title:: Seo Panel API Guide with functions, setup instructions and code samples 
+.. title:: SEO Panel API Guide | Functions, Setup & Code Samples
 
 .. meta::
    :description: API guide to setup and call seo panel api with code examples. Website, Keyword, user  and reports management API functions.

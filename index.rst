@@ -1,4 +1,4 @@
-.. title:: Seo Panel Documentation- Installation, User Guide, Support, Developer Guide  
+.. title:: SEO Panel Documentation | Installation, User Guide & Developer Guide
 
 .. meta::
    :description: Seo Panel Documentation with Installation tutorials, User Guide, Support Sytem Details, Developer Guide for plugins and themes.
@@ -9,16 +9,16 @@
    contain the root `toctree` directive.
 
 
-Seo Panel Documentation
+SEO Panel Documentation
 =======================
 
 .. toctree::
    :maxdepth: 3
-   :numbered:
 
    installation
    usage
    plugins
+   themes
    api
    developer
    support

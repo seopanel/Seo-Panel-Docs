@@ -1,4 +1,4 @@
-.. title:: Seo panel User Management guide to manage seo panel users
+.. title:: SEO Panel User Management | Add & Manage Users
 
 .. meta::
    :description: Guide for Seo panel User Management to manage seo panel users. User type management also possible with seo panel.

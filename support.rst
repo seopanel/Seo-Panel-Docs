@@ -1,4 +1,4 @@
-.. title:: Seo panel support system with blog, email, github of seo panel
+.. title:: SEO Panel Support | Blog, Contact & GitHub
 
 .. meta::
    :description: Support system for seo panel with blog, email, github environments of seo panel. 

@@ -1,4 +1,4 @@
-.. title:: Backlinks Checker of seo panel with daily reports and quick checker
+.. title:: SEO Panel Backlink Checker | Daily Reports & Quick Checker
 
 .. meta::
    :description: Guide for seo panel backlink checker with quick Backlinks Checker and Backlinks Reports 
