@@ -13,6 +13,8 @@ This guide explains, how user setup seo panel according to their requirement.
 
    user_guide/website
    user_guide/ai_visibility
+   user_guide/mcp_access
+   user_guide/scheduler_health
    user_guide/settings
    user_guide/keyword
    user_guide/report

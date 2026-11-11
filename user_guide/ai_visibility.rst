@@ -13,8 +13,9 @@ Overview
 
 Traditional SEO tells you where you rank on Google. It says nothing about whether ChatGPT, Gemini or Google's own AI Overviews ever mention you at all. **AI Visibility** is a dedicated suite, new in Seo Panel 7.0.0, that closes that gap - self-hosted, using your own API keys where a live AI call is involved, with nothing sent anywhere Seo Panel doesn't already send it.
 
-It covers seven tools:
+It covers one setup hub and seven tools:
 
+- **AI Setup** - one-time install of the tracking snippet, bot-collector script, and (optional) robots.txt / llms.txt rules
 - **AI Visibility Summary** - one blended score per website
 - **AI Perception Check** - ask real AI assistants what they know about your site
 - **AI SERP Overview** - track Google AI Overview citations for your tracked keywords
@@ -24,6 +25,32 @@ It covers seven tools:
 - **AI Insights** - a prioritized to-do list built from everything above
 
 All of these are reached from **Seo Tools => AI Visibility** in the left menu.
+
+
+~~~~~~~~~~~~~~
+AI Setup
+~~~~~~~~~~~~~~
+
+The one-time installation hub for the whole suite - install this first, since the AI Referral Report and AI Bot Crawlers pages both start out empty until their matching piece here is in place.
+
+1) Go to **Seo Tools => AI Visibility => AI Setup**, pick a **Website**
+
+2) On the **Setup** tab, copy the **tracking snippet** and paste it into your site's template (before ``</head>`` or ``</body>``) - this is what feeds the **AI Referral Report**
+
+3) Copy the **bot-collector script URL** and have your site request it on every page load (a simple include works) - this is what feeds **AI Bot Crawlers**, since bots don't execute the JS snippet
+
+   .. image:: ../_static/sp_ai_setup.png
+
+   - The tracking snippet stores no cookies, no localStorage and no visitor identifiers - only that a visit arrived from a given AI platform to a given page
+   - If the website is a WordPress site SEO Panel can reach directly, it offers a one-click, zero-touch install of both pieces instead
+
+4) Switch to the **Advanced** tab for everything else - all of it optional, and only usable once an admin has configured a writable **Document Root Path** (and, for the access-log-based checks, an **Access Log Path**) for this website under **Server Access Configuration**
+
+   .. image:: ../_static/sp_ai_setup_advanced.png
+
+   - **AI Crawler Rules** toggles a Disallow rule per AI platform (ChatGPT, Claude, Perplexity, Google-Extended and others) inside a clearly marked block in the site's live ``robots.txt`` - everything else in the file is left untouched, and every change is recorded to an exportable audit trail
+   - **Regenerate llms.txt** builds an ``llms.txt`` file from data Seo Panel already has (title, description, crawled pages) - it refuses to overwrite a hand-authored one unless you confirm
+   - **AI-Bot Response Headers** adds an ``X-Robots-Tag`` header for selected file types via a managed block in the site's ``.htaccess`` - every save is verified live against the site before it's kept, and automatically reverted if it would make the site unreachable
 
 
 ~~~~~~~~~~~~~~
