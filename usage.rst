@@ -12,6 +12,7 @@ This guide explains, how user setup seo panel according to their requirement.
    :maxdepth: 3  
 
    user_guide/website
+   user_guide/ai_visibility
    user_guide/settings
    user_guide/keyword
    user_guide/report
