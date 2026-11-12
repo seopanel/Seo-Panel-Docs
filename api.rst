@@ -19,9 +19,15 @@ Login as admin and go to following page
 
 Admin Panel => API Manager => API Settings
 
-Change values of API Key and Secret for security according to the below screen shot. 
+Change values of API Key and Secret for security according to the below screen shot.
 
 .. image:: _static/sp_api_settings.png
+
+New in Seo Panel 7.0.0: a second, simpler page for the same two values. Go to **Admin Panel => API Manager => API Connection** to view the API URL plus the current Key/Secret, and **Regenerate** either one with a single click (each regenerated value is a fresh random string - no need to type your own) instead of editing them by hand on the System Settings-style page above.
+
+.. image:: _static/sp_api_connection.png
+
+Regenerating either value immediately breaks every existing integration using the old one - update them with the new value right after.
 
 
 2. Functions

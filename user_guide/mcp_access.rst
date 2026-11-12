@@ -13,14 +13,14 @@ Overview
 
 **MCP Access**, new in Seo Panel 7.0.0, lets your own AI agent - Claude Desktop or any other `Model Context Protocol <https://modelcontextprotocol.io/>`_ client - query your Seo Panel data directly instead of you copying numbers into a chat by hand. It's entirely self-hosted: nothing leaves your server except the one response your agent actually asked for, and only to a client holding your own personal access token.
 
-This is separate from the general **API** (Settings => My Account, the ``SP_API_KEY``/``SP_API_SECRET`` pair) - MCP Access uses its own per-user tokens, scoped to a fixed set of read-mostly tools rather than the full API surface.
+This is separate from the general **API** (Admin Panel => API Manager, the ``SP_API_KEY``/``API_SECRET`` pair - see :doc:`../api`) - MCP Access uses its own per-user tokens, scoped to a fixed set of read-mostly tools rather than the full API surface.
 
 
 ~~~~~~~~~~~~~~
 Generate a token
 ~~~~~~~~~~~~~~
 
-1) Go to **Seo Tools => AI Visibility => MCP Access** (also linked from the AI Visibility Summary page's Discover More panel)
+1) Go to **Admin Panel => My Account => MCP Access** (also linked from the AI Visibility Summary page's Discover More panel, and from Seo Tools => AI Visibility => MCP Access - same page either way)
 
 2) Give the token a **label** (so you can tell tokens apart later), pick an expiry - **Never**, 30 days, 90 days or 1 year - and click **Generate new token**
 
