@@ -18,7 +18,7 @@ SEO Diary
        <div>
          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
            <span style="color: #fff; font-size: 16px; font-weight: 700; line-height: 1;">SEO Diary Plugin</span>
-           <span style="background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; line-height: 1.5;">v1.2.1</span>
+           <span style="background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; line-height: 1.5;">v1.5.0</span>
          </div>
          <div style="color: rgba(255,255,255,0.82); font-size: 13px; line-height: 1.4;">Track all SEO work, tasks &amp; notes per project — <strong style="color:#fff;">team collaboration &amp; task management</strong> inside SEO Panel.</div>
        </div>
@@ -39,7 +39,8 @@ The plugin menu provides the following sections:
 - **Diary Manager** – View, filter and manage all diary entries across projects
 - **My Tasks** – Personal task list filtered to the logged-in user
 - **Diary Comments** – View and respond to comments on diary entries
-- **Settings** – Configure user access (admin only)
+- **Settings** – Configure user access and due-date reminder emails (admin only)
+- **Features & Support** – About this plugin, with a link to report issues or request features
 
 ~~~~~~~~~~~~~~~~
 Projects Manager
@@ -117,3 +118,16 @@ Settings
 Plugin Settings (admin only):
 
 - **Allow user to access projects manager** – When enabled, non-admin users can view and manage projects, diary entries and their own tasks
+- **Send due-date reminder emails** – When enabled, a cron job emails the assignee (and reminds again the day a task is due and the day after, if still not completed) ahead of each diary entry's due date - see **Due-Date Reminder Cron** below
+
+~~~~~~~~~~~~~~~~~~~~~~
+Due-Date Reminder Cron
+~~~~~~~~~~~~~~~~~~~~~~
+
+With **Send due-date reminder emails** enabled above, add this to your server's crontab to actually send them - SEO Diary doesn't run it on its own:
+
+.. code-block:: bash
+
+   0 8 * * * php /opt/lampp/htdocs/seopanel/plugins/SeoDiary/diarycron.php
+
+Run once a day, it emails the assignee of any open (not Closed/Cancelled) diary entry due tomorrow, due today, or overdue - worded accordingly - skipping any entry it already reminded about today.

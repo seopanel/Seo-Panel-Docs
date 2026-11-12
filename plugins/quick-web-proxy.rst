@@ -18,7 +18,7 @@ Quick Web Proxy
        <div>
          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
            <span style="color: #fff; font-size: 16px; font-weight: 700; line-height: 1;">Quick Web Proxy Plugin</span>
-           <span style="background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; line-height: 1.5;">v2.2.0</span>
+           <span style="background: rgba(255,255,255,0.2); color: #fff; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 20px; line-height: 1.5;">v2.5.0</span>
          </div>
          <div style="color: rgba(255,255,255,0.82); font-size: 13px; line-height: 1.4;">Browse anonymously &amp; bypass restrictions using your <strong style="color:#fff;">hosting server or external proxies</strong> — directly from SEO Panel.</div>
        </div>
@@ -37,6 +37,7 @@ The plugin menu provides the following sections:
 - **Web Proxy** – Browse any URL anonymously through a selected proxy server
 - **Reports** – View proxy usage logs (admin only)
 - **Settings** – Configure proxy behaviour and user access (admin only)
+- **Features & Support** – About this plugin, with a link to report issues or request features
 
 ~~~~~~~~~
 Web Proxy
@@ -72,6 +73,7 @@ Available settings:
 
 - **Allow user to access the web proxy** – When enabled, non-admin users can use the Web Proxy section
 - **Allow web server to act as a proxy** – When enabled, your own hosting server is available as a proxy option in addition to any external proxies configured in SEO Panel's Proxy Manager
+- **Blocked Urls In Proxy** – Comma-separated list of URLs (or partial matches) to refuse browsing to through this proxy, regardless of which server is selected
 
 To update settings, change the values and click **Proceed**.
 

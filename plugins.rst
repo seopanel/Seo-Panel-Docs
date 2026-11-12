@@ -23,6 +23,7 @@ This guide explains, how to use seo panel plugins according to your requirements
    plugins/article-submitter
    plugins/quick-web-proxy
    plugins/seo-diary
+   plugins/meta-tag-generator
    plugins/captcha-bypass
    plugins/local-search-engines-package
    plugins/yandex-search-engine-package
