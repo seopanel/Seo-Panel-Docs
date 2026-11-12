@@ -38,7 +38,9 @@ This section will show the saturation reports of websites
    .. image:: ../_static/sp_saturation_report.png
 
   Currently it will show the saturation report in different search engines
-  
+
+New in Seo Panel 7.0.0: when **Enable DataForSEO for Backlink and Saturation Checker** is turned on under **Settings => DataForSEO Settings** (see :doc:`settings`), saturation counts are pulled from DataForSEO's indexed-page data instead of scraping the search engine's results page directly - same report, same columns, just a steadier data source.
+
   
 ~~~~~~~~~~~~~~
 Generate Saturation Reports

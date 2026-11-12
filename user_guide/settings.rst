@@ -241,7 +241,7 @@ New in Seo Panel 7.0.0. DataForSEO is an alternative data source several checker
 
    - **DataForSEO Balance($)** - Your remaining account balance, shown read-only once connected
 
-   - **Enable for Backlink and Saturation Checker** - Use DataForSEO as the data source for the Backlink Checker and Search Engine Saturation Checker
+   - **Enable for Backlink and Saturation Checker** - Despite the name, this one currently only affects the **Search Engine Saturation Checker**: it switches its indexed-page ``site:`` count from a direct search-engine crawl to DataForSEO's own count
 
    - **Enable Sandbox** - Use DataForSEO's sandbox (test) endpoints instead of live ones - no real credits are spent, but results are dummy data. Useful while wiring things up
 
@@ -250,6 +250,8 @@ New in Seo Panel 7.0.0. DataForSEO is an alternative data source several checker
    - **Enable for SERP Checker** - Use DataForSEO as a source for the Keyword Position Checker, and feeds the AI Overview presence/citation data shown on **AI SERP Overview** and **SERP Results Archive**
 
    - **Enable for Search Volume** - Turns on the **Search Volume** column shown alongside your tracked keywords (see :ref:`Keyword Position Summary <keyword-position-summary>`)
+
+   - **Enable DataForSEO for Backlink Checker** - The actual Backlink Checker toggle: replaces Moz's backlink-count fields with DataForSEO's real link-graph data (backlinks, referring domains) plus an extra **Broken Backlinks** count Moz doesn't provide. The Moz call for Rank Checker's Domain/Page Authority still runs either way
 
    **Click on `Verify connection`** link to confirm your login/password are valid before relying on them
 

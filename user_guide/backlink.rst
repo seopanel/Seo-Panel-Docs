@@ -38,7 +38,11 @@ This section will show the backlink reports of websites
    .. image:: ../_static/sp_backlink_report.png
 
   Currently it will show the backlink count in different search engines.
-  
+
+New in Seo Panel 7.0.0: when **Enable DataForSEO for Backlink Checker** is turned on under **Settings => DataForSEO Settings** (see :doc:`settings`), rows measured via DataForSEO instead show total backlinks and referring domains (not quite the same page-count metric Moz used) plus an extra **Broken Backlinks** count - a dead-link check Moz doesn't provide. Rows already measured via Moz are unaffected either way.
+
+   .. image:: ../_static/sp_backlink_report_broken.png
+
   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 Generate Backlinks Reports
