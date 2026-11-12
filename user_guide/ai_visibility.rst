@@ -13,7 +13,7 @@ Overview
 
 Traditional SEO tells you where you rank on Google. It says nothing about whether ChatGPT, Gemini or Google's own AI Overviews ever mention you at all. **AI Visibility** is a dedicated suite, new in Seo Panel 7.0.0, that closes that gap - self-hosted, using your own API keys where a live AI call is involved, with nothing sent anywhere Seo Panel doesn't already send it.
 
-It covers one setup hub and seven tools:
+It covers one setup hub, an admin-only platform catalog, and seven tools:
 
 - **AI Setup** - one-time install of the tracking snippet, bot-collector script, and (optional) robots.txt / llms.txt rules
 - **AI Visibility Summary** - one blended score per website
@@ -21,10 +21,11 @@ It covers one setup hub and seven tools:
 - **AI SERP Overview** - track Google AI Overview citations for your tracked keywords
 - **AI Referral Report** - real traffic arriving from AI platforms
 - **AI Bot Crawlers** - which AI crawlers are visiting your site
+- **Manage AI Platforms** - admin-only catalog of every AI platform Seo Panel recognizes, driving the two reports above
 - **AI Schema Markup Generator** - structured data for AI engines to cite
 - **AI Insights** - a prioritized to-do list built from everything above
 
-All of these are reached from **Seo Tools => AI Visibility** in the left menu.
+All of these are reached from **Seo Tools => AI Visibility** in the left menu. You'll also find the **AI Visibility email notification** and **AI Insights email notification** toggles under **Admin Panel => Reports Manager => Schedule Reports** - they gate the weekly AI Visibility/AI Insights digest emails and the AI Visibility block in the periodic Overall Report Summary email, all sent by the same cron job that already generates your other scheduled reports.
 
 
 ~~~~~~~~~~~~~~
@@ -83,6 +84,8 @@ Unlike the rest of AI Visibility, which works from data your site already genera
 
 2) Pick a website and click **Ask <Provider>** for any provider you've configured a key for
 
+   - If you've already added competitors under **Scheduled Tracking**, the same **Share of Voice** card shown there also appears here once you've asked at least one question
+
 **Setup**
 
 1) Open the **Setup** tab and add the API key(s) for the providers you want to ask
@@ -116,6 +119,7 @@ Runs alongside your existing Keyword Position Checker and flags which of your tr
 
    - **Keyword-Level Detail** shows whether an AI Overview is present for that keyword, and whether you're cited among its sources
    - **Competitor domains cited in your AI Overviews** ranks every other domain appearing in the same AI Overviews, with a Share of Voice bar so you can see at a glance who dominates a given keyword's AI Overview
+   - Needs SERP Checker enabled under **Settings => DataForSEO Settings** or **Settings => Seo Panel API Settings** - the same AI Overview data also appears on **SERP Results Archive** and the **AI Overview**/**Search Volume** columns of :ref:`Keyword Position Summary <keyword-position-summary>`
 
 
 ~~~~~~~~~~~~~~
@@ -150,6 +154,32 @@ Tracks actual AI crawler bots - GPTBot, ClaudeBot, PerplexityBot and others - vi
    - Needs the bot collector script from **AI Setup** installed first
    - **Verified** means the crawler's IP passed a reverse-DNS check on your own server at the moment it visited - the same method used to confirm Googlebot. Treat it as advisory analytics, not forensic proof
    - **Platform breakdown** and **Top crawled pages** tables are included below the summary
+
+
+~~~~~~~~~~~~~~~~~~~
+Manage AI Platforms
+~~~~~~~~~~~~~~~~~~~
+
+New in Seo Panel 7.0.0, admin-only. The catalog every other AI Visibility tool matches against - hostnames, bot user-agent patterns and robots.txt tokens for ChatGPT, Perplexity, Google-Extended and the rest. This is what actually drives the matching behind **AI Referral Report** and **AI Bot Crawlers**, and what populates the per-platform toggle list on **AI Setup**'s robots.txt rules.
+
+1) Go to **Seo Tools => AI Visibility => Manage AI Platforms** (admin only)
+
+   .. image:: ../_static/sp_aiv_manage_platforms_crop.png
+
+   - **Active** - Whether this platform is matched at all, for bot classification on **AI Bot Crawlers**
+   - **Referral Source** - Whether click-through traffic from this hostname counts as an AI referral on **AI Referral Report**. Keep this **off** for a vendor domain used only for bot matching (*Eg:* ``google.com`` for Google-Extended) - otherwise that domain's ordinary traffic gets mis-counted as AI referrals
+   - **Edit** / **Delete** an existing row, or use **Add Platform** below the table for one not already listed
+
+2) **Add Platform** to track a new AI crawler or referral source Seo Panel doesn't already recognize
+
+   .. image:: ../_static/sp_aiv_manage_platforms_addform.png
+
+   - **Platform code** - A short internal key, *Eg:* ``chatgpt``
+   - **Hostname** - The domain to match, *Eg:* ``chat.openai.com``
+   - **Display name** - Shown throughout the AI Visibility reports, *Eg:* ``ChatGPT``
+   - **Bot UA pattern** - The substring to match in the crawler's User-Agent header for bot detection, *Eg:* ``GPTBot``
+   - **Robots.txt User-agent token** - Optional. The exact token this crawler documents for its own ``robots.txt`` ``User-agent:`` line, *Eg:* ``Google-Extended``. Leave blank to reuse the Bot UA pattern above
+   - **Verify suffix** - Optional. The hostname suffix used for the reverse-DNS verification check shown as **Verified** on AI Bot Crawlers
 
 
 ~~~~~~~~~~~~~~

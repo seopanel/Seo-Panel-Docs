@@ -219,6 +219,85 @@ It requires user authentication to access the api resources.
       
    
 
+~~~~~~~~~~~~~~~~~~~
+DataForSEO Settings
+~~~~~~~~~~~~~~~~~~~
+
+New in Seo Panel 7.0.0. DataForSEO is an alternative data source several checker tools can use instead of (or alongside) a direct crawl: Review Checker, Backlink/Saturation Checker, SERP Checker, and the new Keyword Search Volume and Google AI Overview tracking under **AI SERP Overview**.
+
+1) Go to **Admin Panel => System Settings => DataForSEO Settings**
+
+2) **Click on `Click here to get Free DataForSEO account`** link if you don't already have one
+
+   https://dataforseo.com/
+
+3) Enter details as following screen shot
+
+   .. image:: ../_static/sp_settings_dataforseo.png
+
+   - **Enable DataForSEO** - Master switch for this integration. Leave this on **No** until your API login/password are saved - every sub-toggle below is ignored while this is off
+
+   - **API Login** / **API Password** - Credentials from your DataForSEO dashboard
+
+   - **DataForSEO Balance($)** - Your remaining account balance, shown read-only once connected
+
+   - **Enable for Backlink and Saturation Checker** - Use DataForSEO as the data source for the Backlink Checker and Search Engine Saturation Checker
+
+   - **Enable Sandbox** - Use DataForSEO's sandbox (test) endpoints instead of live ones - no real credits are spent, but results are dummy data. Useful while wiring things up
+
+   - **Enable for Review Checker** - Use DataForSEO for the async Google/Trustpilot/TripAdvisor Review Checker
+
+   - **Enable for SERP Checker** - Use DataForSEO as a source for the Keyword Position Checker, and feeds the AI Overview presence/citation data shown on **AI SERP Overview** and **SERP Results Archive**
+
+   - **Enable for Search Volume** - Turns on the **Search Volume** column shown alongside your tracked keywords (see :ref:`Keyword Position Summary <keyword-position-summary>`)
+
+   **Click on `Verify connection`** link to confirm your login/password are valid before relying on them
+
+
+~~~~~~~~~~~~~~~~~~~~~~
+Seo Panel API Settings
+~~~~~~~~~~~~~~~~~~~~~~
+
+New in Seo Panel 7.0.0. The hosted **Seo Panel API** (spAPI) is a free, optional alternative source for SERP and search volume data - separate from DataForSEO and Moz, and run by the Seo Panel team.
+
+1) Go to **Admin Panel => System Settings => Seo Panel API Settings**
+
+2) If you haven't registered yet, **Click on `Register`** - it's free and needs no credit card
+
+   .. image:: ../_static/sp_settings_seopanel_api.png
+
+   - **API Key** - Issued automatically once you register. **Verify connection**, **Reset API Token** and **Upgrade Token** links sit right next to it
+
+   - **Email** / **Name** - The contact details used for your spAPI registration
+
+   - **Enable for SERP Checker** - Use the Seo Panel API as a source for the Keyword Position Checker
+
+   - **Enable for Search Volume** - Turns on the **Search Volume** column for your tracked keywords, sourced from spAPI instead of (or alongside) DataForSEO
+
+   - **Resetting your API Token** immediately invalidates the old one - update anywhere else it's in use before resetting
+
+
+~~~~~~~~~~~~~~~~~~
+Local AI Settings
+~~~~~~~~~~~~~~~~~~
+
+New in Seo Panel 7.0.0. Connects Seo Panel to a local `Ollama <https://ollama.com/>`_ instance running on your own server or network, powering the optional **Summarize with AI** trend buttons found on several report pages (including AI Insights). Nothing here is sent to a third party - the request goes from your Seo Panel server straight to your own Ollama instance.
+
+1) Go to **Admin Panel => System Settings => Local AI Settings**
+
+2) Enter details as following screen shot
+
+   .. image:: ../_static/sp_settings_local_ai.png
+
+   - **Enable Local AI** - Master switch for this feature
+
+   - **Ollama Base URL** - Where your Ollama instance listens, *Eg:* ``http://localhost:11434``
+
+   - **Ollama Model** - The model name to use, *Eg:* ``llama3.2:3b`` - must already be pulled on that Ollama instance
+
+   **Click on `Verify connection`** link to confirm Seo Panel can reach your Ollama instance before relying on it
+
+
 ~~~~~~~~~~~~~~~~
 Google Analytics
 ~~~~~~~~~~~~~~~~

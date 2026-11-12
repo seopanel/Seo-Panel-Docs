@@ -33,6 +33,8 @@ Next step is to configure seo panel reports
 
    - **Number of keywords needs to be checked in each cron execution** - The number of keywords used in reports generation for each cron job execution(default value is `1`). For efficient report generation keep it as `1`
 
+.. _report-cron-command:
+
 ~~~~~~~~~~~~
 Cron Command
 ~~~~~~~~~~~~
@@ -105,7 +107,15 @@ You can also schedule reports for different users
    - **Reports generation interval** - User report generation interval. We can set it as Daily, 2 days, Weekly and Monthly(Default value is `Daily`) 
 
    - **Email notification** - Enable this feature to send reports in user email
-   
+
+   - **AI Insights email notification** - New in Seo Panel 7.0.0. Enables a weekly digest of this user's new **AI Insights** recommendations, and - new in 7.0.0 - adds an AI Insights summary block to this scheduled report email too
+
+   - **AI Visibility email notification** - New in Seo Panel 7.0.0. Enables a weekly **AI Visibility** digest (AI referrals, AI bot crawls, AI Overview citations) for this user's websites, and adds an AI Visibility Score/component/AI Referral ROI block to this scheduled report email too
+
+      .. image:: ../_static/sp_report_schedule_aidigest.png
+
+      Both digests are sent by the same cron job as your other scheduled reports - see :ref:`Cron Command <report-cron-command>` below. Nothing extra to set up beyond the cron job itself
+
    
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 Report Generation Manager

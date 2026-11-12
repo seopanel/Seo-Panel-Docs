@@ -84,4 +84,45 @@ This feature used to find the **rank of a website** in keyword search results by
    - **Keyword** - Add keyword to search in search engine
    
    - **Show All results** - Checked to see all results in of keyword search in search engine
-   
+
+
+.. _keyword-position-summary:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~
+Keyword Position Summary
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+A sortable table comparing every active keyword's rank on a "from" and a "to" date, across all your websites or one chosen website. Two columns here are new in Seo Panel 7.0.0: **AI Overview** and **Search Volume**.
+
+1) Go to **Seo Tools => Keyword Position Checker => Keyword Position Summary**
+
+2) Filter by **Name**, **Website** and **Period** (Day/Week/Month/Year, or your own two dates), then click **Search**
+
+   .. image:: ../_static/sp_report_search_volume.png
+
+   - **AI Overview (Google)** - Whether that keyword currently triggers a Google AI Overview, and whether you're **Cited** inside it (with your citation position, *Eg:* ``Cited (#2)``) - needs SERP Checker enabled under **DataForSEO Settings** or **Seo Panel API Settings**
+
+   - **Search Volume (Google)** - Monthly search volume for that keyword - needs **Enable for Search Volume** turned on under **DataForSEO Settings** or **Seo Panel API Settings**
+
+   - Either column shows **-** for a keyword that hasn't been checked yet, not zero - don't read a dash as "no searches"
+
+   - Period is anchored to the latest date that actually has saved data for that keyword, not today's date, so results stay populated even if a cron run is behind schedule
+
+
+~~~~~~~~~~~~~~~~~~~~
+SERP Results Archive
+~~~~~~~~~~~~~~~~~~~~
+
+For a chosen website and keyword, shows the full organic result list from the most recent saved search-engine results page, one tab per search engine. Your own website's result is highlighted when it appears, and - new in 7.0.0 - Google's AI Overview presence/citation data is shown when available.
+
+1) Go to **Seo Tools => Keyword Position Checker => SERP Results Archive**
+
+2) Pick a **Website** and **Keyword**, then click **Go**
+
+   .. image:: ../_static/sp_report_serparchive_aio.png
+
+   - This fills in automatically from your regular Keyword Position Checker runs - no separate setup needed, beyond enabling SERP Checker under **DataForSEO Settings** or **Seo Panel API Settings** if you want the AI Overview block to appear at all
+
+   - The **AI Overview** card shows **Present/Not present**, whether you're **Cited** and at what position, how many **Sources** were cited, and which provider (DataForSEO or Seo Panel API) and date the check ran
+
+   - A keyword only appears here once it has a saved snapshot for at least one search engine

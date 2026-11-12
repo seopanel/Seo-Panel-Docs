@@ -51,3 +51,16 @@ Here you can see overall reports of websites added in seo panel.
    - **Export** - Click on `Export Icon` to download reports in `.csv` format
    
    - **Print** - Click on `Print Icon` to print te reports
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Setup Tour & Installing as an App
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+New in Seo Panel 7.0.0, both shown right in the top bar:
+
+.. image:: ../_static/sp_setup_tour_pwa_banner.png
+
+- **Setup Tour** - A guided, step-by-step walkthrough of a fresh install: add your first website, run your first keyword check, and connect the AI Visibility suite. Click it any time from the top bar to replay it, *Eg:* after upgrading and wanting a refresher on what's new
+
+- **Install SEO Panel** - Seo Panel is now a installable PWA (Progressive Web App). Click **Install** on this banner (or your browser's own install prompt) to add it to your desktop or phone's home screen for full-screen, app-like access without the browser chrome. Dismiss the banner with the **x** if you'd rather keep using it in a regular browser tab
